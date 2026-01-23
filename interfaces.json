@@ -4,14 +4,14 @@
     "AnimationSystem_001": 8299728
   },
   "client.dll": {
-    "ClientToolsInfo_001": 33922448,
+    "ClientToolsInfo_001": 33922576,
     "EmptyWorldService001_Client": 33635600,
-    "GameClientExports001": 33909360,
-    "LegacyGameUI001": 34030384,
-    "Source2Client002": 36701936,
-    "Source2ClientConfig001": 36193808,
-    "Source2ClientPrediction001": 33953504,
-    "Source2ClientUI001": 34024288
+    "GameClientExports001": 33909488,
+    "LegacyGameUI001": 34030512,
+    "Source2Client002": 36702192,
+    "Source2ClientConfig001": 36194064,
+    "Source2ClientPrediction001": 33953632,
+    "Source2ClientUI001": 34024416
   },
   "engine2.dll": {
     "BenchmarkService001": 6342160,
@@ -130,16 +130,16 @@
     "SchemaSystem_001": 485168
   },
   "server.dll": {
-    "EmptyWorldService001_Server": 28731520,
-    "EntitySubclassUtilsV001": 28385408,
-    "NavGameTest001": 29426824,
-    "ServerToolsInfo_001": 29103976,
-    "Source2GameClients001": 29091808,
-    "Source2GameDirector001": 30737408,
-    "Source2GameEntities001": 29101680,
-    "Source2Server001": 29101264,
-    "Source2ServerConfig001": 31742120,
-    "customnavsystem001": 28249736
+    "EmptyWorldService001_Server": 28739696,
+    "EntitySubclassUtilsV001": 28393584,
+    "NavGameTest001": 29435144,
+    "ServerToolsInfo_001": 29112296,
+    "Source2GameClients001": 29100128,
+    "Source2GameDirector001": 30745856,
+    "Source2GameEntities001": 29110000,
+    "Source2Server001": 29109584,
+    "Source2ServerConfig001": 31748744,
+    "customnavsystem001": 28257912
   },
   "soundsystem.dll": {
     "SoundOpSystem001": 5192352,
@@ -182,6 +182,9 @@
   },
   "v8system.dll": {
     "Source2V8System001": 202416
+  },
+  "vconcomm.dll": {
+    "VConComm001": 234816
   },
   "vphysics2.dll": {
     "VPhysics2_Handle_Interface_001": 4186400,
