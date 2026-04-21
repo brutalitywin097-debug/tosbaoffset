@@ -3,8 +3,14 @@
     "classes": {
       "CAudioEmphasisSample": {
         "fields": {
-          "m_flTime": 0,
-          "m_flValue": 4
+          "m_flTime": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "m_flValue": {
+            "offset": 4,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -16,12 +22,30 @@
       },
       "CAudioMorphData": {
         "fields": {
-          "m_flEaseIn": 96,
-          "m_flEaseOut": 100,
-          "m_nameHashCodes": 24,
-          "m_nameStrings": 48,
-          "m_samples": 72,
-          "m_times": 0
+          "m_flEaseIn": {
+            "offset": 96,
+            "type": "float32"
+          },
+          "m_flEaseOut": {
+            "offset": 100,
+            "type": "float32"
+          },
+          "m_nameHashCodes": {
+            "offset": 24,
+            "type": "CUtlVector<uint32>"
+          },
+          "m_nameStrings": {
+            "offset": 48,
+            "type": "CUtlVector<CUtlString>"
+          },
+          "m_samples": {
+            "offset": 72,
+            "type": "CUtlVector<CUtlVector<float32>>"
+          },
+          "m_times": {
+            "offset": 0,
+            "type": "CUtlVector<float32>"
+          }
         },
         "metadata": [
           {
@@ -33,9 +57,18 @@
       },
       "CAudioPhonemeTag": {
         "fields": {
-          "m_flEndTime": 4,
-          "m_flStartTime": 0,
-          "m_nPhonemeCode": 8
+          "m_flEndTime": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_flStartTime": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "m_nPhonemeCode": {
+            "offset": 8,
+            "type": "int32"
+          }
         },
         "metadata": [
           {
@@ -47,10 +80,22 @@
       },
       "CAudioSentence": {
         "fields": {
-          "m_EmphasisSamples": 32,
-          "m_RunTimePhonemes": 8,
-          "m_bShouldVoiceDuck": 0,
-          "m_morphData": 56
+          "m_EmphasisSamples": {
+            "offset": 32,
+            "type": "CUtlVector<CAudioEmphasisSample>"
+          },
+          "m_RunTimePhonemes": {
+            "offset": 8,
+            "type": "CUtlVector<CAudioPhonemeTag>"
+          },
+          "m_bShouldVoiceDuck": {
+            "offset": 0,
+            "type": "bool"
+          },
+          "m_morphData": {
+            "offset": 56,
+            "type": "CAudioMorphData"
+          }
         },
         "metadata": [
           {
@@ -62,12 +107,30 @@
       },
       "CDSPMixgroupModifier": {
         "fields": {
-          "m_flListenerReverbModifierWhenSourceReverbIsActive": 24,
-          "m_flModifier": 8,
-          "m_flModifierMin": 12,
-          "m_flSourceModifier": 16,
-          "m_flSourceModifierMin": 20,
-          "m_mixgroup": 0
+          "m_flListenerReverbModifierWhenSourceReverbIsActive": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_flModifier": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_flModifierMin": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_flSourceModifier": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "m_flSourceModifierMin": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_mixgroup": {
+            "offset": 0,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -79,7 +142,10 @@
       },
       "CDSPPresetMixgroupModifierTable": {
         "fields": {
-          "m_table": 0
+          "m_table": {
+            "offset": 0,
+            "type": "CUtlVector<CDspPresetModifierList>"
+          }
         },
         "metadata": [
           {
@@ -95,8 +161,14 @@
       },
       "CDspPresetModifierList": {
         "fields": {
-          "m_dspName": 0,
-          "m_modifiers": 8
+          "m_dspName": {
+            "offset": 0,
+            "type": "CUtlString"
+          },
+          "m_modifiers": {
+            "offset": 8,
+            "type": "CUtlVector<CDSPMixgroupModifier>"
+          }
         },
         "metadata": [
           {
@@ -108,12 +180,30 @@
       },
       "CSndSeqInstBaseSchema": {
         "fields": {
-          "m_bStopCurrentEvents": 18,
-          "m_flBPM": 20,
-          "m_flBPMFactor": 24,
-          "m_flBPMInvFactor": 28,
-          "m_nPlayerType": 12,
-          "m_nType": 8
+          "m_bStopCurrentEvents": {
+            "offset": 18,
+            "type": "bool"
+          },
+          "m_flBPM": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_flBPMFactor": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_flBPMInvFactor": {
+            "offset": 28,
+            "type": "float32"
+          },
+          "m_nPlayerType": {
+            "offset": 12,
+            "type": "SndSeqPlayerType_t"
+          },
+          "m_nType": {
+            "offset": 8,
+            "type": "SndSeqInstrumentType_t"
+          }
         },
         "metadata": [
           {
@@ -125,17 +215,50 @@
       },
       "CSndSeqInstMidiSampler": {
         "fields": {
-          "m_bBeatEnvelopes": 52,
-          "m_bIsSoundEvent": 32,
-          "m_bStopPrevious": 33,
-          "m_flAttack": 44,
-          "m_flMaxVelocityAtten": 40,
-          "m_flMinVelocityAtten": 36,
-          "m_flRelease": 48,
-          "m_hSoundEventHash": 216,
-          "m_nMaxNote": 35,
-          "m_nMinNote": 34,
-          "m_nNextVoiceSlot": 212
+          "m_bBeatEnvelopes": {
+            "offset": 52,
+            "type": "bool"
+          },
+          "m_bIsSoundEvent": {
+            "offset": 32,
+            "type": "bool"
+          },
+          "m_bStopPrevious": {
+            "offset": 33,
+            "type": "bool"
+          },
+          "m_flAttack": {
+            "offset": 44,
+            "type": "float32"
+          },
+          "m_flMaxVelocityAtten": {
+            "offset": 40,
+            "type": "float32"
+          },
+          "m_flMinVelocityAtten": {
+            "offset": 36,
+            "type": "float32"
+          },
+          "m_flRelease": {
+            "offset": 48,
+            "type": "float32"
+          },
+          "m_hSoundEventHash": {
+            "offset": 216,
+            "type": "uint32"
+          },
+          "m_nMaxNote": {
+            "offset": 35,
+            "type": "uint8"
+          },
+          "m_nMinNote": {
+            "offset": 34,
+            "type": "uint8"
+          },
+          "m_nNextVoiceSlot": {
+            "offset": 212,
+            "type": "uint8"
+          }
         },
         "metadata": [
           {
@@ -170,11 +293,26 @@
       },
       "CSosGroupActionLimitSchema": {
         "fields": {
-          "m_bCountStopped": 21,
-          "m_bStopImmediate": 20,
-          "m_nMaxCount": 8,
-          "m_nSortType": 16,
-          "m_nStopType": 12
+          "m_bCountStopped": {
+            "offset": 21,
+            "type": "bool"
+          },
+          "m_bStopImmediate": {
+            "offset": 20,
+            "type": "bool"
+          },
+          "m_nMaxCount": {
+            "offset": 8,
+            "type": "int32"
+          },
+          "m_nSortType": {
+            "offset": 16,
+            "type": "SosActionLimitSortType_t"
+          },
+          "m_nStopType": {
+            "offset": 12,
+            "type": "SosActionStopType_t"
+          }
         },
         "metadata": [
           {
@@ -190,14 +328,38 @@
       },
       "CSosGroupActionMemberCountEnvelopeSchema": {
         "fields": {
-          "m_bSaveToGroup": 40,
-          "m_flAttack": 24,
-          "m_flBaseValue": 16,
-          "m_flDecay": 28,
-          "m_flTargetValue": 20,
-          "m_nBaseCount": 8,
-          "m_nTargetCount": 12,
-          "m_resultVarName": 32
+          "m_bSaveToGroup": {
+            "offset": 40,
+            "type": "bool"
+          },
+          "m_flAttack": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_flBaseValue": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "m_flDecay": {
+            "offset": 28,
+            "type": "float32"
+          },
+          "m_flTargetValue": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_nBaseCount": {
+            "offset": 8,
+            "type": "int32"
+          },
+          "m_nTargetCount": {
+            "offset": 12,
+            "type": "int32"
+          },
+          "m_resultVarName": {
+            "offset": 32,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -213,12 +375,30 @@
       },
       "CSosGroupActionOcclusionSchema": {
         "fields": {
-          "m_flCalculationInterval": 8,
-          "m_flOcclusionMax": 24,
-          "m_flOcclusionMin": 20,
-          "m_flOcclusionScale": 16,
-          "m_flRadius": 12,
-          "m_flTestDepth": 28
+          "m_flCalculationInterval": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_flOcclusionMax": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_flOcclusionMin": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_flOcclusionScale": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "m_flRadius": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_flTestDepth": {
+            "offset": 28,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -244,11 +424,26 @@
       },
       "CSosGroupActionSetSoundeventParameterSchema": {
         "fields": {
-          "m_flMaxValue": 16,
-          "m_flMinValue": 12,
-          "m_nMaxCount": 8,
-          "m_nSortType": 32,
-          "m_opvarName": 24
+          "m_flMaxValue": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "m_flMinValue": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_nMaxCount": {
+            "offset": 8,
+            "type": "int32"
+          },
+          "m_nSortType": {
+            "offset": 32,
+            "type": "SosActionSetParamSortType_t"
+          },
+          "m_opvarName": {
+            "offset": 24,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -264,13 +459,34 @@
       },
       "CSosGroupActionSoundeventClusterSchema": {
         "fields": {
-          "m_clusterSizeOpvar": 32,
-          "m_flClusterEpsilon": 12,
-          "m_groupBoundingBoxMaxsOpvar": 48,
-          "m_groupBoundingBoxMinsOpvar": 40,
-          "m_nMinNearby": 8,
-          "m_shouldPlayClusterChild": 24,
-          "m_shouldPlayOpvar": 16
+          "m_clusterSizeOpvar": {
+            "offset": 32,
+            "type": "CUtlString"
+          },
+          "m_flClusterEpsilon": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_groupBoundingBoxMaxsOpvar": {
+            "offset": 48,
+            "type": "CUtlString"
+          },
+          "m_groupBoundingBoxMinsOpvar": {
+            "offset": 40,
+            "type": "CUtlString"
+          },
+          "m_nMinNearby": {
+            "offset": 8,
+            "type": "int32"
+          },
+          "m_shouldPlayClusterChild": {
+            "offset": 24,
+            "type": "CUtlString"
+          },
+          "m_shouldPlayOpvar": {
+            "offset": 16,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -286,8 +502,14 @@
       },
       "CSosGroupActionSoundeventCountSchema": {
         "fields": {
-          "m_bExcludeStoppedSounds": 8,
-          "m_strCountKeyName": 16
+          "m_bExcludeStoppedSounds": {
+            "offset": 8,
+            "type": "bool"
+          },
+          "m_strCountKeyName": {
+            "offset": 16,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -303,16 +525,46 @@
       },
       "CSosGroupActionSoundeventMinMaxValuesSchema": {
         "fields": {
-          "m_bExcludSoundsAboveThreshold": 32,
-          "m_bExcludeDelayedSounds": 25,
-          "m_bExcludeSoundsBelowThreshold": 26,
-          "m_bExcludeStoppedSounds": 24,
-          "m_flExcludeSoundsMaxThresholdValue": 36,
-          "m_flExcludeSoundsMinThresholdValue": 28,
-          "m_strDelayPublicFieldName": 16,
-          "m_strMaxValueName": 48,
-          "m_strMinValueName": 40,
-          "m_strQueryPublicFieldName": 8
+          "m_bExcludSoundsAboveThreshold": {
+            "offset": 32,
+            "type": "bool"
+          },
+          "m_bExcludeDelayedSounds": {
+            "offset": 25,
+            "type": "bool"
+          },
+          "m_bExcludeSoundsBelowThreshold": {
+            "offset": 26,
+            "type": "bool"
+          },
+          "m_bExcludeStoppedSounds": {
+            "offset": 24,
+            "type": "bool"
+          },
+          "m_flExcludeSoundsMaxThresholdValue": {
+            "offset": 36,
+            "type": "float32"
+          },
+          "m_flExcludeSoundsMinThresholdValue": {
+            "offset": 28,
+            "type": "float32"
+          },
+          "m_strDelayPublicFieldName": {
+            "offset": 16,
+            "type": "CUtlString"
+          },
+          "m_strMaxValueName": {
+            "offset": 48,
+            "type": "CUtlString"
+          },
+          "m_strMinValueName": {
+            "offset": 40,
+            "type": "CUtlString"
+          },
+          "m_strQueryPublicFieldName": {
+            "offset": 8,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -328,10 +580,22 @@
       },
       "CSosGroupActionSoundeventPrioritySchema": {
         "fields": {
-          "m_bPriorityReadButDontContribute": 32,
-          "m_priorityContributeButDontRead": 24,
-          "m_priorityValue": 8,
-          "m_priorityVolumeScalar": 16
+          "m_bPriorityReadButDontContribute": {
+            "offset": 32,
+            "type": "CUtlString"
+          },
+          "m_priorityContributeButDontRead": {
+            "offset": 24,
+            "type": "CUtlString"
+          },
+          "m_priorityValue": {
+            "offset": 8,
+            "type": "CUtlString"
+          },
+          "m_priorityVolumeScalar": {
+            "offset": 16,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -347,8 +611,14 @@
       },
       "CSosGroupActionTimeBlockLimitSchema": {
         "fields": {
-          "m_flMaxDuration": 12,
-          "m_nMaxCount": 8
+          "m_flMaxDuration": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_nMaxCount": {
+            "offset": 8,
+            "type": "int32"
+          }
         },
         "metadata": [
           {
@@ -364,7 +634,10 @@
       },
       "CSosGroupActionTimeLimitSchema": {
         "fields": {
-          "m_flMaxDuration": 8
+          "m_flMaxDuration": {
+            "offset": 8,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -380,22 +653,70 @@
       },
       "CSosSoundEventGroupSchema": {
         "fields": {
-          "m_Behavior_EntIndex": 56,
-          "m_Behavior_EventName": 28,
-          "m_Behavior_Opvar": 64,
-          "m_Behavior_String": 72,
-          "m_bBlocksEvents": 12,
-          "m_bInvertMatch": 24,
-          "m_bMatchEventSubString": 40,
-          "m_flEntIndex": 60,
-          "m_flMemberLifespanTime": 20,
-          "m_flOpvar": 68,
-          "m_matchSoundEventName": 32,
-          "m_matchSoundEventSubString": 48,
-          "m_nBlockMaxCount": 16,
-          "m_nGroupType": 8,
-          "m_opvarString": 80,
-          "m_vActions": 88
+          "m_Behavior_EntIndex": {
+            "offset": 56,
+            "type": "SosGroupFieldBehavior_t"
+          },
+          "m_Behavior_EventName": {
+            "offset": 28,
+            "type": "SosGroupFieldBehavior_t"
+          },
+          "m_Behavior_Opvar": {
+            "offset": 64,
+            "type": "SosGroupFieldBehavior_t"
+          },
+          "m_Behavior_String": {
+            "offset": 72,
+            "type": "SosGroupFieldBehavior_t"
+          },
+          "m_bBlocksEvents": {
+            "offset": 12,
+            "type": "bool"
+          },
+          "m_bInvertMatch": {
+            "offset": 24,
+            "type": "bool"
+          },
+          "m_bMatchEventSubString": {
+            "offset": 40,
+            "type": "bool"
+          },
+          "m_flEntIndex": {
+            "offset": 60,
+            "type": "float32"
+          },
+          "m_flMemberLifespanTime": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_flOpvar": {
+            "offset": 68,
+            "type": "float32"
+          },
+          "m_matchSoundEventName": {
+            "offset": 32,
+            "type": "CUtlString"
+          },
+          "m_matchSoundEventSubString": {
+            "offset": 48,
+            "type": "CUtlString"
+          },
+          "m_nBlockMaxCount": {
+            "offset": 16,
+            "type": "int32"
+          },
+          "m_nGroupType": {
+            "offset": 8,
+            "type": "SosGroupType_t"
+          },
+          "m_opvarString": {
+            "offset": 80,
+            "type": "CUtlString"
+          },
+          "m_vActions": {
+            "offset": 88,
+            "type": "CUtlVector<CSosGroupActionSchema*>"
+          }
         },
         "metadata": [
           {
@@ -407,10 +728,22 @@
       },
       "CSoundContainerReference": {
         "fields": {
-          "m_bUseReference": 8,
-          "m_namespace": 0,
-          "m_pSound": 24,
-          "m_sound": 16
+          "m_bUseReference": {
+            "offset": 8,
+            "type": "bool"
+          },
+          "m_namespace": {
+            "offset": 0,
+            "type": "CUtlString"
+          },
+          "m_pSound": {
+            "offset": 24,
+            "type": "CVoiceContainerBase*"
+          },
+          "m_sound": {
+            "offset": 16,
+            "type": "CStrongHandle<InfoForResourceTypeCVoiceContainerBase>"
+          }
         },
         "metadata": [
           {
@@ -430,9 +763,18 @@
       },
       "CSoundContainerReferenceArray": {
         "fields": {
-          "m_bUseReference": 0,
-          "m_pSounds": 32,
-          "m_sounds": 8
+          "m_bUseReference": {
+            "offset": 0,
+            "type": "bool"
+          },
+          "m_pSounds": {
+            "offset": 32,
+            "type": "CUtlVector<CVoiceContainerBase*>"
+          },
+          "m_sounds": {
+            "offset": 8,
+            "type": "CUtlVector<CStrongHandle<InfoForResourceTypeCVoiceContainerBase>>"
+          }
         },
         "metadata": [
           {
@@ -452,7 +794,10 @@
       },
       "CSoundEventMetaData": {
         "fields": {
-          "m_soundEventVMix": 0
+          "m_soundEventVMix": {
+            "offset": 0,
+            "type": "CStrongHandle<InfoForResourceTypeCVMixListResource>"
+          }
         },
         "metadata": [
           {
@@ -474,7 +819,10 @@
       },
       "CVMixAdditionalOutput": {
         "fields": {
-          "m_name": 0
+          "m_name": {
+            "offset": 0,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -486,8 +834,14 @@
       },
       "CVMixAudioMeter": {
         "fields": {
-          "m_displayName": 8,
-          "m_name": 0
+          "m_displayName": {
+            "offset": 8,
+            "type": "CUtlString"
+          },
+          "m_name": {
+            "offset": 0,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -499,7 +853,10 @@
       },
       "CVMixAutoFilterProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixAutoFilterDesc_t"
+          }
         },
         "metadata": [
           {
@@ -511,10 +868,22 @@
       },
       "CVMixAutomaticControlInput": {
         "fields": {
-          "m_bIsStackVar": 13,
-          "m_bIsTrackSend": 12,
-          "m_nControlInputIndex": 8,
-          "m_name": 0
+          "m_bIsStackVar": {
+            "offset": 13,
+            "type": "bool"
+          },
+          "m_bIsTrackSend": {
+            "offset": 12,
+            "type": "bool"
+          },
+          "m_nControlInputIndex": {
+            "offset": 8,
+            "type": "int32"
+          },
+          "m_name": {
+            "offset": 0,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -526,9 +895,18 @@
       },
       "CVMixBaseProcessorDesc": {
         "fields": {
-          "m_flxfade": 24,
-          "m_nChannels": 20,
-          "m_name": 8
+          "m_flxfade": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_nChannels": {
+            "offset": 20,
+            "type": "int32"
+          },
+          "m_name": {
+            "offset": 8,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -540,7 +918,10 @@
       },
       "CVMixBoxverb2ProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixBoxverbDesc_t"
+          }
         },
         "metadata": [
           {
@@ -552,7 +933,10 @@
       },
       "CVMixBoxverbProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixBoxverbDesc_t"
+          }
         },
         "metadata": [
           {
@@ -564,14 +948,38 @@
       },
       "CVMixCommand": {
         "fields": {
-          "m_nCommand": 0,
-          "m_nInputSubmix0": 12,
-          "m_nInputSubmix1": 16,
-          "m_nInputValue0": 24,
-          "m_nInputValue1": 28,
-          "m_nOutputSubmix": 8,
-          "m_nParameterNameHash": 4,
-          "m_nProcessor": 20
+          "m_nCommand": {
+            "offset": 0,
+            "type": "VMixGraphCommandID_t"
+          },
+          "m_nInputSubmix0": {
+            "offset": 12,
+            "type": "int32"
+          },
+          "m_nInputSubmix1": {
+            "offset": 16,
+            "type": "int32"
+          },
+          "m_nInputValue0": {
+            "offset": 24,
+            "type": "int32"
+          },
+          "m_nInputValue1": {
+            "offset": 28,
+            "type": "int32"
+          },
+          "m_nOutputSubmix": {
+            "offset": 8,
+            "type": "int32"
+          },
+          "m_nParameterNameHash": {
+            "offset": 4,
+            "type": "uint32"
+          },
+          "m_nProcessor": {
+            "offset": 20,
+            "type": "int32"
+          }
         },
         "metadata": [
           {
@@ -583,7 +991,10 @@
       },
       "CVMixControlInput": {
         "fields": {
-          "m_flDefaultValue": 16
+          "m_flDefaultValue": {
+            "offset": 16,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -595,7 +1006,10 @@
       },
       "CVMixControlInputArray": {
         "fields": {
-          "m_nArrayIndex": 16
+          "m_nArrayIndex": {
+            "offset": 16,
+            "type": "int32"
+          }
         },
         "metadata": [
           {
@@ -607,7 +1021,10 @@
       },
       "CVMixControlMeter": {
         "fields": {
-          "m_nValueIndex": 16
+          "m_nValueIndex": {
+            "offset": 16,
+            "type": "int32"
+          }
         },
         "metadata": [
           {
@@ -619,7 +1036,10 @@
       },
       "CVMixControlOutput": {
         "fields": {
-          "m_flDefaultValue": 16
+          "m_flDefaultValue": {
+            "offset": 16,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -631,7 +1051,10 @@
       },
       "CVMixConvolutionProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixConvolutionDesc_t"
+          }
         },
         "metadata": [
           {
@@ -643,8 +1066,14 @@
       },
       "CVMixCurveHeader": {
         "fields": {
-          "m_nControlPointCount": 0,
-          "m_nControlPointStart": 4
+          "m_nControlPointCount": {
+            "offset": 0,
+            "type": "uint32"
+          },
+          "m_nControlPointStart": {
+            "offset": 4,
+            "type": "uint32"
+          }
         },
         "metadata": [
           {
@@ -656,7 +1085,10 @@
       },
       "CVMixDelayProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixDelayDesc_t"
+          }
         },
         "metadata": [
           {
@@ -668,7 +1100,10 @@
       },
       "CVMixDiffusorProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixDiffusorDesc_t"
+          }
         },
         "metadata": [
           {
@@ -680,7 +1115,10 @@
       },
       "CVMixDualCompressorProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixDualCompressorDesc_t"
+          }
         },
         "metadata": [
           {
@@ -692,7 +1130,10 @@
       },
       "CVMixDynamics3BandProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixDynamics3BandDesc_t"
+          }
         },
         "metadata": [
           {
@@ -704,7 +1145,10 @@
       },
       "CVMixDynamicsCompressorProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixDynamicsCompressorDesc_t"
+          }
         },
         "metadata": [
           {
@@ -716,7 +1160,10 @@
       },
       "CVMixDynamicsProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixDynamicsDesc_t"
+          }
         },
         "metadata": [
           {
@@ -728,7 +1175,10 @@
       },
       "CVMixEQ8ProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixEQ8Desc_t"
+          }
         },
         "metadata": [
           {
@@ -740,7 +1190,10 @@
       },
       "CVMixEffectChainProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixEffectChainDesc_t"
+          }
         },
         "metadata": [
           {
@@ -752,7 +1205,10 @@
       },
       "CVMixEnvelopeProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixEnvelopeDesc_t"
+          }
         },
         "metadata": [
           {
@@ -764,7 +1220,10 @@
       },
       "CVMixFilterProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixFilterDesc_t"
+          }
         },
         "metadata": [
           {
@@ -776,7 +1235,10 @@
       },
       "CVMixFlangerProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixFlangerDesc_t"
+          }
         },
         "metadata": [
           {
@@ -788,7 +1250,10 @@
       },
       "CVMixFreeverbProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixFreeverbDesc_t"
+          }
         },
         "metadata": [
           {
@@ -800,9 +1265,18 @@
       },
       "CVMixGraphDescData": {
         "fields": {
-          "m_bIsMainGraph": 12,
-          "m_nGraphOutputChannels": 8,
-          "m_name": 0
+          "m_bIsMainGraph": {
+            "offset": 12,
+            "type": "bool"
+          },
+          "m_nGraphOutputChannels": {
+            "offset": 8,
+            "type": "int32"
+          },
+          "m_name": {
+            "offset": 0,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -824,7 +1298,10 @@
       },
       "CVMixInputBase": {
         "fields": {
-          "m_name": 0
+          "m_name": {
+            "offset": 0,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -836,7 +1313,10 @@
       },
       "CVMixModDelayProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixModDelayDesc_t"
+          }
         },
         "metadata": [
           {
@@ -848,7 +1328,10 @@
       },
       "CVMixNameInput": {
         "fields": {
-          "m_defaultValue": 16
+          "m_defaultValue": {
+            "offset": 16,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -860,7 +1343,10 @@
       },
       "CVMixNameInputMeter": {
         "fields": {
-          "m_nValueIndex": 16
+          "m_nValueIndex": {
+            "offset": 16,
+            "type": "int32"
+          }
         },
         "metadata": [
           {
@@ -872,7 +1358,10 @@
       },
       "CVMixOscProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixOscDesc_t"
+          }
         },
         "metadata": [
           {
@@ -884,7 +1373,10 @@
       },
       "CVMixPannerProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixPannerDesc_t"
+          }
         },
         "metadata": [
           {
@@ -896,7 +1388,10 @@
       },
       "CVMixPitchShiftProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixPitchShiftDesc_t"
+          }
         },
         "metadata": [
           {
@@ -908,7 +1403,10 @@
       },
       "CVMixPlateReverbProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixPlateverbDesc_t"
+          }
         },
         "metadata": [
           {
@@ -920,7 +1418,10 @@
       },
       "CVMixPresetDSPProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixPresetDSPDesc_t"
+          }
         },
         "metadata": [
           {
@@ -932,7 +1433,10 @@
       },
       "CVMixShaperProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixShaperDesc_t"
+          }
         },
         "metadata": [
           {
@@ -994,7 +1498,10 @@
       },
       "CVMixSubgraphSwitchProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixSubgraphSwitchDesc_t"
+          }
         },
         "metadata": [
           {
@@ -1006,7 +1513,10 @@
       },
       "CVMixUtilityProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixUtilityDesc_t"
+          }
         },
         "metadata": [
           {
@@ -1018,7 +1528,10 @@
       },
       "CVMixVocoderProcessorDesc": {
         "fields": {
-          "m_desc": 32
+          "m_desc": {
+            "offset": 32,
+            "type": "VMixVocoderDesc_t"
+          }
         },
         "metadata": [
           {
@@ -1030,8 +1543,14 @@
       },
       "CVMixVsndInput": {
         "fields": {
-          "m_defaultValue": 16,
-          "m_nProcessor": 24
+          "m_defaultValue": {
+            "offset": 16,
+            "type": "CUtlString"
+          },
+          "m_nProcessor": {
+            "offset": 24,
+            "type": "int32"
+          }
         },
         "metadata": [
           {
@@ -1043,17 +1562,50 @@
       },
       "CVSound": {
         "fields": {
-          "m_Sentences": 24,
-          "m_encodedHeader": 88,
-          "m_flDuration": 20,
-          "m_nChannels": 8,
-          "m_nFormat": 4,
-          "m_nLoopEnd": 80,
-          "m_nLoopStart": 12,
-          "m_nRate": 0,
-          "m_nSampleCount": 16,
-          "m_nSeekTable": 56,
-          "m_nStreamingSize": 48
+          "m_Sentences": {
+            "offset": 24,
+            "type": "CUtlVector<CAudioSentence>"
+          },
+          "m_encodedHeader": {
+            "offset": 88,
+            "type": "CUtlBinaryBlock"
+          },
+          "m_flDuration": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_nChannels": {
+            "offset": 8,
+            "type": "uint32"
+          },
+          "m_nFormat": {
+            "offset": 4,
+            "type": "CVSoundFormat_t"
+          },
+          "m_nLoopEnd": {
+            "offset": 80,
+            "type": "int32"
+          },
+          "m_nLoopStart": {
+            "offset": 12,
+            "type": "int32"
+          },
+          "m_nRate": {
+            "offset": 0,
+            "type": "int32"
+          },
+          "m_nSampleCount": {
+            "offset": 16,
+            "type": "uint32"
+          },
+          "m_nSeekTable": {
+            "offset": 56,
+            "type": "CUtlVector<int32>"
+          },
+          "m_nStreamingSize": {
+            "offset": 48,
+            "type": "uint32"
+          }
         },
         "metadata": [
           {
@@ -1065,7 +1617,10 @@
       },
       "CVoiceContainerAmpedDecayingSineWave": {
         "fields": {
-          "m_flGainAmount": 176
+          "m_flGainAmount": {
+            "offset": 176,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -1085,8 +1640,14 @@
       },
       "CVoiceContainerAnalysisBase": {
         "fields": {
-          "m_bRegenerateCurveOnCompile": 8,
-          "m_curve": 16
+          "m_bRegenerateCurveOnCompile": {
+            "offset": 8,
+            "type": "bool"
+          },
+          "m_curve": {
+            "offset": 16,
+            "type": "CPiecewiseCurve"
+          }
         },
         "metadata": [
           {
@@ -1120,8 +1681,14 @@
       },
       "CVoiceContainerBase": {
         "fields": {
-          "m_pEnvelopeAnalyzer": 160,
-          "m_vSound": 40
+          "m_pEnvelopeAnalyzer": {
+            "offset": 160,
+            "type": "CVoiceContainerAnalysisBase*"
+          },
+          "m_vSound": {
+            "offset": 40,
+            "type": "CVSound"
+          }
         },
         "metadata": [
           {
@@ -1149,9 +1716,18 @@
       },
       "CVoiceContainerBlender": {
         "fields": {
-          "m_firstSound": 168,
-          "m_flBlendFactor": 232,
-          "m_secondSound": 200
+          "m_firstSound": {
+            "offset": 168,
+            "type": "CSoundContainerReference"
+          },
+          "m_flBlendFactor": {
+            "offset": 232,
+            "type": "float32"
+          },
+          "m_secondSound": {
+            "offset": 200,
+            "type": "CSoundContainerReference"
+          }
         },
         "metadata": [
           {
@@ -1171,8 +1747,14 @@
       },
       "CVoiceContainerDecayingSineWave": {
         "fields": {
-          "m_flDecayTime": 172,
-          "m_flFrequency": 168
+          "m_flDecayTime": {
+            "offset": 172,
+            "type": "float32"
+          },
+          "m_flFrequency": {
+            "offset": 168,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -1210,9 +1792,18 @@
       },
       "CVoiceContainerEnum": {
         "fields": {
-          "m_flCrossfadeTime": 228,
-          "m_iSelection": 224,
-          "m_soundsToPlay": 168
+          "m_flCrossfadeTime": {
+            "offset": 228,
+            "type": "float32"
+          },
+          "m_iSelection": {
+            "offset": 224,
+            "type": "int32"
+          },
+          "m_soundsToPlay": {
+            "offset": 168,
+            "type": "CSoundContainerReferenceArray"
+          }
         },
         "metadata": [
           {
@@ -1232,8 +1823,14 @@
       },
       "CVoiceContainerEnvelope": {
         "fields": {
-          "m_analysisContainer": 176,
-          "m_sound": 168
+          "m_analysisContainer": {
+            "offset": 176,
+            "type": "CVoiceContainerAnalysisBase*"
+          },
+          "m_sound": {
+            "offset": 168,
+            "type": "CStrongHandle<InfoForResourceTypeCVoiceContainerBase>"
+          }
         },
         "metadata": [
           {
@@ -1253,9 +1850,18 @@
       },
       "CVoiceContainerEnvelopeAnalyzer": {
         "fields": {
-          "m_fAnalysisWindowMs": 84,
-          "m_flThreshold": 88,
-          "m_mode": 80
+          "m_fAnalysisWindowMs": {
+            "offset": 84,
+            "type": "float32"
+          },
+          "m_flThreshold": {
+            "offset": 88,
+            "type": "float32"
+          },
+          "m_mode": {
+            "offset": 80,
+            "type": "EMode_t"
+          }
         },
         "metadata": [
           {
@@ -1285,12 +1891,30 @@
       },
       "CVoiceContainerGranulator": {
         "fields": {
-          "m_bShouldWraparound": 200,
-          "m_flGrainCrossfadeAmount": 188,
-          "m_flGrainLength": 184,
-          "m_flPlaybackJitter": 196,
-          "m_flStartJitter": 192,
-          "m_sourceAudio": 208
+          "m_bShouldWraparound": {
+            "offset": 200,
+            "type": "bool"
+          },
+          "m_flGrainCrossfadeAmount": {
+            "offset": 188,
+            "type": "float32"
+          },
+          "m_flGrainLength": {
+            "offset": 184,
+            "type": "float32"
+          },
+          "m_flPlaybackJitter": {
+            "offset": 196,
+            "type": "float32"
+          },
+          "m_flStartJitter": {
+            "offset": 192,
+            "type": "float32"
+          },
+          "m_sourceAudio": {
+            "offset": 208,
+            "type": "CStrongHandle<InfoForResourceTypeCVoiceContainerBase>"
+          }
         },
         "metadata": [
           {
@@ -1306,11 +1930,26 @@
       },
       "CVoiceContainerLoopTrigger": {
         "fields": {
-          "m_bCrossFade": 212,
-          "m_flFadeTime": 208,
-          "m_flRetriggerTimeMax": 204,
-          "m_flRetriggerTimeMin": 200,
-          "m_sound": 168
+          "m_bCrossFade": {
+            "offset": 212,
+            "type": "bool"
+          },
+          "m_flFadeTime": {
+            "offset": 208,
+            "type": "float32"
+          },
+          "m_flRetriggerTimeMax": {
+            "offset": 204,
+            "type": "float32"
+          },
+          "m_flRetriggerTimeMin": {
+            "offset": 200,
+            "type": "float32"
+          },
+          "m_sound": {
+            "offset": 168,
+            "type": "CSoundContainerReference"
+          }
         },
         "metadata": [
           {
@@ -1330,14 +1969,38 @@
       },
       "CVoiceContainerLoopXFade": {
         "fields": {
-          "m_bEqualPow": 218,
-          "m_bPlayHead": 216,
-          "m_bPlayTail": 217,
-          "m_flFadeIn": 212,
-          "m_flFadeOut": 208,
-          "m_flLoopEnd": 200,
-          "m_flLoopStart": 204,
-          "m_sound": 168
+          "m_bEqualPow": {
+            "offset": 218,
+            "type": "bool"
+          },
+          "m_bPlayHead": {
+            "offset": 216,
+            "type": "bool"
+          },
+          "m_bPlayTail": {
+            "offset": 217,
+            "type": "bool"
+          },
+          "m_flFadeIn": {
+            "offset": 212,
+            "type": "float32"
+          },
+          "m_flFadeOut": {
+            "offset": 208,
+            "type": "float32"
+          },
+          "m_flLoopEnd": {
+            "offset": 200,
+            "type": "float32"
+          },
+          "m_flLoopStart": {
+            "offset": 204,
+            "type": "float32"
+          },
+          "m_sound": {
+            "offset": 168,
+            "type": "CSoundContainerReference"
+          }
         },
         "metadata": [
           {
@@ -1357,9 +2020,18 @@
       },
       "CVoiceContainerMultiBlender": {
         "fields": {
-          "m_flBlendFactor": 224,
-          "m_flCrossover": 228,
-          "m_soundsToPlay": 168
+          "m_flBlendFactor": {
+            "offset": 224,
+            "type": "float32"
+          },
+          "m_flCrossover": {
+            "offset": 228,
+            "type": "float32"
+          },
+          "m_soundsToPlay": {
+            "offset": 168,
+            "type": "CSoundContainerReferenceArray"
+          }
         },
         "metadata": [
           {
@@ -1397,14 +2069,38 @@
       },
       "CVoiceContainerParameterBlender": {
         "fields": {
-          "m_bEnableDistanceBlend": 368,
-          "m_bEnableOcclusionBlend": 232,
-          "m_curve1": 240,
-          "m_curve2": 304,
-          "m_curve3": 376,
-          "m_curve4": 440,
-          "m_firstSound": 168,
-          "m_secondSound": 200
+          "m_bEnableDistanceBlend": {
+            "offset": 368,
+            "type": "bool"
+          },
+          "m_bEnableOcclusionBlend": {
+            "offset": 232,
+            "type": "bool"
+          },
+          "m_curve1": {
+            "offset": 240,
+            "type": "CPiecewiseCurve"
+          },
+          "m_curve2": {
+            "offset": 304,
+            "type": "CPiecewiseCurve"
+          },
+          "m_curve3": {
+            "offset": 376,
+            "type": "CPiecewiseCurve"
+          },
+          "m_curve4": {
+            "offset": 440,
+            "type": "CPiecewiseCurve"
+          },
+          "m_firstSound": {
+            "offset": 168,
+            "type": "CSoundContainerReference"
+          },
+          "m_secondSound": {
+            "offset": 200,
+            "type": "CSoundContainerReference"
+          }
         },
         "metadata": [
           {
@@ -1424,12 +2120,30 @@
       },
       "CVoiceContainerRandomSampler": {
         "fields": {
-          "m_flAmplitude": 184,
-          "m_flAmplitudeJitter": 188,
-          "m_flMaxLength": 196,
-          "m_flTimeJitter": 192,
-          "m_grainResources": 208,
-          "m_nNumDelayVariations": 200
+          "m_flAmplitude": {
+            "offset": 184,
+            "type": "float32"
+          },
+          "m_flAmplitudeJitter": {
+            "offset": 188,
+            "type": "float32"
+          },
+          "m_flMaxLength": {
+            "offset": 196,
+            "type": "float32"
+          },
+          "m_flTimeJitter": {
+            "offset": 192,
+            "type": "float32"
+          },
+          "m_grainResources": {
+            "offset": 208,
+            "type": "CUtlVector<CStrongHandle<InfoForResourceTypeCVoiceContainerBase>>"
+          },
+          "m_nNumDelayVariations": {
+            "offset": 200,
+            "type": "int32"
+          }
         },
         "metadata": [
           {
@@ -1449,9 +2163,18 @@
       },
       "CVoiceContainerRealtimeFMSineWave": {
         "fields": {
-          "m_flCarrierFrequency": 168,
-          "m_flModulatorAmount": 176,
-          "m_flModulatorFrequency": 172
+          "m_flCarrierFrequency": {
+            "offset": 168,
+            "type": "float32"
+          },
+          "m_flModulatorAmount": {
+            "offset": 176,
+            "type": "float32"
+          },
+          "m_flModulatorFrequency": {
+            "offset": 172,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -1471,9 +2194,18 @@
       },
       "CVoiceContainerSelector": {
         "fields": {
-          "m_fProbabilityWeights": 232,
-          "m_mode": 168,
-          "m_soundsToPlay": 176
+          "m_fProbabilityWeights": {
+            "offset": 232,
+            "type": "CUtlVector<float32>"
+          },
+          "m_mode": {
+            "offset": 168,
+            "type": "PlayBackMode_t"
+          },
+          "m_soundsToPlay": {
+            "offset": 176,
+            "type": "CSoundContainerReferenceArray"
+          }
         },
         "metadata": [
           {
@@ -1493,7 +2225,10 @@
       },
       "CVoiceContainerSet": {
         "fields": {
-          "m_soundsToPlay": 168
+          "m_soundsToPlay": {
+            "offset": 168,
+            "type": "CUtlVector<CVoiceContainerSetElement>"
+          }
         },
         "metadata": [
           {
@@ -1513,8 +2248,14 @@
       },
       "CVoiceContainerSetElement": {
         "fields": {
-          "m_flVolumeDB": 32,
-          "m_sound": 0
+          "m_flVolumeDB": {
+            "offset": 32,
+            "type": "float32"
+          },
+          "m_sound": {
+            "offset": 0,
+            "type": "CSoundContainerReference"
+          }
         },
         "metadata": [
           {
@@ -1526,15 +2267,42 @@
       },
       "CVoiceContainerShapedNoise": {
         "fields": {
-          "m_bUseCurveForAmplitude": 312,
-          "m_bUseCurveForFrequency": 168,
-          "m_bUseCurveForResonance": 240,
-          "m_flFrequency": 172,
-          "m_flGainInDecibels": 316,
-          "m_flResonance": 244,
-          "m_frequencySweep": 176,
-          "m_gainSweep": 320,
-          "m_resonanceSweep": 248
+          "m_bUseCurveForAmplitude": {
+            "offset": 312,
+            "type": "bool"
+          },
+          "m_bUseCurveForFrequency": {
+            "offset": 168,
+            "type": "bool"
+          },
+          "m_bUseCurveForResonance": {
+            "offset": 240,
+            "type": "bool"
+          },
+          "m_flFrequency": {
+            "offset": 172,
+            "type": "float32"
+          },
+          "m_flGainInDecibels": {
+            "offset": 316,
+            "type": "float32"
+          },
+          "m_flResonance": {
+            "offset": 244,
+            "type": "float32"
+          },
+          "m_frequencySweep": {
+            "offset": 176,
+            "type": "CPiecewiseCurve"
+          },
+          "m_gainSweep": {
+            "offset": 320,
+            "type": "CPiecewiseCurve"
+          },
+          "m_resonanceSweep": {
+            "offset": 248,
+            "type": "CPiecewiseCurve"
+          }
         },
         "metadata": [
           {
@@ -1554,7 +2322,10 @@
       },
       "CVoiceContainerStaticAdditiveSynth": {
         "fields": {
-          "m_tones": 184
+          "m_tones": {
+            "offset": 184,
+            "type": "CUtlVector<CVoiceContainerStaticAdditiveSynth::CTone>"
+          }
         },
         "metadata": [
           {
@@ -1574,10 +2345,22 @@
       },
       "CVoiceContainerStaticAdditiveSynth__CGainScalePerInstance": {
         "fields": {
-          "m_flMaxVolume": 8,
-          "m_flMinVolume": 0,
-          "m_nInstancesAtMaxVolume": 12,
-          "m_nInstancesAtMinVolume": 4
+          "m_flMaxVolume": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_flMinVolume": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "m_nInstancesAtMaxVolume": {
+            "offset": 12,
+            "type": "int32"
+          },
+          "m_nInstancesAtMinVolume": {
+            "offset": 4,
+            "type": "int32"
+          }
         },
         "metadata": [
           {
@@ -1589,13 +2372,34 @@
       },
       "CVoiceContainerStaticAdditiveSynth__CHarmonic": {
         "fields": {
-          "m_curve": 16,
-          "m_flCents": 8,
-          "m_flPhase": 12,
-          "m_nFundamental": 1,
-          "m_nOctave": 4,
-          "m_nWaveform": 0,
-          "m_volumeScaling": 80
+          "m_curve": {
+            "offset": 16,
+            "type": "CPiecewiseCurve"
+          },
+          "m_flCents": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_flPhase": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_nFundamental": {
+            "offset": 1,
+            "type": "EMidiNote"
+          },
+          "m_nOctave": {
+            "offset": 4,
+            "type": "int32"
+          },
+          "m_nWaveform": {
+            "offset": 0,
+            "type": "EWaveform"
+          },
+          "m_volumeScaling": {
+            "offset": 80,
+            "type": "CVoiceContainerStaticAdditiveSynth::CGainScalePerInstance"
+          }
         },
         "metadata": [
           {
@@ -1607,9 +2411,18 @@
       },
       "CVoiceContainerStaticAdditiveSynth__CTone": {
         "fields": {
-          "m_bSyncInstances": 88,
-          "m_curve": 24,
-          "m_harmonics": 0
+          "m_bSyncInstances": {
+            "offset": 88,
+            "type": "bool"
+          },
+          "m_curve": {
+            "offset": 24,
+            "type": "CPiecewiseCurve"
+          },
+          "m_harmonics": {
+            "offset": 0,
+            "type": "CUtlVector<CVoiceContainerStaticAdditiveSynth::CHarmonic>"
+          }
         },
         "metadata": [
           {
@@ -1621,7 +2434,10 @@
       },
       "CVoiceContainerSwitch": {
         "fields": {
-          "m_soundsToPlay": 168
+          "m_soundsToPlay": {
+            "offset": 168,
+            "type": "CUtlVector<CSoundContainerReference>"
+          }
         },
         "metadata": [
           {
@@ -1641,10 +2457,22 @@
       },
       "CVoiceContainerTapePlayer": {
         "fields": {
-          "m_bShouldWraparound": 184,
-          "m_flTapeSpeedAttackTime": 200,
-          "m_flTapeSpeedReleaseTime": 204,
-          "m_sourceAudio": 192
+          "m_bShouldWraparound": {
+            "offset": 184,
+            "type": "bool"
+          },
+          "m_flTapeSpeedAttackTime": {
+            "offset": 200,
+            "type": "float32"
+          },
+          "m_flTapeSpeedReleaseTime": {
+            "offset": 204,
+            "type": "float32"
+          },
+          "m_sourceAudio": {
+            "offset": 192,
+            "type": "CStrongHandle<InfoForResourceTypeCVoiceContainerBase>"
+          }
         },
         "metadata": [
           {
@@ -1665,25 +2493,46 @@
       },
       "KeyGroup_t": {
         "fields": {
-          "nCenterNote": 0,
-          "nMaxNote": 2,
-          "nMinNote": 1,
-          "nNumVelocityZones": 3,
-          "pVelocityZones": 8
+          "nCenterNote": {
+            "offset": 0,
+            "type": "uint8"
+          },
+          "nMaxNote": {
+            "offset": 2,
+            "type": "uint8"
+          },
+          "nMinNote": {
+            "offset": 1,
+            "type": "uint8"
+          },
+          "nNumVelocityZones": {
+            "offset": 3,
+            "type": "uint8"
+          },
+          "pVelocityZones": {
+            "offset": 8,
+            "type": "VelocityZone_t*"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "SamplerVoice_t": {
         "fields": {
-          "nNoteNum": 0
+          "nNoteNum": {
+            "offset": 0,
+            "type": "uint8"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "SelectedEditItemInfo_t": {
         "fields": {
-          "m_EditItems": 0
+          "m_EditItems": {
+            "offset": 0,
+            "type": "CUtlVector<SosEditItemInfo_t>"
+          }
         },
         "metadata": [
           {
@@ -1695,11 +2544,26 @@
       },
       "SosEditItemInfo_t": {
         "fields": {
-          "itemKVString": 32,
-          "itemName": 8,
-          "itemPos": 40,
-          "itemType": 0,
-          "itemTypeName": 16
+          "itemKVString": {
+            "offset": 32,
+            "type": "CUtlString"
+          },
+          "itemName": {
+            "offset": 8,
+            "type": "CUtlString"
+          },
+          "itemPos": {
+            "offset": 40,
+            "type": "Vector2D"
+          },
+          "itemType": {
+            "offset": 0,
+            "type": "SosEditItemType_t"
+          },
+          "itemTypeName": {
+            "offset": 16,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -1711,14 +2575,38 @@
       },
       "VMixAutoFilterDesc_t": {
         "fields": {
-          "m_filter": 12,
-          "m_flAttackTimeMS": 4,
-          "m_flEnvelopeAmount": 0,
-          "m_flLFOAmount": 28,
-          "m_flLFORate": 32,
-          "m_flPhase": 36,
-          "m_flReleaseTimeMS": 8,
-          "m_nLFOShape": 40
+          "m_filter": {
+            "offset": 12,
+            "type": "VMixFilterDesc_t"
+          },
+          "m_flAttackTimeMS": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_flEnvelopeAmount": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "m_flLFOAmount": {
+            "offset": 28,
+            "type": "float32"
+          },
+          "m_flLFORate": {
+            "offset": 32,
+            "type": "float32"
+          },
+          "m_flPhase": {
+            "offset": 36,
+            "type": "float32"
+          },
+          "m_flReleaseTimeMS": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_nLFOShape": {
+            "offset": 40,
+            "type": "VMixLFOShape_t"
+          }
         },
         "metadata": [
           {
@@ -1730,23 +2618,74 @@
       },
       "VMixBoxverbDesc_t": {
         "fields": {
-          "m_bParallel": 24,
-          "m_filterType": 28,
-          "m_flComplexity": 8,
-          "m_flDepth": 52,
-          "m_flDiffusion": 12,
-          "m_flFeedbackDepth": 68,
-          "m_flFeedbackHeight": 64,
-          "m_flFeedbackScale": 56,
-          "m_flFeedbackWidth": 60,
-          "m_flHeight": 48,
-          "m_flModDepth": 16,
-          "m_flModRate": 20,
-          "m_flOutputGain": 72,
-          "m_flSizeMax": 0,
-          "m_flSizeMin": 4,
-          "m_flTaps": 76,
-          "m_flWidth": 44
+          "m_bParallel": {
+            "offset": 24,
+            "type": "bool"
+          },
+          "m_filterType": {
+            "offset": 28,
+            "type": "VMixFilterDesc_t"
+          },
+          "m_flComplexity": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_flDepth": {
+            "offset": 52,
+            "type": "float32"
+          },
+          "m_flDiffusion": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_flFeedbackDepth": {
+            "offset": 68,
+            "type": "float32"
+          },
+          "m_flFeedbackHeight": {
+            "offset": 64,
+            "type": "float32"
+          },
+          "m_flFeedbackScale": {
+            "offset": 56,
+            "type": "float32"
+          },
+          "m_flFeedbackWidth": {
+            "offset": 60,
+            "type": "float32"
+          },
+          "m_flHeight": {
+            "offset": 48,
+            "type": "float32"
+          },
+          "m_flModDepth": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "m_flModRate": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_flOutputGain": {
+            "offset": 72,
+            "type": "float32"
+          },
+          "m_flSizeMax": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "m_flSizeMin": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_flTaps": {
+            "offset": 76,
+            "type": "float32"
+          },
+          "m_flWidth": {
+            "offset": 44,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -1758,14 +2697,38 @@
       },
       "VMixConvolutionDesc_t": {
         "fields": {
-          "m_flHighCutoffFreq": 28,
-          "m_flLowCutoffFreq": 24,
-          "m_flPreDelayMS": 4,
-          "m_flWetMix": 8,
-          "m_fldbGain": 0,
-          "m_fldbHigh": 20,
-          "m_fldbLow": 12,
-          "m_fldbMid": 16
+          "m_flHighCutoffFreq": {
+            "offset": 28,
+            "type": "float32"
+          },
+          "m_flLowCutoffFreq": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_flPreDelayMS": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_flWetMix": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_fldbGain": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "m_fldbHigh": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_fldbLow": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_fldbMid": {
+            "offset": 16,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -1777,13 +2740,34 @@
       },
       "VMixDelayDesc_t": {
         "fields": {
-          "m_bEnableFilter": 16,
-          "m_feedbackFilter": 0,
-          "m_flDelay": 20,
-          "m_flDelayGain": 28,
-          "m_flDirectGain": 24,
-          "m_flFeedbackGain": 32,
-          "m_flWidth": 36
+          "m_bEnableFilter": {
+            "offset": 16,
+            "type": "bool"
+          },
+          "m_feedbackFilter": {
+            "offset": 0,
+            "type": "VMixFilterDesc_t"
+          },
+          "m_flDelay": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_flDelayGain": {
+            "offset": 28,
+            "type": "float32"
+          },
+          "m_flDirectGain": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_flFeedbackGain": {
+            "offset": 32,
+            "type": "float32"
+          },
+          "m_flWidth": {
+            "offset": 36,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -1795,10 +2779,22 @@
       },
       "VMixDiffusorDesc_t": {
         "fields": {
-          "m_flComplexity": 4,
-          "m_flFeedback": 8,
-          "m_flOutputGain": 12,
-          "m_flSize": 0
+          "m_flComplexity": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_flFeedback": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_flOutputGain": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_flSize": {
+            "offset": 0,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -1810,11 +2806,26 @@
       },
       "VMixDualCompressorDesc_t": {
         "fields": {
-          "m_bPeakMode": 12,
-          "m_bandDesc": 16,
-          "m_flRMSTimeMS": 0,
-          "m_flWetMix": 8,
-          "m_fldbKneeWidth": 4
+          "m_bPeakMode": {
+            "offset": 12,
+            "type": "bool"
+          },
+          "m_bandDesc": {
+            "offset": 16,
+            "type": "VMixDynamicsBand_t"
+          },
+          "m_flRMSTimeMS": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "m_flWetMix": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_fldbKneeWidth": {
+            "offset": 4,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -1826,16 +2837,46 @@
       },
       "VMixDynamics3BandDesc_t": {
         "fields": {
-          "m_bPeakMode": 32,
-          "m_bandDesc": 36,
-          "m_flDepth": 12,
-          "m_flHighCutoffFreq": 28,
-          "m_flLowCutoffFreq": 24,
-          "m_flRMSTimeMS": 4,
-          "m_flTimeScale": 20,
-          "m_flWetMix": 16,
-          "m_fldbGainOutput": 0,
-          "m_fldbKneeWidth": 8
+          "m_bPeakMode": {
+            "offset": 32,
+            "type": "bool"
+          },
+          "m_bandDesc": {
+            "offset": 36,
+            "type": "VMixDynamicsBand_t[3]"
+          },
+          "m_flDepth": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_flHighCutoffFreq": {
+            "offset": 28,
+            "type": "float32"
+          },
+          "m_flLowCutoffFreq": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_flRMSTimeMS": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_flTimeScale": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_flWetMix": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "m_fldbGainOutput": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "m_fldbKneeWidth": {
+            "offset": 8,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -1847,16 +2888,46 @@
       },
       "VMixDynamicsBand_t": {
         "fields": {
-          "m_bEnable": 32,
-          "m_bSolo": 33,
-          "m_flAttackTimeMS": 24,
-          "m_flRatioAbove": 20,
-          "m_flRatioBelow": 16,
-          "m_flReleaseTimeMS": 28,
-          "m_fldbGainInput": 0,
-          "m_fldbGainOutput": 4,
-          "m_fldbThresholdAbove": 12,
-          "m_fldbThresholdBelow": 8
+          "m_bEnable": {
+            "offset": 32,
+            "type": "bool"
+          },
+          "m_bSolo": {
+            "offset": 33,
+            "type": "bool"
+          },
+          "m_flAttackTimeMS": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_flRatioAbove": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_flRatioBelow": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "m_flReleaseTimeMS": {
+            "offset": 28,
+            "type": "float32"
+          },
+          "m_fldbGainInput": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "m_fldbGainOutput": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_fldbThresholdAbove": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_fldbThresholdBelow": {
+            "offset": 8,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -1868,15 +2939,42 @@
       },
       "VMixDynamicsCompressorDesc_t": {
         "fields": {
-          "m_bPeakMode": 32,
-          "m_flAttackTimeMS": 16,
-          "m_flCompressionRatio": 12,
-          "m_flRMSTimeMS": 24,
-          "m_flReleaseTimeMS": 20,
-          "m_flWetMix": 28,
-          "m_fldbCompressionThreshold": 4,
-          "m_fldbKneeWidth": 8,
-          "m_fldbOutputGain": 0
+          "m_bPeakMode": {
+            "offset": 32,
+            "type": "bool"
+          },
+          "m_flAttackTimeMS": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "m_flCompressionRatio": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_flRMSTimeMS": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_flReleaseTimeMS": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_flWetMix": {
+            "offset": 28,
+            "type": "float32"
+          },
+          "m_fldbCompressionThreshold": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_fldbKneeWidth": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_fldbOutputGain": {
+            "offset": 0,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -1888,18 +2986,54 @@
       },
       "VMixDynamicsDesc_t": {
         "fields": {
-          "m_bPeakMode": 44,
-          "m_flAttackTimeMS": 28,
-          "m_flLimiterRatio": 24,
-          "m_flRMSTimeMS": 36,
-          "m_flRatio": 20,
-          "m_flReleaseTimeMS": 32,
-          "m_flWetMix": 40,
-          "m_fldbCompressionThreshold": 8,
-          "m_fldbGain": 0,
-          "m_fldbKneeWidth": 16,
-          "m_fldbLimiterThreshold": 12,
-          "m_fldbNoiseGateThreshold": 4
+          "m_bPeakMode": {
+            "offset": 44,
+            "type": "bool"
+          },
+          "m_flAttackTimeMS": {
+            "offset": 28,
+            "type": "float32"
+          },
+          "m_flLimiterRatio": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_flRMSTimeMS": {
+            "offset": 36,
+            "type": "float32"
+          },
+          "m_flRatio": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_flReleaseTimeMS": {
+            "offset": 32,
+            "type": "float32"
+          },
+          "m_flWetMix": {
+            "offset": 40,
+            "type": "float32"
+          },
+          "m_fldbCompressionThreshold": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_fldbGain": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "m_fldbKneeWidth": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "m_fldbLimiterThreshold": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_fldbNoiseGateThreshold": {
+            "offset": 4,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -1911,7 +3045,10 @@
       },
       "VMixEQ8Desc_t": {
         "fields": {
-          "m_stages": 0
+          "m_stages": {
+            "offset": 0,
+            "type": "VMixFilterDesc_t[8]"
+          }
         },
         "metadata": [
           {
@@ -1923,7 +3060,10 @@
       },
       "VMixEffectChainDesc_t": {
         "fields": {
-          "m_effectName": 0
+          "m_effectName": {
+            "offset": 0,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -1935,9 +3075,18 @@
       },
       "VMixEnvelopeDesc_t": {
         "fields": {
-          "m_flAttackTimeMS": 0,
-          "m_flHoldTimeMS": 4,
-          "m_flReleaseTimeMS": 8
+          "m_flAttackTimeMS": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "m_flHoldTimeMS": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_flReleaseTimeMS": {
+            "offset": 8,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -1949,12 +3098,30 @@
       },
       "VMixFilterDesc_t": {
         "fields": {
-          "m_bEnabled": 3,
-          "m_flCutoffFreq": 8,
-          "m_flQ": 12,
-          "m_fldbGain": 4,
-          "m_nFilterSlope": 2,
-          "m_nFilterType": 0
+          "m_bEnabled": {
+            "offset": 3,
+            "type": "bool"
+          },
+          "m_flCutoffFreq": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_flQ": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_fldbGain": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_nFilterSlope": {
+            "offset": 2,
+            "type": "VMixFilterSlope_t"
+          },
+          "m_nFilterType": {
+            "offset": 0,
+            "type": "VMixFilterType_t"
+          }
         },
         "metadata": [
           {
@@ -1966,15 +3133,42 @@
       },
       "VMixFlangerDesc_t": {
         "fields": {
-          "m_bApplyAntialiasing": 32,
-          "m_bPhaseInvert": 0,
-          "m_flDelay": 8,
-          "m_flFeedbackGain": 16,
-          "m_flFeedforwardGain": 20,
-          "m_flGlideTime": 4,
-          "m_flModDepth": 28,
-          "m_flModRate": 24,
-          "m_flOutputGain": 12
+          "m_bApplyAntialiasing": {
+            "offset": 32,
+            "type": "bool"
+          },
+          "m_bPhaseInvert": {
+            "offset": 0,
+            "type": "bool"
+          },
+          "m_flDelay": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_flFeedbackGain": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "m_flFeedforwardGain": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_flGlideTime": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_flModDepth": {
+            "offset": 28,
+            "type": "float32"
+          },
+          "m_flModRate": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_flOutputGain": {
+            "offset": 12,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -1986,10 +3180,22 @@
       },
       "VMixFreeverbDesc_t": {
         "fields": {
-          "m_flDamp": 4,
-          "m_flLateReflections": 12,
-          "m_flRoomSize": 0,
-          "m_flWidth": 8
+          "m_flDamp": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_flLateReflections": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_flRoomSize": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "m_flWidth": {
+            "offset": 8,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -2001,15 +3207,42 @@
       },
       "VMixModDelayDesc_t": {
         "fields": {
-          "m_bApplyAntialiasing": 44,
-          "m_bPhaseInvert": 16,
-          "m_feedbackFilter": 0,
-          "m_flDelay": 24,
-          "m_flFeedbackGain": 32,
-          "m_flGlideTime": 20,
-          "m_flModDepth": 40,
-          "m_flModRate": 36,
-          "m_flOutputGain": 28
+          "m_bApplyAntialiasing": {
+            "offset": 44,
+            "type": "bool"
+          },
+          "m_bPhaseInvert": {
+            "offset": 16,
+            "type": "bool"
+          },
+          "m_feedbackFilter": {
+            "offset": 0,
+            "type": "VMixFilterDesc_t"
+          },
+          "m_flDelay": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_flFeedbackGain": {
+            "offset": 32,
+            "type": "float32"
+          },
+          "m_flGlideTime": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_flModDepth": {
+            "offset": 40,
+            "type": "float32"
+          },
+          "m_flModRate": {
+            "offset": 36,
+            "type": "float32"
+          },
+          "m_flOutputGain": {
+            "offset": 28,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -2021,9 +3254,18 @@
       },
       "VMixOscDesc_t": {
         "fields": {
-          "m_flPhase": 8,
-          "m_freq": 4,
-          "oscType": 0
+          "m_flPhase": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_freq": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "oscType": {
+            "offset": 0,
+            "type": "VMixLFOShape_t"
+          }
         },
         "metadata": [
           {
@@ -2035,8 +3277,14 @@
       },
       "VMixPannerDesc_t": {
         "fields": {
-          "m_flStrength": 4,
-          "m_type": 0
+          "m_flStrength": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_type": {
+            "offset": 0,
+            "type": "VMixPannerType_t"
+          }
         },
         "metadata": [
           {
@@ -2048,10 +3296,22 @@
       },
       "VMixPitchShiftDesc_t": {
         "fields": {
-          "m_flPitchShift": 4,
-          "m_nGrainSampleCount": 0,
-          "m_nProcType": 12,
-          "m_nQuality": 8
+          "m_flPitchShift": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_nGrainSampleCount": {
+            "offset": 0,
+            "type": "int32"
+          },
+          "m_nProcType": {
+            "offset": 12,
+            "type": "int32"
+          },
+          "m_nQuality": {
+            "offset": 8,
+            "type": "int32"
+          }
         },
         "metadata": [
           {
@@ -2063,13 +3323,34 @@
       },
       "VMixPlateverbDesc_t": {
         "fields": {
-          "m_flDamp": 16,
-          "m_flDecay": 12,
-          "m_flFeedbackDiffusion1": 20,
-          "m_flFeedbackDiffusion2": 24,
-          "m_flInputDiffusion1": 4,
-          "m_flInputDiffusion2": 8,
-          "m_flPrefilter": 0
+          "m_flDamp": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "m_flDecay": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_flFeedbackDiffusion1": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_flFeedbackDiffusion2": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_flInputDiffusion1": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_flInputDiffusion2": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_flPrefilter": {
+            "offset": 0,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -2081,7 +3362,10 @@
       },
       "VMixPresetDSPDesc_t": {
         "fields": {
-          "m_effectName": 0
+          "m_effectName": {
+            "offset": 0,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -2093,11 +3377,26 @@
       },
       "VMixShaperDesc_t": {
         "fields": {
-          "m_flWetMix": 12,
-          "m_fldbDrive": 4,
-          "m_fldbOutputGain": 8,
-          "m_nOversampleFactor": 16,
-          "m_nShape": 0
+          "m_flWetMix": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_fldbDrive": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_fldbOutputGain": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_nOversampleFactor": {
+            "offset": 16,
+            "type": "int32"
+          },
+          "m_nShape": {
+            "offset": 0,
+            "type": "int32"
+          }
         },
         "metadata": [
           {
@@ -2109,12 +3408,30 @@
       },
       "VMixSubgraphSwitchDesc_t": {
         "fields": {
-          "m_bOnlyTailsOnFadeOut": 44,
-          "m_effectName": 8,
-          "m_flInterpolationTime": 48,
-          "m_interpolationMode": 40,
-          "m_name": 0,
-          "m_subgraphs": 16
+          "m_bOnlyTailsOnFadeOut": {
+            "offset": 44,
+            "type": "bool"
+          },
+          "m_effectName": {
+            "offset": 8,
+            "type": "CUtlString"
+          },
+          "m_flInterpolationTime": {
+            "offset": 48,
+            "type": "float32"
+          },
+          "m_interpolationMode": {
+            "offset": 40,
+            "type": "VMixSubgraphSwitchInterpolationType_t"
+          },
+          "m_name": {
+            "offset": 0,
+            "type": "CUtlString"
+          },
+          "m_subgraphs": {
+            "offset": 16,
+            "type": "CUtlVector<CUtlString>"
+          }
         },
         "metadata": [
           {
@@ -2126,12 +3443,30 @@
       },
       "VMixUtilityDesc_t": {
         "fields": {
-          "m_bBassMono": 16,
-          "m_flBassFreq": 20,
-          "m_flInputPan": 4,
-          "m_flOutputBalance": 8,
-          "m_fldbOutputGain": 12,
-          "m_nOp": 0
+          "m_bBassMono": {
+            "offset": 16,
+            "type": "bool"
+          },
+          "m_flBassFreq": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_flInputPan": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_flOutputBalance": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_fldbOutputGain": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_nOp": {
+            "offset": 0,
+            "type": "VMixChannelOperation_t"
+          }
         },
         "metadata": [
           {
@@ -2143,16 +3478,46 @@
       },
       "VMixVocoderDesc_t": {
         "fields": {
-          "m_bPeakMode": 36,
-          "m_flAttackTimeMS": 24,
-          "m_flBandwidth": 4,
-          "m_flFreqRangeEnd": 16,
-          "m_flFreqRangeStart": 12,
-          "m_flReleaseTimeMS": 28,
-          "m_fldBModGain": 8,
-          "m_fldBUnvoicedGain": 20,
-          "m_nBandCount": 0,
-          "m_nDebugBand": 32
+          "m_bPeakMode": {
+            "offset": 36,
+            "type": "bool"
+          },
+          "m_flAttackTimeMS": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_flBandwidth": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_flFreqRangeEnd": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "m_flFreqRangeStart": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_flReleaseTimeMS": {
+            "offset": 28,
+            "type": "float32"
+          },
+          "m_fldBModGain": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_fldBUnvoicedGain": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_nBandCount": {
+            "offset": 0,
+            "type": "int32"
+          },
+          "m_nDebugBand": {
+            "offset": 32,
+            "type": "int32"
+          }
         },
         "metadata": [
           {
@@ -2164,10 +3529,22 @@
       },
       "VelocityZone_t": {
         "fields": {
-          "nMaxVel": 0,
-          "nNextSelection": 1,
-          "nNumSamples": 2,
-          "pSamples": 4
+          "nMaxVel": {
+            "offset": 0,
+            "type": "uint8"
+          },
+          "nNextSelection": {
+            "offset": 1,
+            "type": "uint8"
+          },
+          "nNumSamples": {
+            "offset": 2,
+            "type": "uint8"
+          },
+          "pSamples": {
+            "offset": 4,
+            "type": "uint32[4]"
+          }
         },
         "metadata": [],
         "parent": null
