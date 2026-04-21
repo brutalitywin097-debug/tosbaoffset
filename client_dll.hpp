@@ -1,5 +1,5 @@
-// Updated with DreamyDebugger
-// 2026-04-21
+// Generated using https://github.com/a2x/cs2-dumper
+// 2026-04-21 15:07:52.020760300 UTC
 
 #pragma once
 
