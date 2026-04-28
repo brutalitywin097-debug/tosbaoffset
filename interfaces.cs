@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-04-21 15:50:08.572404700 UTC
+// 2026-04-28 22:45:24.236403600 UTC
 
 namespace CS2Dumper.Interfaces {
     // Module: animationsystem.dll
@@ -9,14 +9,14 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: client.dll
     public static class ClientDll {
-        public const nint ClientToolsInfo_001 = 0x20480D0;
-        public const nint EmptyWorldService001_Client = 0x200BAA0;
-        public const nint GameClientExports001 = 0x2044D70;
-        public const nint LegacyGameUI001 = 0x2060480;
-        public const nint Source2Client002 = 0x231E850;
-        public const nint Source2ClientConfig001 = 0x2290B80;
-        public const nint Source2ClientPrediction001 = 0x204F540;
-        public const nint Source2ClientUI001 = 0x205EA70;
+        public const nint ClientToolsInfo_001 = 0x204D150;
+        public const nint EmptyWorldService001_Client = 0x2010A90;
+        public const nint GameClientExports001 = 0x2049DF0;
+        public const nint LegacyGameUI001 = 0x2065580;
+        public const nint Source2Client002 = 0x2323E10;
+        public const nint Source2ClientConfig001 = 0x2295D30;
+        public const nint Source2ClientPrediction001 = 0x20545B0;
+        public const nint Source2ClientUI001 = 0x2063AE0;
     }
     // Module: engine2.dll
     public static class Engine2Dll {
@@ -113,7 +113,7 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: panorama.dll
     public static class PanoramaDll {
-        public const nint PanoramaUIEngine001 = 0x505D30;
+        public const nint PanoramaUIEngine001 = 0x506D30;
     }
     // Module: panorama_text_pango.dll
     public static class PanoramaTextPangoDll {
@@ -148,9 +148,9 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: scenesystem.dll
     public static class ScenesystemDll {
-        public const nint RenderingPipelines_001 = 0x663B80;
-        public const nint SceneSystem_002 = 0x8DB470;
-        public const nint SceneUtils_001 = 0x664A90;
+        public const nint RenderingPipelines_001 = 0x663BA0;
+        public const nint SceneSystem_002 = 0x8DB490;
+        public const nint SceneUtils_001 = 0x664AB0;
     }
     // Module: schemasystem.dll
     public static class SchemasystemDll {
@@ -158,23 +158,23 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: server.dll
     public static class ServerDll {
-        public const nint EmptyWorldService001_Server = 0x1BEBCE0;
-        public const nint EntitySubclassUtilsV001 = 0x1B97350;
-        public const nint NavGameTest001 = 0x1C98110;
-        public const nint ServerToolsInfo_001 = 0x1C45418;
-        public const nint Source2GameClients001 = 0x1C43E70;
-        public const nint Source2GameDirector001 = 0x1DDD4E0;
-        public const nint Source2GameEntities001 = 0x1C44B20;
-        public const nint Source2Server001 = 0x1C44970;
-        public const nint Source2ServerConfig001 = 0x1EFA788;
-        public const nint customnavsystem001 = 0x1B78658;
+        public const nint EmptyWorldService001_Server = 0x1BEED40;
+        public const nint EntitySubclassUtilsV001 = 0x1B9A3C0;
+        public const nint NavGameTest001 = 0x1C9B1C0;
+        public const nint ServerToolsInfo_001 = 0x1C481B8;
+        public const nint Source2GameClients001 = 0x1C46C10;
+        public const nint Source2GameDirector001 = 0x1DE06E0;
+        public const nint Source2GameEntities001 = 0x1C478C0;
+        public const nint Source2Server001 = 0x1C47710;
+        public const nint Source2ServerConfig001 = 0x1EFE378;
+        public const nint customnavsystem001 = 0x1B7B6A8;
     }
     // Module: soundsystem.dll
     public static class SoundsystemDll {
-        public const nint SoundOpSystem001 = 0x5129B0;
-        public const nint SoundOpSystemEdit001 = 0x512870;
+        public const nint SoundOpSystem001 = 0x5129C0;
+        public const nint SoundOpSystemEdit001 = 0x512880;
         public const nint SoundSystem001 = 0x512360;
-        public const nint VMixEditTool001 = 0x594879F;
+        public const nint VMixEditTool001 = 0x59487BF;
     }
     // Module: steamaudio.dll
     public static class SteamaudioDll {

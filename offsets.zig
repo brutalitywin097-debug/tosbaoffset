@@ -1,27 +1,27 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-04-21 15:50:08.572404700 UTC
+// 2026-04-28 22:45:24.236403600 UTC
 
 pub const cs2_dumper = struct {
     pub const offsets = struct {
         // Module: client.dll
         pub const client_dll = struct {
-            pub const dwCSGOInput: usize = 0x23386E0;
-            pub const dwEntityList: usize = 0x24C9710;
-            pub const dwGameEntitySystem: usize = 0x24C9710;
+            pub const dwCSGOInput: usize = 0x233DC80;
+            pub const dwEntityList: usize = 0x24CEC60;
+            pub const dwGameEntitySystem: usize = 0x24CEC60;
             pub const dwGameEntitySystem_highestEntityIndex: usize = 0x2090;
-            pub const dwGameRules: usize = 0x19E9B80;
-            pub const dwGlobalVars: usize = 0x20444E8;
-            pub const dwGlowManager: usize = 0x23207A8;
-            pub const dwLocalPlayerController: usize = 0x2302E80;
-            pub const dwLocalPlayerPawn: usize = 0x204F630;
-            pub const dwPlantedC4: usize = 0x2331848;
-            pub const dwPrediction: usize = 0x204F540;
-            pub const dwSensitivity: usize = 0x2321208;
+            pub const dwGameRules: usize = 0x19EEA50;
+            pub const dwGlobalVars: usize = 0x20495A0;
+            pub const dwGlowManager: usize = 0x2325C30;
+            pub const dwLocalPlayerController: usize = 0x23084C0;
+            pub const dwLocalPlayerPawn: usize = 0x20546A0;
+            pub const dwPlantedC4: usize = 0x2336948;
+            pub const dwPrediction: usize = 0x20545B0;
+            pub const dwSensitivity: usize = 0x2326748;
             pub const dwSensitivity_sensitivity: usize = 0x58;
-            pub const dwViewAngles: usize = 0x2338D68;
-            pub const dwViewMatrix: usize = 0x23290D0;
-            pub const dwViewRender: usize = 0x23292E8;
-            pub const dwWeaponC4: usize = 0x22A1928;
+            pub const dwViewAngles: usize = 0x233E308;
+            pub const dwViewMatrix: usize = 0x232E9C0;
+            pub const dwViewRender: usize = 0x232DBB8;
+            pub const dwWeaponC4: usize = 0x22A6C68;
         };
         // Module: engine2.dll
         pub const engine2_dll = struct {
