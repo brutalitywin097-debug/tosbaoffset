@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-04-21 15:50:08.572404700 UTC
+// 2026-04-30 23:00:15.075673400 UTC
 
 pub const cs2_dumper = struct {
     pub const schemas = struct {
