@@ -3,17 +3,12 @@
     "dwCSGOInput": 37459440,
     "dwEntityList": 39120480,
     "dwGameEntitySystem": 39120480,
-    "dwGameEntitySystem_highestEntityIndex": 8336,
     "dwGameRules": 37370328,
     "dwGlobalVars": 34143584,
     "dwGlowManager": 37357320,
     "dwLocalPlayerController": 37219232,
-    "dwLocalPlayerPawn": 37372472,
     "dwPlantedC4": 37152376,
     "dwPrediction": 37372224,
-    "dwSensitivity": 37360168,
-    "dwSensitivity_sensitivity": 88,
-    "dwViewAngles": 37461112,
     "dwViewMatrix": 37393216,
     "dwViewRender": 37393304,
     "dwWeaponC4": 36817360
@@ -38,7 +33,6 @@
     "dwGameTypes": 1761152
   },
   "soundsystem.dll": {
-    "dwSoundSystem": 5551568,
-    "dwSoundSystem_engineViewData": 124
+    "dwSoundSystem": 5551568
   }
 }

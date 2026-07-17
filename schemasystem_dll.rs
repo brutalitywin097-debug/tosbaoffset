@@ -1,7 +1,7 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2026-07-15 04:33:09.837776 UTC
+// Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
+// 2026-07-17 07:15:01.871195900 UTC
 
-#![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
+#![allow(non_upper_case_globals,non_camel_case_types,non_snake_case,unused)]
 
 pub mod cs2_dumper {
     pub mod schemas {

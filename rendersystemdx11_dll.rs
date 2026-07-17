@@ -1,7 +1,7 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2026-07-15 04:33:09.837776 UTC
+// Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
+// 2026-07-17 07:15:01.868421400 UTC
 
-#![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
+#![allow(non_upper_case_globals,non_camel_case_types,non_snake_case,unused)]
 
 pub mod cs2_dumper {
     pub mod schemas {
@@ -84,7 +84,7 @@ pub mod cs2_dumper {
             // Member count: 8
             #[repr(u8)]
             pub enum RenderMultisampleType_t {
-                RENDER_MULTISAMPLE_INVALID = u8::MAX,
+                RENDER_MULTISAMPLE_INVALID = i64::MAX,
                 RENDER_MULTISAMPLE_NONE = 0x0,
                 RENDER_MULTISAMPLE_2X = 0x1,
                 RENDER_MULTISAMPLE_4X = 0x2,
@@ -117,7 +117,7 @@ pub mod cs2_dumper {
             // Member count: 3
             #[repr(u8)]
             pub enum RenderSlotType_t {
-                RENDER_SLOT_INVALID = u8::MAX,
+                RENDER_SLOT_INVALID = i64::MAX,
                 RENDER_SLOT_PER_VERTEX = 0x0,
                 RENDER_SLOT_PER_INSTANCE = 0x1
             }

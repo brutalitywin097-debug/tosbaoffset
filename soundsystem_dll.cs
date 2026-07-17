@@ -1,5 +1,5 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2026-07-15 04:33:09.837776 UTC
+// Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
+// 2026-07-17 07:15:01.889543100 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: soundsystem.dll

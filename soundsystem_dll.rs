@@ -1,7 +1,7 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2026-07-15 04:33:09.837776 UTC
+// Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
+// 2026-07-17 07:15:01.891405100 UTC
 
-#![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
+#![allow(non_upper_case_globals,non_camel_case_types,non_snake_case,unused)]
 
 pub mod cs2_dumper {
     pub mod schemas {
@@ -40,7 +40,7 @@ pub mod cs2_dumper {
             // Member count: 40
             #[repr(u32)]
             pub enum VMixGraphCommandID_t {
-                CMD_INVALID = u32::MAX,
+                CMD_INVALID = i64::MAX,
                 CMD_CONTROL_INPUT_STORE = 0x1,
                 CMD_CONTROL_INPUT_STORE_DB = 0x2,
                 CMD_CONTROL_TRANSIENT_INPUT_STORE = 0x3,
@@ -105,7 +105,7 @@ pub mod cs2_dumper {
             // Member count: 10
             #[repr(u16)]
             pub enum VMixFilterType_t {
-                FILTER_UNKNOWN = u16::MAX,
+                FILTER_UNKNOWN = i64::MAX,
                 FILTER_LOWPASS = 0x0,
                 FILTER_HIGHPASS = 0x1,
                 FILTER_BANDPASS = 0x2,
