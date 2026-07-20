@@ -1,6 +1,3 @@
-// Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-17 07:15:01.893065600 UTC
-
 pub const cs2_dumper = struct {
     pub const schemas = struct {
         // Module: steamaudio.dll

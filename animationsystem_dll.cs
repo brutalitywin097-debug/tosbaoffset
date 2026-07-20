@@ -1,6 +1,3 @@
-// Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-17 07:15:01.835504200 UTC
-
 namespace CS2Dumper.Schemas {
     // Module: animationsystem.dll
     // Class count: 699

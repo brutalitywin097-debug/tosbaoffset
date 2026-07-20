@@ -1,6 +1,3 @@
-// Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-17 07:15:01.893301700 UTC
-
 namespace CS2Dumper.Schemas {
     // Module: vphysics2.dll
     // Class count: 113

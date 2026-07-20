@@ -1,6 +1,3 @@
-// Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-17 07:15:01.868764300 UTC
-
 namespace CS2Dumper.Schemas {
     // Module: resourcesystem.dll
     // Class count: 59

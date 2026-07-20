@@ -1,7 +1,4 @@
-// Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-17 07:15:01.883571300 UTC
-
-#![allow(non_upper_case_globals,non_camel_case_types,non_snake_case,unused)]
+#![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
 pub mod cs2_dumper {
     pub mod schemas {
@@ -191,7 +188,7 @@ pub mod cs2_dumper {
             // Member count: 5
             #[repr(u32)]
             pub enum StanceType_t {
-                STANCE_CURRENT = i64::MAX,
+                STANCE_CURRENT = u32::MAX,
                 STANCE_DEFAULT = 0x0,
                 STANCE_CROUCHING = 0x1,
                 STANCE_PRONE = 0x2,
@@ -209,7 +206,7 @@ pub mod cs2_dumper {
             // Member count: 11
             #[repr(u32)]
             pub enum PreviewCharacterMode {
-                INVALID = i64::MAX,
+                INVALID = u32::MAX,
                 DIORAMA = 0x0,
                 MAIN_MENU = 0x1,
                 BUY_MENU = 0x2,
@@ -416,7 +413,7 @@ pub mod cs2_dumper {
             // Member count: 22
             #[repr(u32)]
             pub enum EDemoCommands {
-                DEM_Error = i64::MAX,
+                DEM_Error = u32::MAX,
                 DEM_Stop = 0x0,
                 DEM_FileHeader = 0x1,
                 DEM_FileInfo = 0x2,
@@ -619,7 +616,7 @@ pub mod cs2_dumper {
             // Member count: 5
             #[repr(u32)]
             pub enum NPCFollowFormation_t {
-                Default = i64::MAX,
+                Default = u32::MAX,
                 CloseCircle = 0x0,
                 WideCircle = 0x1,
                 MediumCircle = 0x5,
@@ -794,7 +791,7 @@ pub mod cs2_dumper {
             // Member count: 6
             #[repr(u8)]
             pub enum AnimationAlgorithm_t {
-                eInvalid = i64::MAX,
+                eInvalid = u8::MAX,
                 eNone = 0x0,
                 eSequence = 0x1,
                 eAnimGraph2 = 0x2,
@@ -838,7 +835,7 @@ pub mod cs2_dumper {
             // Member count: 9
             #[repr(u32)]
             pub enum BloodType {
-                None = i64::MAX,
+                None = u32::MAX,
                 ColorRed = 0x0,
                 ColorYellow = 0x1,
                 ColorGreen = 0x2,
@@ -870,7 +867,7 @@ pub mod cs2_dumper {
             // Member count: 5
             #[repr(u32)]
             pub enum AnimLoopMode_t {
-                ANIM_LOOP_MODE_INVALID = i64::MAX,
+                ANIM_LOOP_MODE_INVALID = u32::MAX,
                 ANIM_LOOP_MODE_NOT_LOOPING = 0x0,
                 ANIM_LOOP_MODE_LOOPING = 0x1,
                 ANIM_LOOP_MODE_USE_SEQUENCE_SETTINGS = 0x2,
@@ -1435,7 +1432,7 @@ pub mod cs2_dumper {
             #[repr(u32)]
             pub enum loadout_slot_t {
                 LOADOUT_SLOT_PROMOTED = 0xFFFFFFFFFFFFFFFE,
-                LOADOUT_SLOT_INVALID = i64::MAX,
+                LOADOUT_SLOT_INVALID = u32::MAX,
                 LOADOUT_SLOT_MELEE = 0x0,
                 LOADOUT_SLOT_C4 = 0x1,
                 LOADOUT_SLOT_SECONDARY0 = 0x2,
@@ -1683,7 +1680,7 @@ pub mod cs2_dumper {
             // Member count: 4
             #[repr(u32)]
             pub enum WeaponAttackType_t {
-                eInvalid = i64::MAX,
+                eInvalid = u32::MAX,
                 ePrimary = 0x0,
                 eSecondary = 0x1,
                 eCount = 0x2
@@ -1792,7 +1789,7 @@ pub mod cs2_dumper {
             // Member count: 5
             #[repr(u32)]
             pub enum eRollType {
-                ROLL_NONE = i64::MAX,
+                ROLL_NONE = u32::MAX,
                 ROLL_STATS = 0x0,
                 ROLL_CREDITS = 0x1,
                 ROLL_LATE_JOIN_LOGO = 0x2,
@@ -1802,7 +1799,7 @@ pub mod cs2_dumper {
             // Member count: 4
             #[repr(u32)]
             pub enum ScriptedOnDeath_t {
-                SS_ONDEATH_NOT_APPLICABLE = i64::MAX,
+                SS_ONDEATH_NOT_APPLICABLE = u32::MAX,
                 SS_ONDEATH_UNDEFINED = 0x0,
                 SS_ONDEATH_RAGDOLL = 0x1,
                 SS_ONDEATH_ANIMATED_DEATH = 0x2
@@ -1882,7 +1879,7 @@ pub mod cs2_dumper {
             // Member count: 4
             #[repr(u32)]
             pub enum ChoreoLookAtSpeed_t {
-                eInvalid = i64::MAX,
+                eInvalid = u32::MAX,
                 eSlow = 0x0,
                 eMedium = 0x1,
                 eFast = 0x2
@@ -1919,7 +1916,7 @@ pub mod cs2_dumper {
             // Member count: 17
             #[repr(u32)]
             pub enum gear_slot_t {
-                GEAR_SLOT_INVALID = i64::MAX,
+                GEAR_SLOT_INVALID = u32::MAX,
                 GEAR_SLOT_RIFLE = 0x0,
                 GEAR_SLOT_PISTOL = 0x1,
                 GEAR_SLOT_KNIFE = 0x2,
@@ -2025,7 +2022,7 @@ pub mod cs2_dumper {
             // Member count: 4
             #[repr(u32)]
             pub enum AmmoPosition_t {
-                AMMO_POSITION_INVALID = i64::MAX,
+                AMMO_POSITION_INVALID = u32::MAX,
                 AMMO_POSITION_PRIMARY = 0x0,
                 AMMO_POSITION_SECONDARY = 0x1,
                 AMMO_POSITION_COUNT = 0x2
@@ -2044,13 +2041,13 @@ pub mod cs2_dumper {
                 AI_EVENT = 0x7,
                 AI_PATHFINDING = 0x8,
                 END_SIM_HISTORY_TYPES = 0x9,
-                COMBINED = i64::MAX
+                COMBINED = u32::MAX
             }
             // Alignment: 4
             // Member count: 24
             #[repr(u32)]
             pub enum PreviewEOMCelebration {
-                INVALID = i64::MAX,
+                INVALID = u32::MAX,
                 WALKUP = 0x0,
                 PUNCHING = 0x1,
                 SWAGGER = 0x2,
@@ -2120,7 +2117,7 @@ pub mod cs2_dumper {
             #[repr(u64)]
             pub enum InputBitMask_t {
                 IN_NONE = 0x0,
-                IN_ALL = i64::MAX,
+                IN_ALL = u64::MAX,
                 IN_ATTACK = 0x1,
                 IN_JUMP = 0x2,
                 IN_DUCK = 0x4,
@@ -2144,7 +2141,7 @@ pub mod cs2_dumper {
             // Member count: 14
             #[repr(u32)]
             pub enum HitGroup_t {
-                HITGROUP_INVALID = i64::MAX,
+                HITGROUP_INVALID = u32::MAX,
                 HITGROUP_GENERIC = 0x0,
                 HITGROUP_HEAD = 0x1,
                 HITGROUP_CHEST = 0x2,
@@ -2392,7 +2389,7 @@ pub mod cs2_dumper {
             // Member count: 4
             #[repr(u32)]
             pub enum EntitySubclassScope_t {
-                SUBCLASS_SCOPE_NONE = i64::MAX,
+                SUBCLASS_SCOPE_NONE = u32::MAX,
                 SUBCLASS_SCOPE_PRECIPITATION = 0x0,
                 SUBCLASS_SCOPE_PLAYER_WEAPONS = 0x1,
                 SUBCLASS_SCOPE_COUNT = 0x2
@@ -2584,7 +2581,7 @@ pub mod cs2_dumper {
             // Member count: 27
             #[repr(u32)]
             pub enum RumbleEffect_t {
-                RUMBLE_INVALID = i64::MAX,
+                RUMBLE_INVALID = u32::MAX,
                 RUMBLE_STOP_ALL = 0x0,
                 RUMBLE_PISTOL = 0x1,
                 RUMBLE_357 = 0x2,
@@ -2637,7 +2634,7 @@ pub mod cs2_dumper {
             // Member count: 4
             #[repr(u32)]
             pub enum ChoreoLookAtMode_t {
-                eInvalid = i64::MAX,
+                eInvalid = u32::MAX,
                 eChest = 0x0,
                 eHead = 0x1,
                 eEyesOnly = 0x2
@@ -2654,7 +2651,7 @@ pub mod cs2_dumper {
             // Member count: 7
             #[repr(u32)]
             pub enum PlayerConnectedState {
-                NeverConnected = i64::MAX,
+                NeverConnected = u32::MAX,
                 Connected = 0x0,
                 Connecting = 0x1,
                 Reconnecting = 0x2,
@@ -2666,7 +2663,7 @@ pub mod cs2_dumper {
             // Member count: 30
             #[repr(u32)]
             pub enum PreviewCharacterBannerAnimation {
-                INVALID = i64::MAX,
+                INVALID = u32::MAX,
                 IDLE_OFFSCREEN = 0x0,
                 BANNER_AWP_ACE_GUN = 0x1,
                 BANNER_AWP_ACE_A = 0x2,
@@ -2701,7 +2698,7 @@ pub mod cs2_dumper {
             // Member count: 5
             #[repr(u32)]
             pub enum EntityDissolveType_t {
-                ENTITY_DISSOLVE_INVALID = i64::MAX,
+                ENTITY_DISSOLVE_INVALID = u32::MAX,
                 ENTITY_DISSOLVE_NORMAL = 0x0,
                 ENTITY_DISSOLVE_ELECTRICAL = 0x1,
                 ENTITY_DISSOLVE_ELECTRICAL_LIGHT = 0x2,
@@ -2898,7 +2895,7 @@ pub mod cs2_dumper {
             // Member count: 5
             #[repr(u32)]
             pub enum INavObstacle__NavObstacleType_t {
-                NAV_OBSTACLE_TYPE_INVALID = i64::MAX,
+                NAV_OBSTACLE_TYPE_INVALID = u32::MAX,
                 NAV_OBSTACLE_TYPE_NONE = 0x0,
                 NAV_OBSTACLE_TYPE_AVOID = 0x1,
                 NAV_OBSTACLE_TYPE_CONN = 0x2,
