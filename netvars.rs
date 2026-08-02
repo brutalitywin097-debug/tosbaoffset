@@ -12,15 +12,9 @@
 // Classes: 3330 | Enums: 549 | Offsets: 32 | Modules: 18
 //
 
-namespace ExitScam.Schemas {
-    // Module: networksystem.dll
-    // Class count: 1
-    // Enum count: 0
-    public static class NetworksystemDll {
-        // Parent: None
-        // Field count: 1
-        public static class ChangeAccessorFieldPathIndex_t {
-            public const nint m_Value = 0x0; // int32
-        }
+#![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
+
+pub mod exitscam {
+    pub mod schemas {
     }
 }
