@@ -1,5 +1,5 @@
-// Generated using https://github.com/Xeleng/cs2-dumper
-// 2026-08-03 22:07:26.964939400 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2026-08-11 04:00:07.594936800 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: soundsystem.dll
