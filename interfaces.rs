@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-08-13 00:19:04.393840300 UTC
+// 2026-08-13 10:19:56.565193200 UTC
 
 #![allow(non_upper_case_globals, unused)]
 

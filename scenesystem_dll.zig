@@ -1,3 +1,6 @@
+// Generated using https://github.com/a2x/cs2-dumper
+// 2026-08-13 10:19:56.565193200 UTC
+
 pub const cs2_dumper = struct {
     pub const schemas = struct {
         // Module: scenesystem.dll
