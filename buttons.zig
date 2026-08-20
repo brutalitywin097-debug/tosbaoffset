@@ -1,21 +1,24 @@
+// Generated using https://github.com/Xeleng/cs2-dumper
+// 2026-08-20 08:54:48.460913500 UTC
+
 pub const cs2_dumper = struct {
     // Module: client.dll
     pub const buttons = struct {
-        pub const attack: usize = 0x2093F80;
-        pub const attack2: usize = 0x2094010;
-        pub const back: usize = 0x2094250;
-        pub const duck: usize = 0x2094520;
-        pub const forward: usize = 0x20941C0;
-        pub const jump: usize = 0x2094490;
-        pub const left: usize = 0x20942E0;
-        pub const lookatweapon: usize = 0x23B9510;
-        pub const reload: usize = 0x2093EF0;
-        pub const right: usize = 0x2094370;
-        pub const showscores: usize = 0x23B93F0;
-        pub const sprint: usize = 0x2093E60;
-        pub const turnleft: usize = 0x20940A0;
-        pub const turnright: usize = 0x2094130;
-        pub const use: usize = 0x2094400;
-        pub const zoom: usize = 0x23B9480;
+        pub const attack: usize = 0x209A000;
+        pub const attack2: usize = 0x209A090;
+        pub const back: usize = 0x209A2D0;
+        pub const duck: usize = 0x209A5A0;
+        pub const forward: usize = 0x209A240;
+        pub const jump: usize = 0x209A510;
+        pub const left: usize = 0x209A360;
+        pub const lookatweapon: usize = 0x23BFA40;
+        pub const reload: usize = 0x2099F70;
+        pub const right: usize = 0x209A3F0;
+        pub const showscores: usize = 0x23BF920;
+        pub const sprint: usize = 0x2099EE0;
+        pub const turnleft: usize = 0x209A120;
+        pub const turnright: usize = 0x209A1B0;
+        pub const use: usize = 0x209A480;
+        pub const zoom: usize = 0x23BF9B0;
     };
 };
