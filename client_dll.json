@@ -7447,12 +7447,22 @@
         },
         "type": "uint32"
       },
-      "_0____": {
+      "_0_Z__": {
         "alignment": 0,
         "members": {},
         "type": "unknown"
       },
-      "_W____": {
+      "_8_Q__": {
+        "alignment": 0,
+        "members": {},
+        "type": "unknown"
+      },
+      "_E_Q__": {
+        "alignment": 111,
+        "members": {},
+        "type": "unknown"
+      },
+      "___Q__": {
         "alignment": 0,
         "members": {},
         "type": "unknown"
