@@ -1,12 +1,18 @@
-// Generated using https://github.com/Xeleng/cs2-dumper
-// 2026-08-20 08:54:48.460913500 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2026-10-23 10:46:13.109601900 UTC
 
 pub const cs2_dumper = struct {
     pub const schemas = struct {
         // Module: soundsystem.dll
-        // Class count: 150
-        // Enum count: 27
+        // Class count: 158
+        // Enum count: 35
         pub const soundsystem_dll = struct {
+            // Alignment: 1
+            // Member count: 2
+            pub const VMixUpMixRule_t = enum(u8) {
+                DIVIDE = 0x0,
+                BROADCAST = 0x1
+            };
             // Alignment: 4
             // Member count: 3
             pub const SndSeqInstrumentType_t = enum(u32) {
@@ -32,48 +38,42 @@ pub const cs2_dumper = struct {
                 SndSeqMidiStatusPitchBend = 0xE
             };
             // Alignment: 4
-            // Member count: 40
+            // Member count: 34
             pub const VMixGraphCommandID_t = enum(u32) {
                 CMD_INVALID = 0xFFFFFFFF,
-                CMD_CONTROL_INPUT_STORE = 0x1,
-                CMD_CONTROL_INPUT_STORE_DB = 0x2,
-                CMD_CONTROL_TRANSIENT_INPUT_STORE = 0x3,
-                CMD_CONTROL_TRANSIENT_INPUT_RESET = 0x4,
-                CMD_CONTROL_OUTPUT_STORE = 0x5,
-                CMD_CONTROL_EVALUATE_CURVE = 0x6,
-                CMD_CONTROL_COPY = 0x7,
-                CMD_CONTROL_COND_COPY_IF_NEGATIVE = 0x8,
-                CMD_CONTROL_REMAP_LINEAR = 0x9,
-                CMD_CONTROL_REMAP_SINE = 0xA,
-                CMD_CONTROL_REMAP_LOGLINEAR = 0xB,
-                CMD_CONTROL_MAX = 0xC,
-                CMD_CONTROL_RESET_TIMER = 0xD,
-                CMD_CONTROL_INCREMENT_TIMER = 0xE,
-                CMD_CONTROL_EVAL_ENVELOPE = 0xF,
-                CMD_CONTROL_SINE_BLEND = 0x10,
-                CMD_PROCESSOR_SET_CONTROL_VALUE = 0x11,
-                CMD_PROCESSOR_SET_NAME_INPUT = 0x12,
-                CMD_PROCESSOR_SET_CONTROL_ARRAYVALUE = 0x13,
-                CMD_PROCESSOR_STORE_CONTROL_VALUE = 0x14,
-                CMD_PROCESSOR_SET_VSND_VALUE = 0x15,
-                CMD_SUBMIX_PROCESS = 0x16,
-                CMD_SUBMIX_GENERATE = 0x17,
-                CMD_SUBMIX_GENERATE_SIDECHAIN = 0x18,
-                CMD_SUBMIX_EXTRACTCONTAINER = 0x19,
-                CMD_SUBMIX_DEBUG = 0x1A,
-                CMD_SUBMIX_MIX2x1 = 0x1B,
-                CMD_SUBMIX_OUTPUT = 0x1C,
-                CMD_SUBMIX_OUTPUTx2 = 0x1D,
-                CMD_SUBMIX_COPY = 0x1E,
-                CMD_SUBMIX_ACCUMULATE = 0x1F,
-                CMD_SUBMIX_METER = 0x20,
-                CMD_SUBMIX_METER_SPECTRUM = 0x21,
-                CMD_IMPULSERESPONSE_INPUT_STORE = 0x22,
-                CMD_PROCESSOR_SET_IMPULSERESPONSE_VALUE = 0x23,
-                CMD_REMAP_VSND_TO_IMPULSERESPONSE = 0x24,
-                CMD_IMPULSERESPONSE_RESET = 0x25,
-                CMD_BLEND_VSNDS_TO_IMPULSERESPONSE = 0x26,
-                CMD_IMPULSERESPONSE_DELAY = 0x27
+                CMD_CONTROL_CONVERT_DB_TO_GAIN = 0x1,
+                CMD_CONTROL_TRANSIENT_INPUT_STORE = 0x2,
+                CMD_CONTROL_TRANSIENT_INPUT_RESET = 0x3,
+                CMD_CONTROL_OUTPUT_STORE = 0x4,
+                CMD_CONTROL_EVALUATE_CURVE = 0x5,
+                CMD_CONTROL_COPY = 0x6,
+                CMD_CONTROL_COND_COPY_IF_NEGATIVE = 0x7,
+                CMD_CONTROL_REMAP_LINEAR = 0x8,
+                CMD_CONTROL_REMAP_SINE = 0x9,
+                CMD_CONTROL_REMAP_LOGLINEAR = 0xA,
+                CMD_CONTROL_MAX = 0xB,
+                CMD_CONTROL_RESET_TIMER = 0xC,
+                CMD_CONTROL_INCREMENT_TIMER = 0xD,
+                CMD_CONTROL_EVAL_ENVELOPE = 0xE,
+                CMD_CONTROL_SINE_BLEND = 0xF,
+                CMD_SUBMIX_PROCESS = 0x10,
+                CMD_SUBMIX_GENERATE = 0x11,
+                CMD_SUBMIX_GENERATE_SIDECHAIN = 0x12,
+                CMD_SUBMIX_EXTRACTCONTAINER = 0x13,
+                CMD_SUBMIX_DEBUG = 0x14,
+                CMD_SUBMIX_MIX2x1 = 0x15,
+                CMD_SUBMIX_OUTPUT = 0x16,
+                CMD_SUBMIX_OUTPUTx2 = 0x17,
+                CMD_SUBMIX_COPY = 0x18,
+                CMD_SUBMIX_ACCUMULATE = 0x19,
+                CMD_SUBMIX_METER = 0x1A,
+                CMD_SUBMIX_METER_SPECTRUM = 0x1B,
+                CMD_IMPULSERESPONSE_INPUT_STORE = 0x1C,
+                CMD_PROCESSOR_SET_IMPULSERESPONSE_VALUE = 0x1D,
+                CMD_REMAP_VSND_TO_IMPULSERESPONSE = 0x1E,
+                CMD_IMPULSERESPONSE_RESET = 0x1F,
+                CMD_BLEND_VSNDS_TO_IMPULSERESPONSE = 0x20,
+                CMD_IMPULSERESPONSE_DELAY = 0x21
             };
             // Alignment: 1
             // Member count: 5
@@ -84,6 +84,16 @@ pub const cs2_dumper = struct {
                 Triangle = 0x3,
                 Noise = 0x4
             };
+            // Alignment: 1
+            // Member count: 6
+            pub const VMixFilterChannelSet_t = enum(u8) {
+                FILTER_ALL_CHANNELS = 0x0,
+                FILTER_LEFT_ONLY = 0x1,
+                FILTER_RIGHT_ONLY = 0x2,
+                FILTER_MID_ONLY = 0x3,
+                FILTER_SIDE_ONLY = 0x4,
+                FILTER_CHANNEL_SET_MAX = 0x5
+            };
             // Alignment: 4
             // Member count: 5
             pub const VMixLFOShape_t = enum(u32) {
@@ -93,10 +103,36 @@ pub const cs2_dumper = struct {
                 LFO_SHAPE_SAW = 0x3,
                 LFO_SHAPE_NOISE = 0x4
             };
-            // Alignment: 2
+            // Alignment: 4
+            // Member count: 13
+            pub const VMixOffsetType_t = enum(u32) {
+                VO_CHAR = 0x0,
+                VO_ARRAY = 0x1,
+                VO_BOOL = 0x2,
+                VO_FLOAT = 0x3,
+                VO_UINT32 = 0x4,
+                VO_INT32 = 0x5,
+                VO_VECTOR = 0x6,
+                VO_QUATERNION = 0x7,
+                VO_CUBIC_SPLINE = 0x8,
+                VO_VSND_INPUT = 0x9,
+                VO_FLOAT_UTLVECTOR = 0xA,
+                VO_SHAREDPTR_IR = 0xB,
+                VO_TYPE_COUNT = 0xC
+            };
+            // Alignment: 1
+            // Member count: 5
+            pub const VMixMixDownRule_t = enum(u8) {
+                SUM = 0x0,
+                LEFT = 0x1,
+                RIGHT = 0x2,
+                MID = 0x3,
+                SIDE = 0x4
+            };
+            // Alignment: 1
             // Member count: 10
-            pub const VMixFilterType_t = enum(u16) {
-                FILTER_UNKNOWN = 0xFFFF,
+            pub const VMixFilterType_t = enum(u8) {
+                FILTER_UNKNOWN = 0xFF,
                 FILTER_LOWPASS = 0x0,
                 FILTER_HIGHPASS = 0x1,
                 FILTER_BANDPASS = 0x2,
@@ -112,6 +148,20 @@ pub const cs2_dumper = struct {
             pub const SndBeatTrackPlaybackType_t = enum(u32) {
                 eSndBeatTrackPlaybackTypeStep = 0x0,
                 eSndBeatTrackPlaybackTypeFwd = 0x1
+            };
+            // Alignment: 2
+            // Member count: 10
+            pub const VMixSendOperator_t = enum(u16) {
+                NO_VOICES = 0xFFFF,
+                ALL_VOICES = 0x0,
+                ROOM_VOICES = 0x1,
+                FACING_VOICES = 0x2,
+                MIXGROUP_VOICES = 0x3,
+                NAMED_SEND = 0x4,
+                INVERSE_NAMED_SENDS = 0x5,
+                INVERSE_TOTAL_SEND = 0x6,
+                ALL_MAX_SEND = 0x7,
+                TRACK = 0x8
             };
             // Alignment: 4
             // Member count: 6
@@ -131,14 +181,6 @@ pub const cs2_dumper = struct {
                 SOS_STOPTYPE_OPVAR = 0x2
             };
             // Alignment: 4
-            // Member count: 4
-            pub const SndBeatLaunchSyncType_t = enum(u32) {
-                eSndBeatLaunchSyncTypeInvalid = 0x0,
-                eSndBeatLaunchSyncTypeQueue = 0x1,
-                eSndBeatLaunchSyncTypeSeek = 0x2,
-                eSndBeatLaunchSyncTypeReset = 0x3
-            };
-            // Alignment: 4
             // Member count: 5
             pub const SndBeatKeyType_t = enum(u32) {
                 eSndBeatPatternTypeNone = 0x0,
@@ -156,6 +198,13 @@ pub const cs2_dumper = struct {
                 SOS_EDIT_ITEM_TYPE_STACK = 0x3,
                 SOS_EDIT_ITEM_TYPE_OPERATOR = 0x4,
                 SOS_EDIT_ITEM_TYPE_FIELD = 0x5
+            };
+            // Alignment: 4
+            // Member count: 3
+            pub const SndBeatSyncType_t = enum(u32) {
+                eSndBeatSyncTypeInvalid = 0x0,
+                eSndBeatSyncTypeReset = 0x1,
+                eSndBeatSyncTypeSeekImmediate = 0x2
             };
             // Alignment: 4
             // Member count: 5
@@ -243,6 +292,24 @@ pub const cs2_dumper = struct {
                 Count = 0xC
             };
             // Alignment: 1
+            // Member count: 14
+            pub const VMixAutoControlType_t = enum(u8) {
+                VMIX_AUTO_SEND_LEVEL = 0x0,
+                VMIX_AUTO_STACK_VAR = 0x1,
+                VMIX_AUTO_PLAYTIME = 0x2,
+                VMIX_AUTO_DISTANCE = 0x3,
+                VMIX_AUTO_POSITION_X = 0x4,
+                VMIX_AUTO_POSITION_Y = 0x5,
+                VMIX_AUTO_POSITION_Z = 0x6,
+                VMIX_AUTO_POSITION_VECTOR = 0x7,
+                VMIX_AUTO_LISTENER_YAW_SIN = 0x8,
+                VMIX_AUTO_LISTENER_YAW_COS = 0x9,
+                VMIX_AUTO_LISTENER_PITCH_SIN = 0xA,
+                VMIX_AUTO_LISTENER_PITCH_COS = 0xB,
+                VMIX_AUTO_LISTENER_ROLL_SIN = 0xC,
+                VMIX_AUTO_LISTENER_ROLL_COS = 0xD
+            };
+            // Alignment: 1
             // Member count: 4
             pub const CVSoundFormat_t = enum(u8) {
                 PCM16 = 0x0,
@@ -282,6 +349,21 @@ pub const cs2_dumper = struct {
                 SOS_GROUPTYPE_STATIC = 0x1
             };
             // Alignment: 4
+            // Member count: 4
+            pub const VMixOffsetCategory_t = enum(u32) {
+                NULL_POINTER = 0x0,
+                HEAP_OFFSET = 0x1,
+                INPUT_INDEX = 0x2,
+                SUBMIX_INDEX = 0x3
+            };
+            // Alignment: 4
+            // Member count: 3
+            pub const SndBeatSyncStartType_t = enum(u32) {
+                eSndBeatSyncStartTypeInvalid = 0x0,
+                eSndBeatSyncStartTypeImmediate = 0x1,
+                eSndBeatSyncStartTypeQueue = 0x2
+            };
+            // Alignment: 4
             // Member count: 2
             pub const SosActionSetParamSortType_t = enum(u32) {
                 SOS_SETPARAM_SORTTYPE_HIGHEST = 0x0,
@@ -309,17 +391,18 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerBlender = struct {
-                pub const m_firstSound: usize = 0x70; // CSoundContainerReference
-                pub const m_secondSound: usize = 0x90; // CSoundContainerReference
-                pub const m_flBlendFactor: usize = 0xB0; // float32
+                pub const m_firstSound: usize = 0x78; // CSoundContainerReference
+                pub const m_secondSound: usize = 0x98; // CSoundContainerReference
+                pub const m_flBlendFactor: usize = 0xB8; // float32
             };
             // Parent: None
-            // Field count: 1
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixPitchShiftProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixPitchShiftDesc_t
+                pub const m_desc: usize = 0x28; // VMixPitchShiftDesc_t
+                pub const m_paramPitchScale: usize = 0x38; // CVMixParameterFloat
             };
             // Parent: None
             // Field count: 4
@@ -394,26 +477,60 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerRandomSampler = struct {
-                pub const m_flAmplitude: usize = 0x80; // float32
-                pub const m_flAmplitudeJitter: usize = 0x84; // float32
-                pub const m_flTimeJitter: usize = 0x88; // float32
-                pub const m_flMaxLength: usize = 0x8C; // float32
-                pub const m_nNumDelayVariations: usize = 0x90; // int32
-                pub const m_grainResources: usize = 0x98; // CUtlVector<CStrongHandle<InfoForResourceTypeCVoiceContainerBase>>
+                pub const m_flAmplitude: usize = 0x88; // float32
+                pub const m_flAmplitudeJitter: usize = 0x8C; // float32
+                pub const m_flTimeJitter: usize = 0x90; // float32
+                pub const m_flMaxLength: usize = 0x94; // float32
+                pub const m_nNumDelayVariations: usize = 0x98; // int32
+                pub const m_grainResources: usize = 0xA0; // CUtlVector<CStrongHandle<InfoForResourceTypeCVoiceContainerBase>>
             };
             // Parent: None
-            // Field count: 0
+            // Field count: 25
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixSteamAudioDirectProcessorDesc = struct {
+                pub const m_paramPositionX: usize = 0x28; // CVMixParameterFloat
+                pub const m_paramPositionY: usize = 0x2C; // CVMixParameterFloat
+                pub const m_paramPositionZ: usize = 0x30; // CVMixParameterFloat
+                pub const m_paramRightX: usize = 0x34; // CVMixParameterFloat
+                pub const m_paramRightY: usize = 0x38; // CVMixParameterFloat
+                pub const m_paramRightZ: usize = 0x3C; // CVMixParameterFloat
+                pub const m_paramUpX: usize = 0x40; // CVMixParameterFloat
+                pub const m_paramUpY: usize = 0x44; // CVMixParameterFloat
+                pub const m_paramUpZ: usize = 0x48; // CVMixParameterFloat
+                pub const m_paramAheadX: usize = 0x4C; // CVMixParameterFloat
+                pub const m_paramAheadY: usize = 0x50; // CVMixParameterFloat
+                pub const m_paramAheadZ: usize = 0x54; // CVMixParameterFloat
+                pub const m_paramApplyDistanceAttenuation: usize = 0x58; // CVMixParameterFloat
+                pub const m_paramApplyAirAbsorption: usize = 0x5C; // CVMixParameterFloat
+                pub const m_paramApplyDirectivity: usize = 0x60; // CVMixParameterFloat
+                pub const m_paramApplyOcclusion: usize = 0x64; // CVMixParameterFloat
+                pub const m_paramApplyTransmission: usize = 0x68; // CVMixParameterFloat
+                pub const m_paramDipoleWeight: usize = 0x6C; // CVMixParameterFloat
+                pub const m_paramDipolePower: usize = 0x70; // CVMixParameterFloat
+                pub const m_paramOcclusion: usize = 0x74; // CVMixParameterFloat
+                pub const m_paramTransmissionLow: usize = 0x78; // CVMixParameterFloat
+                pub const m_paramTransmissionMid: usize = 0x7C; // CVMixParameterFloat
+                pub const m_paramTransmissionHigh: usize = 0x80; // CVMixParameterFloat
+                pub const m_paramBand: usize = 0x84; // CVMixParameterFloat
+                pub const m_paramTransmission: usize = 0x88; // CVMixDataOffset
             };
             // Parent: None
-            // Field count: 0
+            // Field count: 9
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixSteamAudioHRTFProcessorDesc = struct {
+                pub const m_paramPositionX: usize = 0x28; // CVMixParameterFloat
+                pub const m_paramPositionY: usize = 0x2C; // CVMixParameterFloat
+                pub const m_paramPositionZ: usize = 0x30; // CVMixParameterFloat
+                pub const m_paramInterpolation: usize = 0x34; // CVMixParameterFloat
+                pub const m_paramDirectMixLevel: usize = 0x38; // CVMixParameterFloat
+                pub const m_paramPerspectiveCorrection: usize = 0x3C; // CVMixParameterFloat
+                pub const m_paramRelativePosition: usize = 0x40; // CVMixParameterFloat
+                pub const m_paramDelayLeft: usize = 0x44; // CVMixParameterFloat
+                pub const m_paramDelayRight: usize = 0x48; // CVMixParameterFloat
             };
             // Parent: None
             // Field count: 0
@@ -542,12 +659,14 @@ pub const cs2_dumper = struct {
                 pub const m_strMaxValueName: usize = 0x30; // CUtlString
             };
             // Parent: None
-            // Field count: 1
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixEnvelopeProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixEnvelopeDesc_t
+                pub const m_desc: usize = 0x28; // VMixEnvelopeDesc_t
+                pub const m_outParamLevel: usize = 0x34; // CVMixParameterFloat
+                pub const m_outParamdBLevel: usize = 0x38; // CVMixParameterFloat
             };
             // Parent: None
             // Field count: 8
@@ -557,12 +676,12 @@ pub const cs2_dumper = struct {
             pub const CVMixCommand = struct {
                 pub const m_nCommand: usize = 0x0; // VMixGraphCommandID_t
                 pub const m_nParameterNameHash: usize = 0x4; // uint32
-                pub const m_nOutputSubmix: usize = 0x8; // int32
-                pub const m_nInputSubmix0: usize = 0xC; // int32
-                pub const m_nInputSubmix1: usize = 0x10; // int32
+                pub const m_nOutputSubmix: usize = 0x8; // CVMixDataOffset
+                pub const m_nInputSubmix0: usize = 0xC; // CVMixDataOffset
+                pub const m_nInputSubmix1: usize = 0x10; // CVMixDataOffset
                 pub const m_nProcessor: usize = 0x14; // int32
-                pub const m_nInputValue0: usize = 0x18; // int32
-                pub const m_nInputValue1: usize = 0x1C; // int32
+                pub const m_nInputValue0: usize = 0x18; // CVMixDataOffset
+                pub const m_nInputValue1: usize = 0x1C; // CVMixDataOffset
             };
             // Parent: None
             // Field count: 1
@@ -583,15 +702,18 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixBoxverbProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixBoxverbDesc_t
+                pub const m_desc: usize = 0x28; // VMixBoxverbDesc_t
             };
             // Parent: None
-            // Field count: 1
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixDynamicsCompressorProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixDynamicsCompressorDesc_t
+                pub const m_desc: usize = 0x28; // VMixDynamicsCompressorDesc_t
+                pub const m_outParamLevel: usize = 0x50; // CVMixParameterFloat
+                pub const m_outParamdBLevel: usize = 0x54; // CVMixParameterFloat
+                pub const m_outParamReduction: usize = 0x58; // CVMixParameterFloat
             };
             // Parent: None
             // Field count: 2
@@ -622,9 +744,9 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerRealtimeFMSineWave = struct {
-                pub const m_flCarrierFrequency: usize = 0x70; // float32
-                pub const m_flModulatorFrequency: usize = 0x74; // float32
-                pub const m_flModulatorAmount: usize = 0x78; // float32
+                pub const m_flCarrierFrequency: usize = 0x78; // float32
+                pub const m_flModulatorFrequency: usize = 0x7C; // float32
+                pub const m_flModulatorAmount: usize = 0x80; // float32
             };
             // Parent: None
             // Field count: 1
@@ -664,7 +786,7 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixNameInputMeter = struct {
-                pub const m_nValueIndex: usize = 0x10; // int32
+                pub const m_nValueIndex: usize = 0x10; // CVMixDataOffset
             };
             // Parent: None
             // Field count: 0
@@ -676,7 +798,7 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixDynamics3BandProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixDynamics3BandDesc_t
+                pub const m_desc: usize = 0x28; // VMixDynamics3BandDesc_t
             };
             // Parent: None
             // Field count: 17
@@ -752,6 +874,15 @@ pub const cs2_dumper = struct {
                 pub const m_hSoundEventHash: usize = 0xD8; // uint32
             };
             // Parent: None
+            // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const VMixPointerFixupEntry_t = struct {
+                pub const m_nIndex: usize = 0x0; // uint32
+                pub const m_offset: usize = 0x4; // CVMixDataOffset
+            };
+            // Parent: None
             // Field count: 5
             //
             // Metadata:
@@ -781,12 +912,13 @@ pub const cs2_dumper = struct {
                 pub const m_bandDesc: usize = 0x24; // VMixDynamicsBand_t[3]
             };
             // Parent: None
-            // Field count: 1
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixEQ8ProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixEQ8Desc_t
+                pub const m_desc: usize = 0x28; // VMixEQ8Desc_t
+                pub const m_paramEQScale: usize = 0xC8; // CVMixParameterFloat
             };
             // Parent: None
             // Field count: 6
@@ -835,6 +967,18 @@ pub const cs2_dumper = struct {
                 pub const m_bandDesc: usize = 0x10; // VMixDynamicsBand_t
             };
             // Parent: None
+            // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CVMixRuntimeGraph = struct {
+                pub const m_submixes: usize = 0xD0; // CUtlLeanVector<CVMixSubmix>
+                pub const m_impulseResponseValues: usize = 0xE0; // CUtlLeanVector<uint64>
+                pub const m_inputDefaultValues: usize = 0xF0; // KeyValues3
+                pub const m_sources: usize = 0x100; // KeyValues3
+                pub const m_fixups: usize = 0x110; // CUtlVector<VMixPointerFixupEntry_t>
+            };
+            // Parent: None
             // Field count: 1
             //
             // Metadata:
@@ -842,7 +986,7 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerStaticAdditiveSynth = struct {
-                pub const m_tones: usize = 0x80; // CUtlVector<CVoiceContainerStaticAdditiveSynth::CTone>
+                pub const m_tones: usize = 0x88; // CUtlVector<CVoiceContainerStaticAdditiveSynth::CTone>
             };
             // Parent: None
             // Field count: 9
@@ -852,15 +996,15 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerShapedNoise = struct {
-                pub const m_bUseCurveForFrequency: usize = 0x70; // bool
-                pub const m_flFrequency: usize = 0x74; // float32
-                pub const m_frequencySweep: usize = 0x78; // CPiecewiseCurve
-                pub const m_bUseCurveForResonance: usize = 0xB8; // bool
-                pub const m_flResonance: usize = 0xBC; // float32
-                pub const m_resonanceSweep: usize = 0xC0; // CPiecewiseCurve
-                pub const m_bUseCurveForAmplitude: usize = 0x100; // bool
-                pub const m_flGainInDecibels: usize = 0x104; // float32
-                pub const m_gainSweep: usize = 0x108; // CPiecewiseCurve
+                pub const m_bUseCurveForFrequency: usize = 0x78; // bool
+                pub const m_flFrequency: usize = 0x7C; // float32
+                pub const m_frequencySweep: usize = 0x80; // CPiecewiseCurve
+                pub const m_bUseCurveForResonance: usize = 0xC0; // bool
+                pub const m_flResonance: usize = 0xC4; // float32
+                pub const m_resonanceSweep: usize = 0xC8; // CPiecewiseCurve
+                pub const m_bUseCurveForAmplitude: usize = 0x108; // bool
+                pub const m_flGainInDecibels: usize = 0x10C; // float32
+                pub const m_gainSweep: usize = 0x110; // CPiecewiseCurve
             };
             // Parent: None
             // Field count: 2
@@ -872,7 +1016,7 @@ pub const cs2_dumper = struct {
                 pub const m_modifiers: usize = 0x8; // CUtlVector<CDSPMixgroupModifier>
             };
             // Parent: None
-            // Field count: 2
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -881,8 +1025,10 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerBase = struct {
-                pub const m_vSound: usize = 0x28; // CVSound
-                pub const m_pEnvelopeAnalyzer: usize = 0x68; // CVoiceContainerAnalysisBase*
+                pub const m_bRegisteredVMix: usize = 0x10; // bool
+                pub const m_nResourceName: usize = 0x14; // CUtlStringToken
+                pub const m_vSound: usize = 0x30; // CVSound
+                pub const m_pEnvelopeAnalyzer: usize = 0x70; // CVoiceContainerAnalysisBase*
             };
             // Parent: None
             // Field count: 1
@@ -890,7 +1036,7 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixDiffusorProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixDiffusorDesc_t
+                pub const m_desc: usize = 0x28; // VMixDiffusorDesc_t
             };
             // Parent: None
             // Field count: 1
@@ -898,7 +1044,7 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixUtilityProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixUtilityDesc_t
+                pub const m_desc: usize = 0x28; // VMixUtilityDesc_t
             };
             // Parent: None
             // Field count: 5
@@ -915,26 +1061,29 @@ pub const cs2_dumper = struct {
                 pub const m_strVectorStackParam: usize = 0x18; // CUtlString
             };
             // Parent: None
-            // Field count: 6
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
             // MPropertyFriendlyName
             pub const CVoiceContainerGranulator = struct {
-                pub const m_flGrainLength: usize = 0x80; // float32
-                pub const m_flGrainCrossfadeAmount: usize = 0x84; // float32
-                pub const m_flStartJitter: usize = 0x88; // float32
-                pub const m_flPlaybackJitter: usize = 0x8C; // float32
-                pub const m_bShouldWraparound: usize = 0x90; // bool
-                pub const m_sourceAudio: usize = 0x98; // CStrongHandle<InfoForResourceTypeCVoiceContainerBase>
+                pub const m_flGrainLength: usize = 0x88; // float32
+                pub const m_flGrainCrossfadeAmount: usize = 0x8C; // float32
+                pub const m_flStartJitter: usize = 0x90; // float32
+                pub const m_flPlaybackJitter: usize = 0x94; // float32
+                pub const m_bShouldWraparound: usize = 0x98; // bool
+                pub const m_sourceAudio: usize = 0xA0; // CStrongHandle<InfoForResourceTypeCVoiceContainerBase>
+                pub const m_bDoubleBufferSourceAudio: usize = 0xA8; // bool
+                pub const m_flMaxSourceLength: usize = 0xAC; // float32
             };
             // Parent: None
-            // Field count: 1
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixPresetDSPProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixPresetDSPDesc_t
+                pub const m_desc: usize = 0x28; // VMixPresetDSPDesc_t
+                pub const m_paramEffectName: usize = 0x38; // CVMixParameterEffectName
             };
             // Parent: None
             // Field count: 7
@@ -956,25 +1105,25 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const VMixEQ8Desc_t = struct {
-                pub const m_stages: usize = 0x0; // VMixFilterDesc_t[8]
-            };
-            // Parent: None
-            // Field count: 1
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
-            pub const CVMixDynamicsProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixDynamicsDesc_t
+                pub const m_stages: usize = 0x0; // VMixEQFilterDesc_t[8]
             };
             // Parent: None
             // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
-            pub const CVMixGraphDescData = struct {
-                pub const m_name: usize = 0x0; // CUtlString
-                pub const m_nGraphOutputChannels: usize = 0x8; // int32
-                pub const m_bIsMainGraph: usize = 0xC; // bool
+            pub const CVMixDynamicsProcessorDesc = struct {
+                pub const m_desc: usize = 0x28; // VMixDynamicsDesc_t
+                pub const m_outParamLevel: usize = 0x58; // CVMixParameterFloat
+                pub const m_outParamdBLevel: usize = 0x5C; // CVMixParameterFloat
+            };
+            // Parent: None
+            // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const VMixEQFilterDesc_t = struct {
+                pub const m_nChannelSet: usize = 0x10; // VMixFilterChannelSet_t
             };
             // Parent: None
             // Field count: 8
@@ -984,14 +1133,14 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerLoopXFade = struct {
-                pub const m_sound: usize = 0x70; // CSoundContainerReference
-                pub const m_flLoopEnd: usize = 0x90; // float32
-                pub const m_flLoopStart: usize = 0x94; // float32
-                pub const m_flFadeOut: usize = 0x98; // float32
-                pub const m_flFadeIn: usize = 0x9C; // float32
-                pub const m_bPlayHead: usize = 0xA0; // bool
-                pub const m_bPlayTail: usize = 0xA1; // bool
-                pub const m_bEqualPow: usize = 0xA2; // bool
+                pub const m_sound: usize = 0x78; // CSoundContainerReference
+                pub const m_flLoopEnd: usize = 0x98; // float32
+                pub const m_flLoopStart: usize = 0x9C; // float32
+                pub const m_flFadeOut: usize = 0xA0; // float32
+                pub const m_flFadeIn: usize = 0xA4; // float32
+                pub const m_bPlayHead: usize = 0xA8; // bool
+                pub const m_bPlayTail: usize = 0xA9; // bool
+                pub const m_bEqualPow: usize = 0xAA; // bool
             };
             // Parent: None
             // Field count: 1
@@ -1012,14 +1161,6 @@ pub const cs2_dumper = struct {
                 pub const m_nPhonemeCode: usize = 0x8; // int32
             };
             // Parent: None
-            // Field count: 1
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
-            pub const CVMixControlInputArray = struct {
-                pub const m_nArrayIndex: usize = 0x10; // int32
-            };
-            // Parent: None
             // Field count: 10
             //
             // Metadata:
@@ -1035,14 +1176,6 @@ pub const cs2_dumper = struct {
                 pub const m_volume: usize = 0x7C; // float32
                 pub const m_fadeOut: usize = 0x80; // float32
                 pub const m_mode: usize = 0x84; // EVsndPlaybackMode
-            };
-            // Parent: None
-            // Field count: 1
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
-            pub const CVMixNameInput = struct {
-                pub const m_defaultValue: usize = 0x10; // CUtlString
             };
             // Parent: None
             // Field count: 2
@@ -1067,14 +1200,18 @@ pub const cs2_dumper = struct {
                 pub const m_flThreshold: usize = 0x50; // float32
             };
             // Parent: None
-            // Field count: 3
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixBaseProcessorDesc = struct {
                 pub const m_name: usize = 0x8; // CUtlString
-                pub const m_nChannels: usize = 0x14; // int32
-                pub const m_flxfade: usize = 0x18; // float32
+                pub const m_nDebugId: usize = 0x10; // uint32
+                pub const m_flxfade: usize = 0x14; // float32
+                pub const m_nChannels: usize = 0x18; // int32
+                pub const m_bDebugBypass: usize = 0x1C; // bool
+                pub const m_paramEnable: usize = 0x20; // CVMixParameterFloat
+                pub const m_paramMix: usize = 0x24; // CVMixParameterFloat
             };
             // Parent: None
             // Field count: 0
@@ -1084,19 +1221,16 @@ pub const cs2_dumper = struct {
             pub const CVMixImpulseResponseInput = struct {
             };
             // Parent: None
-            // Field count: 0
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixSteamAudioHybridReverbProcessorDesc = struct {
-            };
-            // Parent: None
-            // Field count: 1
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
-            pub const CSoundEventMetaData = struct {
-                pub const m_soundEventVMix: usize = 0x0; // CStrongHandle<InfoForResourceTypeCVMixListResource>
+                pub const m_paramReverbTimeLow: usize = 0x28; // CVMixParameterFloat
+                pub const m_paramReverbTimeMid: usize = 0x2C; // CVMixParameterFloat
+                pub const m_paramReverbTimeHigh: usize = 0x30; // CVMixParameterFloat
+                pub const m_paramBand: usize = 0x34; // CVMixParameterFloat
+                pub const m_paramReverbTime: usize = 0x38; // CVMixDataOffset
             };
             // Parent: None
             // Field count: 4
@@ -1118,31 +1252,65 @@ pub const cs2_dumper = struct {
                 pub const m_flDefaultValue: usize = 0x10; // float32
             };
             // Parent: None
-            // Field count: 1
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixModDelayProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixModDelayDesc_t
+                pub const m_desc: usize = 0x28; // VMixModDelayDesc_t
+                pub const m_paramCutoffFrequency: usize = 0x58; // CVMixParameterFloat
+                pub const m_paramDelay: usize = 0x5C; // CVMixParameterFloat
+                pub const m_paramModRate: usize = 0x60; // CVMixParameterFloat
+                pub const m_paramModDepth: usize = 0x64; // CVMixParameterFloat
+            };
+            // Parent: None
+            // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CVMixShaperProcessorDesc = struct {
+                pub const m_desc: usize = 0x28; // VMixShaperDesc_t
+                pub const m_paramDrive: usize = 0x3C; // CVMixParameterFloat
             };
             // Parent: None
             // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
-            pub const CVMixShaperProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixShaperDesc_t
+            pub const CVMixParameterFloat = struct {
+                pub const m_offset: usize = 0x0; // CVMixDataOffset
             };
             // Parent: None
-            // Field count: 4
+            // Field count: 15
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CVMixBaseGraphDescription = struct {
+                pub const m_name: usize = 0x0; // CUtlString
+                pub const m_nGraphOutputChannels: usize = 0x8; // int32
+                pub const m_bIsMainGraph: usize = 0xC; // bool
+                pub const m_processorNodes: usize = 0x10; // CUtlLeanVector<std::unique_ptr<CVMixBaseProcessorDesc>>
+                pub const m_graphInputs: usize = 0x20; // CUtlLeanVector<CVMixGraphInput>
+                pub const m_controlTransientInputs: usize = 0x30; // CUtlLeanVector<CVMixControlInput>
+                pub const m_controlOutputs: usize = 0x40; // CUtlLeanVector<CVMixControlOutput>
+                pub const m_impulseResponseInputs: usize = 0x50; // CUtlLeanVector<CVMixImpulseResponseInput>
+                pub const m_mixCommands: usize = 0x60; // CUtlLeanVector<CVMixCommand>
+                pub const m_heap: usize = 0x70; // CVMixHeap
+                pub const m_audioMeters: usize = 0x80; // CUtlLeanVector<CVMixAudioMeter>
+                pub const m_controlMeters: usize = 0x90; // CUtlLeanVector<CVMixControlMeter>
+                pub const m_nameInputMeters: usize = 0xA0; // CUtlLeanVector<CVMixNameInputMeter>
+                pub const m_additionalOutputs: usize = 0xB0; // CUtlLeanVector<CVMixAdditionalOutput>
+                pub const m_automaticControlInputs: usize = 0xC0; // CUtlLeanVector<CVMixAutomaticControlInput>
+            };
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixAutomaticControlInput = struct {
                 pub const m_name: usize = 0x0; // CUtlString
-                pub const m_nControlInputIndex: usize = 0x8; // int32
-                pub const m_bIsTrackSend: usize = 0xC; // bool
-                pub const m_bIsStackVar: usize = 0xD; // bool
+                pub const m_nGraphInputIndex: usize = 0xC; // int32
+                pub const m_nControlType: usize = 0x10; // VMixAutoControlType_t
             };
             // Parent: None
             // Field count: 5
@@ -1166,23 +1334,23 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerVsndRadioButton = struct {
-                pub const m_namespace: usize = 0x70; // CUtlString
-                pub const m_slot1: usize = 0x78; // CVsndRadioButtonSlot
-                pub const m_slot2: usize = 0x100; // CVsndRadioButtonSlot
-                pub const m_slot3: usize = 0x188; // CVsndRadioButtonSlot
-                pub const m_slot4: usize = 0x210; // CVsndRadioButtonSlot
-                pub const m_slot5: usize = 0x298; // CVsndRadioButtonSlot
-                pub const m_slot6: usize = 0x320; // CVsndRadioButtonSlot
-                pub const m_slot7: usize = 0x3A8; // CVsndRadioButtonSlot
-                pub const m_slot8: usize = 0x430; // CVsndRadioButtonSlot
-                pub const m_slot9: usize = 0x4B8; // CVsndRadioButtonSlot
-                pub const m_slot10: usize = 0x540; // CVsndRadioButtonSlot
-                pub const m_slot11: usize = 0x5C8; // CVsndRadioButtonSlot
-                pub const m_slot12: usize = 0x650; // CVsndRadioButtonSlot
-                pub const m_slot13: usize = 0x6D8; // CVsndRadioButtonSlot
-                pub const m_slot14: usize = 0x760; // CVsndRadioButtonSlot
-                pub const m_slot15: usize = 0x7E8; // CVsndRadioButtonSlot
-                pub const m_slot16: usize = 0x870; // CVsndRadioButtonSlot
+                pub const m_namespace: usize = 0x78; // CUtlString
+                pub const m_slot1: usize = 0x80; // CVsndRadioButtonSlot
+                pub const m_slot2: usize = 0x108; // CVsndRadioButtonSlot
+                pub const m_slot3: usize = 0x190; // CVsndRadioButtonSlot
+                pub const m_slot4: usize = 0x218; // CVsndRadioButtonSlot
+                pub const m_slot5: usize = 0x2A0; // CVsndRadioButtonSlot
+                pub const m_slot6: usize = 0x328; // CVsndRadioButtonSlot
+                pub const m_slot7: usize = 0x3B0; // CVsndRadioButtonSlot
+                pub const m_slot8: usize = 0x438; // CVsndRadioButtonSlot
+                pub const m_slot9: usize = 0x4C0; // CVsndRadioButtonSlot
+                pub const m_slot10: usize = 0x548; // CVsndRadioButtonSlot
+                pub const m_slot11: usize = 0x5D0; // CVsndRadioButtonSlot
+                pub const m_slot12: usize = 0x658; // CVsndRadioButtonSlot
+                pub const m_slot13: usize = 0x6E0; // CVsndRadioButtonSlot
+                pub const m_slot14: usize = 0x768; // CVsndRadioButtonSlot
+                pub const m_slot15: usize = 0x7F0; // CVsndRadioButtonSlot
+                pub const m_slot16: usize = 0x878; // CVsndRadioButtonSlot
             };
             // Parent: None
             // Field count: 2
@@ -1194,21 +1362,14 @@ pub const cs2_dumper = struct {
                 pub const m_flValue: usize = 0x4; // float32
             };
             // Parent: None
-            // Field count: 1
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixOscProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixOscDesc_t
-            };
-            // Parent: None
-            // Field count: 2
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
-            pub const CVMixCurveHeader = struct {
-                pub const m_nControlPointCount: usize = 0x0; // uint32
-                pub const m_nControlPointStart: usize = 0x4; // uint32
+                pub const m_desc: usize = 0x28; // VMixOscDesc_t
+                pub const m_paramFrequency: usize = 0x34; // CVMixParameterFloat
+                pub const m_paramPhase: usize = 0x38; // CVMixParameterFloat
             };
             // Parent: None
             // Field count: 1
@@ -1218,7 +1379,7 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerLoopTriggerWithRandomPanner = struct {
-                pub const m_randomPannerControls: usize = 0xA0; // CRandomPannerControls
+                pub const m_randomPannerControls: usize = 0xA8; // CRandomPannerControls
             };
             // Parent: None
             // Field count: 0
@@ -1235,7 +1396,7 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerSet = struct {
-                pub const m_soundsToPlay: usize = 0x70; // CUtlVector<CVoiceContainerSetElement>
+                pub const m_soundsToPlay: usize = 0x78; // CUtlVector<CVoiceContainerSetElement>
             };
             // Parent: None
             // Field count: 8
@@ -1260,23 +1421,23 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerVsndTrigger = struct {
-                pub const m_namespace: usize = 0x70; // CUtlString
-                pub const m_slot1: usize = 0x78; // CVsndTriggerSlot
-                pub const m_slot2: usize = 0x100; // CVsndTriggerSlot
-                pub const m_slot3: usize = 0x188; // CVsndTriggerSlot
-                pub const m_slot4: usize = 0x210; // CVsndTriggerSlot
-                pub const m_slot5: usize = 0x298; // CVsndTriggerSlot
-                pub const m_slot6: usize = 0x320; // CVsndTriggerSlot
-                pub const m_slot7: usize = 0x3A8; // CVsndTriggerSlot
-                pub const m_slot8: usize = 0x430; // CVsndTriggerSlot
-                pub const m_slot9: usize = 0x4B8; // CVsndTriggerSlot
-                pub const m_slot10: usize = 0x540; // CVsndTriggerSlot
-                pub const m_slot11: usize = 0x5C8; // CVsndTriggerSlot
-                pub const m_slot12: usize = 0x650; // CVsndTriggerSlot
-                pub const m_slot13: usize = 0x6D8; // CVsndTriggerSlot
-                pub const m_slot14: usize = 0x760; // CVsndTriggerSlot
-                pub const m_slot15: usize = 0x7E8; // CVsndTriggerSlot
-                pub const m_slot16: usize = 0x870; // CVsndTriggerSlot
+                pub const m_namespace: usize = 0x78; // CUtlString
+                pub const m_slot1: usize = 0x80; // CVsndTriggerSlot
+                pub const m_slot2: usize = 0x108; // CVsndTriggerSlot
+                pub const m_slot3: usize = 0x190; // CVsndTriggerSlot
+                pub const m_slot4: usize = 0x218; // CVsndTriggerSlot
+                pub const m_slot5: usize = 0x2A0; // CVsndTriggerSlot
+                pub const m_slot6: usize = 0x328; // CVsndTriggerSlot
+                pub const m_slot7: usize = 0x3B0; // CVsndTriggerSlot
+                pub const m_slot8: usize = 0x438; // CVsndTriggerSlot
+                pub const m_slot9: usize = 0x4C0; // CVsndTriggerSlot
+                pub const m_slot10: usize = 0x548; // CVsndTriggerSlot
+                pub const m_slot11: usize = 0x5D0; // CVsndTriggerSlot
+                pub const m_slot12: usize = 0x658; // CVsndTriggerSlot
+                pub const m_slot13: usize = 0x6E0; // CVsndTriggerSlot
+                pub const m_slot14: usize = 0x768; // CVsndTriggerSlot
+                pub const m_slot15: usize = 0x7F0; // CVsndTriggerSlot
+                pub const m_slot16: usize = 0x878; // CVsndTriggerSlot
             };
             // Parent: None
             // Field count: 2
@@ -1312,6 +1473,17 @@ pub const cs2_dumper = struct {
             pub const CSoundInfoHeader = struct {
             };
             // Parent: None
+            // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CVMixDescription = struct {
+                pub const m_submixList: usize = 0xD0; // CUtlLeanVector<CSubmix>
+                pub const m_sources: usize = 0xE0; // CUtlLeanVector<std::unique_ptr<CVoiceContainerBase>>
+                pub const m_impulseResponseValues: usize = 0xF0; // CUtlLeanVector<uint64>
+                pub const m_nNameHashCode: usize = 0x100; // uint32
+            };
+            // Parent: None
             // Field count: 5
             //
             // Metadata:
@@ -1324,20 +1496,38 @@ pub const cs2_dumper = struct {
                 pub const itemPos: usize = 0x28; // Vector2D
             };
             // Parent: None
-            // Field count: 1
+            // Field count: 7
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CVMixSubmix = struct {
+                pub const m_name: usize = 0x0; // CUtlString
+                pub const m_SendNames: usize = 0x8; // CUtlString[4]
+                pub const m_nSoloNameHash: usize = 0x2C; // uint32
+                pub const m_nChannels: usize = 0x30; // int32
+                pub const m_nSendOperator: usize = 0x34; // VMixSendOperator_t
+                pub const m_nMixDownRule: usize = 0x36; // VMixMixDownRule_t
+                pub const m_nUpMixRule: usize = 0x37; // VMixUpMixRule_t
+            };
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixFlangerProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixFlangerDesc_t
+                pub const m_desc: usize = 0x28; // VMixFlangerDesc_t
+                pub const m_paramDelay: usize = 0x4C; // CVMixParameterFloat
+                pub const m_paramModRate: usize = 0x50; // CVMixParameterFloat
+                pub const m_paramModDepth: usize = 0x54; // CVMixParameterFloat
             };
             // Parent: None
-            // Field count: 1
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixEffectChainProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixEffectChainDesc_t
+                pub const m_desc: usize = 0x28; // VMixEffectChainDesc_t
+                pub const m_paramEffectName: usize = 0x30; // CVMixParameterEffectName
             };
             // Parent: None
             // Field count: 5
@@ -1354,7 +1544,7 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixFreeverbProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixFreeverbDesc_t
+                pub const m_desc: usize = 0x28; // VMixFreeverbDesc_t
             };
             // Parent: None
             // Field count: 7
@@ -1371,12 +1561,21 @@ pub const cs2_dumper = struct {
                 pub const m_flFeedbackDiffusion2: usize = 0x18; // float32
             };
             // Parent: None
-            // Field count: 1
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixConvolutionProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixConvolutionDesc_t
+                pub const m_desc: usize = 0x28; // VMixConvolutionDesc_t
+                pub const m_paramImpulseResponse: usize = 0x48; // CVMixDataOffset
+            };
+            // Parent: None
+            // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CVMixParameterBool = struct {
+                pub const m_offset: usize = 0x0; // CVMixDataOffset
             };
             // Parent: None
             // Field count: 3
@@ -1391,12 +1590,14 @@ pub const cs2_dumper = struct {
                 pub const m_pSounds: usize = 0x20; // CUtlVector<CVoiceContainerBase*>
             };
             // Parent: None
-            // Field count: 1
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixFilterProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixFilterDesc_t
+                pub const m_desc: usize = 0x28; // VMixFilterDesc_t
+                pub const m_paramCutoffFreq: usize = 0x38; // CVMixParameterFloat
+                pub const m_paramQ: usize = 0x3C; // CVMixParameterFloat
             };
             // Parent: None
             // Field count: 1
@@ -1413,18 +1614,20 @@ pub const cs2_dumper = struct {
             // MGetKV3ClassDefaults
             // MPropertyFriendlyName
             pub const CVoiceContainerTapePlayer = struct {
-                pub const m_bShouldWraparound: usize = 0x80; // bool
-                pub const m_sourceAudio: usize = 0x88; // CStrongHandle<InfoForResourceTypeCVoiceContainerBase>
-                pub const m_flTapeSpeedAttackTime: usize = 0x90; // float32
-                pub const m_flTapeSpeedReleaseTime: usize = 0x94; // float32
+                pub const m_bShouldWraparound: usize = 0x88; // bool
+                pub const m_sourceAudio: usize = 0x90; // CStrongHandle<InfoForResourceTypeCVoiceContainerBase>
+                pub const m_flTapeSpeedAttackTime: usize = 0x98; // float32
+                pub const m_flTapeSpeedReleaseTime: usize = 0x9C; // float32
             };
             // Parent: None
-            // Field count: 1
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixSubgraphSwitchProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixSubgraphSwitchDesc_t
+                pub const m_desc: usize = 0x28; // VMixSubgraphSwitchDesc_t
+                pub const m_paramEffectName: usize = 0x60; // CVMixParameterEffectName
+                pub const m_paramSelectionIndex: usize = 0x64; // CVMixParameterFloat
             };
             // Parent: None
             // Field count: 4
@@ -1438,22 +1641,30 @@ pub const cs2_dumper = struct {
                 pub const m_flOutputGain: usize = 0xC; // float32
             };
             // Parent: None
-            // Field count: 0
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixSteamAudioPathingProcessorDesc = struct {
+                pub const m_paramPositionX: usize = 0x28; // CVMixParameterFloat
+                pub const m_paramPositionY: usize = 0x2C; // CVMixParameterFloat
+                pub const m_paramPositionZ: usize = 0x30; // CVMixParameterFloat
+                pub const m_paramPathingMixLevel: usize = 0x34; // CVMixParameterFloat
+                pub const m_paramBand: usize = 0x38; // CVMixParameterFloat
+                pub const m_paramArrayPathingEQ: usize = 0x3C; // CVMixDataOffset
+                pub const m_paramArrayPathingCoefficients: usize = 0x40; // CVMixDataOffset
             };
             // Parent: None
-            // Field count: 1
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixPannerProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixPannerDesc_t
+                pub const m_desc: usize = 0x28; // VMixPannerDesc_t
+                pub const m_paramPan: usize = 0x30; // CVMixParameterFloat
             };
             // Parent: None
-            // Field count: 9
+            // Field count: 11
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1466,23 +1677,36 @@ pub const cs2_dumper = struct {
                 pub const m_flReleaseTimeMS: usize = 0x14; // float32
                 pub const m_flRMSTimeMS: usize = 0x18; // float32
                 pub const m_flWetMix: usize = 0x1C; // float32
-                pub const m_bPeakMode: usize = 0x20; // bool
+                pub const m_flSCHighPassFreq: usize = 0x20; // float32
+                pub const m_bPeakMode: usize = 0x24; // bool
+                pub const m_bAutoMakeupGain: usize = 0x25; // bool
             };
             // Parent: None
-            // Field count: 0
+            // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CVMixHeap = struct {
+                pub const m_storage: usize = 0x0; // CUtlLeanVector<uint32>
+            };
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerVMixSnd = struct {
+                pub const m_resourceName: usize = 0x188; // CUtlString
             };
             // Parent: None
-            // Field count: 0
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixStereoDelayProcessorDesc = struct {
+                pub const m_paramDelayLeft: usize = 0x28; // CVMixParameterFloat
+                pub const m_paramDelayRight: usize = 0x2C; // CVMixParameterFloat
             };
             // Parent: None
             // Field count: 5
@@ -1495,6 +1719,11 @@ pub const cs2_dumper = struct {
                 pub const m_fldbOutputGain: usize = 0x8; // float32
                 pub const m_flWetMix: usize = 0xC; // float32
                 pub const m_nOversampleFactor: usize = 0x10; // int32
+            };
+            // Parent: None
+            // Field count: 1
+            pub const CVMixDataOffset = struct {
+                pub const m_nOffset: usize = 0x0; // uint32
             };
             // Parent: None
             // Field count: 3
@@ -1525,31 +1754,33 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerParameterBlender = struct {
-                pub const m_firstSound: usize = 0x70; // CSoundContainerReference
-                pub const m_secondSound: usize = 0x90; // CSoundContainerReference
-                pub const m_bEnableOcclusionBlend: usize = 0xB0; // bool
-                pub const m_curve1: usize = 0xB8; // CPiecewiseCurve
-                pub const m_curve2: usize = 0xF8; // CPiecewiseCurve
-                pub const m_bEnableDistanceBlend: usize = 0x138; // bool
-                pub const m_curve3: usize = 0x140; // CPiecewiseCurve
-                pub const m_curve4: usize = 0x180; // CPiecewiseCurve
+                pub const m_firstSound: usize = 0x78; // CSoundContainerReference
+                pub const m_secondSound: usize = 0x98; // CSoundContainerReference
+                pub const m_bEnableOcclusionBlend: usize = 0xB8; // bool
+                pub const m_curve1: usize = 0xC0; // CPiecewiseCurve
+                pub const m_curve2: usize = 0x100; // CPiecewiseCurve
+                pub const m_bEnableDistanceBlend: usize = 0x140; // bool
+                pub const m_curve3: usize = 0x148; // CPiecewiseCurve
+                pub const m_curve4: usize = 0x188; // CPiecewiseCurve
             };
             // Parent: None
-            // Field count: 2
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixAudioMeter = struct {
                 pub const m_name: usize = 0x0; // CUtlString
                 pub const m_displayName: usize = 0x8; // CUtlString
+                pub const m_nDebugId: usize = 0x10; // uint32
             };
             // Parent: None
-            // Field count: 1
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixVocoderProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixVocoderDesc_t
+                pub const m_desc: usize = 0x28; // VMixVocoderDesc_t
+                pub const m_paramBandwidth: usize = 0x50; // CVMixParameterFloat
             };
             // Parent: None
             // Field count: 5
@@ -1572,7 +1803,7 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerAmpedDecayingSineWave = struct {
-                pub const m_flGainAmount: usize = 0x78; // float32
+                pub const m_flGainAmount: usize = 0x80; // float32
             };
             // Parent: None
             // Field count: 8
@@ -1620,7 +1851,7 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixPlateReverbProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixPlateverbDesc_t
+                pub const m_desc: usize = 0x28; // VMixPlateverbDesc_t
             };
             // Parent: None
             // Field count: 3
@@ -1630,18 +1861,17 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerMultiBlender = struct {
-                pub const m_soundsToPlay: usize = 0x70; // CSoundContainerReferenceArray
-                pub const m_flBlendFactor: usize = 0xA8; // float32
-                pub const m_flCrossover: usize = 0xAC; // float32
+                pub const m_soundsToPlay: usize = 0x78; // CSoundContainerReferenceArray
+                pub const m_flBlendFactor: usize = 0xB0; // float32
+                pub const m_flCrossover: usize = 0xB4; // float32
             };
             // Parent: None
-            // Field count: 2
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixVsndInput = struct {
-                pub const m_defaultValue: usize = 0x10; // CUtlString
-                pub const m_nProcessor: usize = 0x18; // int32
+                pub const m_defaultValue: usize = 0x0; // CUtlString
             };
             // Parent: None
             // Field count: 4
@@ -1653,6 +1883,14 @@ pub const cs2_dumper = struct {
                 pub const m_nInstancesAtMinVolume: usize = 0x4; // int32
                 pub const m_flMaxVolume: usize = 0x8; // float32
                 pub const m_nInstancesAtMaxVolume: usize = 0xC; // int32
+            };
+            // Parent: None
+            // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CVMixParameterEffectName = struct {
+                pub const m_offset: usize = 0x0; // CVMixDataOffset
             };
             // Parent: None
             // Field count: 2
@@ -1679,9 +1917,9 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerSelector = struct {
-                pub const m_mode: usize = 0x70; // PlayBackMode_t
-                pub const m_soundsToPlay: usize = 0x78; // CSoundContainerReferenceArray
-                pub const m_fProbabilityWeights: usize = 0xB0; // CUtlVector<float32>
+                pub const m_mode: usize = 0x78; // PlayBackMode_t
+                pub const m_soundsToPlay: usize = 0x80; // CSoundContainerReferenceArray
+                pub const m_fProbabilityWeights: usize = 0xB8; // CUtlVector<float32>
             };
             // Parent: None
             // Field count: 1
@@ -1690,6 +1928,14 @@ pub const cs2_dumper = struct {
             // MGetKV3ClassDefaults
             pub const SndBeatEventKeyedSndEvts_t = struct {
                 pub const m_strSoundEventName: usize = 0x10; // CUtlString
+            };
+            // Parent: None
+            // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CVMixGraphInput = struct {
+                pub const m_nOffset: usize = 0x10; // CVMixDataOffset
             };
             // Parent: None
             // Field count: 2
@@ -1728,12 +1974,15 @@ pub const cs2_dumper = struct {
                 pub const m_bSaveToGroup: usize = 0x28; // bool
             };
             // Parent: None
-            // Field count: 1
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixDualCompressorProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixDualCompressorDesc_t
+                pub const m_desc: usize = 0x28; // VMixDualCompressorDesc_t
+                pub const m_outParamLevel: usize = 0x5C; // CVMixParameterFloat
+                pub const m_outParamdBLevel: usize = 0x60; // CVMixParameterFloat
+                pub const m_outParamReduction: usize = 0x64; // CVMixParameterFloat
             };
             // Parent: None
             // Field count: 1
@@ -1743,7 +1992,7 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerSwitch = struct {
-                pub const m_soundsToPlay: usize = 0x70; // CUtlVector<CSoundContainerReference>
+                pub const m_soundsToPlay: usize = 0x78; // CUtlVector<CSoundContainerReference>
             };
             // Parent: None
             // Field count: 1
@@ -1751,7 +2000,7 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixControlMeter = struct {
-                pub const m_nValueIndex: usize = 0x10; // int32
+                pub const m_nValueIndex: usize = 0x10; // CVMixDataOffset
             };
             // Parent: None
             // Field count: 3
@@ -1761,9 +2010,9 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerEnum = struct {
-                pub const m_soundsToPlay: usize = 0x70; // CSoundContainerReferenceArray
-                pub const m_iSelection: usize = 0xA8; // int32
-                pub const m_flCrossfadeTime: usize = 0xAC; // float32
+                pub const m_soundsToPlay: usize = 0x78; // CSoundContainerReferenceArray
+                pub const m_iSelection: usize = 0xB0; // int32
+                pub const m_flCrossfadeTime: usize = 0xB4; // float32
             };
             // Parent: None
             // Field count: 1
@@ -1812,11 +2061,11 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerLoopTrigger = struct {
-                pub const m_flRetriggerTimeMin: usize = 0x70; // float32
-                pub const m_flRetriggerTimeMax: usize = 0x74; // float32
-                pub const m_flFadeTime: usize = 0x78; // float32
-                pub const m_bCrossFade: usize = 0x7C; // bool
-                pub const m_sound: usize = 0x80; // CSoundContainerReference
+                pub const m_flRetriggerTimeMin: usize = 0x78; // float32
+                pub const m_flRetriggerTimeMax: usize = 0x7C; // float32
+                pub const m_flFadeTime: usize = 0x80; // float32
+                pub const m_bCrossFade: usize = 0x84; // bool
+                pub const m_sound: usize = 0x88; // CSoundContainerReference
             };
             // Parent: None
             // Field count: 1
@@ -1835,16 +2084,18 @@ pub const cs2_dumper = struct {
             // MPropertyFriendlyName
             // MPropertyDescription
             pub const CVoiceContainerDecayingSineWave = struct {
-                pub const m_flFrequency: usize = 0x70; // float32
-                pub const m_flDecayTime: usize = 0x74; // float32
+                pub const m_flFrequency: usize = 0x78; // float32
+                pub const m_flDecayTime: usize = 0x7C; // float32
             };
             // Parent: None
-            // Field count: 1
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixDelayProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixDelayDesc_t
+                pub const m_desc: usize = 0x28; // VMixDelayDesc_t
+                pub const m_paramCutoffFrequency: usize = 0x50; // CVMixParameterFloat
+                pub const m_paramDelay: usize = 0x54; // CVMixParameterFloat
             };
             // Parent: None
             // Field count: 1
@@ -1852,7 +2103,7 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixBoxverb2ProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixBoxverbDesc_t
+                pub const m_desc: usize = 0x28; // VMixBoxverbDesc_t
             };
             // Parent: None
             // Field count: 6
@@ -1860,15 +2111,15 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const VMixFilterDesc_t = struct {
-                pub const m_nFilterType: usize = 0x0; // VMixFilterType_t
-                pub const m_nFilterSlope: usize = 0x2; // VMixFilterSlope_t
-                pub const m_bEnabled: usize = 0x3; // bool
-                pub const m_fldbGain: usize = 0x4; // float32
-                pub const m_flCutoffFreq: usize = 0x8; // float32
-                pub const m_flQ: usize = 0xC; // float32
+                pub const m_fldbGain: usize = 0x0; // float32
+                pub const m_flCutoffFreq: usize = 0x4; // float32
+                pub const m_flQ: usize = 0x8; // float32
+                pub const m_nFilterType: usize = 0xC; // VMixFilterType_t
+                pub const m_nFilterSlope: usize = 0xD; // VMixFilterSlope_t
+                pub const m_bEnabled: usize = 0xE; // bool
             };
             // Parent: None
-            // Field count: 15
+            // Field count: 17
             //
             // Metadata:
             // MPropertyArrayElementNameKey
@@ -1876,20 +2127,29 @@ pub const cs2_dumper = struct {
             // MGetKV3ClassDefaults
             pub const CSndBeatPattern = struct {
                 pub const m_name: usize = 0x0; // CUtlString
-                pub const m_launchSyncType: usize = 0xC; // SndBeatLaunchSyncType_t
-                pub const m_flSyncPriority: usize = 0x10; // float32
-                pub const m_timeSignature: usize = 0x14; // SndBeatTimeSignature_t
-                pub const m_flLength: usize = 0x1C; // float32
-                pub const m_bLooping: usize = 0x20; // bool
-                pub const m_launchSyncEventType: usize = 0x24; // SndBeatEventType_t
-                pub const m_flSyncBeatMult: usize = 0x28; // float32
-                pub const m_playEventType: usize = 0x2C; // SndBeatEventType_t
-                pub const m_flPlayBeatMult: usize = 0x30; // float32
-                pub const m_keyType: usize = 0x34; // SndBeatKeyType_t
+                pub const m_flSyncPriority: usize = 0xC; // float32
+                pub const m_syncStartType: usize = 0x10; // SndBeatSyncStartType_t
+                pub const m_syncType: usize = 0x14; // SndBeatSyncType_t
+                pub const m_timeSignature: usize = 0x18; // SndBeatTimeSignature_t
+                pub const m_flLength: usize = 0x20; // float32
+                pub const m_bLooping: usize = 0x24; // bool
+                pub const m_playEventType: usize = 0x28; // SndBeatEventType_t
+                pub const m_flPlayBeatMult: usize = 0x2C; // float32
+                pub const m_playKeyType: usize = 0x30; // SndBeatKeyType_t
                 pub const m_vecPatternKeys: usize = 0x38; // CUtlVector<SndBeatEventKeys_t>
                 pub const m_vecPatternFloats: usize = 0x50; // CUtlVector<SndBeatEventKeyedFloats_t>
                 pub const m_vecPatternSndEvts: usize = 0x68; // CUtlVector<SndBeatEventKeyedSndEvts_t>
                 pub const m_vecPatternMidi: usize = 0x80; // CUtlVector<SndBeatEventKeyedMidiNotes_t>
+                pub const m_syncEventType: usize = 0x98; // SndBeatEventType_t
+                pub const m_flSyncBeatMult: usize = 0x9C; // float32
+                pub const m_vecSyncPatternKeys: usize = 0xA0; // CUtlVector<SndBeatEventKeys_t>
+            };
+            // Parent: None
+            // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CSubmix = struct {
             };
             // Parent: None
             // Field count: 3
@@ -1907,7 +2167,7 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CVMixAutoFilterProcessorDesc = struct {
-                pub const m_desc: usize = 0x20; // VMixAutoFilterDesc_t
+                pub const m_desc: usize = 0x28; // VMixAutoFilterDesc_t
             };
             // Parent: None
             // Field count: 0
