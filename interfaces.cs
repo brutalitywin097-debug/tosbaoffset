@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-10-29 00:49:13.643745100 UTC
+// 2026-10-31 00:57:05.660540400 UTC
 
 namespace CS2Dumper.Interfaces {
     // Module: animationsystem.dll
@@ -177,7 +177,7 @@ namespace CS2Dumper.Interfaces {
         public const nint SoundOpSystem001 = 0x532B20;
         public const nint SoundOpSystemEdit001 = 0x532A30;
         public const nint SoundSystem001 = 0x532420;
-        public const nint VMixEditTool001 = 0x5941C0F;
+        public const nint VMixEditTool001 = 0x5941C1F;
     }
     // Module: steamaudio.dll
     public static class SteamaudioDll {
@@ -193,10 +193,6 @@ namespace CS2Dumper.Interfaces {
     // Module: v8system.dll
     public static class V8systemDll {
         public const nint Source2V8System001 = 0x34790;
-    }
-    // Module: vconcomm.dll
-    public static class VconcommDll {
-        public const nint VConComm001 = 0x3C750;
     }
     // Module: vphysics2.dll
     public static class Vphysics2Dll {
