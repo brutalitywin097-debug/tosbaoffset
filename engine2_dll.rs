@@ -1,5 +1,5 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2026-10-31 00:57:05.660540400 UTC
+﻿// Generated using https://github.com/SelfC0de/CS2-All-Dumps-Offsets
+// 2026-11-12 08:33:41.7308395 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -21,7 +21,7 @@ pub mod cs2_dumper {
             // Member count: 4
             #[repr(u32)]
             pub enum EntityIOTargetType_t {
-                ENTITY_IO_TARGET_INVALID = u32::MAX,
+                ENTITY_IO_TARGET_INVALID = 0xFFFFFFFFFFFFFFFF,
                 ENTITY_IO_TARGET_ENTITYNAME = 0x2,
                 ENTITY_IO_TARGET_EHANDLE = 0x6,
                 ENTITY_IO_TARGET_ENTITYNAME_OR_CLASSNAME = 0x7
@@ -39,17 +39,11 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod CScriptComponent {
                 pub const m_scriptClassName: usize = 0x30; // CUtlSymbolLarge
             }
             // Parent: None
             // Field count: 12
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod CEntityIdentity {
                 pub const m_nameStringTableIndex: usize = 0x14; // int32
                 pub const m_name: usize = 0x18; // CUtlSymbolLarge
@@ -125,9 +119,6 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 10
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod EntityIOQueuePrioritizedEvent_t {
                 pub const m_flFireTime: usize = 0x4; // GameTime_t
                 pub const m_targetType: usize = 0x8; // EntityIOTargetType_t
@@ -347,9 +338,10 @@ pub mod cs2_dumper {
                 pub const m_nRenderHeight: usize = 0x24; // int32
             }
             // Parent: None
-            // Field count: 1
+            // Field count: 2
             pub mod EventClientPollNetworking_t {
                 pub const m_nTickCount: usize = 0x0; // int32
+                pub const m_nTotalTicks: usize = 0x4; // int32
             }
             // Parent: None
             // Field count: 1
@@ -376,3 +368,4 @@ pub mod cs2_dumper {
         }
     }
 }
+

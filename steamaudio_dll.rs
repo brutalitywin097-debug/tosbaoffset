@@ -1,5 +1,5 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2026-10-31 00:57:05.660540400 UTC
+﻿// Generated using https://github.com/SelfC0de/CS2-All-Dumps-Offsets
+// 2026-11-12 08:33:41.7308395 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -11,9 +11,6 @@ pub mod cs2_dumper {
         pub mod steamaudio_dll {
             // Parent: None
             // Field count: 3
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod SteamAudioReverbClusteringSettings_t {
                 pub const m_bEnableClustering: usize = 0x0; // bool
                 pub const m_nCubeMapResolution: usize = 0x4; // int32
@@ -21,9 +18,6 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 5
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod SteamAudioCustomDataDimensionsSettings_t {
                 pub const m_nAmbisonicsOrderOutsideField: usize = 0x0; // int32
                 pub const m_nAmbisonicsOrderInsideSizeField: usize = 0x4; // int32
@@ -33,9 +27,6 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 4
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod SteamAudioPathSettings_t {
                 pub const m_nNumVisSamples: usize = 0x0; // int32
                 pub const m_flProbeVisRadius: usize = 0x4; // float32
@@ -44,17 +35,11 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod CSteamAudioAmbisonicsField {
                 pub const m_field: usize = 0x0; // CUtlVector<float32>
             }
             // Parent: None
             // Field count: 3
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod CSteamAudioBakedPathingData {
                 pub const m_nBands: usize = 0x0; // int32
                 pub const m_probes: usize = 0x8; // CSteamAudioProbeData
@@ -62,9 +47,6 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 5
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod SteamAudioReverbSettings_t {
                 pub const m_nNumRays: usize = 0x0; // int32
                 pub const m_nNumBounces: usize = 0x4; // int32
@@ -74,26 +56,17 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod CSteamAudioProbeData {
                 pub const m_pProbeBatch: usize = 0x0; // IPLProbeBatch
             }
             // Parent: None
             // Field count: 2
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod SteamAudioReverbCompressionSettings_t {
                 pub const m_bEnableCompression: usize = 0x0; // bool
                 pub const m_flQuality: usize = 0x4; // float32
             }
             // Parent: None
             // Field count: 3
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod CSteamAudioBakedMaterialsData {
                 pub const m_probes: usize = 0x0; // CSteamAudioProbeData
                 pub const m_vecMaterialTokens: usize = 0x8; // CUtlVector<uint32>
@@ -101,9 +74,6 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 5
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod CSteamAudioBakedOcclusionData {
                 pub const m_settings: usize = 0x0; // SteamAudioCustomDataOcclusionSettings_t
                 pub const m_probes: usize = 0x10; // CSteamAudioProbeData
@@ -113,9 +83,6 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 12
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod CSteamAudioBakedReverbData {
                 pub const m_nBands: usize = 0x0; // int32
                 pub const m_scene: usize = 0x8; // CSteamAudioSceneData
@@ -132,9 +99,6 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 4
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod CSteamAudioProbeLineSegment {
                 pub const m_vStart: usize = 0x0; // Vector
                 pub const m_vEnd: usize = 0xC; // Vector
@@ -143,9 +107,6 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 4
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod SteamAudioCustomDataOcclusionSettings_t {
                 pub const m_bEnablePathing: usize = 0x0; // bool
                 pub const m_bEnableReflections: usize = 0x1; // bool
@@ -154,9 +115,6 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 7
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod CSteamAudioBakedDimensionsData {
                 pub const m_settings: usize = 0x0; // SteamAudioCustomDataDimensionsSettings_t
                 pub const m_probes: usize = 0x18; // CSteamAudioProbeData
@@ -168,18 +126,12 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 2
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod CSteamAudioSceneData {
                 pub const m_pScene: usize = 0x0; // IPLScene
                 pub const m_pStaticMesh: usize = 0x8; // IPLStaticMesh
             }
             // Parent: None
             // Field count: 7
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod CSteamAudioProbeGrid {
                 pub const m_aabb: usize = 0x0; // AABB_t
                 pub const m_flSpacing: usize = 0x18; // float32
@@ -191,9 +143,6 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 8
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
             pub mod CSteamAudioCompressedReverb {
                 pub const m_nChannels: usize = 0x0; // int32
                 pub const m_nBands: usize = 0x4; // int32
@@ -207,3 +156,4 @@ pub mod cs2_dumper {
         }
     }
 }
+
