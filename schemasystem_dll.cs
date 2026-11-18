@@ -1,5 +1,5 @@
-﻿// Generated using https://github.com/SelfC0de/CS2-All-Dumps-Offsets
-// 2026-11-12 08:33:41.7308395 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2026-11-18 04:47:40.949652200 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: schemasystem.dll
@@ -8,7 +8,7 @@ namespace CS2Dumper.Schemas {
     public static class SchemasystemDll {
         // Alignment: 1
         // Member count: 84
-        public enum fieldtype_t : uint {
+        public enum fieldtype_t : byte {
             FIELD_VOID = 0x0,
             FIELD_FLOAT32 = 0x1,
             FIELD_STRING = 0x2,
@@ -103,6 +103,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCResourceManifestInternal {
         }
         // Parent: None
@@ -134,16 +137,25 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CExampleSchemaVData_PolymorphicDerivedA {
             public const nint m_nDerivedA = 0x10; // int32
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CExampleSchemaVData_PolymorphicBase {
             public const nint m_nBase = 0x8; // int32
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CExampleSchemaVData_PolymorphicDerivedB {
             public const nint m_nDerivedB = 0x10; // int32
         }
@@ -154,10 +166,12 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CExampleSchemaVData_Monomorphic {
             public const nint m_nExample1 = 0x0; // int32
             public const nint m_nExample2 = 0x4; // int32
         }
     }
 }
-

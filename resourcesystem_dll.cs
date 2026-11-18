@@ -1,5 +1,5 @@
-﻿// Generated using https://github.com/SelfC0de/CS2-All-Dumps-Offsets
-// 2026-11-12 08:33:41.7308395 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2026-11-18 04:47:40.949652200 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: resourcesystem.dll
@@ -35,7 +35,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 9
-        public enum FuseVariableType_t : uint {
+        public enum FuseVariableType_t : byte {
             INVALID = 0x0,
             BOOL = 0x1,
             INT8 = 0x2,
@@ -48,12 +48,15 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 2
-        public enum FuseVariableAccess_t : uint {
+        public enum FuseVariableAccess_t : byte {
             WRITABLE = 0x0,
             READ_ONLY = 0x1
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCResponseRulesList {
         }
         // Parent: None
@@ -64,14 +67,23 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCDotaItemDefinitionResource {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCMorphSetData {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCVSoundStackScriptList {
         }
         // Parent: None
@@ -82,14 +94,23 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCVPhysXSurfacePropertiesList {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeManifestTestResource_t {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class ConstantInfo_t {
             public const nint m_name = 0x0; // CUtlString
             public const nint m_nameToken = 0x8; // CUtlStringToken
@@ -102,18 +123,30 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCGcExportableExternalData {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeIAnimGraphModelBinding {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCJavaScriptResource {
         }
         // Parent: None
         // Field count: 6
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CFuseSymbolTable {
             public const nint m_constants = 0x0; // CUtlVector<ConstantInfo_t>
             public const nint m_variables = 0x18; // CUtlVector<VariableInfo_t>
@@ -124,30 +157,51 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCRenderMesh {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCVoxelVisibility {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeISmartProp {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCPhysAggregateData {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCNmClip {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeWorld_t {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeProceduralTestResource_t {
         }
         // Parent: None
@@ -158,10 +212,16 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCPostProcessingResource {
         }
         // Parent: None
         // Field count: 6
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VariableInfo_t {
             public const nint m_name = 0x0; // CUtlString
             public const nint m_nameToken = 0x8; // CUtlStringToken
@@ -172,6 +232,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeIParticleSnapshot {
         }
         // Parent: None
@@ -184,58 +247,100 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCPanoramaLayout {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCTypeScriptResource {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCChoreoSceneResource {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCNmSkeleton {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCTestResourceData {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCAnimationGroup {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCVSoundEventScriptList {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCVoiceContainerBase {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCPanoramaStyle {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCWorldNode {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCSurfaceGraph {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCCSGOEconItem {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCNmGraphDefinition {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CFuseProgram {
             public const nint m_programBuffer = 0x0; // CUtlVector<uint8>
             public const nint m_variablesRead = 0x18; // CUtlVector<FuseVariableIndex_t>
@@ -244,38 +349,65 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCCompositeMaterialKit {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCAnimData {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeIMaterial2 {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCVDSPResource {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeIVectorGraphic {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCPanoramaDynamicImages {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeIPulseGraphDef {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCVDataItemDefs {
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class FunctionInfo_t {
             public const nint m_name = 0x8; // CUtlString
             public const nint m_nameToken = 0x10; // CUtlStringToken
@@ -285,10 +417,16 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCVDataResource {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class NoiseOscillatorDef_t {
             public const nint m_flPhase = 0x0; // float32
             public const nint m_flFrequency = 0x4; // float32
@@ -296,14 +434,23 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCModel {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCDOTANovelsList {
         }
         // Parent: None
         // Field count: 12
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class NoiseStreamDef_t {
             public const nint m_nType = 0x0; // NoiseStreamType_t
             public const nint m_nModifier = 0x4; // NoiseStreamModifier_t
@@ -320,6 +467,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCTextureBase {
         }
         // Parent: None
@@ -329,26 +479,40 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeIParticleSystemDefinition {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCSequenceGroupData {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class ManifestTestResource_t {
             public const nint m_name = 0x0; // CUtlString
             public const nint m_child = 0x8; // CStrongHandle<InfoForResourceTypeManifestTestResource_t>
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCEntityLump {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeCDOTAPatchNotesList {
         }
     }
 }
-

@@ -1,5 +1,5 @@
-﻿// Generated using https://github.com/SelfC0de/CS2-All-Dumps-Offsets
-// 2026-11-12 08:33:41.7308395 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2026-11-18 04:47:40.949652200 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: soundsystem.dll
@@ -8,7 +8,7 @@ namespace CS2Dumper.Schemas {
     public static class SoundsystemDll {
         // Alignment: 1
         // Member count: 2
-        public enum VMixUpMixRule_t : uint {
+        public enum VMixUpMixRule_t : byte {
             DIVIDE = 0x0,
             BROADCAST = 0x1
         }
@@ -39,7 +39,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 34
         public enum VMixGraphCommandID_t : uint {
-            CMD_INVALID = 0xFFFFFFFFFFFFFFFF,
+            CMD_INVALID = unchecked((uint)-1),
             CMD_CONTROL_CONVERT_DB_TO_GAIN = 0x1,
             CMD_CONTROL_TRANSIENT_INPUT_STORE = 0x2,
             CMD_CONTROL_TRANSIENT_INPUT_RESET = 0x3,
@@ -76,7 +76,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 5
-        public enum EWaveform : uint {
+        public enum EWaveform : byte {
             Sine = 0x0,
             Square = 0x1,
             Saw = 0x2,
@@ -85,7 +85,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 6
-        public enum VMixFilterChannelSet_t : uint {
+        public enum VMixFilterChannelSet_t : byte {
             FILTER_ALL_CHANNELS = 0x0,
             FILTER_LEFT_ONLY = 0x1,
             FILTER_RIGHT_ONLY = 0x2,
@@ -121,7 +121,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 5
-        public enum VMixMixDownRule_t : uint {
+        public enum VMixMixDownRule_t : byte {
             SUM = 0x0,
             LEFT = 0x1,
             RIGHT = 0x2,
@@ -130,8 +130,8 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 10
-        public enum VMixFilterType_t : uint {
-            FILTER_UNKNOWN = 0xFFFFFFFFFFFFFFFF,
+        public enum VMixFilterType_t : byte {
+            FILTER_UNKNOWN = unchecked((byte)-1),
             FILTER_LOWPASS = 0x0,
             FILTER_HIGHPASS = 0x1,
             FILTER_BANDPASS = 0x2,
@@ -150,8 +150,8 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 2
         // Member count: 10
-        public enum VMixSendOperator_t : uint {
-            NO_VOICES = 0xFFFFFFFFFFFFFFFF,
+        public enum VMixSendOperator_t : ushort {
+            NO_VOICES = unchecked((ushort)-1),
             ALL_VOICES = 0x0,
             ROOM_VOICES = 0x1,
             FACING_VOICES = 0x2,
@@ -279,7 +279,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 13
-        public enum EMidiNote : uint {
+        public enum EMidiNote : byte {
             C = 0x0,
             C_Sharp = 0x1,
             D = 0x2,
@@ -296,7 +296,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 14
-        public enum VMixAutoControlType_t : uint {
+        public enum VMixAutoControlType_t : byte {
             VMIX_AUTO_SEND_LEVEL = 0x0,
             VMIX_AUTO_STACK_VAR = 0x1,
             VMIX_AUTO_PLAYTIME = 0x2,
@@ -314,7 +314,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 4
-        public enum CVSoundFormat_t : uint {
+        public enum CVSoundFormat_t : byte {
             PCM16 = 0x0,
             PCM8 = 0x1,
             MP3 = 0x2,
@@ -322,7 +322,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 9
-        public enum VMixFilterSlope_t : uint {
+        public enum VMixFilterSlope_t : byte {
             FILTER_SLOPE_1POLE_6dB = 0x0,
             FILTER_SLOPE_1POLE_12dB = 0x1,
             FILTER_SLOPE_1POLE_18dB = 0x2,
@@ -381,11 +381,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixInputBase {
             public const nint m_name = 0x0; // CUtlString
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerBlender {
             public const nint m_firstSound = 0x78; // CSoundContainerReference
             public const nint m_secondSound = 0x98; // CSoundContainerReference
@@ -393,12 +401,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixPitchShiftProcessorDesc {
             public const nint m_desc = 0x28; // VMixPitchShiftDesc_t
             public const nint m_paramPitchScale = 0x38; // CVMixParameterFloat
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixFreeverbDesc_t {
             public const nint m_flRoomSize = 0x0; // float32
             public const nint m_flDamp = 0x4; // float32
@@ -407,7 +421,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 7
-        public static class CVoiceContainerStaticAdditiveSynth::CHarmonic {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CVoiceContainerStaticAdditiveSynth__CHarmonic {
             public const nint m_nWaveform = 0x0; // EWaveform
             public const nint m_nFundamental = 0x1; // EMidiNote
             public const nint m_nOctave = 0x4; // int32
@@ -418,6 +435,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 9
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVsndTriggerSlot {
             public const nint m_bEnableVsnd = 0x0; // bool
             public const nint m_vsnd = 0x8; // CSoundContainerReference
@@ -431,13 +451,20 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
-        public static class CVoiceContainerStaticAdditiveSynth::CTone {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CVoiceContainerStaticAdditiveSynth__CTone {
             public const nint m_harmonics = 0x0; // CUtlVector<CVoiceContainerStaticAdditiveSynth::CHarmonic>
             public const nint m_curve = 0x18; // CPiecewiseCurve
             public const nint m_bSyncInstances = 0x58; // bool
         }
         // Parent: None
         // Field count: 6
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class CSosGroupActionOcclusionSchema {
             public const nint m_flCalculationInterval = 0x8; // float32
             public const nint m_flRadius = 0xC; // float32
@@ -448,6 +475,11 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 6
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerRandomSampler {
             public const nint m_flAmplitude = 0x88; // float32
             public const nint m_flAmplitudeJitter = 0x8C; // float32
@@ -458,6 +490,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 25
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixSteamAudioDirectProcessorDesc {
             public const nint m_paramPositionX = 0x28; // CVMixParameterFloat
             public const nint m_paramPositionY = 0x2C; // CVMixParameterFloat
@@ -487,6 +522,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 9
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixSteamAudioHRTFProcessorDesc {
             public const nint m_paramPositionX = 0x28; // CVMixParameterFloat
             public const nint m_paramPositionY = 0x2C; // CVMixParameterFloat
@@ -500,10 +538,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerDefault {
         }
         // Parent: None
         // Field count: 9
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVSound {
             public const nint m_Sentences = 0x0; // CUtlLeanVector<CAudioSentence>
             public const nint m_nRate = 0x10; // int32
@@ -517,11 +563,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MVDataNodeType
         public static class CDSPPresetMixgroupModifierTable {
             public const nint m_table = 0x0; // CUtlVector<CDspPresetModifierList>
         }
         // Parent: None
         // Field count: 7
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class CSosGroupActionSoundeventClusterSchema {
             public const nint m_nMinNearby = 0x8; // int32
             public const nint m_flClusterEpsilon = 0xC; // float32
@@ -533,6 +587,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class CSosGroupActionSetSoundeventParameterSchema {
             public const nint m_nMaxCount = 0x8; // int32
             public const nint m_flMinValue = 0xC; // float32
@@ -542,6 +600,11 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CSoundContainerReference {
             public const nint m_namespace = 0x0; // CUtlString
             public const nint m_bUseReference = 0x8; // bool
@@ -550,10 +613,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerNull {
         }
         // Parent: None
         // Field count: 6
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixSubgraphSwitchDesc_t {
             public const nint m_name = 0x0; // CUtlString
             public const nint m_effectName = 0x8; // CUtlString
@@ -564,11 +635,21 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MVDataNodeType
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerAnalysisBase {
             public const nint m_curve = 0x8; // CPiecewiseCurve
         }
         // Parent: None
         // Field count: 10
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class CSosGroupActionSoundeventMinMaxValuesSchema {
             public const nint m_strQueryPublicFieldName = 0x8; // CUtlString
             public const nint m_strDelayPublicFieldName = 0x10; // CUtlString
@@ -583,6 +664,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixEnvelopeProcessorDesc {
             public const nint m_desc = 0x28; // VMixEnvelopeDesc_t
             public const nint m_outParamLevel = 0x34; // CVMixParameterFloat
@@ -590,6 +674,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 8
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixCommand {
             public const nint m_nCommand = 0x0; // VMixGraphCommandID_t
             public const nint m_nParameterNameHash = 0x4; // uint32
@@ -607,16 +694,25 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixControlInput {
             public const nint m_flDefaultValue = 0x10; // float32
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixBoxverbProcessorDesc {
             public const nint m_desc = 0x28; // VMixBoxverbDesc_t
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixDynamicsCompressorProcessorDesc {
             public const nint m_desc = 0x28; // VMixDynamicsCompressorDesc_t
             public const nint m_outParamLevel = 0x50; // CVMixParameterFloat
@@ -625,12 +721,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixPannerDesc_t {
             public const nint m_type = 0x0; // VMixPannerType_t
             public const nint m_flStrength = 0x4; // float32
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class CSosGroupActionSoundeventPrioritySchema {
             public const nint m_priorityValue = 0x8; // CUtlString
             public const nint m_priorityVolumeScalar = 0x10; // CUtlString
@@ -639,6 +742,11 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerRealtimeFMSineWave {
             public const nint m_flCarrierFrequency = 0x78; // float32
             public const nint m_flModulatorFrequency = 0x7C; // float32
@@ -646,11 +754,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class SelectedEditItemInfo_t {
             public const nint m_EditItems = 0x0; // CUtlVector<SosEditItemInfo_t>
         }
         // Parent: None
         // Field count: 9
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixModDelayDesc_t {
             public const nint m_feedbackFilter = 0x0; // VMixFilterDesc_t
             public const nint m_bPhaseInvert = 0x10; // bool
@@ -664,10 +778,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class CSndSeqInstSndEvtSchema {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixNameInputMeter {
             public const nint m_nValueIndex = 0x10; // CVMixDataOffset
         }
@@ -677,11 +798,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixDynamics3BandProcessorDesc {
             public const nint m_desc = 0x28; // VMixDynamics3BandDesc_t
         }
         // Parent: None
         // Field count: 17
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixBoxverbDesc_t {
             public const nint m_flSizeMax = 0x0; // float32
             public const nint m_flSizeMin = 0x4; // float32
@@ -703,10 +830,16 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CSosGroupActionSchema {
         }
         // Parent: None
         // Field count: 16
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CSosSoundEventGroupSchema {
             public const nint m_nGroupType = 0x8; // SosGroupType_t
             public const nint m_bBlocksEvents = 0xC; // bool
@@ -727,6 +860,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 11
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class CSndSeqInstMidiSampler {
             public const nint m_bIsSoundEvent = 0x20; // bool
             public const nint m_bStopPrevious = 0x21; // bool
@@ -742,12 +879,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixPointerFixupEntry_t {
             public const nint m_nIndex = 0x0; // uint32
             public const nint m_offset = 0x4; // CVMixDataOffset
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CSndSeqInstBaseSchema {
             public const nint m_nType = 0x8; // SndSeqInstrumentType_t
             public const nint m_bStopCurrentEvents = 0xE; // bool
@@ -757,6 +900,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 10
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixDynamics3BandDesc_t {
             public const nint m_fldbGainOutput = 0x0; // float32
             public const nint m_flRMSTimeMS = 0x4; // float32
@@ -771,12 +917,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixEQ8ProcessorDesc {
             public const nint m_desc = 0x28; // VMixEQ8Desc_t
             public const nint m_paramEQScale = 0xC8; // CVMixParameterFloat
         }
         // Parent: None
         // Field count: 6
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CDSPMixgroupModifier {
             public const nint m_mixgroup = 0x0; // CUtlString
             public const nint m_flModifier = 0x8; // float32
@@ -787,6 +939,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 6
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CAudioMorphData {
             public const nint m_times = 0x0; // CUtlVector<float32>
             public const nint m_nameHashCodes = 0x18; // CUtlVector<uint32>
@@ -797,11 +952,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class SndBeatEventKeyedFloats_t {
             public const nint m_flFloat = 0x10; // float32
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixDualCompressorDesc_t {
             public const nint m_flRMSTimeMS = 0x0; // float32
             public const nint m_fldbKneeWidth = 0x4; // float32
@@ -811,6 +972,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixRuntimeGraph {
             public const nint m_submixes = 0xD0; // CUtlLeanVector<CVMixSubmix>
             public const nint m_impulseResponseValues = 0xE0; // CUtlLeanVector<uint64>
@@ -820,11 +984,21 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerStaticAdditiveSynth {
             public const nint m_tones = 0x88; // CUtlVector<CVoiceContainerStaticAdditiveSynth::CTone>
         }
         // Parent: None
         // Field count: 9
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerShapedNoise {
             public const nint m_bUseCurveForFrequency = 0x78; // bool
             public const nint m_flFrequency = 0x7C; // float32
@@ -838,12 +1012,22 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CDspPresetModifierList {
             public const nint m_dspName = 0x0; // CUtlString
             public const nint m_modifiers = 0x8; // CUtlVector<CDSPMixgroupModifier>
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MVDataNodeType
+        // MVDataFileExtension
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerBase {
             public const nint m_bRegisteredVMix = 0x10; // bool
             public const nint m_nResourceName = 0x14; // CUtlStringToken
@@ -852,16 +1036,27 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixDiffusorProcessorDesc {
             public const nint m_desc = 0x28; // VMixDiffusorDesc_t
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixUtilityProcessorDesc {
             public const nint m_desc = 0x28; // VMixUtilityDesc_t
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CRandomPannerControls {
             public const nint m_panningControlInputName = 0x0; // CUtlString
             public const nint m_volumeControlInputName = 0x8; // CUtlString
@@ -871,6 +1066,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 8
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class CVoiceContainerGranulator {
             public const nint m_flGrainLength = 0x88; // float32
             public const nint m_flGrainCrossfadeAmount = 0x8C; // float32
@@ -883,12 +1082,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixPresetDSPProcessorDesc {
             public const nint m_desc = 0x28; // VMixPresetDSPDesc_t
             public const nint m_paramEffectName = 0x38; // CVMixParameterEffectName
         }
         // Parent: None
         // Field count: 7
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixDelayDesc_t {
             public const nint m_feedbackFilter = 0x0; // VMixFilterDesc_t
             public const nint m_bEnableFilter = 0x10; // bool
@@ -900,11 +1105,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixEQ8Desc_t {
             public const nint m_stages = 0x0; // VMixEQFilterDesc_t[8]
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixDynamicsProcessorDesc {
             public const nint m_desc = 0x28; // VMixDynamicsDesc_t
             public const nint m_outParamLevel = 0x58; // CVMixParameterFloat
@@ -912,11 +1123,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixEQFilterDesc_t {
             public const nint m_nChannelSet = 0x10; // VMixFilterChannelSet_t
         }
         // Parent: None
         // Field count: 8
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerLoopXFade {
             public const nint m_sound = 0x78; // CSoundContainerReference
             public const nint m_flLoopEnd = 0x98; // float32
@@ -929,11 +1148,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixPresetDSPDesc_t {
             public const nint m_effectName = 0x0; // CUtlString
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CAudioPhonemeTag {
             public const nint m_flStartTime = 0x0; // float32
             public const nint m_flEndTime = 0x4; // float32
@@ -941,6 +1166,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 10
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVsndRadioButtonSlot {
             public const nint m_bEnableVsnd = 0x0; // bool
             public const nint m_vsnd = 0x8; // CSoundContainerReference
@@ -955,12 +1183,21 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class CSosGroupActionSoundeventCountSchema {
             public const nint m_bExcludeStoppedSounds = 0x8; // bool
             public const nint m_strCountKeyName = 0x10; // CUtlString
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerEnvelopeAnalyzer {
             public const nint m_mode = 0x48; // EMode_t
             public const nint m_fAnalysisWindowMs = 0x4C; // float32
@@ -968,6 +1205,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 7
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixBaseProcessorDesc {
             public const nint m_name = 0x8; // CUtlString
             public const nint m_nDebugId = 0x10; // uint32
@@ -979,10 +1219,16 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixImpulseResponseInput {
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixSteamAudioHybridReverbProcessorDesc {
             public const nint m_paramReverbTimeLow = 0x28; // CVMixParameterFloat
             public const nint m_paramReverbTimeMid = 0x2C; // CVMixParameterFloat
@@ -992,6 +1238,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixPitchShiftDesc_t {
             public const nint m_nGrainSampleCount = 0x0; // int32
             public const nint m_flPitchShift = 0x4; // float32
@@ -1000,11 +1249,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixControlOutput {
             public const nint m_flDefaultValue = 0x10; // float32
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixModDelayProcessorDesc {
             public const nint m_desc = 0x28; // VMixModDelayDesc_t
             public const nint m_paramCutoffFrequency = 0x58; // CVMixParameterFloat
@@ -1014,17 +1269,26 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixShaperProcessorDesc {
             public const nint m_desc = 0x28; // VMixShaperDesc_t
             public const nint m_paramDrive = 0x3C; // CVMixParameterFloat
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixParameterFloat {
             public const nint m_offset = 0x0; // CVMixDataOffset
         }
         // Parent: None
         // Field count: 15
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixBaseGraphDescription {
             public const nint m_name = 0x0; // CUtlString
             public const nint m_nGraphOutputChannels = 0x8; // int32
@@ -1044,6 +1308,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixAutomaticControlInput {
             public const nint m_name = 0x0; // CUtlString
             public const nint m_nGraphInputIndex = 0xC; // int32
@@ -1051,6 +1318,11 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MPropertyArrayElementNameKey
+        // MVDataOutlinerNameExpr
+        // MGetKV3ClassDefaults
         public static class CSndBeatTrack {
             public const nint m_name = 0x0; // CUtlString
             public const nint m_playbackType = 0x20; // SndBeatTrackPlaybackType_t
@@ -1060,6 +1332,11 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 17
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerVsndRadioButton {
             public const nint m_namespace = 0x78; // CUtlString
             public const nint m_slot1 = 0x80; // CVsndRadioButtonSlot
@@ -1081,12 +1358,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CAudioEmphasisSample {
             public const nint m_flTime = 0x0; // float32
             public const nint m_flValue = 0x4; // float32
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixOscProcessorDesc {
             public const nint m_desc = 0x28; // VMixOscDesc_t
             public const nint m_paramFrequency = 0x34; // CVMixParameterFloat
@@ -1094,20 +1377,36 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerLoopTriggerWithRandomPanner {
             public const nint m_randomPannerControls = 0xA8; // CRandomPannerControls
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVoiceContainerGenerator {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerSet {
             public const nint m_soundsToPlay = 0x78; // CUtlVector<CVoiceContainerSetElement>
         }
         // Parent: None
         // Field count: 8
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixConvolutionDesc_t {
             public const nint m_fldbGain = 0x0; // float32
             public const nint m_flPreDelayMS = 0x4; // float32
@@ -1120,6 +1419,11 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 17
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerVsndTrigger {
             public const nint m_namespace = 0x78; // CUtlString
             public const nint m_slot1 = 0x80; // CVsndTriggerSlot
@@ -1141,26 +1445,42 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVoiceContainerSetElement {
             public const nint m_sound = 0x0; // CSoundContainerReference
             public const nint m_flVolumeDB = 0x20; // float32
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MPropertyFriendlyName
+        // MGetKV3ClassDefaults
         public static class CSndBeatPatternManager {
             public const nint m_vecPatterns = 0x38; // CUtlVector<CSndBeatPattern>
             public const nint m_vecActiveTracks = 0x70; // CUtlVector<CSndBeatTrack>
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVoiceContainerAsyncGenerator {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CSoundInfoHeader {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixDescription {
             public const nint m_submixList = 0xD0; // CUtlLeanVector<CSubmix>
             public const nint m_sources = 0xE0; // CUtlLeanVector<std::unique_ptr<CVoiceContainerBase>>
@@ -1169,6 +1489,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class SosEditItemInfo_t {
             public const nint itemType = 0x0; // SosEditItemType_t
             public const nint itemName = 0x8; // CUtlString
@@ -1178,6 +1501,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 7
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixSubmix {
             public const nint m_name = 0x0; // CUtlString
             public const nint m_SendNames = 0x8; // CUtlString[4]
@@ -1189,6 +1515,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixFlangerProcessorDesc {
             public const nint m_desc = 0x28; // VMixFlangerDesc_t
             public const nint m_paramDelay = 0x4C; // CVMixParameterFloat
@@ -1197,6 +1526,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixEffectChainProcessorDesc {
             public const nint m_desc = 0x28; // VMixEffectChainDesc_t
             public const nint m_paramEffectName = 0x30; // CVMixParameterEffectName
@@ -1212,11 +1544,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixFreeverbProcessorDesc {
             public const nint m_desc = 0x28; // VMixFreeverbDesc_t
         }
         // Parent: None
         // Field count: 7
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixPlateverbDesc_t {
             public const nint m_flPrefilter = 0x0; // float32
             public const nint m_flInputDiffusion1 = 0x4; // float32
@@ -1228,17 +1566,28 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixConvolutionProcessorDesc {
             public const nint m_desc = 0x28; // VMixConvolutionDesc_t
             public const nint m_paramImpulseResponse = 0x48; // CVMixDataOffset
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixParameterBool {
             public const nint m_offset = 0x0; // CVMixDataOffset
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CSoundContainerReferenceArray {
             public const nint m_bUseReference = 0x0; // bool
             public const nint m_sounds = 0x8; // CUtlVector<CStrongHandle<InfoForResourceTypeCVoiceContainerBase>>
@@ -1246,6 +1595,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixFilterProcessorDesc {
             public const nint m_desc = 0x28; // VMixFilterDesc_t
             public const nint m_paramCutoffFreq = 0x38; // CVMixParameterFloat
@@ -1253,11 +1605,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixAdditionalOutput {
             public const nint m_name = 0x0; // CUtlString
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class CVoiceContainerTapePlayer {
             public const nint m_bShouldWraparound = 0x88; // bool
             public const nint m_sourceAudio = 0x90; // CStrongHandle<InfoForResourceTypeCVoiceContainerBase>
@@ -1266,6 +1625,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixSubgraphSwitchProcessorDesc {
             public const nint m_desc = 0x28; // VMixSubgraphSwitchDesc_t
             public const nint m_paramEffectName = 0x60; // CVMixParameterEffectName
@@ -1273,6 +1635,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixDiffusorDesc_t {
             public const nint m_flSize = 0x0; // float32
             public const nint m_flComplexity = 0x4; // float32
@@ -1281,6 +1646,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 7
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixSteamAudioPathingProcessorDesc {
             public const nint m_paramPositionX = 0x28; // CVMixParameterFloat
             public const nint m_paramPositionY = 0x2C; // CVMixParameterFloat
@@ -1292,12 +1660,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixPannerProcessorDesc {
             public const nint m_desc = 0x28; // VMixPannerDesc_t
             public const nint m_paramPan = 0x30; // CVMixParameterFloat
         }
         // Parent: None
         // Field count: 11
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixDynamicsCompressorDesc_t {
             public const nint m_fldbOutputGain = 0x0; // float32
             public const nint m_fldbCompressionThreshold = 0x4; // float32
@@ -1313,22 +1687,36 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixHeap {
             public const nint m_storage = 0x0; // CUtlLeanVector<uint32>
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerVMixSnd {
             public const nint m_resourceName = 0x188; // CUtlString
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixStereoDelayProcessorDesc {
             public const nint m_paramDelayLeft = 0x28; // CVMixParameterFloat
             public const nint m_paramDelayRight = 0x2C; // CVMixParameterFloat
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixShaperDesc_t {
             public const nint m_nShape = 0x0; // int32
             public const nint m_fldbDrive = 0x4; // float32
@@ -1343,6 +1731,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixEnvelopeDesc_t {
             public const nint m_flAttackTimeMS = 0x0; // float32
             public const nint m_flHoldTimeMS = 0x4; // float32
@@ -1350,6 +1741,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CAudioSentence {
             public const nint m_bShouldVoiceDuck = 0x0; // bool
             public const nint m_RunTimePhonemes = 0x8; // CUtlVector<CAudioPhonemeTag>
@@ -1358,6 +1752,11 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 8
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerParameterBlender {
             public const nint m_firstSound = 0x78; // CSoundContainerReference
             public const nint m_secondSound = 0x98; // CSoundContainerReference
@@ -1370,6 +1769,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixAudioMeter {
             public const nint m_name = 0x0; // CUtlString
             public const nint m_displayName = 0x8; // CUtlString
@@ -1377,12 +1779,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixVocoderProcessorDesc {
             public const nint m_desc = 0x28; // VMixVocoderDesc_t
             public const nint m_paramBandwidth = 0x50; // CVMixParameterFloat
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class CSosGroupActionLimitSchema {
             public const nint m_nMaxCount = 0x8; // int32
             public const nint m_nStopType = 0xC; // SosActionStopType_t
@@ -1392,11 +1801,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerAmpedDecayingSineWave {
             public const nint m_flGainAmount = 0x80; // float32
         }
         // Parent: None
         // Field count: 8
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixAutoFilterDesc_t {
             public const nint m_flEnvelopeAmount = 0x0; // float32
             public const nint m_flAttackTimeMS = 0x4; // float32
@@ -1409,6 +1826,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 10
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixDynamicsBand_t {
             public const nint m_fldbGainInput = 0x0; // float32
             public const nint m_fldbGainOutput = 0x4; // float32
@@ -1423,16 +1843,27 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixEffectChainDesc_t {
             public const nint m_effectName = 0x0; // CUtlString
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixPlateReverbProcessorDesc {
             public const nint m_desc = 0x28; // VMixPlateverbDesc_t
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerMultiBlender {
             public const nint m_soundsToPlay = 0x78; // CSoundContainerReferenceArray
             public const nint m_flBlendFactor = 0xB0; // float32
@@ -1440,12 +1871,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixVsndInput {
             public const nint m_defaultValue = 0x0; // CUtlString
         }
         // Parent: None
         // Field count: 4
-        public static class CVoiceContainerStaticAdditiveSynth::CGainScalePerInstance {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CVoiceContainerStaticAdditiveSynth__CGainScalePerInstance {
             public const nint m_flMinVolume = 0x0; // float32
             public const nint m_nInstancesAtMinVolume = 0x4; // int32
             public const nint m_flMaxVolume = 0x8; // float32
@@ -1453,11 +1890,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixParameterEffectName {
             public const nint m_offset = 0x0; // CVMixDataOffset
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class SndBeatTimeSignature_t {
             public const nint nNumerator = 0x0; // uint8
             public const nint nDenominator = 0x1; // uint8
@@ -1472,6 +1915,11 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerSelector {
             public const nint m_mode = 0x78; // PlayBackMode_t
             public const nint m_soundsToPlay = 0x80; // CSoundContainerReferenceArray
@@ -1479,22 +1927,35 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class SndBeatEventKeyedSndEvts_t {
             public const nint m_strSoundEventName = 0x10; // CUtlString
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixGraphInput {
             public const nint m_nOffset = 0x10; // CVMixDataOffset
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class CSosGroupActionTimeBlockLimitSchema {
             public const nint m_nMaxCount = 0x8; // int32
             public const nint m_flMaxDuration = 0xC; // float32
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class SndBeatEventKeyedMidiNotes_t {
             public const nint m_nStatus = 0x10; // uint8
             public const nint m_nNote = 0x11; // uint8
@@ -1502,6 +1963,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 8
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class CSosGroupActionMemberCountEnvelopeSchema {
             public const nint m_nBaseCount = 0x8; // int32
             public const nint m_nTargetCount = 0xC; // int32
@@ -1514,6 +1979,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixDualCompressorProcessorDesc {
             public const nint m_desc = 0x28; // VMixDualCompressorDesc_t
             public const nint m_outParamLevel = 0x5C; // CVMixParameterFloat
@@ -1522,16 +1990,29 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerSwitch {
             public const nint m_soundsToPlay = 0x78; // CUtlVector<CSoundContainerReference>
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixControlMeter {
             public const nint m_nValueIndex = 0x10; // CVMixDataOffset
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerEnum {
             public const nint m_soundsToPlay = 0x78; // CSoundContainerReferenceArray
             public const nint m_iSelection = 0xB0; // int32
@@ -1539,11 +2020,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class CSosGroupActionTimeLimitSchema {
             public const nint m_flMaxDuration = 0x8; // float32
         }
         // Parent: None
         // Field count: 10
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixVocoderDesc_t {
             public const nint m_nBandCount = 0x0; // int32
             public const nint m_flBandwidth = 0x4; // float32
@@ -1558,6 +2046,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 6
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixUtilityDesc_t {
             public const nint m_nOp = 0x0; // VMixChannelOperation_t
             public const nint m_flInputPan = 0x4; // float32
@@ -1568,6 +2059,11 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerLoopTrigger {
             public const nint m_flRetriggerTimeMin = 0x78; // float32
             public const nint m_flRetriggerTimeMax = 0x7C; // float32
@@ -1577,17 +2073,29 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MVDataNodeType
         public static class SndBeatEventKeys_t {
             public const nint m_flKey = 0x8; // float32
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CVoiceContainerDecayingSineWave {
             public const nint m_flFrequency = 0x78; // float32
             public const nint m_flDecayTime = 0x7C; // float32
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixDelayProcessorDesc {
             public const nint m_desc = 0x28; // VMixDelayDesc_t
             public const nint m_paramCutoffFrequency = 0x50; // CVMixParameterFloat
@@ -1595,11 +2103,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixBoxverb2ProcessorDesc {
             public const nint m_desc = 0x28; // VMixBoxverbDesc_t
         }
         // Parent: None
         // Field count: 6
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixFilterDesc_t {
             public const nint m_fldbGain = 0x0; // float32
             public const nint m_flCutoffFreq = 0x4; // float32
@@ -1610,6 +2124,11 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 17
+        //
+        // Metadata:
+        // MPropertyArrayElementNameKey
+        // MVDataOutlinerNameExpr
+        // MGetKV3ClassDefaults
         public static class CSndBeatPattern {
             public const nint m_name = 0x0; // CUtlString
             public const nint m_flSyncPriority = 0xC; // float32
@@ -1631,10 +2150,16 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CSubmix {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixOscDesc_t {
             public const nint oscType = 0x0; // VMixLFOShape_t
             public const nint m_freq = 0x4; // float32
@@ -1642,6 +2167,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVMixAutoFilterProcessorDesc {
             public const nint m_desc = 0x28; // VMixAutoFilterDesc_t
         }
@@ -1651,6 +2179,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 9
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixFlangerDesc_t {
             public const nint m_bPhaseInvert = 0x0; // bool
             public const nint m_flGlideTime = 0x4; // float32
@@ -1664,6 +2195,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 12
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VMixDynamicsDesc_t {
             public const nint m_fldbGain = 0x0; // float32
             public const nint m_fldbNoiseGateThreshold = 0x4; // float32
@@ -1680,4 +2214,3 @@ namespace CS2Dumper.Schemas {
         }
     }
 }
-

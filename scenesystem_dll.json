@@ -135,7 +135,7 @@
           "kDecalMax": 2,
           "kDecalMin": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "DisableShadows_t": {
         "alignment": 1,
@@ -146,7 +146,7 @@
           "kDisableShadows_ReallyNone": 4,
           "kDisableShadows_Realtime": 3
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "ESceneObjectMeshletVisualization": {
         "alignment": 4,

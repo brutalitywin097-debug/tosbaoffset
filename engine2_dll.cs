@@ -1,5 +1,5 @@
-﻿// Generated using https://github.com/SelfC0de/CS2-All-Dumps-Offsets
-// 2026-11-12 08:33:41.7308395 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2026-11-18 04:47:40.949652200 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: engine2.dll
@@ -16,7 +16,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 4
         public enum EntityIOTargetType_t : uint {
-            ENTITY_IO_TARGET_INVALID = 0xFFFFFFFFFFFFFFFF,
+            ENTITY_IO_TARGET_INVALID = unchecked((uint)-1),
             ENTITY_IO_TARGET_ENTITYNAME = 0x2,
             ENTITY_IO_TARGET_EHANDLE = 0x6,
             ENTITY_IO_TARGET_ENTITYNAME_OR_CLASSNAME = 0x7
@@ -34,11 +34,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CScriptComponent {
             public const nint m_scriptClassName = 0x30; // CUtlSymbolLarge
         }
         // Parent: None
         // Field count: 12
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CEntityIdentity {
             public const nint m_nameStringTableIndex = 0x14; // int32
             public const nint m_name = 0x18; // CUtlSymbolLarge
@@ -114,6 +120,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 10
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class EntityIOQueuePrioritizedEvent_t {
             public const nint m_flFireTime = 0x4; // GameTime_t
             public const nint m_targetType = 0x8; // EntityIOTargetType_t
@@ -362,4 +371,3 @@ namespace CS2Dumper.Schemas {
         }
     }
 }
-

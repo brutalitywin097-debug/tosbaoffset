@@ -43,7 +43,7 @@
         "metadata": [],
         "parent": null
       },
-      "CAttributeManager::cached_attribute_float_t": {
+      "CAttributeManager__cached_attribute_float_t": {
         "fields": {
           "flIn": 0,
           "flOut": 16,
@@ -699,7 +699,7 @@
         "metadata": [],
         "parent": null
       },
-      "CCSPlayerController_InventoryServices::NetworkedLoadoutSlot_t": {
+      "CCSPlayerController_InventoryServices__NetworkedLoadoutSlot_t": {
         "fields": {
           "pItem": 0,
           "slot": 10,
@@ -2161,7 +2161,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_BaseLerp::CursorState_t": {
+      "CPulseCell_BaseLerp__CursorState_t": {
         "fields": {
           "m_EndTime": 4,
           "m_StartTime": 0
@@ -2453,7 +2453,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_IntervalTimer::CursorState_t": {
+      "CPulseCell_IntervalTimer__CursorState_t": {
         "fields": {
           "m_EndTime": 4,
           "m_StartTime": 0,
@@ -2479,7 +2479,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_IsRequirementValid::Criteria_t": {
+      "CPulseCell_IsRequirementValid__Criteria_t": {
         "fields": {
           "m_bIsValid": 0
         },
@@ -2500,7 +2500,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_LerpCameraSettings::CursorState_t": {
+      "CPulseCell_LerpCameraSettings__CursorState_t": {
         "fields": {
           "m_OverlaidEnd": 28,
           "m_OverlaidStart": 12,
@@ -2534,14 +2534,14 @@
         ],
         "parent": null
       },
-      "CPulseCell_LimitCount::Criteria_t": {
+      "CPulseCell_LimitCount__Criteria_t": {
         "fields": {
           "m_bLimitCountPasses": 0
         },
         "metadata": [],
         "parent": null
       },
-      "CPulseCell_LimitCount::InstanceState_t": {
+      "CPulseCell_LimitCount__InstanceState_t": {
         "fields": {
           "m_nCurrentCount": 0
         },
@@ -2565,7 +2565,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_Outflow_CycleOrdered::InstanceState_t": {
+      "CPulseCell_Outflow_CycleOrdered__InstanceState_t": {
         "fields": {
           "m_nNextIndex": 0
         },
@@ -2601,7 +2601,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_Outflow_CycleShuffled::InstanceState_t": {
+      "CPulseCell_Outflow_CycleShuffled__InstanceState_t": {
         "fields": {
           "m_Shuffle": 0,
           "m_nNextShuffle": 32
@@ -2665,7 +2665,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_PlaySequence::CursorState_t": {
+      "CPulseCell_PlaySequence__CursorState_t": {
         "fields": {
           "m_hTarget": 0
         },
@@ -2764,7 +2764,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_Timeline::TimelineEvent_t": {
+      "CPulseCell_Timeline__TimelineEvent_t": {
         "fields": {
           "m_EventOutflow": 8,
           "m_flTimeFromPrevious": 0
@@ -3510,7 +3510,7 @@
         "metadata": [],
         "parent": "C_BaseEntity"
       },
-      "C_BaseModelEntity::BodyGroupRequest_t": {
+      "C_BaseModelEntity__BodyGroupRequest_t": {
         "fields": {
           "m_nGroup": 16,
           "m_nGroupName": 4,
@@ -3527,7 +3527,7 @@
         ],
         "parent": null
       },
-      "C_BaseModelEntity::Emphasized_Phoneme": {
+      "C_BaseModelEntity__Emphasized_Phoneme": {
         "fields": {
           "m_bBasechecked": 29,
           "m_bRequired": 28,
@@ -4512,7 +4512,7 @@
         "metadata": [],
         "parent": null
       },
-      "C_EconEntity::AttachedModelData_t": {
+      "C_EconEntity__AttachedModelData_t": {
         "fields": {
           "m_iModelDisplayFlags": 0
         },
@@ -5887,7 +5887,7 @@
         "metadata": [],
         "parent": null
       },
-      "C_RopeKeyframe::CPhysicsDelegate": {
+      "C_RopeKeyframe__CPhysicsDelegate": {
         "fields": {
           "m_pKeyframe": 8
         },
@@ -5913,7 +5913,7 @@
         "metadata": [],
         "parent": null
       },
-      "C_SceneEntity::QueuedEvents_t": {
+      "C_SceneEntity__QueuedEvents_t": {
         "fields": {
           "starttime": 0
         },
@@ -6870,7 +6870,7 @@
         ],
         "parent": null
       },
-      "PulseNodeDynamicOutflows_t::DynamicOutflow_t": {
+      "PulseNodeDynamicOutflows_t__DynamicOutflow_t": {
         "fields": {
           "m_Connection": 8,
           "m_OutflowID": 0
@@ -7242,7 +7242,7 @@
       }
     },
     "enums": {
-      "C_BaseCombatCharacter::WaterWakeMode_t": {
+      "C_BaseCombatCharacter__WaterWakeMode_t": {
         "alignment": 4,
         "members": {
           "WATER_WAKE_IDLE": 1,

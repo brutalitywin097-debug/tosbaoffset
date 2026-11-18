@@ -40,7 +40,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_BaseLerp::CursorState_t": {
+      "CPulseCell_BaseLerp__CursorState_t": {
         "fields": {
           "m_EndTime": 4,
           "m_StartTime": 0
@@ -172,7 +172,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_ExampleCriteria::Criteria_t": {
+      "CPulseCell_ExampleCriteria__Criteria_t": {
         "fields": {
           "m_bMyBool": 8,
           "m_flFloatValue1": 0,
@@ -387,7 +387,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_IntervalTimer::CursorState_t": {
+      "CPulseCell_IntervalTimer__CursorState_t": {
         "fields": {
           "m_EndTime": 4,
           "m_StartTime": 0,
@@ -413,7 +413,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_IsRequirementValid::Criteria_t": {
+      "CPulseCell_IsRequirementValid__Criteria_t": {
         "fields": {
           "m_bIsValid": 0
         },
@@ -440,14 +440,14 @@
         ],
         "parent": null
       },
-      "CPulseCell_LimitCount::Criteria_t": {
+      "CPulseCell_LimitCount__Criteria_t": {
         "fields": {
           "m_bLimitCountPasses": 0
         },
         "metadata": [],
         "parent": null
       },
-      "CPulseCell_LimitCount::InstanceState_t": {
+      "CPulseCell_LimitCount__InstanceState_t": {
         "fields": {
           "m_nCurrentCount": 0
         },
@@ -471,7 +471,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_Outflow_CycleOrdered::InstanceState_t": {
+      "CPulseCell_Outflow_CycleOrdered__InstanceState_t": {
         "fields": {
           "m_nNextIndex": 0
         },
@@ -507,7 +507,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_Outflow_CycleShuffled::InstanceState_t": {
+      "CPulseCell_Outflow_CycleShuffled__InstanceState_t": {
         "fields": {
           "m_Shuffle": 0,
           "m_nNextShuffle": 32
@@ -761,7 +761,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_TestWaitWithCursorState::CursorState_t": {
+      "CPulseCell_TestWaitWithCursorState__CursorState_t": {
         "fields": {
           "bFail": 4,
           "flWaitValue": 0,
@@ -777,7 +777,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_TestWaitWithCursorState::InstanceState_t": {
+      "CPulseCell_TestWaitWithCursorState__InstanceState_t": {
         "fields": {
           "m_nDummy": 0
         },
@@ -864,7 +864,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_Test_MultiOutflow_WithParams_Yielding::CursorState_t": {
+      "CPulseCell_Test_MultiOutflow_WithParams_Yielding__CursorState_t": {
         "fields": {
           "nTestStep": 0
         },
@@ -900,7 +900,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_Timeline::TimelineEvent_t": {
+      "CPulseCell_Timeline__TimelineEvent_t": {
         "fields": {
           "m_EventOutflow": 8,
           "m_flTimeFromPrevious": 0
@@ -1287,7 +1287,7 @@
         ],
         "parent": null
       },
-      "PulseNodeDynamicOutflows_t::DynamicOutflow_t": {
+      "PulseNodeDynamicOutflows_t__DynamicOutflow_t": {
         "fields": {
           "m_Connection": 8,
           "m_OutflowID": 0

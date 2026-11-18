@@ -1,5 +1,5 @@
-﻿// Generated using https://github.com/SelfC0de/CS2-All-Dumps-Offsets
-// 2026-11-12 08:33:41.7308395 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2026-11-18 04:47:40.949652200 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: rendersystemdx11.dll
@@ -44,14 +44,14 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 3
-        public enum RsCullMode_t : uint {
+        public enum RsCullMode_t : byte {
             RS_CULL_NONE = 0x0,
             RS_CULL_BACK = 0x1,
             RS_CULL_FRONT = 0x2
         }
         // Alignment: 1
         // Member count: 14
-        public enum RsComparison_t : uint {
+        public enum RsComparison_t : byte {
             RS_CMP_NEVER = 0x0,
             RS_CMP_LESS = 0x1,
             RS_CMP_EQUAL = 0x2,
@@ -69,14 +69,14 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 2
-        public enum RsFillMode_t : uint {
+        public enum RsFillMode_t : byte {
             RS_FILL_SOLID = 0x0,
             RS_FILL_WIREFRAME = 0x1
         }
         // Alignment: 1
         // Member count: 8
-        public enum RenderMultisampleType_t : uint {
-            RENDER_MULTISAMPLE_INVALID = 0xFFFFFFFFFFFFFFFF,
+        public enum RenderMultisampleType_t : byte {
+            RENDER_MULTISAMPLE_INVALID = unchecked((byte)-1),
             RENDER_MULTISAMPLE_NONE = 0x0,
             RENDER_MULTISAMPLE_2X = 0x1,
             RENDER_MULTISAMPLE_4X = 0x2,
@@ -87,7 +87,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 4
-        public enum InputLayoutVariation_t : uint {
+        public enum InputLayoutVariation_t : byte {
             INPUT_LAYOUT_VARIATION_DEFAULT = 0x0,
             INPUT_LAYOUT_VARIATION_STREAM1_INSTANCEID = 0x1,
             INPUT_LAYOUT_VARIATION_STREAM1_INSTANCEID_MORPH_VERT_ID = 0x2,
@@ -105,8 +105,8 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 3
-        public enum RenderSlotType_t : uint {
-            RENDER_SLOT_INVALID = 0xFFFFFFFFFFFFFFFF,
+        public enum RenderSlotType_t : byte {
+            RENDER_SLOT_INVALID = unchecked((byte)-1),
             RENDER_SLOT_PER_VERTEX = 0x0,
             RENDER_SLOT_PER_INSTANCE = 0x1
         }
@@ -190,4 +190,3 @@ namespace CS2Dumper.Schemas {
         }
     }
 }
-

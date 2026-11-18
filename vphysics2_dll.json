@@ -147,7 +147,7 @@
         ],
         "parent": null
       },
-      "CollisionDetailLayerInfo_t::Name_t": {
+      "CollisionDetailLayerInfo_t__Name_t": {
         "fields": {
           "m_nNameToken": 0,
           "m_sNameString": 8
@@ -1830,7 +1830,7 @@
           "DYNAMIC_CONTINUOUS_ALWAYS": 1,
           "DYNAMIC_CONTINUOUS_NEVER": 2
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "JointAxis_t": {
         "alignment": 4,
@@ -1860,7 +1860,7 @@
           "GENERIC_SHAPE_POINT": 0,
           "GENERIC_SHAPE_SPHERE": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "PhysInterfaceId_t": {
         "alignment": 4,

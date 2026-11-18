@@ -1,5 +1,5 @@
-﻿// Generated using https://github.com/SelfC0de/CS2-All-Dumps-Offsets
-// 2026-11-12 08:33:41.7308395 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2026-11-18 04:47:40.949652200 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: server.dll
@@ -8,7 +8,7 @@ namespace CS2Dumper.Schemas {
     public static class ServerDll {
         // Alignment: 4
         // Member count: 4
-        public enum CLogicBranchList::LogicBranchListenerLastState_t : uint {
+        public enum CLogicBranchList__LogicBranchListenerLastState_t : uint {
             LOGIC_BRANCH_LISTENER_NOT_INIT = 0x0,
             LOGIC_BRANCH_LISTENER_ALL_TRUE = 0x1,
             LOGIC_BRANCH_LISTENER_ALL_FALSE = 0x2,
@@ -16,14 +16,14 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 4
         // Member count: 3
-        public enum CFuncMover::Move_t : uint {
+        public enum CFuncMover__Move_t : uint {
             MOVE_LOOP = 0x0,
             MOVE_OSCILLATE = 0x1,
             MOVE_STOP_AT_END = 0x2
         }
         // Alignment: 4
         // Member count: 7
-        public enum CFuncRotator::Rotate_t : uint {
+        public enum CFuncRotator__Rotate_t : uint {
             ROTATE_LOOP = 0x0,
             ROTATE_OSCILLATE = 0x1,
             ROTATE_STOP_AT_END = 0x2,
@@ -34,7 +34,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 4
         // Member count: 4
-        public enum CFuncRotator::RotationAxis_t : uint {
+        public enum CFuncRotator__RotationAxis_t : uint {
             ROTATION_AXIS_UNDEFINED = 0x0,
             ROTATION_AXIS_YAW = 0x1,
             ROTATION_AXIS_PITCH = 0x2,
@@ -48,20 +48,20 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 4
         // Member count: 2
-        public enum CPhysicsProp::CrateType_t : uint {
+        public enum CPhysicsProp__CrateType_t : uint {
             CRATE_SPECIFIC_ITEM = 0x0,
             CRATE_TYPE_COUNT = 0x1
         }
         // Alignment: 4
         // Member count: 3
-        public enum CFuncMover::FindFollowMoverStrategy_t : uint {
+        public enum CFuncMover__FindFollowMoverStrategy_t : uint {
             FIND_FOLLOW_MOVER_FORWARD_CLOSEST = 0x0,
             FIND_FOLLOW_MOVER_REVERSE_CLOSEST = 0x1,
             FIND_FOLLOW_MOVER_BIDIRECTIONAL_CLOSEST = 0x2
         }
         // Alignment: 4
         // Member count: 3
-        public enum CPathMoverEntitySpawner::TemplateChoiceStrategy_t : uint {
+        public enum CPathMoverEntitySpawner__TemplateChoiceStrategy_t : uint {
             TEMPLATE_CHOICE_COUNT_SEQUENTIAL = 0x0,
             TEMPLATE_CHOICE_WEIGHTED_RANDOM = 0x1,
             TEMPLATE_CHOICE_COUNT_RANDOM = 0x2
@@ -82,7 +82,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 4
         // Member count: 4
-        public enum CFuncMover::FollowConstraint_t : uint {
+        public enum CFuncMover__FollowConstraint_t : uint {
             FOLLOW_CONSTRAINT_DISTANCE = 0x0,
             FOLLOW_CONSTRAINT_SPRING = 0x1,
             FOLLOW_CONSTRAINT_RATIO = 0x2,
@@ -90,21 +90,21 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 4
         // Member count: 3
-        public enum CFuncMover::FollowEntityDirection_t : uint {
+        public enum CFuncMover__FollowEntityDirection_t : uint {
             FOLLOW_ENTITY_BIDIRECTIONAL = 0x0,
             FOLLOW_ENTITY_FORWARD = 0x1,
             FOLLOW_ENTITY_REVERSE = 0x2
         }
         // Alignment: 4
         // Member count: 3
-        public enum CFuncMover::PathRebuildStrategy_t : uint {
+        public enum CFuncMover__PathRebuildStrategy_t : uint {
             PATH_REBUILD_DONT_MOVE = 0x0,
             PATH_REBUILD_MAINTAIN_T = 0x1,
             PATH_REBUILD_USE_CURRENT_NODE_T = 0x2
         }
         // Alignment: 4
         // Member count: 4
-        public enum CFuncMover::TransitionToPathNodeAction_t : uint {
+        public enum CFuncMover__TransitionToPathNodeAction_t : uint {
             TRANSITION_TO_PATH_NODE_ACTION_NONE = 0x0,
             TRANSITION_TO_PATH_NODE_ACTION_START_FORWARD = 0x1,
             TRANSITION_TO_PATH_NODE_ACTION_START_REVERSE = 0x2,
@@ -118,7 +118,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 4
         // Member count: 9
-        public enum CFuncMover::OrientationUpdate_t : uint {
+        public enum CFuncMover__OrientationUpdate_t : uint {
             ORIENTATION_FORWARD_PATH = 0x0,
             ORIENTATION_FORWARD_PATH_AND_FIXED_PITCH = 0x1,
             ORIENTATION_FORWARD_PATH_AND_UP_CONTROL_POINT = 0x2,
@@ -165,7 +165,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 4
-        public enum CustomCameraMode_t : uint {
+        public enum CustomCameraMode_t : byte {
             CUSTOM_CAMERA_MODE_DISABLED = 0x0,
             CUSTOM_CAMERA_MODE_CONTROLLED = 0x1,
             CUSTOM_CAMERA_MODE_CONTROLLED_POSITION = 0x2,
@@ -188,7 +188,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 5
         public enum StanceType_t : uint {
-            STANCE_CURRENT = 0xFFFFFFFFFFFFFFFF,
+            STANCE_CURRENT = unchecked((uint)-1),
             STANCE_DEFAULT = 0x0,
             STANCE_CROUCHING = 0x1,
             STANCE_PRONE = 0x2,
@@ -204,7 +204,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 14
         public enum PreviewCharacterMode : uint {
-            INVALID = 0xFFFFFFFFFFFFFFFF,
+            INVALID = unchecked((uint)-1),
             DIORAMA = 0x0,
             MAIN_MENU = 0x1,
             BUY_MENU = 0x2,
@@ -390,7 +390,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 3
-        public enum SequenceFinishNotifyState_t : uint {
+        public enum SequenceFinishNotifyState_t : byte {
             eDoNotNotify = 0x0,
             eNotifyWhenFinished = 0x1,
             eNotifyTriggered = 0x2
@@ -405,7 +405,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 22
         public enum EDemoCommands : uint {
-            DEM_Error = 0xFFFFFFFFFFFFFFFF,
+            DEM_Error = unchecked((uint)-1),
             DEM_Stop = 0x0,
             DEM_FileHeader = 0x1,
             DEM_FileInfo = 0x2,
@@ -483,7 +483,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 2
-        public enum BeginDeathLifeStateTransition_t : uint {
+        public enum BeginDeathLifeStateTransition_t : byte {
             TRANSITION_TO_LIFESTATE_DYING = 0x0,
             TRANSITION_TO_LIFESTATE_DEAD = 0x1
         }
@@ -530,7 +530,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 9
-        public enum ItemFlagTypes_t : uint {
+        public enum ItemFlagTypes_t : byte {
             ITEM_FLAG_NONE = 0x0,
             ITEM_FLAG_CAN_SELECT_WITHOUT_AMMO = 0x1,
             ITEM_FLAG_NOAUTORELOAD = 0x2,
@@ -543,7 +543,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 10
-        public enum SurroundingBoundsType_t : uint {
+        public enum SurroundingBoundsType_t : byte {
             USE_OBB_COLLISION_BOUNDS = 0x0,
             USE_BEST_COLLISION_BOUNDS = 0x1,
             USE_HITBOXES = 0x2,
@@ -588,7 +588,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 5
         public enum NPCFollowFormation_t : uint {
-            Default = 0xFFFFFFFFFFFFFFFF,
+            Default = unchecked((uint)-1),
             CloseCircle = 0x0,
             WideCircle = 0x1,
             MediumCircle = 0x5,
@@ -747,15 +747,15 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 3
-        public enum GLOBALESTATE : uint {
+        public enum GLOBALESTATE : byte {
             GLOBAL_OFF = 0x0,
             GLOBAL_ON = 0x1,
             GLOBAL_DEAD = 0x2
         }
         // Alignment: 1
         // Member count: 6
-        public enum AnimationAlgorithm_t : uint {
-            eInvalid = 0xFFFFFFFFFFFFFFFF,
+        public enum AnimationAlgorithm_t : byte {
+            eInvalid = unchecked((byte)-1),
             eNone = 0x0,
             eSequence = 0x1,
             eAnimGraph2 = 0x2,
@@ -771,7 +771,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 3
-        public enum OnFrame : uint {
+        public enum OnFrame : byte {
             ONFRAME_UNKNOWN = 0x0,
             ONFRAME_TRUE = 0x1,
             ONFRAME_FALSE = 0x2
@@ -795,7 +795,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 9
         public enum BloodType : uint {
-            None = 0xFFFFFFFFFFFFFFFF,
+            None = unchecked((uint)-1),
             ColorRed = 0x0,
             ColorYellow = 0x1,
             ColorGreen = 0x2,
@@ -807,7 +807,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 5
-        public enum NavScope_t : uint {
+        public enum NavScope_t : byte {
             eGround = 0x0,
             eAir = 0x1,
             eCount = 0x2,
@@ -825,7 +825,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 5
         public enum AnimLoopMode_t : uint {
-            ANIM_LOOP_MODE_INVALID = 0xFFFFFFFFFFFFFFFF,
+            ANIM_LOOP_MODE_INVALID = unchecked((uint)-1),
             ANIM_LOOP_MODE_NOT_LOOPING = 0x0,
             ANIM_LOOP_MODE_LOOPING = 0x1,
             ANIM_LOOP_MODE_USE_SEQUENCE_SETTINGS = 0x2,
@@ -1027,14 +1027,14 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 3
-        public enum FixAngleSet_t : uint {
+        public enum FixAngleSet_t : byte {
             None = 0x0,
             Absolute = 0x1,
             Relative = 0x2
         }
         // Alignment: 4
         // Member count: 5
-        public enum IChoreoServices::ScriptState_t : uint {
+        public enum IChoreoServices__ScriptState_t : uint {
             SCRIPT_PLAYING = 0x0,
             SCRIPT_WAIT = 0x1,
             SCRIPT_POST_IDLE = 0x2,
@@ -1052,7 +1052,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 4
-        public enum CCSPlayerAnimationState::MoveType_t : uint {
+        public enum CCSPlayerAnimationState__MoveType_t : byte {
             None = 0x0,
             Ground = 0x1,
             Air = 0x2,
@@ -1096,7 +1096,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 4
-        public enum NavScopeFlags_t : uint {
+        public enum NavScopeFlags_t : byte {
             eGround = 0x1,
             eAir = 0x2,
             eAll = 0x3,
@@ -1155,7 +1155,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 2
-        public enum ShardSolid_t : uint {
+        public enum ShardSolid_t : byte {
             SHARD_SOLID = 0x0,
             SHARD_DEBRIS = 0x1
         }
@@ -1167,7 +1167,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 3
-        public enum EntityPlatformTypes_t : uint {
+        public enum EntityPlatformTypes_t : byte {
             ENTITY_NOT_PLATFORM = 0x0,
             ENTITY_PLATFORM_PLAYER_FOLLOWS_YAW = 0x1,
             ENTITY_PLATFORM_PLAYER_IGNORES_YAW = 0x2
@@ -1183,7 +1183,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 4
-        public enum RenderMode_t : uint {
+        public enum RenderMode_t : byte {
             kRenderNormal = 0x0,
             kRenderTransAlpha = 0x1,
             kRenderNone = 0x2,
@@ -1363,8 +1363,8 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 75
         public enum loadout_slot_t : uint {
-            LOADOUT_SLOT_PROMOTED = 0xFFFFFFFFFFFFFFFE,
-            LOADOUT_SLOT_INVALID = 0xFFFFFFFFFFFFFFFF,
+            LOADOUT_SLOT_PROMOTED = unchecked((uint)-2),
+            LOADOUT_SLOT_INVALID = unchecked((uint)-1),
             LOADOUT_SLOT_MELEE = 0x0,
             LOADOUT_SLOT_C4 = 0x1,
             LOADOUT_SLOT_FIRST_AUTO_BUY_WEAPON = 0x0,
@@ -1463,7 +1463,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 8
         // Member count: 20
-        public enum NavAttributeEnum : uint {
+        public enum NavAttributeEnum : ulong {
             NAV_MESH_NONE = 0x0,
             NAV_MESH_AVOID = 0x80,
             NAV_MESH_STAIRS = 0x1000,
@@ -1518,7 +1518,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 3
-        public enum ExternalAnimGraphInactiveBehavior_t : uint {
+        public enum ExternalAnimGraphInactiveBehavior_t : byte {
             eNone = 0x0,
             eUnbind = 0x1,
             eUnbindAndDelete = 0x2
@@ -1573,7 +1573,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 7
-        public enum CCSPlayerAnimationState::GroundMoveState_t : uint {
+        public enum CCSPlayerAnimationState__GroundMoveState_t : byte {
             None = 0x0,
             Idle = 0x1,
             Start = 0x2,
@@ -1608,7 +1608,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 4
         public enum WeaponAttackType_t : uint {
-            eInvalid = 0xFFFFFFFFFFFFFFFF,
+            eInvalid = unchecked((uint)-1),
             ePrimary = 0x0,
             eSecondary = 0x1,
             eCount = 0x2
@@ -1681,7 +1681,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 5
-        public enum ShatterDamageCause : uint {
+        public enum ShatterDamageCause : byte {
             SHATTERDAMAGE_BULLET = 0x0,
             SHATTERDAMAGE_MELEE = 0x1,
             SHATTERDAMAGE_THROWN = 0x2,
@@ -1710,7 +1710,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 5
         public enum eRollType : uint {
-            ROLL_NONE = 0xFFFFFFFFFFFFFFFF,
+            ROLL_NONE = unchecked((uint)-1),
             ROLL_STATS = 0x0,
             ROLL_CREDITS = 0x1,
             ROLL_LATE_JOIN_LOGO = 0x2,
@@ -1719,7 +1719,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 4
         public enum ScriptedOnDeath_t : uint {
-            SS_ONDEATH_NOT_APPLICABLE = 0xFFFFFFFFFFFFFFFF,
+            SS_ONDEATH_NOT_APPLICABLE = unchecked((uint)-1),
             SS_ONDEATH_UNDEFINED = 0x0,
             SS_ONDEATH_RAGDOLL = 0x1,
             SS_ONDEATH_ANIMATED_DEATH = 0x2
@@ -1797,7 +1797,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 4
         public enum ChoreoLookAtSpeed_t : uint {
-            eInvalid = 0xFFFFFFFFFFFFFFFF,
+            eInvalid = unchecked((uint)-1),
             eSlow = 0x0,
             eMedium = 0x1,
             eFast = 0x2
@@ -1830,7 +1830,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 17
         public enum gear_slot_t : uint {
-            GEAR_SLOT_INVALID = 0xFFFFFFFFFFFFFFFF,
+            GEAR_SLOT_INVALID = unchecked((uint)-1),
             GEAR_SLOT_RIFLE = 0x0,
             GEAR_SLOT_PISTOL = 0x1,
             GEAR_SLOT_KNIFE = 0x2,
@@ -1877,7 +1877,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 7
-        public enum WaterLevel_t : uint {
+        public enum WaterLevel_t : byte {
             WL_NotInWater = 0x0,
             WL_Feet = 0x1,
             WL_Knees = 0x2,
@@ -1895,7 +1895,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 4
-        public enum RelativeLocationType_t : uint {
+        public enum RelativeLocationType_t : byte {
             WORLD_SPACE_POSITION = 0x0,
             RELATIVE_TO_ENTITY_IN_LOCAL_SPACE = 0x1,
             RELATIVE_TO_ENTITY_YAW_ONLY = 0x2,
@@ -1929,7 +1929,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 4
         public enum AmmoPosition_t : uint {
-            AMMO_POSITION_INVALID = 0xFFFFFFFFFFFFFFFF,
+            AMMO_POSITION_INVALID = unchecked((uint)-1),
             AMMO_POSITION_PRIMARY = 0x0,
             AMMO_POSITION_SECONDARY = 0x1,
             AMMO_POSITION_COUNT = 0x2
@@ -1947,12 +1947,12 @@ namespace CS2Dumper.Schemas {
             AI_EVENT = 0x7,
             AI_PATHFINDING = 0x8,
             END_SIM_HISTORY_TYPES = 0x9,
-            COMBINED = 0xFFFFFFFFFFFFFFFF
+            COMBINED = unchecked((uint)-1)
         }
         // Alignment: 4
         // Member count: 24
         public enum PreviewEOMCelebration : uint {
-            INVALID = 0xFFFFFFFFFFFFFFFF,
+            INVALID = unchecked((uint)-1),
             WALKUP = 0x0,
             PUNCHING = 0x1,
             SWAGGER = 0x2,
@@ -1993,7 +1993,7 @@ namespace CS2Dumper.Schemas {
         // Member count: 22
         public enum SaveRestoreTableFlags_t : uint {
             FENTTABLE_NONE = 0x0,
-            FENTTABLE_PLAYER = 0x80000000,
+            FENTTABLE_PLAYER = unchecked((uint)2147483648),
             FENTTABLE_REMOVED = 0x40000000,
             FENTTABLE_MOVEABLE = 0x20000000,
             FENTTABLE_GLOBAL = 0x10000000,
@@ -2017,9 +2017,9 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 8
         // Member count: 21
-        public enum InputBitMask_t : uint {
+        public enum InputBitMask_t : ulong {
             IN_NONE = 0x0,
-            IN_ALL = 0xFFFFFFFFFFFFFFFF,
+            IN_ALL = unchecked((ulong)-1),
             IN_ATTACK = 0x1,
             IN_JUMP = 0x2,
             IN_DUCK = 0x4,
@@ -2034,16 +2034,16 @@ namespace CS2Dumper.Schemas {
             IN_RELOAD = 0x2000,
             IN_SPEED = 0x10000,
             IN_JOYAUTOSPRINT = 0x20000,
-            IN_FIRST_MOD_SPECIFIC_BIT = 0x100000000,
-            IN_USEORRELOAD = 0x100000000,
-            IN_SCORE = 0x200000000,
-            IN_ZOOM = 0x400000000,
-            IN_LOOK_AT_WEAPON = 0x800000000
+            IN_FIRST_MOD_SPECIFIC_BIT = unchecked((ulong)4294967296),
+            IN_USEORRELOAD = unchecked((ulong)4294967296),
+            IN_SCORE = unchecked((ulong)8589934592),
+            IN_ZOOM = unchecked((ulong)17179869184),
+            IN_LOOK_AT_WEAPON = unchecked((ulong)34359738368)
         }
         // Alignment: 4
         // Member count: 14
         public enum HitGroup_t : uint {
-            HITGROUP_INVALID = 0xFFFFFFFFFFFFFFFF,
+            HITGROUP_INVALID = unchecked((uint)-1),
             HITGROUP_GENERIC = 0x0,
             HITGROUP_HEAD = 0x1,
             HITGROUP_CHEST = 0x2,
@@ -2078,7 +2078,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 8
         // Member count: 43
-        public enum DebugOverlayBits_t : uint {
+        public enum DebugOverlayBits_t : ulong {
             OVERLAY_TEXT_BIT = 0x1,
             OVERLAY_NAME_BIT = 0x2,
             OVERLAY_BBOX_BIT = 0x4,
@@ -2108,20 +2108,20 @@ namespace CS2Dumper.Schemas {
             OVERLAY_NPC_VIEWCONE_BIT = 0x8000000,
             OVERLAY_NPC_KILL_BIT = 0x10000000,
             OVERLAY_BUDDHA_MODE = 0x40000000,
-            OVERLAY_NPC_STEERING_REGULATIONS = 0x80000000,
-            OVERLAY_NPC_TASK_TEXT_BIT = 0x100000000,
-            OVERLAY_PROP_DEBUG = 0x200000000,
-            OVERLAY_NPC_RELATION_BIT = 0x400000000,
-            OVERLAY_VIEWOFFSET = 0x800000000,
-            OVERLAY_VCOLLIDE_WIREFRAME_BIT = 0x1000000000,
-            OVERLAY_NPC_SCRIPTED_COMMANDS_BIT = 0x2000000000,
-            OVERLAY_ACTORNAME_BIT = 0x4000000000,
-            OVERLAY_NPC_CONDITIONS_TEXT_BIT = 0x8000000000,
-            OVERLAY_NPC_ABILITY_RANGE_DEBUG_BIT = 0x10000000000,
-            OVERLAY_MINIMAL_TEXT = 0x20000000000,
-            OVERLAY_NPC_GOD_MODE = 0x40000000000,
-            OVERLAY_NPC_ANIM_AI_HANDSHAKES_BIT = 0x80000000000,
-            OVERLAY_NPC_PATH_QUERIES_BIT = 0x100000000000
+            OVERLAY_NPC_STEERING_REGULATIONS = unchecked((ulong)2147483648),
+            OVERLAY_NPC_TASK_TEXT_BIT = unchecked((ulong)4294967296),
+            OVERLAY_PROP_DEBUG = unchecked((ulong)8589934592),
+            OVERLAY_NPC_RELATION_BIT = unchecked((ulong)17179869184),
+            OVERLAY_VIEWOFFSET = unchecked((ulong)34359738368),
+            OVERLAY_VCOLLIDE_WIREFRAME_BIT = unchecked((ulong)68719476736),
+            OVERLAY_NPC_SCRIPTED_COMMANDS_BIT = unchecked((ulong)137438953472),
+            OVERLAY_ACTORNAME_BIT = unchecked((ulong)274877906944),
+            OVERLAY_NPC_CONDITIONS_TEXT_BIT = unchecked((ulong)549755813888),
+            OVERLAY_NPC_ABILITY_RANGE_DEBUG_BIT = unchecked((ulong)1099511627776),
+            OVERLAY_MINIMAL_TEXT = unchecked((ulong)2199023255552),
+            OVERLAY_NPC_GOD_MODE = unchecked((ulong)4398046511104),
+            OVERLAY_NPC_ANIM_AI_HANDSHAKES_BIT = unchecked((ulong)8796093022208),
+            OVERLAY_NPC_PATH_QUERIES_BIT = unchecked((ulong)17592186044416)
         }
         // Alignment: 4
         // Member count: 3
@@ -2155,8 +2155,8 @@ namespace CS2Dumper.Schemas {
             eNone = 0x0,
             eCannotClear = 0x1,
             eDecalProjectToBackfaces = 0x2,
-            eAll = 0xFFFFFFFF,
-            eAllButCannotClear = 0xFFFFFFFE
+            eAll = unchecked((uint)4294967295),
+            eAllButCannotClear = unchecked((uint)4294967294)
         }
         // Alignment: 4
         // Member count: 79
@@ -2281,7 +2281,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 4
         public enum EntitySubclassScope_t : uint {
-            SUBCLASS_SCOPE_NONE = 0xFFFFFFFFFFFFFFFF,
+            SUBCLASS_SCOPE_NONE = unchecked((uint)-1),
             SUBCLASS_SCOPE_PRECIPITATION = 0x0,
             SUBCLASS_SCOPE_PLAYER_WEAPONS = 0x1,
             SUBCLASS_SCOPE_COUNT = 0x2
@@ -2301,7 +2301,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 4
-        public enum ShatterGlassStressType : uint {
+        public enum ShatterGlassStressType : byte {
             SHATTERGLASS_BLUNT = 0x0,
             SHATTERGLASS_BALLISTIC = 0x1,
             SHATTERGLASS_PULSE = 0x2,
@@ -2359,7 +2359,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 4
         // Member count: 2
-        public enum CRR_Response::ResponseEnum_t : uint {
+        public enum CRR_Response__ResponseEnum_t : uint {
             MAX_RESPONSE_NAME = 0xC0,
             MAX_RULE_NAME = 0x80
         }
@@ -2374,7 +2374,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 3
         public enum EHudPanelClassStatus_t : uint {
-            k_eHudPanelClassStatus_Undefined = 0xFFFFFFFFFFFFFFFF,
+            k_eHudPanelClassStatus_Undefined = unchecked((uint)-1),
             k_eHudPanelClassStatus_DoesNotHaveClass = 0x0,
             k_eHudPanelClassStatus_HasClass = 0x1
         }
@@ -2395,14 +2395,14 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 3
-        public enum HoverPoseFlags_t : uint {
+        public enum HoverPoseFlags_t : byte {
             eNone = 0x0,
             ePosition = 0x1,
             eAngles = 0x2
         }
         // Alignment: 1
         // Member count: 18
-        public enum RenderFx_t : uint {
+        public enum RenderFx_t : byte {
             kRenderFxNone = 0x0,
             kRenderFxPulseSlow = 0x1,
             kRenderFxPulseFast = 0x2,
@@ -2464,7 +2464,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 27
         public enum RumbleEffect_t : uint {
-            RUMBLE_INVALID = 0xFFFFFFFFFFFFFFFF,
+            RUMBLE_INVALID = unchecked((uint)-1),
             RUMBLE_STOP_ALL = 0x0,
             RUMBLE_PISTOL = 0x1,
             RUMBLE_357 = 0x2,
@@ -2514,7 +2514,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 4
         public enum ChoreoLookAtMode_t : uint {
-            eInvalid = 0xFFFFFFFFFFFFFFFF,
+            eInvalid = unchecked((uint)-1),
             eChest = 0x0,
             eHead = 0x1,
             eEyesOnly = 0x2
@@ -2529,7 +2529,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 7
         public enum PlayerConnectedState : uint {
-            NeverConnected = 0xFFFFFFFFFFFFFFFF,
+            NeverConnected = unchecked((uint)-1),
             Connected = 0x0,
             Connecting = 0x1,
             Reconnecting = 0x2,
@@ -2540,7 +2540,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 30
         public enum PreviewCharacterBannerAnimation : uint {
-            INVALID = 0xFFFFFFFFFFFFFFFF,
+            INVALID = unchecked((uint)-1),
             IDLE_OFFSCREEN = 0x0,
             BANNER_AWP_ACE_GUN = 0x1,
             BANNER_AWP_ACE_A = 0x2,
@@ -2574,7 +2574,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 5
         public enum EntityDissolveType_t : uint {
-            ENTITY_DISSOLVE_INVALID = 0xFFFFFFFFFFFFFFFF,
+            ENTITY_DISSOLVE_INVALID = unchecked((uint)-1),
             ENTITY_DISSOLVE_NORMAL = 0x0,
             ENTITY_DISSOLVE_ELECTRICAL = 0x1,
             ENTITY_DISSOLVE_ELECTRICAL_LIGHT = 0x2,
@@ -2595,7 +2595,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 2
         // Member count: 7
-        public enum EntityEffects_t : uint {
+        public enum EntityEffects_t : ushort {
             DEPRICATED_EF_NOINTERP = 0x8,
             EF_NOSHADOW = 0x10,
             EF_NODRAW = 0x20,
@@ -2620,7 +2620,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 10
-        public enum SolidType_t : uint {
+        public enum SolidType_t : byte {
             SOLID_NONE = 0x0,
             SOLID_BSP = 0x1,
             SOLID_BBOX = 0x2,
@@ -2697,7 +2697,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 6
-        public enum MoveCollide_t : uint {
+        public enum MoveCollide_t : byte {
             MOVECOLLIDE_DEFAULT = 0x0,
             MOVECOLLIDE_FLY_BOUNCE = 0x1,
             MOVECOLLIDE_FLY_CUSTOM = 0x2,
@@ -2707,7 +2707,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 4
         // Member count: 7
-        public enum IChoreoServices::ChoreoState_t : uint {
+        public enum IChoreoServices__ChoreoState_t : uint {
             STATE_PRE_SCRIPT = 0x0,
             STATE_WAIT_FOR_SCRIPT = 0x1,
             STATE_WALK_TO_MARK = 0x2,
@@ -2758,8 +2758,8 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 4
         // Member count: 6
-        public enum INavObstacle::NavObstacleType_t : uint {
-            NAV_OBSTACLE_TYPE_INVALID = 0xFFFFFFFFFFFFFFFF,
+        public enum INavObstacle__NavObstacleType_t : uint {
+            NAV_OBSTACLE_TYPE_INVALID = unchecked((uint)-1),
             NAV_OBSTACLE_TYPE_NONE = 0x0,
             NAV_OBSTACLE_TYPE_AVOID = 0x1,
             NAV_OBSTACLE_TYPE_CONN = 0x2,
@@ -2775,14 +2775,14 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 3
-        public enum EContributionScoreFlag_t : uint {
+        public enum EContributionScoreFlag_t : byte {
             k_EContributionScoreFlag_Default = 0x0,
             k_EContributionScoreFlag_Objective = 0x1,
             k_EContributionScoreFlag_Bullets = 0x2
         }
         // Alignment: 1
         // Member count: 9
-        public enum CCSPlayerAnimationState::Direction_t : uint {
+        public enum CCSPlayerAnimationState__Direction_t : byte {
             None = 0x0,
             N = 0x1,
             NE = 0x2,
@@ -2810,7 +2810,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 2
         // Member count: 31
-        public enum WeaponGameplayAnimState : uint {
+        public enum WeaponGameplayAnimState : ushort {
             WPN_ANIMSTATE_UNINITIALIZED = 0x0,
             WPN_ANIMSTATE_DROPPED = 0x1,
             WPN_ANIMSTATE_HOLSTERED = 0xA,
@@ -3110,7 +3110,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 4
         // Member count: 13
-        public enum QuestProgress::Reason : uint {
+        public enum QuestProgress__Reason : uint {
             QUEST_NONINITIALIZED = 0x0,
             QUEST_OK = 0x1,
             QUEST_NOT_ENOUGH_PLAYERS = 0x2,
@@ -3162,7 +3162,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 8
-        public enum EKillTypes_t : uint {
+        public enum EKillTypes_t : byte {
             KILL_NONE = 0x0,
             KILL_DEFAULT = 0x1,
             KILL_HEADSHOT = 0x2,
@@ -3203,7 +3203,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 8
         // Member count: 22
-        public enum TakeDamageFlags_t : uint {
+        public enum TakeDamageFlags_t : ulong {
             DFLAG_NONE = 0x0,
             DFLAG_SUPPRESS_HEALTH_CHANGES = 0x1,
             DFLAG_SUPPRESS_PHYSICS_FORCE = 0x2,
@@ -3302,7 +3302,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 4
-        public enum CCSPlayerAnimationState::AirAction_t : uint {
+        public enum CCSPlayerAnimationState__AirAction_t : byte {
             None = 0x0,
             Jump = 0x1,
             StartFall = 0x2,
@@ -3370,7 +3370,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 14
-        public enum MoveType_t : uint {
+        public enum MoveType_t : byte {
             MOVETYPE_NONE = 0x0,
             MOVETYPE_OBSOLETE = 0x1,
             MOVETYPE_WALK = 0x2,
@@ -3463,6 +3463,12 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
+        // MPulseEditorHeaderIcon
         public static class CPulseCell_WaitForCursorsWithTag {
             public const nint m_bTagSelfWhenComplete = 0x128; // bool
             public const nint m_nDesiredKillPriority = 0x12C; // PulseCursorCancelPriority_t
@@ -3605,6 +3611,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_RaceCursors {
             public const nint m_Outflows = 0xD8; // CUtlVector<CPulse_OutflowConnection>
             public const nint m_OnFinished = 0xF0; // CPulse_ResumePoint
@@ -3659,6 +3668,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Base {
             public const nint m_nEditorNodeID = 0x8; // PulseDocNodeID_t
         }
@@ -3772,6 +3784,13 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
+        // MPulseEditorHeaderIcon
+        // MPulseEditorHeaderHelper
         public static class CPulseCell_Outflow_PlayVOLine {
             public const nint m_OnFinished = 0xD8; // CPulse_ResumePoint
         }
@@ -3821,6 +3840,11 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CPulseCell_PlaySequence {
             public const nint m_SequenceName = 0xD8; // CUtlString
             public const nint m_PulseAnimEvents = 0xE0; // PulseNodeDynamicOutflows_t
@@ -3856,16 +3880,25 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CTouchExpansionComponent {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Outflow_PlaySceneBase {
             public const nint m_OnFinished = 0xD8; // CPulse_ResumePoint
             public const nint m_Triggers = 0x120; // CUtlVector<CPulse_OutflowConnection>
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_LerpCameraSettings {
             public const nint m_flSeconds = 0x120; // float32
             public const nint m_Start = 0x124; // PointCameraSettings_t
@@ -3910,6 +3943,13 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
+        // MPulseEditorHeaderIcon
+        // MPulseEditorCanvasItemSpecKV3
         public static class CPulseCell_PickBestOutflowSelector {
             public const nint m_nCheckType = 0x48; // PulseBestOutflowRules_t
             public const nint m_OutflowList = 0x50; // PulseSelectorOutflowList_t
@@ -3936,6 +3976,11 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CPulseCell_ApplyDynamicAttributeEHandle {
         }
         // Parent: None
@@ -4244,6 +4289,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 11
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPrecipitationVData {
             public const nint m_szParticlePrecipitationEffect = 0x28; // CResourceNameTyped<CWeakHandle<InfoForResourceTypeIParticleSystemDefinition>>
             public const nint m_szParticlePrecipitationPuddleEffect = 0x108; // CResourceNameTyped<CWeakHandle<InfoForResourceTypeIParticleSystemDefinition>>
@@ -4259,6 +4307,12 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPulseEditorHeaderIcon
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CPulseCell_WaitForObservable {
             public const nint m_Condition = 0xD8; // CPulseObservableExpression<bool>
             public const nint m_OnTrue = 0x168; // CPulse_ResumePoint
@@ -4302,6 +4356,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Step_EntFire {
             public const nint m_Input = 0x48; // CUtlString
         }
@@ -4320,6 +4377,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CHitboxComponent {
             public const nint m_flBoundsExpandRadius = 0x14; // float32
         }
@@ -4380,6 +4440,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPathQueryComponent {
         }
         // Parent: CBaseEntity
@@ -4463,6 +4526,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 15
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseGraphDef {
             public const nint m_DomainIdentifier = 0x8; // PulseSymbol_t
             public const nint m_DomainSubType = 0x18; // CPulseValueFullType
@@ -4509,6 +4575,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CRenderComponent {
             public const nint __m_pChainEntity = 0x10; // CNetworkVarChainer
             public const nint m_bIsRenderingWithViewModels = 0x50; // bool
@@ -4529,7 +4598,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
-        public static class CPulseCell_Outflow_PlayVOLine::CursorState_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CPulseCell_Outflow_PlayVOLine__CursorState_t {
             public const nint m_sceneInstance = 0x0; // CHandle<CBaseEntity>
         }
         // Parent: None
@@ -4678,6 +4750,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: CSkeletonAnimationController
         // Field count: 31
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CBaseAnimGraphController {
             public const nint m_nAnimationAlgorithm = 0x18; // AnimationAlgorithm_t
             public const nint m_nNextExternalGraphHandle = 0x1C; // ExternalAnimGraphHandle_t
@@ -4718,6 +4793,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 11
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CBuoyancyHelper {
             public const nint m_pController = 0x8; // IPhysicsMotionController*
             public const nint m_nFluidType = 0x18; // CUtlStringToken
@@ -4772,6 +4850,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_FireCursors {
             public const nint m_Outflows = 0xD8; // CUtlVector<CPulse_OutflowConnection>
             public const nint m_bWaitForChildOutflows = 0xF0; // bool
@@ -4819,6 +4900,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: CBodyComponent
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CBodyComponentPoint {
             public const nint m_sceneNode = 0x80; // CGameSceneNode
         }
@@ -4856,11 +4940,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CPulseCell_ApplyDynamicAttributeBase {
         }
         // Parent: None
         // Field count: 2
-        public static class CPulseCell_Timeline::TimelineEvent_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CPulseCell_Timeline__TimelineEvent_t {
             public const nint m_flTimeFromPrevious = 0x0; // float32
             public const nint m_EventOutflow = 0x8; // CPulse_OutflowConnection
         }
@@ -4884,7 +4976,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 5
-        public static class CPulseCell_IntervalTimer::CursorState_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CPulseCell_IntervalTimer__CursorState_t {
             public const nint m_StartTime = 0x0; // GameTime_t
             public const nint m_EndTime = 0x4; // GameTime_t
             public const nint m_flWaitInterval = 0x8; // float32
@@ -4893,6 +4988,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_BaseRequirement {
         }
         // Parent: CBaseModelEntity
@@ -4917,10 +5015,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPulseEditorHeaderIcon
         public static class CPulseCell_BaseState {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class OutflowWithRequirements_t {
             public const nint m_Connection = 0x0; // CPulse_OutflowConnection
             public const nint m_DestinationFlowNodeID = 0x48; // PulseDocNodeID_t
@@ -4929,13 +5034,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
-        public static class CTestPulseIO::ThreeStringArgs_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CTestPulseIO__ThreeStringArgs_t {
             public const nint strArg1 = 0x0; // CUtlString
             public const nint strArg2 = 0x8; // CUtlString
             public const nint strArg3 = 0x10; // CUtlString
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_IsRequirementValid {
         }
         // Parent: CBaseTrigger
@@ -4952,6 +5063,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class CPulseCell_Value_Gradient {
             public const nint m_Gradient = 0x48; // CColorGradient
         }
@@ -4994,12 +5109,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class IntervalTimer {
             public const nint m_timestamp = 0x8; // GameTime_t
             public const nint m_nWorldGroupId = 0xC; // WorldGroupId_t
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class audioparams_t {
             public const nint localSound = 0x8; // VectorWS[8]
             public const nint soundscapeIndex = 0x68; // int32
@@ -5029,6 +5150,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 7
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CTimeline {
             public const nint m_flValues = 0x10; // float32[64]
             public const nint m_nValueCounts = 0x110; // int32[64]
@@ -5040,12 +5164,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
-        public static class CTestPulseIO::FloatStringArgs_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CTestPulseIO__FloatStringArgs_t {
             public const nint flOutFloat = 0x0; // float32
             public const nint strOutString = 0x8; // CUtlSymbolLarge
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CountdownTimer {
             public const nint m_duration = 0x8; // float32
             public const nint m_timestamp = 0xC; // GameTime_t
@@ -5054,12 +5184,21 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MVDataOverlayType
+        // MVDataAssociatedFile
+        // MVDataPreviewWidget
         public static class CNoiseStreamData {
             public const nint m_Stream = 0x0; // NoiseStreamDef_t
         }
         // Parent: None
         // Field count: 2
-        public static class PulseNodeDynamicOutflows_t::DynamicOutflow_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class PulseNodeDynamicOutflows_t__DynamicOutflow_t {
             public const nint m_OutflowID = 0x0; // CGlobalSymbol
             public const nint m_Connection = 0x8; // CPulse_OutflowConnection
         }
@@ -5184,6 +5323,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Inflow_GraphHook {
             public const nint m_HookName = 0x80; // PulseSymbol_t
         }
@@ -5237,6 +5379,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Outflow_PlayVCDBase {
         }
         // Parent: CCSPlayerPawnBase
@@ -5309,12 +5454,20 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
-        public static class CPulseCell_Outflow_PlayVCD::VCDRequirementInfo_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CPulseCell_Outflow_PlayVCD__VCDRequirementInfo_t {
             public const nint m_nEventID = 0x0; // int32
             public const nint m_Outflow = 0x8; // CPulse_OutflowConnection
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CPulseCell_ApplyDynamicAttributeInt {
         }
         // Parent: None
@@ -5415,6 +5568,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 9
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Outflow_ScriptedSequence {
             public const nint m_szSyncGroup = 0xD8; // CUtlString
             public const nint m_nExpectedNumSequencesInSyncGroup = 0xE0; // int32
@@ -5533,13 +5689,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
-        public static class CPulseCell_ApplyAnimGraphParam::CursorState_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CPulseCell_ApplyAnimGraphParam__CursorState_t {
             public const nint hEntity = 0x0; // CHandle<CBaseEntity>
             public const nint sParamName = 0x8; // CUtlString
             public const nint bApplyToExternalGraphs = 0x10; // bool
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Inflow_BaseEntrypoint {
             public const nint m_EntryChunk = 0x48; // PulseRuntimeChunkIndex_t
             public const nint m_RegisterMap = 0x50; // PulseRegisterMap_t
@@ -5562,6 +5724,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPulseEditorCanvasItemSpecKV3
         public static class CPulseCell_WaitForCursorsWithTagBase {
             public const nint m_nCursorsAllowedToWait = 0xD8; // int32
             public const nint m_WaitComplete = 0xE0; // CPulse_ResumePoint
@@ -5709,6 +5875,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 31
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CGameSceneNode {
             public const nint m_nodeToWorld = 0x10; // CTransformWS
             public const nint m_pOwner = 0x30; // CEntityInstance*
@@ -5769,7 +5938,7 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
-        public static class CAttributeManager::cached_attribute_float_t {
+        public static class CAttributeManager__cached_attribute_float_t {
             public const nint flIn = 0x0; // float32
             public const nint iAttribHook = 0x8; // CUtlSymbolLarge
             public const nint flOut = 0x10; // float32
@@ -5834,6 +6003,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulse_InvokeBinding {
             public const nint m_RegisterMap = 0x0; // PulseRegisterMap_t
             public const nint m_FuncName = 0x30; // PulseSymbol_t
@@ -5862,6 +6034,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Outflow_PlayVCD {
             public const nint m_hChoreoScene = 0x138; // CStrongHandle<InfoForResourceTypeCChoreoSceneResource>
             public const nint m_OnPaused = 0x140; // CPulse_OutflowConnection
@@ -5983,6 +6158,13 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
+        // MPulseEditorHeaderIcon
+        // MPulseEditorCanvasItemSpecKV3
         public static class CPulseCell_IntervalTimer {
             public const nint m_Completed = 0xD8; // CPulse_ResumePoint
             public const nint m_OnInterval = 0x120; // SignatureOutflow_Continue
@@ -6014,6 +6196,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 17
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CEnvWindShared {
             public const nint m_flStartTime = 0x8; // GameTime_t
             public const nint m_iWindSeed = 0xC; // uint32
@@ -6046,6 +6231,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_BaseLerp {
             public const nint m_WakeResume = 0xD8; // CPulse_ResumePoint
         }
@@ -6189,6 +6377,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 8
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CNetworkedSequenceOperation {
             public const nint m_hSequence = 0x8; // HSequence
             public const nint m_flPrevCycle = 0xC; // float32
@@ -6309,11 +6500,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
-        public static class CPulseCell_Outflow_ListenForEntityOutput::CursorState_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CPulseCell_Outflow_ListenForEntityOutput__CursorState_t {
             public const nint m_entity = 0x0; // CHandle<CBaseEntity>
         }
         // Parent: None
         // Field count: 6
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class ActiveModelConfig_t {
             public const nint m_Handle = 0x30; // ModelConfigHandle_t
             public const nint m_Name = 0x38; // CUtlSymbolLarge
@@ -6333,6 +6530,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class CPulseCell_Value_Curve {
             public const nint m_Curve = 0x48; // CPiecewiseCurve
         }
@@ -6420,6 +6621,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Inflow_EventHandler {
             public const nint m_EventName = 0x80; // PulseSymbol_t
         }
@@ -6429,6 +6633,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_BaseFlow {
         }
         // Parent: CBaseTrigger
@@ -6477,6 +6684,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: CGameSceneNode
         // Field count: 8
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CSkeletonInstance {
             public const nint m_modelState = 0x120; // CModelState
             public const nint m_bUseParentRenderBounds = 0x3B0; // bool
@@ -6531,13 +6741,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
-        public static class CPulseCell_Outflow_CycleShuffled::InstanceState_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CPulseCell_Outflow_CycleShuffled__InstanceState_t {
             public const nint m_Shuffle = 0x0; // CUtlVectorFixedGrowable<uint8,8>
             public const nint m_nNextShuffle = 0x20; // int32
         }
         // Parent: None
         // Field count: 2
-        public static class CPulseCell_BaseLerp::CursorState_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CPulseCell_BaseLerp__CursorState_t {
             public const nint m_StartTime = 0x0; // GameTime_t
             public const nint m_EndTime = 0x4; // GameTime_t
         }
@@ -6681,6 +6897,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Step_FollowEntity {
             public const nint m_ParamBoneOrAttachName = 0x48; // CUtlString
             public const nint m_ParamBoneOrAttachNameChild = 0x50; // CUtlString
@@ -6714,6 +6933,11 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 83
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertySuppressBaseClassField
+        // MPropertySuppressBaseClassField
         public static class CCSWeaponBaseVData {
             public const nint m_WeaponType = 0x520; // CSWeaponType
             public const nint m_WeaponCategory = 0x524; // CSWeaponCategory
@@ -6835,6 +7059,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Timeline {
             public const nint m_TimelineEvents = 0xD8; // CUtlVector<CPulseCell_Timeline::TimelineEvent_t>
             public const nint m_bWaitForChildOutflows = 0xF0; // bool
@@ -6842,6 +7069,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Inflow_EntOutputHandler {
             public const nint m_SourceEntity = 0x80; // PulseSymbol_t
             public const nint m_SourceOutput = 0x90; // PulseSymbol_t
@@ -6939,6 +7169,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Step_SetAnimGraphParam {
             public const nint m_ParamName = 0x48; // CUtlString
         }
@@ -7070,7 +7303,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
-        public static class CPulseCell_Outflow_CycleOrdered::InstanceState_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CPulseCell_Outflow_CycleOrdered__InstanceState_t {
             public const nint m_nNextIndex = 0x0; // int32
         }
         // Parent: CDynamicProp
@@ -7236,7 +7472,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
-        public static class CTestPulseIO::EntityNameStringArgs_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CTestPulseIO__EntityNameStringArgs_t {
             public const nint nameA = 0x0; // CEntityNameString
             public const nint strValueB = 0x8; // CUtlSymbolLarge
         }
@@ -7263,6 +7502,13 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
+        // MPulseEditorSubHeaderText
+        // MPulseEditorHeaderIcon
         public static class CPulseCell_Outflow_ListenForEntityOutput {
             public const nint m_OnFired = 0xD8; // SignatureOutflow_Resume
             public const nint m_strEntityOutput = 0x120; // CGlobalSymbol
@@ -7306,7 +7552,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
-        public static class CPulseCell_Outflow_ScriptedSequence::CursorState_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CPulseCell_Outflow_ScriptedSequence__CursorState_t {
             public const nint m_scriptedSequence = 0x0; // CHandle<CBaseEntity>
         }
         // Parent: CBasePropDoor
@@ -7375,6 +7624,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class PhysicsRagdollPose_t {
             public const nint m_RelativeTransforms = 0x8; // CNetworkUtlVectorBase<CTransform>
             public const nint m_hOwner = 0x20; // CHandle<CBaseEntity>
@@ -7382,12 +7634,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
-        public static class CPulseCell_ApplyDynamicAttributeBase::CursorState_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CPulseCell_ApplyDynamicAttributeBase__CursorState_t {
             public const nint m_hEntity = 0x0; // CHandle<CBaseEntity>
             public const nint m_szAttributeKey = 0x8; // CUtlString
         }
         // Parent: None
         // Field count: 10
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPropDataComponent {
             public const nint m_flDmgModBullet = 0x10; // float32
             public const nint m_flDmgModClub = 0x14; // float32
@@ -7415,7 +7673,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
-        public static class CPulseCell_LimitCount::InstanceState_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CPulseCell_LimitCount__InstanceState_t {
             public const nint m_nCurrentCount = 0x0; // int32
         }
         // Parent: CBaseTrigger
@@ -7490,6 +7751,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 28
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CCS2PawnGraphController {
             public const nint m_bIsDefusing = 0x5C0; // CAnimGraph2ParamOptionalRef<bool>
             public const nint m_moveType = 0x5D8; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
@@ -7522,6 +7786,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class EngineCountdownTimer {
             public const nint m_duration = 0x8; // float32
             public const nint m_timestamp = 0xC; // float32
@@ -7597,7 +7864,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
-        public static class CBaseModelEntity::OnDamageLevelChangedArgs_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CBaseModelEntity__OnDamageLevelChangedArgs_t {
             public const nint nHitGroup = 0x0; // HitGroup_t
             public const nint nDamageLevel = 0x4; // int32
             public const nint nDamageLevelsRemaining = 0x8; // int32
@@ -7620,6 +7890,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 6
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class sky3dparams_t {
             public const nint scale = 0x8; // int16
             public const nint origin = 0xC; // VectorWS
@@ -7634,6 +7907,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CDestructiblePartsComponent {
             public const nint __m_pChainEntity = 0x0; // CNetworkVarChainer
             public const nint m_vecDamageTakenByHitGroup = 0x48; // CUtlVector<uint16>
@@ -7683,11 +7959,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CPulseCell_SoundEventStart {
             public const nint m_Type = 0x48; // SoundEventStartType_t
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Step_DebugLog {
         }
         // Parent: None
@@ -7736,17 +8020,27 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: CBodyComponentSkeletonInstance
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CBodyComponentBaseAnimGraph {
             public const nint m_animationController = 0x4E0; // CBaseAnimGraphController
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MCustomFGDMetadata
         public static class CPulseCell_BaseYieldingInflow {
             public const nint m_BaseFlow_OnAfterCancel = 0x48; // CPulse_ResumePoint
             public const nint m_BaseFlow_WhileActive = 0x90; // CPulse_ResumePoint
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class PulseNodeDynamicOutflows_t {
             public const nint m_Outflows = 0x0; // CUtlVector<PulseNodeDynamicOutflows_t::DynamicOutflow_t>
         }
@@ -7830,7 +8124,7 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
-        public static class CPulseCell_IsRequirementValid::Criteria_t {
+        public static class CPulseCell_IsRequirementValid__Criteria_t {
             public const nint m_bIsValid = 0x0; // bool
         }
         // Parent: None
@@ -7868,12 +8162,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class EntityRenderAttribute_t {
             public const nint m_ID = 0x30; // CUtlStringToken
             public const nint m_Values = 0x34; // Vector4D
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Inflow_ObservableVariableListener {
             public const nint m_nBlackboardReference = 0x80; // PulseRuntimeBlackboardReferenceIndex_t
             public const nint m_bSelfReference = 0x82; // bool
@@ -7949,7 +8249,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
-        public static class CPulseCell_ApplyParent::CursorState_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CPulseCell_ApplyParent__CursorState_t {
             public const nint m_hParentEntity = 0x0; // CHandle<CBaseEntity>
             public const nint m_hChildEntity = 0x4; // CHandle<CBaseEntity>
         }
@@ -7989,6 +8292,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 14
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CModelState {
             public const nint m_hModel = 0xA0; // CStrongHandle<InfoForResourceTypeCModel>
             public const nint m_ModelName = 0xA8; // CUtlSymbolLarge
@@ -8007,7 +8313,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 6
-        public static class CBaseModelEntity::BodyGroupRequest_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CBaseModelEntity__BodyGroupRequest_t {
             public const nint m_uRequestID = 0x0; // uint32
             public const nint m_nGroupName = 0x4; // CUtlStringToken
             public const nint m_sChoiceName = 0x8; // CGlobalSymbol
@@ -8017,13 +8326,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
-        public static class CPulseCell_LerpCameraSettings::CursorState_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CPulseCell_LerpCameraSettings__CursorState_t {
             public const nint m_hCamera = 0x8; // CHandle<CPointCamera>
             public const nint m_OverlaidStart = 0xC; // PointCameraSettings_t
             public const nint m_OverlaidEnd = 0x1C; // PointCameraSettings_t
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Outflow_CycleOrdered {
             public const nint m_Outputs = 0x48; // CUtlVector<CPulse_OutflowConnection>
         }
@@ -8041,6 +8356,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 17
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CCollisionProperty {
             public const nint m_collisionAttribute = 0x10; // VPhysicsCollisionAttribute_t
             public const nint m_vecMins = 0x40; // Vector
@@ -8152,10 +8470,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CPulseCell_ApplyParent {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class PulseSelectorOutflowList_t {
             public const nint m_Outflows = 0x0; // CUtlVector<OutflowWithRequirements_t>
         }
@@ -8209,11 +8535,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
-        public static class CPulseCell_PlaySequence::CursorState_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CPulseCell_PlaySequence__CursorState_t {
             public const nint m_hTarget = 0x0; // CHandle<CBaseAnimGraph>
         }
         // Parent: CBodyComponent
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CBodyComponentSkeletonInstance {
             public const nint m_skeletonInstance = 0x80; // CSkeletonInstance
         }
@@ -8352,6 +8684,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CScriptComponent {
             public const nint m_scriptClassName = 0x30; // CUtlSymbolLarge
         }
@@ -8492,6 +8827,13 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
+        // MPulseEditorHeaderIcon
+        // MPulseEditorCanvasItemSpecKV3
         public static class CPulseCell_Inflow_Wait {
             public const nint m_WakeResume = 0xD8; // CPulse_ResumePoint
         }
@@ -8502,6 +8844,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 20
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CCS2WeaponGraphController {
             public const nint m_action = 0xC0; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
             public const nint m_bActionReset = 0xD8; // CAnimGraph2ParamOptionalRef<bool>
@@ -8759,12 +9104,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
-        public static class CPulseCell_ApplyEntityFlags::CursorState_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CPulseCell_ApplyEntityFlags__CursorState_t {
             public const nint m_hEntity = 0x0; // CHandle<CBaseEntity>
             public const nint m_uFlags = 0x4; // uint32
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Outflow_CycleShuffled {
             public const nint m_Outputs = 0x48; // CUtlVector<CPulse_OutflowConnection>
         }
@@ -8815,13 +9166,16 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
-        public static class CCSPlayerController_InventoryServices::NetworkedLoadoutSlot_t {
+        public static class CCSPlayerController_InventoryServices__NetworkedLoadoutSlot_t {
             public const nint pItem = 0x0; // CEconItemView*
             public const nint team = 0x8; // uint16
             public const nint slot = 0xA; // uint16
         }
         // Parent: CEntityComponent
         // Field count: 71
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CLightComponent {
             public const nint __m_pChainEntity = 0x38; // CNetworkVarChainer
             public const nint m_Color = 0x78; // Color
@@ -9022,6 +9376,12 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
+        // MPulseEditorSubHeaderText
         public static class CPulseCell_Outflow_ListenForAnimgraphTag {
             public const nint m_OnStart = 0xD8; // CPulse_ResumePoint
             public const nint m_OnEnd = 0x120; // CPulse_ResumePoint
@@ -9029,12 +9389,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: CEntityComponent
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CBodyComponent {
             public const nint m_pSceneNode = 0x8; // CGameSceneNode*
             public const nint __m_pChainEntity = 0x48; // CNetworkVarChainer
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Inflow_Method {
             public const nint m_MethodName = 0x80; // PulseSymbol_t
             public const nint m_Description = 0x90; // CUtlString
@@ -9123,6 +9489,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 14
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class fogplayerparams_t {
             public const nint m_hCtrl = 0x8; // CHandle<CFogController>
             public const nint m_flTransitionTime = 0xC; // float32
@@ -9141,6 +9510,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 11
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CGlowProperty {
             public const nint m_fGlowColor = 0x8; // Vector
             public const nint m_iGlowType = 0x30; // int32
@@ -9166,6 +9538,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_BaseValue {
         }
         // Parent: CBaseEntity
@@ -9192,6 +9567,12 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
+        // MPulseEditorCanvasItemSpecKV3
         public static class CPulseCell_BooleanSwitchState {
             public const nint m_Condition = 0xD8; // CPulseObservableExpression<bool>
             public const nint m_WhenTrue = 0x168; // CPulse_OutflowConnection
@@ -9228,6 +9609,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 11
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VPhysicsCollisionAttribute_t {
             public const nint m_nInteractsAs = 0x8; // uint64
             public const nint m_nInteractsWith = 0x10; // uint64
@@ -9334,6 +9718,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Inflow_Yield {
             public const nint m_UnyieldResume = 0xD8; // CPulse_ResumePoint
         }
@@ -9435,6 +9822,11 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CPulseCell_ApplyAnimGraphParam {
             public const nint m_value = 0xD8; // CPulseObservableExpression<CPulseVariant>
         }
@@ -9444,6 +9836,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CGameSceneNodeHandle {
             public const nint m_hOwner = 0x8; // CEntityHandle
             public const nint m_name = 0xC; // CUtlStringToken
@@ -9485,6 +9880,11 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CPulseCell_ApplyEntityFlags {
         }
         // Parent: None
@@ -9611,11 +10011,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Outflow_CycleRandom {
             public const nint m_Outputs = 0x48; // CUtlVector<CPulse_OutflowConnection>
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Step_PublicOutput {
             public const nint m_OutputIndex = 0x48; // PulseRuntimeOutputIndex_t
         }
@@ -9731,6 +10137,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulse_BlackboardReference {
             public const nint m_hBlackboardResource = 0x0; // CStrongHandle<InfoForResourceTypeIPulseGraphDef>
             public const nint m_BlackboardResource = 0x8; // PulseSymbol_t
@@ -9789,6 +10198,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_ReturnValues {
         }
         // Parent: None
@@ -9886,6 +10298,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 6
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CChoreoComponent {
             public const nint __m_pChainEntity = 0x8; // CNetworkVarChainer
             public const nint m_hOwner = 0x30; // CHandle<CBaseModelEntity>
@@ -9896,6 +10311,12 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
+        // MPulseEditorHeaderIcon
         public static class CPulseCell_Value_RandomInt {
         }
         // Parent: CPointEntity
@@ -10043,6 +10464,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 25
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class fogparams_t {
             public const nint dirPrimary = 0x8; // Vector
             public const nint colorPrimary = 0x14; // Color
@@ -10120,6 +10544,11 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MVDataOverlayType
+        // MVDataAssociatedFile
         public static class CExplosionTypeData {
             public const nint m_SoundName = 0x0; // CSoundEventName
             public const nint m_ParticleEffect = 0x10; // CResourceNameTyped<CWeakHandle<InfoForResourceTypeIParticleSystemDefinition>>
@@ -10265,6 +10694,11 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CPulseCell_ApplyDynamicAttributeString {
         }
         // Parent: None
@@ -10317,6 +10751,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 8
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulse_CallInfo {
             public const nint m_PortName = 0x0; // PulseSymbol_t
             public const nint m_nEditorNodeID = 0x10; // PulseDocNodeID_t
@@ -10381,6 +10818,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_InlineNodeSkipSelector {
             public const nint m_nFlowNodeID = 0x48; // PulseDocNodeID_t
             public const nint m_bAnd = 0x4C; // bool
@@ -10613,11 +11053,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
         public static class CPulseCell_LimitCount {
             public const nint m_nLimitCount = 0x48; // int32
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Step_CallExternalMethod {
             public const nint m_MethodName = 0xD8; // PulseSymbol_t
             public const nint m_nBlackboardIndex = 0xE8; // PulseRuntimeBlackboardReferenceIndex_t
@@ -10992,7 +11440,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
-        public static class CPulseCell_Outflow_PlaySceneBase::CursorState_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CPulseCell_Outflow_PlaySceneBase__CursorState_t {
             public const nint m_sceneInstance = 0x0; // CHandle<CBaseEntity>
             public const nint m_mainActor = 0x4; // CHandle<CBaseEntity>
             public const nint m_cursorIDToEventID = 0x8; // CUtlHashtable<PulseCursorID_t,int32>
@@ -11043,11 +11494,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Outflow_PlaySequence {
             public const nint m_ParamSequenceName = 0x138; // CUtlString
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPulseCell_Outflow_PlayDynamicVCD {
         }
         // Parent: CPointClientUIWorldPanel
@@ -11057,6 +11514,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 12
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CEntityIdentity {
             public const nint m_nameStringTableIndex = 0x14; // int32
             public const nint m_name = 0x18; // CUtlSymbolLarge
@@ -11073,7 +11533,7 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
-        public static class CPulseCell_LimitCount::Criteria_t {
+        public static class CPulseCell_LimitCount__Criteria_t {
             public const nint m_bLimitCountPasses = 0x0; // bool
         }
         // Parent: CBaseModelEntity
@@ -11148,6 +11608,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 15
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CBasePlayerVData {
             public const nint m_sModelName = 0x28; // CResourceNameTyped<CWeakHandle<InfoForResourceTypeCModel>>
             public const nint m_sModelNameAg2Override = 0x108; // CResourceNameTyped<CWeakHandle<InfoForResourceTypeCModel>>
@@ -11182,17 +11645,32 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
-        public static class CTestPulseIO::EntityHandleIntArgs_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CTestPulseIO__EntityHandleIntArgs_t {
             public const nint handleA = 0x0; // CEntityHandle
             public const nint valueB = 0x4; // int32
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
+        // MPulseEditorHeaderIcon
         public static class CPulseCell_CursorQueue {
             public const nint m_nCursorsAllowedToRunParallel = 0x128; // int32
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MPropertyDescription
+        // MPulseEditorHeaderIcon
         public static class CPulseCell_Value_RandomFloat {
         }
         // Parent: None
@@ -11375,6 +11853,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 33
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CBasePlayerWeaponVData {
             public const nint m_szWorldModel = 0x28; // CResourceNameTyped<CWeakHandle<InfoForResourceTypeCModel>>
             public const nint m_szWorldModelAg2Override = 0x108; // CResourceNameTyped<CWeakHandle<InfoForResourceTypeCModel>>
@@ -11548,11 +12029,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MPropertyCustomEditor
         public static class CRangeFloat {
             public const nint m_pValue = 0x0; // float32[2]
         }
         // Parent: None
         // Field count: 7
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MFgdHelper
         public static class CDestructiblePart {
             public const nint m_DebugName = 0x0; // CGlobalSymbol
             public const nint m_nHitGroup = 0x8; // HitGroup_t
@@ -11564,29 +12052,44 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class PhysBlockHeader_t {
             public const nint nSaved = 0x0; // int32
             public const nint pWorldObject = 0x8; // uint64
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class RelationshipOverride_t {
             public const nint entity = 0x8; // CHandle<CBaseEntity>
             public const nint classType = 0xC; // Class_T
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class AutoRoomDoorwayPairs_t {
             public const nint vP1 = 0x0; // VectorWS
             public const nint vP2 = 0xC; // VectorWS
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class NavHull_t {
             public const nint m_nHullIdx = 0x0; // int32
         }
         // Parent: None
         // Field count: 14
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CDebugSnapshotData_t {
             public const nint m_text = 0x0; // CUtlString
             public const nint m_dataType = 0x8; // uint32
@@ -11605,6 +12108,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MPropertyCustomEditor
         public static class CRemapFloat {
             public const nint m_pValue = 0x0; // float32[4]
         }
@@ -11621,6 +12127,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 19
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class AI_GroundRootMotionMotor_DebugSnapshotData_t {
             public const nint desired_movement_gait_set = 0x8; // CGlobalSymbol
             public const nint desired_movement_gait = 0x10; // CGlobalSymbol
@@ -11655,10 +12165,16 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MPropertyCustomFGDType
         public static class CFootstepTableHandle {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CDecalGroupVData {
             public const nint m_vecOptions = 0x0; // CUtlVector<DecalGroupOption_t>
             public const nint m_flTotalProbability = 0x18; // float32
@@ -11691,6 +12207,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 6
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class lerpdata_t {
             public const nint m_hEnt = 0x0; // CHandle<CBaseEntity>
             public const nint m_MoveType = 0x4; // MoveType_t
@@ -11701,11 +12220,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class WrappedPhysicsJoint_t {
             public const nint m_pJoint = 0x0; // IPhysicsJoint*
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class SimpleConstraintSoundProfile {
             public const nint m_flKeyPointMinSoundThreshold = 0x8; // float32
             public const nint m_flKeyPointMaxSoundThreshold = 0xC; // float32
@@ -11715,12 +12240,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CSimpleSimTimer {
             public const nint m_flNext = 0x0; // GameTime_t
             public const nint m_nWorldGroupId = 0x4; // WorldGroupId_t
         }
         // Parent: None
         // Field count: 9
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class AI_BaseNPCAnimGraph_DebugSnapshotData_t {
             public const nint ag2_update_id = 0x0; // int32
             public const nint e_action_desired = 0x8; // CGlobalSymbol
@@ -11734,11 +12266,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPhysicsBodyGameMarkupData {
             public const nint m_PhysicsBodyMarkupByBoneName = 0x0; // CUtlDict<CPhysicsBodyGameMarkup>
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class SoundCommand_t {
             public const nint m_time = 0x8; // float32
             public const nint m_deltaTime = 0xC; // float32
@@ -11747,6 +12285,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class modifiedconvars_t {
             public const nint pszConvar = 0x0; // char[128]
             public const nint pszCurrentValue = 0x80; // char[128]
@@ -11754,10 +12295,16 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CTestPulseIOComponent_Derived {
         }
         // Parent: None
         // Field count: 7
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class SAVE_HEADER {
             public const nint m_saveId = 0x0; // int32
             public const nint m_version = 0x4; // int32
@@ -11769,6 +12316,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CSkillDamage {
             public const nint m_flDamage = 0x0; // CSkillFloat
             public const nint m_flNPCDamageScalarVsNPC = 0x10; // float32
@@ -11776,11 +12326,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class DebugSnapshotBaseStructuredData_t {
         }
         // Parent: None
         // Field count: 5
-        public static class AI_DefaultNPC_DebugSnapshotData_t::PathQuery_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MDebugSnapshotDataSummaryFn
+        public static class AI_DefaultNPC_DebugSnapshotData_t__PathQuery_t {
             public const nint m_nInitialMovementId = 0x0; // CGlobalSymbol
             public const nint m_nCurrentMovementId = 0x8; // CGlobalSymbol
             public const nint m_nMode = 0x10; // CGlobalSymbol
@@ -11793,6 +12351,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class physics_save_sphere_t {
             public const nint radius = 0x0; // float32
         }
@@ -11802,6 +12363,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class GAME_HEADER {
             public const nint m_sComment = 0x0; // CUtlString
             public const nint m_nSpawnGroupCount = 0x8; // int32
@@ -11810,10 +12374,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class ChickenPathCost {
         }
         // Parent: None
         // Field count: 13
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class AI_BaseNPC_DebugSnapshotData_t {
             public const nint npc_state = 0x8; // CGlobalSymbol
             public const nint current_enemy = 0x10; // CHandle<CBaseEntity>
@@ -11831,6 +12402,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 9
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CDebugDrawHistoryData {
             public const nint m_hEntity = 0x0; // CHandle<CBaseEntity>
             public const nint m_etype = 0x4; // ESceneViewDebugOverlaysListenerDataType_t
@@ -11844,6 +12418,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CNmEventConsumer {
         }
         // Parent: None
@@ -11860,32 +12437,50 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CNmEventConsumerContact {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CDestructiblePartsSystemData {
             public const nint m_PartsDataByHitGroup = 0x0; // CUtlOrderedMap<HitGroup_t,CDestructiblePart>
             public const nint m_nMinMaxNumberHitGroupsToDestroyWhenGibbing = 0x28; // CRangeInt
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CRopeOverlapHit {
             public const nint m_hEntity = 0x0; // CHandle<CBaseEntity>
             public const nint m_vecOverlappingLinks = 0x8; // CUtlVector<int32>
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class ActorClipEntry_t {
             public const nint m_sClipName = 0x0; // CUtlString
             public const nint m_bLooping = 0x8; // bool
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CNavPathCostForTests {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class ResponseContext_t {
             public const nint m_iszName = 0x0; // CUtlSymbolLarge
             public const nint m_iszValue = 0x8; // CUtlSymbolLarge
@@ -11893,6 +12488,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class ApproachAreaCost {
         }
         // Parent: None
@@ -11902,12 +12500,20 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPlayerPawnComponent {
             public const nint __m_pChainEntity = 0x8; // CNetworkVarChainer
             public const nint m_pComponentGraphController = 0x30; // CAnimGraphControllerPtr
         }
         // Parent: None
         // Field count: 7
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MDebugSnapshotDataRenderFn
         public static class AI_FacingServices_DebugSnapshotData_t {
             public const nint npc_position = 0x0; // VectorWS
             public const nint facing_target_source = 0x10; // CGlobalSymbol
@@ -11919,6 +12525,11 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 7
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MDebugSnapshotDataRenderFn
         public static class AI_Navigator_DebugSnapshotData_t {
             public const nint s_movement_id = 0x0; // CGlobalSymbol
             public const nint s_movement_serial_number = 0x8; // uint32
@@ -11930,6 +12541,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 28
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CDecalInstance {
             public const nint m_sDecalGroup = 0x0; // CGlobalSymbol
             public const nint m_hMaterial = 0x8; // CStrongHandle<InfoForResourceTypeIMaterial2>
@@ -11962,6 +12576,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 18
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CGameScriptedMoveData {
             public const nint m_vAccumulatedRootMotion = 0x0; // Vector
             public const nint m_angAccumulatedRootMotionRotation = 0xC; // QAngle
@@ -11984,6 +12601,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CSkeletonAnimationController {
             public const nint m_pSkeletonInstance = 0x8; // CSkeletonInstance*
         }
@@ -11998,12 +12618,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class FuncRotatorRotationSummary_t {
             public const nint nTick = 0x0; // GameTick_t
             public const nint nFlags = 0x4; // FuncRotatorRotationSummaryFlags_t
         }
         // Parent: None
         // Field count: 13
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CAI_Expresser {
             public const nint m_conceptCooldowns = 0x10; // CUtlDict<GameTime_t>
             public const nint m_ruleCooldowns = 0x38; // CUtlDict<GameTime_t>
@@ -12025,6 +12651,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CNmEventConsumerAttributes {
         }
         // Parent: None
@@ -12034,10 +12663,16 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CNmEventConsumerCloth {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class ResponseParams {
             public const nint odds = 0x10; // int16
             public const nint flags = 0x12; // int16
@@ -12045,6 +12680,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class SPAWNGROUP_HEADER {
             public const nint m_sGroupName = 0x0; // CUtlString
             public const nint m_sEntityLumpName = 0x8; // CUtlString
@@ -12054,6 +12692,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class globalentity_t {
             public const nint name = 0x0; // CUtlSymbol
             public const nint levelName = 0x2; // CUtlSymbol
@@ -12067,6 +12708,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 10
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class ConstraintSoundInfo {
             public const nint m_vSampler = 0x8; // VelocitySampler
             public const nint m_soundProfile = 0x20; // SimpleConstraintSoundProfile
@@ -12081,12 +12725,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPhysicsBodyGameMarkup {
             public const nint m_TargetBody = 0x0; // CUtlString
             public const nint m_Tag = 0x8; // CGlobalSymbol
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class PointCameraSettings_t {
             public const nint m_flNearBlurryDistance = 0x0; // float32
             public const nint m_flNearCrispDistance = 0x4; // float32
@@ -12095,6 +12745,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class HUDPanelHasClass_t {
             public const nint m_nPanelIdIndex = 0x0; // uint16
             public const nint m_nClassNameIndex = 0x2; // uint16
@@ -12102,11 +12755,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class DebugDrawBoneTransforms_t {
             public const nint vecBones = 0x10; // CUtlVectorFixedGrowable<CTransform,128>
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class INavPathCost {
             public const nint m_navHull = 0x8; // NavHull_t
         }
@@ -12124,6 +12784,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CSoundEnvelope {
             public const nint m_current = 0x0; // float32
             public const nint m_target = 0x4; // float32
@@ -12132,6 +12795,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 25
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class dynpitchvol_base_t {
             public const nint preset = 0x0; // int32
             public const nint pitchrun = 0x4; // int32
@@ -12161,17 +12827,26 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CStopwatchBase {
             public const nint m_bIsRunning = 0x8; // bool
         }
         // Parent: None
         // Field count: 2
-        public static class AI_GroundRootMotionMotor_DebugSnapshotData_t::Event_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class AI_GroundRootMotionMotor_DebugSnapshotData_t__Event_t {
             public const nint description = 0x0; // CUtlString
             public const nint location = 0x8; // VectorWS
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CMarkupSearch_PathCostAreaFilter {
             public const nint m_searchHelper = 0x8; // CMarkupSearchHelper
         }
@@ -12182,12 +12857,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class NavGravity_t {
             public const nint m_vGravity = 0x0; // Vector
             public const nint m_bDefault = 0xC; // bool
         }
         // Parent: None
         // Field count: 12
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class PulseScriptedSequenceData_t {
             public const nint m_nActorID = 0x0; // int32
             public const nint m_szPreIdleSequence = 0x8; // CUtlString
@@ -12204,6 +12885,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CChoreo_GraphController {
             public const nint m_eChoreoState = 0xC0; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
             public const nint m_tChoreoTargetWarp = 0xD8; // CAnimGraph2ParamOptionalRef<CTransform>
@@ -12211,6 +12895,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CBaseAnimGraphDestructibleParts_GraphController {
         }
         // Parent: None
@@ -12220,11 +12907,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPhysicsShake {
             public const nint m_force = 0x8; // Vector
         }
         // Parent: None
         // Field count: 8
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CInfoChoreoAnchorPosition {
             public const nint m_vOriginLS = 0x0; // Vector
             public const nint m_qAnglesLS = 0x10; // Quaternion
@@ -12244,6 +12937,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 15
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CTakeDamageResult {
             public const nint m_pOriginatingInfo = 0x0; // CTakeDamageInfo*
             public const nint m_DestructibleHitGroupRequests = 0x8; // CUtlLeanVector<DestructiblePartDamageRequest_t>
@@ -12263,6 +12959,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 7
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CMarkupSearchHelper {
             public const nint m_navHull = 0x0; // NavHull_t
             public const nint m_tagString = 0x8; // CUtlString
@@ -12279,6 +12978,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 10
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CCommentarySystem {
             public const nint m_bCommentaryEnabledMidGame = 0x12; // bool
             public const nint m_flNextTeleportTime = 0x14; // GameTime_t
@@ -12301,6 +13003,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class AmmoTypeInfo_t {
             public const nint m_nMaxCarry = 0x10; // int32
             public const nint m_nSplashSize = 0x1C; // CRangeInt
@@ -12310,11 +13015,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CNetworkTransmitComponent {
             public const nint m_nTransmitStateOwnedCounter = 0x184; // uint8
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
+        // MDebugSnapshotDataRenderFn
         public static class AI_MotorServices_DebugSnapshotData_t {
             public const nint active_motor = 0x0; // CGlobalSymbol
             public const nint desired_speed = 0x8; // float32
@@ -12324,6 +13037,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CPathQueryUtil {
             public const nint m_PathToEntityTransform = 0x10; // CTransform
             public const nint m_vecPathSamplePositions = 0x30; // CUtlVector<Vector>
@@ -12333,6 +13049,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class RagdollCreationParams_t {
             public const nint m_vForce = 0x0; // Vector
             public const nint m_nForceBone = 0xC; // int32
@@ -12341,6 +13060,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CRelativeTransform {
             public const nint m_bTransformIsWorldSpace = 0x0; // bool
             public const nint m_transform = 0x10; // CTransform
@@ -12349,11 +13071,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MPropertyCustomEditor
         public static class CRangeInt {
             public const nint m_pValue = 0x0; // int32[2]
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class PathCost {
             public const nint m_dangerFactor = 0x3C; // float32
             public const nint m_damagingAreasPenaltyCost = 0x40; // float32
@@ -12361,38 +13089,59 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class globalentitydatabase_t {
             public const nint m_list = 0x60; // CUtlVector<globalentity_t>
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CNmEventConsumerPulse {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CNMEventPulseState_t {
             public const nint m_eventID = 0x0; // CGlobalSymbol
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CWorldCompositionChunkReferenceElement_t {
             public const nint m_strMapToLoad = 0x0; // CUtlString
             public const nint m_strLandmarkName = 0x8; // CUtlString
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CRandStopwatch {
             public const nint m_flMinInterval = 0xC; // float32
             public const nint m_flMaxInterval = 0x10; // float32
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CMovementStatsProperty {
             public const nint m_nUseCounter = 0x10; // int32
             public const nint m_emaMovementDirection = 0x14; // CVectorExponentialMovingAverage
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CGameChoreoServices {
             public const nint m_hOwner = 0x8; // CHandle<CBaseModelEntity>
             public const nint m_hScriptedSequence = 0xC; // CHandle<CScriptedSequence>
@@ -12402,6 +13151,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 8
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class PhysObjectHeader_t {
             public const nint type = 0x0; // PhysInterfaceId_t
             public const nint hEntity = 0x4; // CHandle<CBaseEntity>
@@ -12418,6 +13170,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 28
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CShatterGlassShard {
             public const nint m_hShardHandle = 0x8; // uint32
             public const nint m_vecPanelVertices = 0x10; // CUtlVector<Vector2D>
@@ -12450,6 +13205,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class ragdollelement_t {
             public const nint originParentSpace = 0x0; // Vector
             public const nint parentIndex = 0x20; // int32
@@ -12482,10 +13240,16 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CBaseAnimGraphVariationUserData {
         }
         // Parent: None
         // Field count: 8
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class DynamicVolumeDef_t {
             public const nint m_source = 0x0; // CHandle<CBaseEntity>
             public const nint m_target = 0x4; // CHandle<CBaseEntity>
@@ -12505,6 +13269,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class magnetted_objects_t {
             public const nint hEntity = 0x8; // CHandle<CBaseEntity>
         }
@@ -12517,11 +13284,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MPropertyCustomEditor
         public static class CSkillInt {
             public const nint m_pValue = 0x0; // int32[4]
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class thinkfunc_t {
             public const nint m_think = 0x0; // BASEPTR
             public const nint m_hFn = 0x8; // HSCRIPT
@@ -12531,22 +13304,34 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CNavHullPresetVData {
             public const nint m_vecNavHulls = 0x0; // CUtlVector<CUtlString>
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MPropertyCustomEditor
         public static class CSkillFloat {
             public const nint m_pValue = 0x0; // float32[4]
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class WaterWheelFrictionScale_t {
             public const nint m_flFractionOfWheelSubmerged = 0x0; // float32
             public const nint m_flFrictionScale = 0x4; // float32
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class ragdollhierarchyjoint_t {
             public const nint parentIndex = 0x0; // int32
             public const nint childIndex = 0x4; // int32
@@ -12603,6 +13388,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 13
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CCS2ChickenGraphController {
             public const nint m_action = 0xC0; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
             public const nint m_bActionReset = 0xD8; // CAnimGraph2ParamAutoResetOptionalRef
@@ -12620,6 +13408,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class levellist_t {
             public const nint m_sMapName = 0x0; // CUtlString
             public const nint m_sLandmarkName = 0x8; // CUtlString
@@ -12629,6 +13420,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class locksound_t {
             public const nint sLockedSound = 0x8; // CGameSoundEventName
             public const nint sUnlockedSound = 0x10; // CGameSoundEventName
@@ -12636,6 +13430,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 6
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class DecalGroupOption_t {
             public const nint m_hMaterial = 0x0; // CStrongHandleCopyable<InfoForResourceTypeIMaterial2>
             public const nint m_sSequenceName = 0x8; // CGlobalSymbol
@@ -12656,11 +13453,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MPropertyCustomEditor
         public static class CFiringModeFloat {
             public const nint m_flValues = 0x0; // float32[2]
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CCopyRecipientFilter {
             public const nint m_Flags = 0x8; // int32
             public const nint m_Recipients = 0x10; // CUtlVector<CPlayerSlot>
@@ -12672,6 +13475,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 8
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class FuncMoverMovementSummary_t {
             public const nint flStartT = 0x0; // float32
             public const nint flEndT = 0x4; // float32
@@ -12684,6 +13490,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CSmoothFunc {
             public const nint m_flSmoothAmplitude = 0x8; // float32
             public const nint m_flSmoothBias = 0xC; // float32
@@ -12697,6 +13506,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class ragdoll_t {
             public const nint list = 0x0; // CUtlVector<ragdollelement_t>
             public const nint hierarchyJoints = 0x18; // CUtlVector<ragdollhierarchyjoint_t>
@@ -12725,6 +13537,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class ISkeletonAnimationController {
         }
         // Parent: None
@@ -12736,12 +13551,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class GameAmmoTypeInfo_t {
             public const nint m_nBuySize = 0x38; // int32
             public const nint m_nCost = 0x3C; // int32
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CMotorController {
             public const nint m_speed = 0x8; // float32
             public const nint m_maxTorque = 0xC; // float32
@@ -12765,11 +13586,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CDynamicPropGraphController {
             public const nint m_sActionState = 0xC0; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class SummaryTakeDamageInfo_t {
             public const nint nSummarisedCount = 0x0; // int32
             public const nint info = 0x8; // CTakeDamageInfo
@@ -12783,6 +13610,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 10
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class entitytable_t {
             public const nint id = 0x0; // int32
             public const nint edictindex = 0x4; // CEntityIndex
@@ -12797,13 +13627,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
-        public static class AI_MotorServices_DebugSnapshotData_t::MotorPathWaypoint_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class AI_MotorServices_DebugSnapshotData_t__MotorPathWaypoint_t {
             public const nint position = 0x0; // VectorWS
             public const nint nav_type = 0xC; // uint32
             public const nint flags = 0x10; // uint32
         }
         // Parent: None
         // Field count: 10
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CRR_Response {
             public const nint m_Type = 0x0; // uint8
             public const nint m_szResponseName = 0x1; // char[192]
@@ -12822,7 +13658,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 12
-        public static class CNmAimCSNode::CDefinition {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CNmAimCSNode__CDefinition {
             public const nint m_nVerticalAngleNodeIdx = 0x18; // int16
             public const nint m_nHorizontalAngleNodeIdx = 0x1A; // int16
             public const nint m_nWeaponCategoryNodeIdx = 0x1C; // int16
@@ -12838,6 +13677,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CConstantForceController {
             public const nint m_linear = 0xC; // Vector
             public const nint m_angular = 0x18; // RotationVector
@@ -12846,12 +13688,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class WaterWheelDrag_t {
             public const nint m_flFractionOfWheelSubmerged = 0x0; // float32
             public const nint m_flWheelDrag = 0x4; // float32
         }
         // Parent: None
         // Field count: 22
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CTakeDamageInfo {
             public const nint m_vecDamageForce = 0x8; // Vector
             public const nint m_vecDamagePosition = 0x14; // VectorWS
@@ -12878,6 +13726,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CRandSimTimer {
             public const nint m_flMinInterval = 0x8; // float32
             public const nint m_flMaxInterval = 0xC; // float32
@@ -12888,6 +13739,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CRelativeLocation {
             public const nint m_Type = 0x18; // RelativeLocationType_t
             public const nint m_vRelativeOffset = 0x1C; // Vector
@@ -12896,6 +13750,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class HostagePathCost {
         }
         // Parent: None
@@ -12906,6 +13763,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 5
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class sndopvarlatchdata_t {
             public const nint m_iszStack = 0x8; // CUtlSymbolLarge
             public const nint m_iszOperator = 0x10; // CUtlSymbolLarge
@@ -12915,6 +13775,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class PrecipitationFilter_t {
             public const nint m_flMaxRadius = 0x0; // float32
         }
@@ -12924,6 +13787,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class PathMoverEntitySpawn {
             public const nint hMover = 0x0; // CHandle<CFuncMover>
             public const nint vecOtherEntities = 0x8; // CUtlVector<CHandle<CBaseEntity>>
@@ -12974,18 +13840,30 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class INavPathCostAreaFilter {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CNmEventConsumerSound {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CNmEventConsumerLegacy {
         }
         // Parent: None
         // Field count: 10
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class DestructiblePartDamageRequest_t {
             public const nint m_nHitGroup = 0x0; // HitGroup_t
             public const nint m_nDamageLevel = 0x4; // int32
@@ -13024,10 +13902,16 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CNmEventConsumerParticle {
         }
         // Parent: None
         // Field count: 15
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CNavHullVData {
             public const nint m_bAgentEnabled = 0x0; // bool
             public const nint m_agentRadius = 0x4; // float32
@@ -13047,10 +13931,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CNmEventConsumerCamera {
         }
         // Parent: None
         // Field count: 7
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MPropertyFriendlyName
         public static class AI_DefaultNPC_DebugSnapshotData_t {
             public const nint s_npc_current_ability = 0x8; // CGlobalSymbol
             public const nint s_npc_current_held_ability = 0x10; // CGlobalSymbol
@@ -13062,6 +13953,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 12
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CNavPathCost {
             public const nint m_bAllowLadders = 0x10; // bool
             public const nint m_bCanFly = 0x11; // bool
@@ -13078,13 +13972,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
-        public static class CNmSnapWeaponNode::CDefinition {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class CNmSnapWeaponNode__CDefinition {
             public const nint m_nFlashedAmountNodeIdx = 0x18; // int16
             public const nint m_nWeaponCategoryNodeIdx = 0x1A; // int16
             public const nint m_nWeaponTypeNodeIdx = 0x1C; // int16
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class SoundOpvarTraceResult_t {
             public const nint vPos = 0x0; // VectorWS
             public const nint bDidHit = 0xC; // bool
@@ -13092,6 +13992,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class ActorMapping_t {
             public const nint m_sActorName = 0x0; // CUtlString
             public const nint m_hEntity = 0x8; // CHandle<CBaseEntity>
@@ -13102,6 +14005,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MPropertyCustomEditor
         public static class CFiringModeInt {
             public const nint m_nValues = 0x0; // int32[2]
         }
@@ -13127,10 +14033,16 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CNmEventConsumerBodyGroup {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CEmptyGraphController {
         }
         // Parent: None
@@ -13140,10 +14052,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        // MVDataNodeType
+        // MVDataOverlayType
         public static class CEntitySubclassVDataBase {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CBreakableStageHelper {
             public const nint m_nCurrentStage = 0x8; // int32
             public const nint m_nStageCount = 0xC; // int32
@@ -13156,6 +14076,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class dynpitchvol_t {
         }
         // Parent: None
@@ -13176,7 +14099,10 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
-        public static class AI_Navigator_DebugSnapshotData_t::Waypoint_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class AI_Navigator_DebugSnapshotData_t__Waypoint_t {
             public const nint position = 0x0; // VectorWS
             public const nint nav_type = 0xC; // uint32
             public const nint flags = 0x10; // uint32
@@ -13184,6 +14110,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CTestPulseIOComponent {
             public const nint m_ComponentData = 0x8; // CUtlString
             public const nint m_OnComponentTestFunc = 0x10; // CEntityOutputTemplate<CUtlSymbolLarge>
@@ -13214,6 +14143,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 6
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class hudtextparms_t {
             public const nint color1 = 0x0; // Color
             public const nint color2 = 0x4; // Color
@@ -13229,6 +14161,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CAnimGraphControllerBase {
             public const nint m_hExternalGraph = 0x4C; // ExternalAnimGraphHandle_t
         }
@@ -13241,6 +14176,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 10
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CDestructiblePart_DamageLevel {
             public const nint m_sName = 0x0; // CUtlString
             public const nint m_sBreakablePieceName = 0x8; // CGlobalSymbol
@@ -13265,10 +14203,12 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class Relationship_t {
             public const nint disposition = 0x0; // Disposition_t
             public const nint priority = 0x4; // int32
         }
     }
 }
-

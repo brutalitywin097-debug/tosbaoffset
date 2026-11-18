@@ -140,7 +140,7 @@
         ],
         "parent": null
       },
-      "BakedLightingInfo_t::BakedShadowAssignment_t": {
+      "BakedLightingInfo_t__BakedShadowAssignment_t": {
         "fields": {
           "m_nLightHash": 0,
           "m_nMapHash": 4,
@@ -545,7 +545,7 @@
           "AGGREGATE_INSTANCE_STREAM_VERTEXBLEND_UNORM8": 4,
           "AGGREGATE_INSTANCE_STREAM_VERTEXTINT_UNORM8": 2
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "ObjectTypeFlags_t": {
         "alignment": 4,
@@ -576,7 +576,7 @@
           "RTPROXY_INSTANCE_FLAG_NONE": 0,
           "RTPROXY_INSTANCE_UNIQUE_MESH": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       }
     }
   }

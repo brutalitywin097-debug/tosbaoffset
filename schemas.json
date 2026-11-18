@@ -66835,7 +66835,7 @@
             "type": "bool"
           },
           "m_bForceTeamChangeSilent": {
-            "offset": 3620,
+            "offset": 3616,
             "type": "bool"
           },
           "m_bFreezePeriod": {
@@ -66887,7 +66887,7 @@
             "type": "bool"
           },
           "m_bLoadingRoundBackupData": {
-            "offset": 3621,
+            "offset": 3617,
             "type": "bool"
           },
           "m_bLogoMap": {
@@ -66940,10 +66940,6 @@
           },
           "m_bPlayedTeamIntroVO": {
             "offset": 5076,
-            "type": "bool"
-          },
-          "m_bQueuedMatchmakingReportedRoundStatsPendingSend": {
-            "offset": 3608,
             "type": "bool"
           },
           "m_bRespawningAllRespawnablePlayers": {
@@ -67319,7 +67315,7 @@
             "type": "int32"
           },
           "m_nCTsAliveAtFreezetimeEnd": {
-            "offset": 3612,
+            "offset": 3608,
             "type": "int32"
           },
           "m_nEndMatchMapGroupVoteOptions": {
@@ -67399,7 +67395,7 @@
             "type": "int32"
           },
           "m_nTerroristsAliveAtFreezetimeEnd": {
-            "offset": 3616,
+            "offset": 3612,
             "type": "int32"
           },
           "m_nTournamentPredictionsPct": {
@@ -70054,7 +70050,7 @@
             "type": "CountdownTimer"
           },
           "m_bSpawnDyingParticles": {
-            "offset": 13027,
+            "offset": 13026,
             "type": "bool"
           },
           "m_collisionStuckTimer": {

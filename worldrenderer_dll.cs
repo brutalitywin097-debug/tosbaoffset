@@ -1,5 +1,5 @@
-﻿// Generated using https://github.com/SelfC0de/CS2-All-Dumps-Offsets
-// 2026-11-12 08:33:41.7308395 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2026-11-18 04:47:40.949652200 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: worldrenderer.dll
@@ -8,7 +8,7 @@ namespace CS2Dumper.Schemas {
     public static class WorldrendererDll {
         // Alignment: 1
         // Member count: 2
-        public enum RTProxyInstanceFlags_t : uint {
+        public enum RTProxyInstanceFlags_t : byte {
             RTPROXY_INSTANCE_FLAG_NONE = 0x0,
             RTPROXY_INSTANCE_UNIQUE_MESH = 0x1
         }
@@ -35,7 +35,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 4
-        public enum AggregateInstanceStream_t : uint {
+        public enum AggregateInstanceStream_t : byte {
             AGGREGATE_INSTANCE_STREAM_NONE = 0x0,
             AGGREGATE_INSTANCE_STREAM_LIGHTMAPUV_UNORM16 = 0x1,
             AGGREGATE_INSTANCE_STREAM_VERTEXTINT_UNORM8 = 0x2,
@@ -54,11 +54,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CScriptComponent {
             public const nint m_scriptClassName = 0x30; // CUtlSymbolLarge
         }
         // Parent: None
         // Field count: 12
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CEntityIdentity {
             public const nint m_nameStringTableIndex = 0x14; // int32
             public const nint m_name = 0x18; // CUtlSymbolLarge
@@ -75,6 +81,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 10
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class RTProxyInstanceInfo_t {
             public const nint m_nFlags = 0x0; // RTProxyInstanceFlags_t
             public const nint m_albedoFormat = 0x1; // VertexAlbedoFormat_t
@@ -89,11 +98,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class AggregateVertexAlbedoStreamOnDiskData_t {
             public const nint m_BufferData = 0x0; // CUtlBinaryBlock
         }
         // Parent: None
         // Field count: 15
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class SceneObject_t {
             public const nint m_nObjectID = 0x0; // uint32
             public const nint m_vTransform = 0x4; // Vector4D[3]
@@ -113,6 +128,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class AggregateLODSetup_t {
             public const nint m_vLODOrigin = 0x0; // Vector
             public const nint m_fMaxObjectScale = 0xC; // float32
@@ -120,6 +138,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class ExtraVertexStreamOverride_t {
             public const nint m_nSubSceneObject = 0x4; // uint32
             public const nint m_nDrawCallIndex = 0x8; // uint32
@@ -128,6 +149,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class ClutterTile_t {
             public const nint m_nFirstInstance = 0x0; // uint32
             public const nint m_nLastInstance = 0x4; // uint32
@@ -135,6 +159,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 11
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class AggregateSceneObject_t {
             public const nint m_allFlags = 0x0; // ObjectTypeFlags_t
             public const nint m_anyFlags = 0x4; // ObjectTypeFlags_t
@@ -150,6 +177,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class NodeData_t {
             public const nint m_vOrigin = 0x0; // Vector
             public const nint m_vMinBounds = 0xC; // Vector
@@ -162,12 +192,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class AggregateInstanceStreamOnDiskData_t {
             public const nint m_DecodedSize = 0x0; // uint32
             public const nint m_BufferData = 0x8; // CUtlBinaryBlock
         }
         // Parent: None
         // Field count: 9
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class RTProxyBLAS_t {
             public const nint m_nFirstIndex = 0x0; // uint32
             public const nint m_nIndexCount = 0x4; // uint32
@@ -181,11 +217,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class AggregateVertexEmissiveStreamOnDiskData_t {
             public const nint m_BufferData = 0x0; // CUtlBinaryBlock
         }
         // Parent: None
         // Field count: 11
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class ClutterSceneObject_t {
             public const nint m_Bounds = 0x0; // AABB_t
             public const nint m_flags = 0x18; // ObjectTypeFlags_t
@@ -201,6 +243,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 6
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class WorldBuilderParams_t {
             public const nint m_flMinDrawVolumeSize = 0x0; // float32
             public const nint m_bBuildBakedLighting = 0x4; // bool
@@ -211,6 +256,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class PermEntityLumpData_t {
             public const nint m_name = 0x8; // CUtlString
             public const nint m_childLumps = 0x10; // CUtlVector<CStrongHandleCopyable<InfoForResourceTypeCEntityLump>>
@@ -218,6 +266,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 16
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class WorldNode_t {
             public const nint m_sceneObjects = 0x0; // CUtlVector<SceneObject_t>
             public const nint m_visClusterMembership = 0x18; // CUtlVector<uint16>
@@ -238,11 +289,17 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 1
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class BaseSceneObjectOverride_t {
             public const nint m_nSceneObjectIndex = 0x0; // uint32
         }
         // Parent: None
         // Field count: 8
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class EntityIOConnectionData_t {
             public const nint m_outputName = 0x0; // CUtlString
             public const nint m_targetType = 0x8; // uint32
@@ -255,6 +312,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 12
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class BakedLightingInfo_t {
             public const nint m_nLightmapVersionNumber = 0x0; // uint32
             public const nint m_nLightmapGameVersionNumber = 0x4; // uint32
@@ -271,16 +331,25 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class VoxelVisBlockOffset_t {
             public const nint m_nOffset = 0x0; // uint32
             public const nint m_nElementCount = 0x4; // uint32
         }
         // Parent: None
         // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
         public static class InfoForResourceTypeVMapResourceData_t {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class WorldNodeOnDiskBufferData_t {
             public const nint m_nElementCount = 0x0; // int32
             public const nint m_nElementSizeInBytes = 0x4; // int32
@@ -289,6 +358,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 14
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class AggregateMeshInfo_t {
             public const nint m_nVisClusterMemberOffset = 0x0; // uint32
             public const nint m_nVisClusterMemberCount = 0x4; // uint8
@@ -307,6 +379,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class World_t {
             public const nint m_builderParams = 0x0; // WorldBuilderParams_t
             public const nint m_worldNodes = 0x60; // CUtlVector<NodeData_t>
@@ -315,13 +390,19 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 3
-        public static class BakedLightingInfo_t::BakedShadowAssignment_t {
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class BakedLightingInfo_t__BakedShadowAssignment_t {
             public const nint m_nLightHash = 0x0; // uint32
             public const nint m_nMapHash = 0x4; // uint32
             public const nint m_nShadowChannel = 0x8; // int8
         }
         // Parent: None
         // Field count: 4
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class MaterialOverride_t {
             public const nint m_nSubSceneObject = 0x4; // uint32
             public const nint m_nDrawCallIndex = 0x8; // uint32
@@ -330,6 +411,9 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 7
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class AggregateRTProxySceneObject_t {
             public const nint m_nLayer = 0x0; // int16
             public const nint m_BLASes = 0x8; // CUtlVector<RTProxyBLAS_t>
@@ -341,12 +425,18 @@ namespace CS2Dumper.Schemas {
         }
         // Parent: None
         // Field count: 2
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class EntityKeyValueData_t {
             public const nint m_connections = 0x8; // CUtlVector<EntityIOConnectionData_t>
             public const nint m_keyValuesData = 0x20; // CUtlBinaryBlock
         }
         // Parent: None
         // Field count: 13
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         public static class CVoxelVisibility {
             public const nint m_nBaseClusterCount = 0x40; // uint32
             public const nint m_nPVSBytesPerCluster = 0x44; // uint32
@@ -364,4 +454,3 @@ namespace CS2Dumper.Schemas {
         }
     }
 }
-

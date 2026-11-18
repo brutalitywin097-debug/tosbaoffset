@@ -1461,7 +1461,7 @@
         ],
         "parent": null
       },
-      "CBoneConstraintPoseSpaceBone::Input_t": {
+      "CBoneConstraintPoseSpaceBone__Input_t": {
         "fields": {
           "m_inputValue": 0,
           "m_outputTransformList": 16
@@ -1485,7 +1485,7 @@
         ],
         "parent": null
       },
-      "CBoneConstraintPoseSpaceMorph::Input_t": {
+      "CBoneConstraintPoseSpaceMorph__Input_t": {
         "fields": {
           "m_inputValue": 0,
           "m_outputWeightList": 16
@@ -2729,7 +2729,7 @@
         ],
         "parent": null
       },
-      "CMaterialDrawDescriptor::RigidMeshPart_t": {
+      "CMaterialDrawDescriptor__RigidMeshPart_t": {
         "fields": {
           "m_nBoneIndex": 2,
           "m_nPrimitiveCount": 8,
@@ -3394,7 +3394,7 @@
         "metadata": [],
         "parent": null
       },
-      "CNmAndNode::CDefinition": {
+      "CNmAndNode__CDefinition": {
         "fields": {
           "m_conditionNodeIndices": 16
         },
@@ -3406,7 +3406,7 @@
         ],
         "parent": null
       },
-      "CNmAnimationPoseNode::CDefinition": {
+      "CNmAnimationPoseNode__CDefinition": {
         "fields": {
           "m_bUseFramesAsInput": 32,
           "m_flUserSpecifiedTime": 28,
@@ -3434,7 +3434,7 @@
         ],
         "parent": null
       },
-      "CNmBlend1DNode::CDefinition": {
+      "CNmBlend1DNode__CDefinition": {
         "fields": {
           "m_parameterization": 48
         },
@@ -3446,7 +3446,7 @@
         ],
         "parent": null
       },
-      "CNmBlend2DNode::CDefinition": {
+      "CNmBlend2DNode__CDefinition": {
         "fields": {
           "m_bAllowLooping": 196,
           "m_hullIndices": 168,
@@ -3488,7 +3488,7 @@
         ],
         "parent": null
       },
-      "CNmBodyGroupNode::CDefinition": {
+      "CNmBodyGroupNode__CDefinition": {
         "fields": {
           "m_event": 32,
           "m_nEnabledNodeIdx": 24
@@ -3501,7 +3501,7 @@
         ],
         "parent": null
       },
-      "CNmBoneMaskBlendNode::CDefinition": {
+      "CNmBoneMaskBlendNode__CDefinition": {
         "fields": {
           "m_nBlendWeightValueNodeIdx": 20,
           "m_nSourceMaskNodeIdx": 16,
@@ -3515,7 +3515,7 @@
         ],
         "parent": null
       },
-      "CNmBoneMaskNode::CDefinition": {
+      "CNmBoneMaskNode__CDefinition": {
         "fields": {
           "m_boneMaskID": 16
         },
@@ -3527,7 +3527,7 @@
         ],
         "parent": null
       },
-      "CNmBoneMaskSelectorNode::CDefinition": {
+      "CNmBoneMaskSelectorNode__CDefinition": {
         "fields": {
           "m_bSwitchDynamically": 20,
           "m_defaultMaskNodeIdx": 16,
@@ -3544,7 +3544,7 @@
         ],
         "parent": null
       },
-      "CNmBoneMaskSwitchNode::CDefinition": {
+      "CNmBoneMaskSwitchNode__CDefinition": {
         "fields": {
           "m_bSwitchDynamically": 28,
           "m_flBlendTimeSeconds": 24,
@@ -3560,7 +3560,7 @@
         ],
         "parent": null
       },
-      "CNmBoneMaskValueNode::CDefinition": {
+      "CNmBoneMaskValueNode__CDefinition": {
         "fields": {},
         "metadata": [],
         "parent": null
@@ -3579,12 +3579,12 @@
         ],
         "parent": null
       },
-      "CNmBoolValueNode::CDefinition": {
+      "CNmBoolValueNode__CDefinition": {
         "fields": {},
         "metadata": [],
         "parent": null
       },
-      "CNmCachedBoolNode::CDefinition": {
+      "CNmCachedBoolNode__CDefinition": {
         "fields": {
           "m_mode": 20,
           "m_nInputValueNodeIdx": 16
@@ -3597,7 +3597,7 @@
         ],
         "parent": null
       },
-      "CNmCachedFloatNode::CDefinition": {
+      "CNmCachedFloatNode__CDefinition": {
         "fields": {
           "m_mode": 20,
           "m_nInputValueNodeIdx": 16
@@ -3610,7 +3610,7 @@
         ],
         "parent": null
       },
-      "CNmCachedIDNode::CDefinition": {
+      "CNmCachedIDNode__CDefinition": {
         "fields": {
           "m_mode": 20,
           "m_nInputValueNodeIdx": 16
@@ -3633,7 +3633,7 @@
         "metadata": [],
         "parent": null
       },
-      "CNmCachedTargetNode::CDefinition": {
+      "CNmCachedTargetNode__CDefinition": {
         "fields": {
           "m_mode": 20,
           "m_nInputValueNodeIdx": 16
@@ -3646,7 +3646,7 @@
         ],
         "parent": null
       },
-      "CNmCachedVectorNode::CDefinition": {
+      "CNmCachedVectorNode__CDefinition": {
         "fields": {
           "m_mode": 20,
           "m_nInputValueNodeIdx": 16
@@ -3683,7 +3683,7 @@
         ],
         "parent": null
       },
-      "CNmChainLookatNode::CDefinition": {
+      "CNmChainLookatNode__CDefinition": {
         "fields": {
           "m_bIsTargetInWorldSpace": 113,
           "m_chainWeights": 64,
@@ -3732,21 +3732,7 @@
         ],
         "parent": null
       },
-      "CNmClip::ModelSpaceSamplingChainLink_t": {
-        "fields": {
-          "m_nBoneIdx": 0,
-          "m_nParentBoneIdx": 4,
-          "m_nParentChainLinkIdx": 8
-        },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
-        "parent": null
-      },
-      "CNmClipNode::CDefinition": {
+      "CNmClipNode__CDefinition": {
         "fields": {
           "m_bAllowLooping": 19,
           "m_bSampleRootMotion": 18,
@@ -3765,7 +3751,7 @@
         ],
         "parent": null
       },
-      "CNmClipReferenceNode::CDefinition": {
+      "CNmClipReferenceNode__CDefinition": {
         "fields": {},
         "metadata": [
           {
@@ -3775,10 +3761,24 @@
         ],
         "parent": null
       },
-      "CNmClipSelectorNode::CDefinition": {
+      "CNmClipSelectorNode__CDefinition": {
         "fields": {
           "m_conditionNodeIndices": 40,
           "m_optionNodeIndices": 16
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CNmClip__ModelSpaceSamplingChainLink_t": {
+        "fields": {
+          "m_nBoneIdx": 0,
+          "m_nParentBoneIdx": 4,
+          "m_nParentChainLinkIdx": 8
         },
         "metadata": [
           {
@@ -3806,7 +3806,7 @@
         ],
         "parent": null
       },
-      "CNmConstBoolNode::CDefinition": {
+      "CNmConstBoolNode__CDefinition": {
         "fields": {
           "m_bValue": 16
         },
@@ -3818,7 +3818,7 @@
         ],
         "parent": null
       },
-      "CNmConstFloatNode::CDefinition": {
+      "CNmConstFloatNode__CDefinition": {
         "fields": {
           "m_flValue": 16
         },
@@ -3830,7 +3830,7 @@
         ],
         "parent": null
       },
-      "CNmConstIDNode::CDefinition": {
+      "CNmConstIDNode__CDefinition": {
         "fields": {
           "m_value": 16
         },
@@ -3842,7 +3842,7 @@
         ],
         "parent": null
       },
-      "CNmConstTargetNode::CDefinition": {
+      "CNmConstTargetNode__CDefinition": {
         "fields": {
           "m_value": 16
         },
@@ -3854,7 +3854,7 @@
         ],
         "parent": null
       },
-      "CNmConstVectorNode::CDefinition": {
+      "CNmConstVectorNode__CDefinition": {
         "fields": {
           "m_value": 16
         },
@@ -3918,7 +3918,7 @@
         ],
         "parent": null
       },
-      "CNmControlParameterBoolNode::CDefinition": {
+      "CNmControlParameterBoolNode__CDefinition": {
         "fields": {},
         "metadata": [
           {
@@ -3928,7 +3928,7 @@
         ],
         "parent": null
       },
-      "CNmControlParameterFloatNode::CDefinition": {
+      "CNmControlParameterFloatNode__CDefinition": {
         "fields": {},
         "metadata": [
           {
@@ -3938,7 +3938,7 @@
         ],
         "parent": null
       },
-      "CNmControlParameterIDNode::CDefinition": {
+      "CNmControlParameterIDNode__CDefinition": {
         "fields": {},
         "metadata": [
           {
@@ -3948,7 +3948,7 @@
         ],
         "parent": null
       },
-      "CNmControlParameterTargetNode::CDefinition": {
+      "CNmControlParameterTargetNode__CDefinition": {
         "fields": {},
         "metadata": [
           {
@@ -3958,7 +3958,7 @@
         ],
         "parent": null
       },
-      "CNmControlParameterVectorNode::CDefinition": {
+      "CNmControlParameterVectorNode__CDefinition": {
         "fields": {},
         "metadata": [
           {
@@ -3968,7 +3968,7 @@
         ],
         "parent": null
       },
-      "CNmCurrentSyncEventIDNode::CDefinition": {
+      "CNmCurrentSyncEventIDNode__CDefinition": {
         "fields": {
           "m_nSourceStateNodeIdx": 16
         },
@@ -3980,7 +3980,7 @@
         ],
         "parent": null
       },
-      "CNmCurrentSyncEventNode::CDefinition": {
+      "CNmCurrentSyncEventNode__CDefinition": {
         "fields": {
           "m_infoType": 18,
           "m_nSourceStateNodeIdx": 16
@@ -3993,7 +3993,7 @@
         ],
         "parent": null
       },
-      "CNmDurationScaleNode::CDefinition": {
+      "CNmDurationScaleNode__CDefinition": {
         "fields": {},
         "metadata": [
           {
@@ -4054,7 +4054,7 @@
         ],
         "parent": null
       },
-      "CNmExternalPoseNode::CDefinition": {
+      "CNmExternalPoseNode__CDefinition": {
         "fields": {
           "m_bShouldSampleRootMotion": 16
         },
@@ -4066,7 +4066,7 @@
         ],
         "parent": null
       },
-      "CNmFixedWeightBoneMaskNode::CDefinition": {
+      "CNmFixedWeightBoneMaskNode__CDefinition": {
         "fields": {
           "m_flBoneWeight": 16
         },
@@ -4078,7 +4078,7 @@
         ],
         "parent": null
       },
-      "CNmFloatAngleMathNode::CDefinition": {
+      "CNmFloatAngleMathNode__CDefinition": {
         "fields": {
           "m_nInputValueNodeIdx": 16,
           "m_operation": 18
@@ -4107,7 +4107,7 @@
         ],
         "parent": null
       },
-      "CNmFloatChannelData::ChannelSettings_t": {
+      "CNmFloatChannelData__ChannelSettings_t": {
         "fields": {
           "m_bIsStatic": 8,
           "m_range": 0
@@ -4133,7 +4133,7 @@
         ],
         "parent": null
       },
-      "CNmFloatClampNode::CDefinition": {
+      "CNmFloatClampNode__CDefinition": {
         "fields": {
           "m_clampRange": 20,
           "m_nInputValueNodeIdx": 16
@@ -4146,7 +4146,7 @@
         ],
         "parent": null
       },
-      "CNmFloatComparisonNode::CDefinition": {
+      "CNmFloatComparisonNode__CDefinition": {
         "fields": {
           "m_comparison": 20,
           "m_flComparisonValue": 28,
@@ -4175,7 +4175,7 @@
         ],
         "parent": null
       },
-      "CNmFloatCurveEventNode::CDefinition": {
+      "CNmFloatCurveEventNode__CDefinition": {
         "fields": {
           "m_eventConditionRules": 32,
           "m_eventID": 16,
@@ -4190,7 +4190,7 @@
         ],
         "parent": null
       },
-      "CNmFloatCurveNode::CDefinition": {
+      "CNmFloatCurveNode__CDefinition": {
         "fields": {
           "m_curve": 24,
           "m_nInputValueNodeIdx": 16
@@ -4203,7 +4203,7 @@
         ],
         "parent": null
       },
-      "CNmFloatEaseNode::CDefinition": {
+      "CNmFloatEaseNode__CDefinition": {
         "fields": {
           "m_bUseStartValue": 27,
           "m_easingOp": 26,
@@ -4219,7 +4219,7 @@
         ],
         "parent": null
       },
-      "CNmFloatMathNode::CDefinition": {
+      "CNmFloatMathNode__CDefinition": {
         "fields": {
           "m_bReturnAbsoluteResult": 20,
           "m_bReturnNegatedResult": 21,
@@ -4236,7 +4236,7 @@
         ],
         "parent": null
       },
-      "CNmFloatRangeComparisonNode::CDefinition": {
+      "CNmFloatRangeComparisonNode__CDefinition": {
         "fields": {
           "m_bIsInclusiveCheck": 26,
           "m_nInputValueNodeIdx": 24,
@@ -4250,7 +4250,7 @@
         ],
         "parent": null
       },
-      "CNmFloatRemapNode::CDefinition": {
+      "CNmFloatRemapNode__CDefinition": {
         "fields": {
           "m_inputRange": 20,
           "m_nInputValueNodeIdx": 16,
@@ -4264,7 +4264,7 @@
         ],
         "parent": null
       },
-      "CNmFloatRemapNode::RemapRange_t": {
+      "CNmFloatRemapNode__RemapRange_t": {
         "fields": {
           "m_flBegin": 0,
           "m_flEnd": 4
@@ -4277,7 +4277,7 @@
         ],
         "parent": null
       },
-      "CNmFloatSelectorNode::CDefinition": {
+      "CNmFloatSelectorNode__CDefinition": {
         "fields": {
           "m_conditionNodeIndices": 16,
           "m_easingOp": 80,
@@ -4293,7 +4293,7 @@
         ],
         "parent": null
       },
-      "CNmFloatSpringNode::CDefinition": {
+      "CNmFloatSpringNode__CDefinition": {
         "fields": {
           "m_bUseStartValue": 30,
           "m_flDampingRatio": 24,
@@ -4309,7 +4309,7 @@
         ],
         "parent": null
       },
-      "CNmFloatSwitchNode::CDefinition": {
+      "CNmFloatSwitchNode__CDefinition": {
         "fields": {
           "m_flFalseValue": 24,
           "m_flTrueValue": 28,
@@ -4325,12 +4325,12 @@
         ],
         "parent": null
       },
-      "CNmFloatValueNode::CDefinition": {
+      "CNmFloatValueNode__CDefinition": {
         "fields": {},
         "metadata": [],
         "parent": null
       },
-      "CNmFollowBoneNode::CDefinition": {
+      "CNmFollowBoneNode__CDefinition": {
         "fields": {
           "m_bone": 24,
           "m_followTargetBone": 32,
@@ -4362,7 +4362,7 @@
         ],
         "parent": null
       },
-      "CNmFootEventConditionNode::CDefinition": {
+      "CNmFootEventConditionNode__CDefinition": {
         "fields": {
           "m_eventConditionRules": 20,
           "m_nSourceStateNodeIdx": 16,
@@ -4376,7 +4376,7 @@
         ],
         "parent": null
       },
-      "CNmFootIKNode::CDefinition": {
+      "CNmFootIKNode__CDefinition": {
         "fields": {
           "m_bIsTargetInWorldSpace": 53,
           "m_blendMode": 52,
@@ -4413,7 +4413,7 @@
         "metadata": [],
         "parent": null
       },
-      "CNmFootstepEventIDNode::CDefinition": {
+      "CNmFootstepEventIDNode__CDefinition": {
         "fields": {
           "m_eventConditionRules": 20,
           "m_nSourceStateNodeIdx": 16
@@ -4426,7 +4426,7 @@
         ],
         "parent": null
       },
-      "CNmFootstepEventPercentageThroughNode::CDefinition": {
+      "CNmFootstepEventPercentageThroughNode__CDefinition": {
         "fields": {
           "m_eventConditionRules": 20,
           "m_nSourceStateNodeIdx": 16,
@@ -4477,7 +4477,7 @@
         ],
         "parent": null
       },
-      "CNmGraphDefinition::ExternalGraphSlot_t": {
+      "CNmGraphDefinition__ExternalGraphSlot_t": {
         "fields": {
           "m_nNodeIdx": 0,
           "m_slotID": 8
@@ -4490,7 +4490,7 @@
         ],
         "parent": null
       },
-      "CNmGraphDefinition::ExternalPoseSlot_t": {
+      "CNmGraphDefinition__ExternalPoseSlot_t": {
         "fields": {
           "m_nNodeIdx": 0,
           "m_slotID": 8
@@ -4503,7 +4503,7 @@
         ],
         "parent": null
       },
-      "CNmGraphDefinition::ReferencedGraphSlot_t": {
+      "CNmGraphDefinition__ReferencedGraphSlot_t": {
         "fields": {
           "m_dataSlotIdx": 2,
           "m_nNodeIdx": 0
@@ -4516,7 +4516,7 @@
         ],
         "parent": null
       },
-      "CNmGraphEventConditionNode::CDefinition": {
+      "CNmGraphEventConditionNode__CDefinition": {
         "fields": {
           "m_conditions": 24,
           "m_eventConditionRules": 20,
@@ -4530,7 +4530,7 @@
         ],
         "parent": null
       },
-      "CNmGraphEventConditionNode::Condition_t": {
+      "CNmGraphEventConditionNode__Condition_t": {
         "fields": {
           "m_eventID": 0,
           "m_eventTypeCondition": 8
@@ -4548,7 +4548,7 @@
         "metadata": [],
         "parent": null
       },
-      "CNmGraphNode::CDefinition": {
+      "CNmGraphNode__CDefinition": {
         "fields": {
           "m_nNodeIdx": 8
         },
@@ -4570,7 +4570,7 @@
         ],
         "parent": null
       },
-      "CNmIDBasedClipSelectorNode::CDefinition": {
+      "CNmIDBasedClipSelectorNode__CDefinition": {
         "fields": {
           "m_bIgnoreInvalidOptions": 92,
           "m_nFallbackNodeIdx": 90,
@@ -4586,7 +4586,7 @@
         ],
         "parent": null
       },
-      "CNmIDBasedSelectorNode::CDefinition": {
+      "CNmIDBasedSelectorNode__CDefinition": {
         "fields": {
           "m_bIgnoreInvalidOptions": 92,
           "m_nFallbackNodeIdx": 90,
@@ -4602,7 +4602,7 @@
         ],
         "parent": null
       },
-      "CNmIDComparisonNode::CDefinition": {
+      "CNmIDComparisonNode__CDefinition": {
         "fields": {
           "m_comparisionIDs": 24,
           "m_comparison": 18,
@@ -4629,7 +4629,7 @@
         ],
         "parent": null
       },
-      "CNmIDEventConditionNode::CDefinition": {
+      "CNmIDEventConditionNode__CDefinition": {
         "fields": {
           "m_eventConditionRules": 20,
           "m_eventIDs": 24,
@@ -4643,7 +4643,7 @@
         ],
         "parent": null
       },
-      "CNmIDEventNode::CDefinition": {
+      "CNmIDEventNode__CDefinition": {
         "fields": {
           "m_defaultValue": 24,
           "m_eventConditionRules": 20,
@@ -4657,7 +4657,7 @@
         ],
         "parent": null
       },
-      "CNmIDEventPercentageThroughNode::CDefinition": {
+      "CNmIDEventPercentageThroughNode__CDefinition": {
         "fields": {
           "m_eventConditionRules": 20,
           "m_eventID": 24,
@@ -4671,7 +4671,7 @@
         ],
         "parent": null
       },
-      "CNmIDSelectorNode::CDefinition": {
+      "CNmIDSelectorNode__CDefinition": {
         "fields": {
           "m_conditionNodeIndices": 16,
           "m_defaultValue": 88,
@@ -4685,7 +4685,7 @@
         ],
         "parent": null
       },
-      "CNmIDSwitchNode::CDefinition": {
+      "CNmIDSwitchNode__CDefinition": {
         "fields": {
           "m_falseValue": 24,
           "m_nFalseValueNodeIdx": 20,
@@ -4701,7 +4701,7 @@
         ],
         "parent": null
       },
-      "CNmIDToFloatNode::CDefinition": {
+      "CNmIDToFloatNode__CDefinition": {
         "fields": {
           "m_IDs": 24,
           "m_defaultValue": 20,
@@ -4716,12 +4716,12 @@
         ],
         "parent": null
       },
-      "CNmIDValueNode::CDefinition": {
+      "CNmIDValueNode__CDefinition": {
         "fields": {},
         "metadata": [],
         "parent": null
       },
-      "CNmIsExternalGraphSlotFilledNode::CDefinition": {
+      "CNmIsExternalGraphSlotFilledNode__CDefinition": {
         "fields": {
           "m_nExternalGraphNodeIdx": 16
         },
@@ -4733,7 +4733,7 @@
         ],
         "parent": null
       },
-      "CNmIsExternalPoseSetNode::CDefinition": {
+      "CNmIsExternalPoseSetNode__CDefinition": {
         "fields": {
           "m_nExternalPoseNodeIdx": 16
         },
@@ -4745,7 +4745,7 @@
         ],
         "parent": null
       },
-      "CNmIsInactiveBranchConditionNode::CDefinition": {
+      "CNmIsInactiveBranchConditionNode__CDefinition": {
         "fields": {},
         "metadata": [
           {
@@ -4755,7 +4755,7 @@
         ],
         "parent": null
       },
-      "CNmIsTargetSetNode::CDefinition": {
+      "CNmIsTargetSetNode__CDefinition": {
         "fields": {
           "m_nInputValueNodeIdx": 16
         },
@@ -4767,7 +4767,7 @@
         ],
         "parent": null
       },
-      "CNmLayerBlendNode::CDefinition": {
+      "CNmLayerBlendNode__CDefinition": {
         "fields": {
           "m_bOnlySampleBaseRootMotion": 18,
           "m_layerDefinition": 24,
@@ -4781,7 +4781,7 @@
         ],
         "parent": null
       },
-      "CNmLayerBlendNode::LayerDefinition_t": {
+      "CNmLayerBlendNode__LayerDefinition_t": {
         "fields": {
           "m_bIgnoreEvents": 9,
           "m_bIsStateMachineLayer": 10,
@@ -4836,7 +4836,7 @@
         "metadata": [],
         "parent": null
       },
-      "CNmNotNode::CDefinition": {
+      "CNmNotNode__CDefinition": {
         "fields": {
           "m_nInputValueNodeIdx": 16
         },
@@ -4848,7 +4848,7 @@
         ],
         "parent": null
       },
-      "CNmOrNode::CDefinition": {
+      "CNmOrNode__CDefinition": {
         "fields": {
           "m_conditionNodeIndices": 16
         },
@@ -4870,7 +4870,7 @@
         ],
         "parent": null
       },
-      "CNmOrientationWarpNode::CDefinition": {
+      "CNmOrientationWarpNode__CDefinition": {
         "fields": {
           "m_alignmentMode": 23,
           "m_bIsOffsetNode": 20,
@@ -4893,7 +4893,7 @@
         "metadata": [],
         "parent": null
       },
-      "CNmParameterizedBlendNode::BlendRange_t": {
+      "CNmParameterizedBlendNode__BlendRange_t": {
         "fields": {
           "m_nInputIdx0": 0,
           "m_nInputIdx1": 2,
@@ -4907,7 +4907,7 @@
         ],
         "parent": null
       },
-      "CNmParameterizedBlendNode::CDefinition": {
+      "CNmParameterizedBlendNode__CDefinition": {
         "fields": {
           "m_bAllowLooping": 42,
           "m_nInputParameterValueNodeIdx": 40,
@@ -4921,7 +4921,7 @@
         ],
         "parent": null
       },
-      "CNmParameterizedBlendNode::Parameterization_t": {
+      "CNmParameterizedBlendNode__Parameterization_t": {
         "fields": {
           "m_blendRanges": 0,
           "m_parameterRange": 72
@@ -4934,7 +4934,7 @@
         ],
         "parent": null
       },
-      "CNmParameterizedClipSelectorNode::CDefinition": {
+      "CNmParameterizedClipSelectorNode__CDefinition": {
         "fields": {
           "m_bHasWeightsSet": 59,
           "m_bIgnoreInvalidOptions": 58,
@@ -4950,7 +4950,7 @@
         ],
         "parent": null
       },
-      "CNmParameterizedSelectorNode::CDefinition": {
+      "CNmParameterizedSelectorNode__CDefinition": {
         "fields": {
           "m_bHasWeightsSet": 59,
           "m_bIgnoreInvalidOptions": 58,
@@ -4991,7 +4991,7 @@
         ],
         "parent": null
       },
-      "CNmPassthroughNode::CDefinition": {
+      "CNmPassthroughNode__CDefinition": {
         "fields": {
           "m_nChildNodeIdx": 16
         },
@@ -5003,7 +5003,7 @@
         ],
         "parent": null
       },
-      "CNmPoseNode::CDefinition": {
+      "CNmPoseNode__CDefinition": {
         "fields": {},
         "metadata": [],
         "parent": null
@@ -5013,7 +5013,7 @@
         "metadata": [],
         "parent": null
       },
-      "CNmReferencePoseNode::CDefinition": {
+      "CNmReferencePoseNode__CDefinition": {
         "fields": {},
         "metadata": [
           {
@@ -5028,7 +5028,7 @@
         "metadata": [],
         "parent": null
       },
-      "CNmReferencedGraphNode::CDefinition": {
+      "CNmReferencedGraphNode__CDefinition": {
         "fields": {
           "m_nFallbackNodeIdx": 18,
           "m_nReferencedGraphIdx": 16
@@ -5069,7 +5069,7 @@
         ],
         "parent": null
       },
-      "CNmRootMotionOverrideNode::CDefinition": {
+      "CNmRootMotionOverrideNode__CDefinition": {
         "fields": {
           "m_angularVelocityLimitNodeIdx": 30,
           "m_desiredFacingDirectionNodeIdx": 26,
@@ -5093,7 +5093,7 @@
         "metadata": [],
         "parent": null
       },
-      "CNmScaleNode::CDefinition": {
+      "CNmScaleNode__CDefinition": {
         "fields": {
           "m_nEnableNodeIdx": 26,
           "m_nMaskNodeIdx": 24
@@ -5111,7 +5111,7 @@
         "metadata": [],
         "parent": null
       },
-      "CNmSelectorNode::CDefinition": {
+      "CNmSelectorNode__CDefinition": {
         "fields": {
           "m_conditionNodeIndices": 40,
           "m_optionNodeIndices": 16
@@ -5148,7 +5148,7 @@
         ],
         "parent": null
       },
-      "CNmSkeleton::ContactConfig_t": {
+      "CNmSkeleton__ContactConfig_t": {
         "fields": {
           "m_ID": 0,
           "m_audioInfo": 32,
@@ -5164,7 +5164,7 @@
         ],
         "parent": null
       },
-      "CNmSkeleton::SecondarySkeleton_t": {
+      "CNmSkeleton__SecondarySkeleton_t": {
         "fields": {
           "m_attachToBoneID": 0,
           "m_skeleton": 8
@@ -5195,7 +5195,7 @@
         ],
         "parent": null
       },
-      "CNmSpeedScaleBaseNode::CDefinition": {
+      "CNmSpeedScaleBaseNode__CDefinition": {
         "fields": {
           "m_flDefaultInputValue": 28,
           "m_nInputValueNodeIdx": 24
@@ -5208,7 +5208,7 @@
         ],
         "parent": null
       },
-      "CNmSpeedScaleNode::CDefinition": {
+      "CNmSpeedScaleNode__CDefinition": {
         "fields": {},
         "metadata": [
           {
@@ -5218,7 +5218,7 @@
         ],
         "parent": null
       },
-      "CNmStateCompletedConditionNode::CDefinition": {
+      "CNmStateCompletedConditionNode__CDefinition": {
         "fields": {
           "m_flTransitionDurationSeconds": 20,
           "m_nSourceStateNodeIdx": 16,
@@ -5232,7 +5232,7 @@
         ],
         "parent": null
       },
-      "CNmStateMachineNode::CDefinition": {
+      "CNmStateMachineNode__CDefinition": {
         "fields": {
           "m_nDefaultStateIndex": 304,
           "m_stateDefinitions": 16
@@ -5245,7 +5245,7 @@
         ],
         "parent": null
       },
-      "CNmStateMachineNode::StateDefinition_t": {
+      "CNmStateMachineNode__StateDefinition_t": {
         "fields": {
           "m_nEntryConditionNodeIdx": 2,
           "m_nStateNodeIdx": 0,
@@ -5259,7 +5259,7 @@
         ],
         "parent": null
       },
-      "CNmStateMachineNode::TransitionDefinition_t": {
+      "CNmStateMachineNode__TransitionDefinition_t": {
         "fields": {
           "m_bCanBeForced": 6,
           "m_nConditionNodeIdx": 2,
@@ -5274,7 +5274,7 @@
         ],
         "parent": null
       },
-      "CNmStateNode::CDefinition": {
+      "CNmStateNode__CDefinition": {
         "fields": {
           "m_bIsOffState": 174,
           "m_bUseActualElapsedTimeInStateForTimedEvents": 175,
@@ -5296,7 +5296,7 @@
         ],
         "parent": null
       },
-      "CNmStateNode::TimedEvent_t": {
+      "CNmStateNode__TimedEvent_t": {
         "fields": {
           "m_ID": 0,
           "m_comparisionOperator": 12,
@@ -5310,7 +5310,7 @@
         ],
         "parent": null
       },
-      "CNmSyncEventIndexConditionNode::CDefinition": {
+      "CNmSyncEventIndexConditionNode__CDefinition": {
         "fields": {
           "m_nSourceStateNodeIdx": 16,
           "m_syncEventIdx": 20,
@@ -5337,7 +5337,7 @@
         ],
         "parent": null
       },
-      "CNmSyncTrack::EventMarker_t": {
+      "CNmSyncTrack__EventMarker_t": {
         "fields": {
           "m_ID": 8,
           "m_startTime": 0
@@ -5350,7 +5350,7 @@
         ],
         "parent": null
       },
-      "CNmSyncTrack::Event_t": {
+      "CNmSyncTrack__Event_t": {
         "fields": {
           "m_ID": 0,
           "m_duration": 12,
@@ -5381,7 +5381,7 @@
         ],
         "parent": null
       },
-      "CNmTargetInfoNode::CDefinition": {
+      "CNmTargetInfoNode__CDefinition": {
         "fields": {
           "m_bIsWorldSpaceTarget": 24,
           "m_infoType": 20,
@@ -5395,7 +5395,7 @@
         ],
         "parent": null
       },
-      "CNmTargetOffsetNode::CDefinition": {
+      "CNmTargetOffsetNode__CDefinition": {
         "fields": {
           "m_bIsBoneSpaceOffset": 18,
           "m_nInputValueNodeIdx": 16,
@@ -5410,7 +5410,7 @@
         ],
         "parent": null
       },
-      "CNmTargetPointNode::CDefinition": {
+      "CNmTargetPointNode__CDefinition": {
         "fields": {
           "m_bIsWorldSpaceTarget": 18,
           "m_nInputValueNodeIdx": 16
@@ -5423,7 +5423,7 @@
         ],
         "parent": null
       },
-      "CNmTargetSelectorNode::CDefinition": {
+      "CNmTargetSelectorNode__CDefinition": {
         "fields": {
           "m_alignmentBoneID": 56,
           "m_bIgnoreInvalidOptions": 50,
@@ -5441,7 +5441,7 @@
         ],
         "parent": null
       },
-      "CNmTargetValueNode::CDefinition": {
+      "CNmTargetValueNode__CDefinition": {
         "fields": {},
         "metadata": [],
         "parent": null
@@ -5459,7 +5459,7 @@
         ],
         "parent": null
       },
-      "CNmTargetWarpNode::CDefinition": {
+      "CNmTargetWarpNode__CDefinition": {
         "fields": {
           "m_alignmentBoneID": 48,
           "m_bAlignWithTargetAtLastWarpEvent": 22,
@@ -5481,7 +5481,7 @@
         ],
         "parent": null
       },
-      "CNmTimeConditionNode::CDefinition": {
+      "CNmTimeConditionNode__CDefinition": {
         "fields": {
           "m_flComparand": 20,
           "m_nInputValueNodeIdx": 18,
@@ -5497,7 +5497,7 @@
         ],
         "parent": null
       },
-      "CNmTimeControlledClipNode::CDefinition": {
+      "CNmTimeControlledClipNode__CDefinition": {
         "fields": {
           "m_bSampleRootMotion": 18,
           "m_graphEvents": 24,
@@ -5526,7 +5526,7 @@
         ],
         "parent": null
       },
-      "CNmTransitionEventConditionNode::CDefinition": {
+      "CNmTransitionEventConditionNode__CDefinition": {
         "fields": {
           "m_eventConditionRules": 24,
           "m_nSourceStateNodeIdx": 28,
@@ -5541,7 +5541,7 @@
         ],
         "parent": null
       },
-      "CNmTransitionNode::CDefinition": {
+      "CNmTransitionNode__CDefinition": {
         "fields": {
           "m_blendWeightEasing": 42,
           "m_boneMaskBlendInTimePercentage": 28,
@@ -5563,7 +5563,7 @@
         ],
         "parent": null
       },
-      "CNmTwoBoneIKNode::CDefinition": {
+      "CNmTwoBoneIKNode__CDefinition": {
         "fields": {
           "m_bIsTargetInWorldSpace": 41,
           "m_blendMode": 40,
@@ -5590,12 +5590,12 @@
         "metadata": [],
         "parent": null
       },
-      "CNmValueNode::CDefinition": {
+      "CNmValueNode__CDefinition": {
         "fields": {},
         "metadata": [],
         "parent": null
       },
-      "CNmVectorCreateNode::CDefinition": {
+      "CNmVectorCreateNode__CDefinition": {
         "fields": {
           "m_inputValueXNodeIdx": 18,
           "m_inputValueYNodeIdx": 20,
@@ -5610,7 +5610,7 @@
         ],
         "parent": null
       },
-      "CNmVectorInfoNode::CDefinition": {
+      "CNmVectorInfoNode__CDefinition": {
         "fields": {
           "m_desiredInfo": 18,
           "m_nInputValueNodeIdx": 16
@@ -5623,7 +5623,7 @@
         ],
         "parent": null
       },
-      "CNmVectorNegateNode::CDefinition": {
+      "CNmVectorNegateNode__CDefinition": {
         "fields": {
           "m_nInputValueNodeIdx": 16
         },
@@ -5635,12 +5635,12 @@
         ],
         "parent": null
       },
-      "CNmVectorValueNode::CDefinition": {
+      "CNmVectorValueNode__CDefinition": {
         "fields": {},
         "metadata": [],
         "parent": null
       },
-      "CNmVelocityBasedSpeedScaleNode::CDefinition": {
+      "CNmVelocityBasedSpeedScaleNode__CDefinition": {
         "fields": {},
         "metadata": [
           {
@@ -5650,7 +5650,7 @@
         ],
         "parent": null
       },
-      "CNmVelocityBlendNode::CDefinition": {
+      "CNmVelocityBlendNode__CDefinition": {
         "fields": {},
         "metadata": [
           {
@@ -5660,7 +5660,7 @@
         ],
         "parent": null
       },
-      "CNmVirtualParameterBoneMaskNode::CDefinition": {
+      "CNmVirtualParameterBoneMaskNode__CDefinition": {
         "fields": {
           "m_nChildNodeIdx": 16
         },
@@ -5672,7 +5672,7 @@
         ],
         "parent": null
       },
-      "CNmVirtualParameterBoolNode::CDefinition": {
+      "CNmVirtualParameterBoolNode__CDefinition": {
         "fields": {
           "m_nChildNodeIdx": 16
         },
@@ -5684,7 +5684,7 @@
         ],
         "parent": null
       },
-      "CNmVirtualParameterFloatNode::CDefinition": {
+      "CNmVirtualParameterFloatNode__CDefinition": {
         "fields": {
           "m_nChildNodeIdx": 16
         },
@@ -5696,7 +5696,7 @@
         ],
         "parent": null
       },
-      "CNmVirtualParameterIDNode::CDefinition": {
+      "CNmVirtualParameterIDNode__CDefinition": {
         "fields": {
           "m_nChildNodeIdx": 16
         },
@@ -5708,7 +5708,7 @@
         ],
         "parent": null
       },
-      "CNmVirtualParameterTargetNode::CDefinition": {
+      "CNmVirtualParameterTargetNode__CDefinition": {
         "fields": {
           "m_nChildNodeIdx": 16
         },
@@ -5720,7 +5720,7 @@
         ],
         "parent": null
       },
-      "CNmVirtualParameterVectorNode::CDefinition": {
+      "CNmVirtualParameterVectorNode__CDefinition": {
         "fields": {
           "m_nChildNodeIdx": 16
         },
@@ -5732,7 +5732,7 @@
         ],
         "parent": null
       },
-      "CNmZeroPoseNode::CDefinition": {
+      "CNmZeroPoseNode__CDefinition": {
         "fields": {},
         "metadata": [
           {
@@ -6392,7 +6392,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_BaseLerp::CursorState_t": {
+      "CPulseCell_BaseLerp__CursorState_t": {
         "fields": {
           "m_EndTime": 4,
           "m_StartTime": 0
@@ -6684,7 +6684,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_IntervalTimer::CursorState_t": {
+      "CPulseCell_IntervalTimer__CursorState_t": {
         "fields": {
           "m_EndTime": 4,
           "m_StartTime": 0,
@@ -6710,7 +6710,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_IsRequirementValid::Criteria_t": {
+      "CPulseCell_IsRequirementValid__Criteria_t": {
         "fields": {
           "m_bIsValid": 0
         },
@@ -6737,14 +6737,14 @@
         ],
         "parent": null
       },
-      "CPulseCell_LimitCount::Criteria_t": {
+      "CPulseCell_LimitCount__Criteria_t": {
         "fields": {
           "m_bLimitCountPasses": 0
         },
         "metadata": [],
         "parent": null
       },
-      "CPulseCell_LimitCount::InstanceState_t": {
+      "CPulseCell_LimitCount__InstanceState_t": {
         "fields": {
           "m_nCurrentCount": 0
         },
@@ -6768,7 +6768,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_Outflow_CycleOrdered::InstanceState_t": {
+      "CPulseCell_Outflow_CycleOrdered__InstanceState_t": {
         "fields": {
           "m_nNextIndex": 0
         },
@@ -6804,7 +6804,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_Outflow_CycleShuffled::InstanceState_t": {
+      "CPulseCell_Outflow_CycleShuffled__InstanceState_t": {
         "fields": {
           "m_Shuffle": 0,
           "m_nNextShuffle": 32
@@ -6921,7 +6921,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_Timeline::TimelineEvent_t": {
+      "CPulseCell_Timeline__TimelineEvent_t": {
         "fields": {
           "m_EventOutflow": 8,
           "m_flTimeFromPrevious": 0
@@ -7566,7 +7566,7 @@
         ],
         "parent": null
       },
-      "CSceneObjectData::RTProxyDrawDescriptor_t": {
+      "CSceneObjectData__RTProxyDrawDescriptor_t": {
         "fields": {
           "m_drawDesc": 8,
           "m_fEmissiveFactor": 356,
@@ -9314,7 +9314,7 @@
         ],
         "parent": null
       },
-      "NmCompressionSettings_t::QuantizationRange_t": {
+      "NmCompressionSettings_t__QuantizationRange_t": {
         "fields": {
           "m_flRangeLength": 4,
           "m_flRangeStart": 0
@@ -9773,7 +9773,7 @@
         ],
         "parent": null
       },
-      "PulseNodeDynamicOutflows_t::DynamicOutflow_t": {
+      "PulseNodeDynamicOutflows_t__DynamicOutflow_t": {
         "fields": {
           "m_Connection": 8,
           "m_OutflowID": 0
@@ -10026,7 +10026,7 @@
         ],
         "parent": null
       },
-      "SkeletonAnimCapture_t::Bone_t": {
+      "SkeletonAnimCapture_t__Bone_t": {
         "fields": {
           "m_BindPose": 16,
           "m_Name": 0,
@@ -10040,7 +10040,7 @@
         ],
         "parent": null
       },
-      "SkeletonAnimCapture_t::Camera_t": {
+      "SkeletonAnimCapture_t__Camera_t": {
         "fields": {
           "m_flTime": 32,
           "m_tmCamera": 0
@@ -10053,7 +10053,7 @@
         ],
         "parent": null
       },
-      "SkeletonAnimCapture_t::FrameStamp_t": {
+      "SkeletonAnimCapture_t__FrameStamp_t": {
         "fields": {
           "m_bPredicted": 9,
           "m_bTeleportTick": 8,
@@ -10072,7 +10072,7 @@
         ],
         "parent": null
       },
-      "SkeletonAnimCapture_t::Frame_t": {
+      "SkeletonAnimCapture_t__Frame_t": {
         "fields": {
           "m_CompositeBones": 72,
           "m_FeModelAnims": 120,
@@ -10526,7 +10526,7 @@
           "ANIMPARAM_UNKNOWN": 0,
           "ANIMPARAM_VECTOR": 5
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "AnimParamVectorType_t": {
         "alignment": 4,
@@ -10546,7 +10546,7 @@
           "ANIMSCRIPT_FUSE_STATEMACHINE": 1,
           "ANIMSCRIPT_TYPE_INVALID": -1
         },
-        "type": "uint32"
+        "type": "uint16"
       },
       "AnimValueSource": {
         "alignment": 4,
@@ -10711,7 +10711,7 @@
         },
         "type": "uint32"
       },
-      "CNmClothEvent::Type_t": {
+      "CNmClothEvent__Type_t": {
         "alignment": 4,
         "members": {
           "Effect": 1,
@@ -10719,14 +10719,14 @@
         },
         "type": "uint32"
       },
-      "CNmCurrentSyncEventNode::InfoType_t": {
+      "CNmCurrentSyncEventNode__InfoType_t": {
         "alignment": 1,
         "members": {
           "IndexAndPercentage": 0,
           "IndexOnly": 1,
           "PercentageOnly": 2
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "CNmEventRelevance_t": {
         "alignment": 4,
@@ -10747,7 +10747,7 @@
         },
         "type": "uint32"
       },
-      "CNmFloatAngleMathNode::Operation_t": {
+      "CNmFloatAngleMathNode__Operation_t": {
         "alignment": 1,
         "members": {
           "ClampTo180": 0,
@@ -10755,9 +10755,9 @@
           "FlipHemisphere": 2,
           "FlipHemisphereNegate": 3
         },
-        "type": "uint32"
+        "type": "uint8"
       },
-      "CNmFloatComparisonNode::Comparison_t": {
+      "CNmFloatComparisonNode__Comparison_t": {
         "alignment": 1,
         "members": {
           "GreaterThan": 3,
@@ -10766,9 +10766,9 @@
           "LessThanEqual": 1,
           "NearEqual": 2
         },
-        "type": "uint32"
+        "type": "uint8"
       },
-      "CNmFloatMathNode::Operator_t": {
+      "CNmFloatMathNode__Operator_t": {
         "alignment": 1,
         "members": {
           "Abs": 5,
@@ -10784,25 +10784,25 @@
           "Negate": 6,
           "Sub": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
-      "CNmIDComparisonNode::Comparison_t": {
+      "CNmIDComparisonNode__Comparison_t": {
         "alignment": 1,
         "members": {
           "DoesntMatch": 1,
           "Matches": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
-      "CNmOrientationWarpNode::AlignmentMode_t": {
+      "CNmOrientationWarpNode__AlignmentMode_t": {
         "alignment": 1,
         "members": {
           "AnimationEndFacing": 1,
           "MovementDirection": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
-      "CNmParticleEvent::Type_t": {
+      "CNmParticleEvent__Type_t": {
         "alignment": 4,
         "members": {
           "Create": 0,
@@ -10810,15 +10810,15 @@
         },
         "type": "uint32"
       },
-      "CNmRootMotionData::SamplingMode_t": {
+      "CNmRootMotionData__SamplingMode_t": {
         "alignment": 1,
         "members": {
           "Delta": 0,
           "WorldSpace": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
-      "CNmRootMotionOverrideNode::OverrideFlags_t": {
+      "CNmRootMotionOverrideNode__OverrideFlags_t": {
         "alignment": 1,
         "members": {
           "AllowFacingPitch": 3,
@@ -10827,9 +10827,9 @@
           "AllowMoveZ": 2,
           "ListenForEvents": 4
         },
-        "type": "uint32"
+        "type": "uint8"
       },
-      "CNmSoundEvent::Position_t": {
+      "CNmSoundEvent__Position_t": {
         "alignment": 4,
         "members": {
           "EntityAttachment": 4,
@@ -10840,23 +10840,23 @@
         },
         "type": "uint32"
       },
-      "CNmStateNode::TimedEvent_t::Comparison_t": {
+      "CNmStateNode__TimedEvent_t__Comparison_t": {
         "alignment": 1,
         "members": {
           "GreaterThanEqual": 1,
           "LessThanEqual": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
-      "CNmSyncEventIndexConditionNode::TriggerMode_t": {
+      "CNmSyncEventIndexConditionNode__TriggerMode_t": {
         "alignment": 1,
         "members": {
           "ExactlyAtEventIndex": 0,
           "GreaterThanEqualToEventIndex": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
-      "CNmTargetInfoNode::Info_t": {
+      "CNmTargetInfoNode__Info_t": {
         "alignment": 4,
         "members": {
           "AngleHorizontal": 0,
@@ -10870,7 +10870,7 @@
         },
         "type": "uint32"
       },
-      "CNmTargetWarpNode::TargetUpdateRule_t": {
+      "CNmTargetWarpNode__TargetUpdateRule_t": {
         "alignment": 1,
         "members": {
           "None": 0,
@@ -10878,18 +10878,18 @@
           "Recalculate": 1,
           "RecalculateOrOffset": 3
         },
-        "type": "uint32"
+        "type": "uint8"
       },
-      "CNmTimeConditionNode::ComparisonType_t": {
+      "CNmTimeConditionNode__ComparisonType_t": {
         "alignment": 1,
         "members": {
           "ElapsedTime": 2,
           "PercentageThroughState": 0,
           "PercentageThroughSyncEvent": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
-      "CNmTimeConditionNode::Operator_t": {
+      "CNmTimeConditionNode__Operator_t": {
         "alignment": 1,
         "members": {
           "GreaterThan": 2,
@@ -10897,9 +10897,9 @@
           "LessThan": 0,
           "LessThanEqual": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
-      "CNmTransitionNode::TransitionOptions_t": {
+      "CNmTransitionNode__TransitionOptions_t": {
         "alignment": 1,
         "members": {
           "ClampDuration": 1,
@@ -10913,9 +10913,9 @@
           "PreferClosestSyncEventID": 7,
           "Synchronized": 2
         },
-        "type": "uint32"
+        "type": "uint8"
       },
-      "CNmVectorInfoNode::Info_t": {
+      "CNmVectorInfoNode__Info_t": {
         "alignment": 1,
         "members": {
           "AngleHorizontal": 4,
@@ -10925,7 +10925,7 @@
           "Y": 1,
           "Z": 2
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "ChoiceBlendMethod": {
         "alignment": 4,
@@ -11007,7 +11007,7 @@
           "FacingMode_ManualPosition": 4,
           "FacingMode_Path": 2
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "FieldNetworkOption": {
         "alignment": 4,
@@ -11089,7 +11089,7 @@
           "NotJumping": 1,
           "Unknown": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "FootstepLandedFootSoundType_t": {
         "alignment": 4,
@@ -11116,7 +11116,7 @@
           "eInactive": 0,
           "eMomentarilyInactive": 2
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "HandshakeTagType_t": {
         "alignment": 4,
@@ -11269,9 +11269,9 @@
           "MESH_BUFFER_USAGE_VERTEX_ALBEDO": 32,
           "MESH_BUFFER_USAGE_VERTEX_EMISSIVE": 64
         },
-        "type": "uint32"
+        "type": "uint16"
       },
-      "ModelSkeletonData_t::BoneFlags_t": {
+      "ModelSkeletonData_t__BoneFlags_t": {
         "alignment": 4,
         "members": {
           "BLEND_PREALIGNED": 1048576,
@@ -11378,7 +11378,7 @@
           "Quint": 4,
           "Sine": 5
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "NmEasingOperation_t": {
         "alignment": 1,
@@ -11407,7 +11407,7 @@
           "OutQuint": 11,
           "OutSine": 14
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "NmEventConditionRules_t": {
         "alignment": 1,
@@ -11422,7 +11422,7 @@
           "SearchOnlyAnimEvents": 7,
           "SearchOnlyGraphEvents": 6
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "NmFollowBoneMode_t": {
         "alignment": 1,
@@ -11431,7 +11431,7 @@
           "RotationOnly": 1,
           "TranslationOnly": 2
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "NmFootPhaseCondition_t": {
         "alignment": 1,
@@ -11444,7 +11444,7 @@
           "RightFootPassing": 3,
           "RightPhase": 5
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "NmFootPhase_t": {
         "alignment": 1,
@@ -11455,7 +11455,7 @@
           "RightFootDown": 2,
           "RightFootPassing": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "NmFrameSnapEventMode_t": {
         "alignment": 4,
@@ -11483,7 +11483,7 @@
           "Generic": 4,
           "Timed": 3
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "NmGraphValueType_t": {
         "alignment": 1,
@@ -11498,7 +11498,7 @@
           "Unknown": 0,
           "Vector": 4
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "NmIKBlendMode_t": {
         "alignment": 1,
@@ -11506,7 +11506,7 @@
           "Effector": 0,
           "Pose": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "NmPoseBlendMode_t": {
         "alignment": 1,
@@ -11515,7 +11515,7 @@
           "ModelSpace": 2,
           "Overlay": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "NmRootMotionBlendMode_t": {
         "alignment": 1,
@@ -11525,7 +11525,7 @@
           "IgnoreSource": 2,
           "IgnoreTarget": 3
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "NmTargetWarpAlgorithm_t": {
         "alignment": 1,
@@ -11535,7 +11535,7 @@
           "HermiteFeaturePreserving": 2,
           "Lerp": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "NmTargetWarpRule_t": {
         "alignment": 1,
@@ -11546,7 +11546,7 @@
           "WarpXYZ": 2,
           "WarpZ": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "NmTransitionRuleCondition_t": {
         "alignment": 1,
@@ -11556,7 +11556,7 @@
           "ConditionallyAllowed": 2,
           "FullyAllowed": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "NmTransitionRule_t": {
         "alignment": 1,
@@ -11565,7 +11565,7 @@
           "BlockTransition": 2,
           "ConditionallyAllowTransition": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "OrientationWarpMode_t": {
         "alignment": 4,
@@ -11851,7 +11851,7 @@
         },
         "type": "uint32"
       },
-      "PermModelInfo_t::FlagEnum": {
+      "PermModelInfo_t__FlagEnum": {
         "alignment": 4,
         "members": {
           "FLAG_ANIMATION_DRIVEN_FLEXES": 2097152,
@@ -11879,7 +11879,7 @@
           "POSETYPE_INVALID": 255,
           "POSETYPE_STATIC": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "PulseApiFeature_t": {
         "alignment": 4,
@@ -12070,7 +12070,7 @@
           "SUB_VEC3WS_VEC3WS": 69,
           "SUB_VEC4": 70
         },
-        "type": "uint32"
+        "type": "uint16"
       },
       "PulseMethodCallMode_t": {
         "alignment": 4,
@@ -12148,7 +12148,7 @@
           "RENDERMESH_SLOT_PER_INSTANCE": 1,
           "RENDERMESH_SLOT_PER_VERTEX": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "ResetCycleOption": {
         "alignment": 4,
@@ -12235,7 +12235,7 @@
           "eSlow": 0,
           "eVeryFast": 3
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "SolveIKChainAnimNodeDebugSetting": {
         "alignment": 4,
@@ -12284,7 +12284,7 @@
           "Fired": 2,
           "Inactive": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "TargetSelectorAngleMode_t": {
         "alignment": 4,
@@ -12318,7 +12318,7 @@
         },
         "type": "uint32"
       },
-      "VPhysXAggregateData_t::VPhysXFlagEnum_t": {
+      "VPhysXAggregateData_t__VPhysXFlagEnum_t": {
         "alignment": 4,
         "members": {
           "FLAG_IGNORE_SCALE_OBSOLETE_DO_NOT_USE": 32,
@@ -12327,7 +12327,7 @@
         },
         "type": "uint32"
       },
-      "VPhysXBodyPart_t::VPhysXFlagEnum_t": {
+      "VPhysXBodyPart_t__VPhysXFlagEnum_t": {
         "alignment": 4,
         "members": {
           "FLAG_ALWAYS_DYNAMIC_ON_CLIENT": 16,
@@ -12339,7 +12339,7 @@
         },
         "type": "uint32"
       },
-      "VPhysXConstraintParams_t::EnumFlags0_t": {
+      "VPhysXConstraintParams_t__EnumFlags0_t": {
         "alignment": 4,
         "members": {
           "FLAG0_SHIFT_BREAKABLE_FORCE": 2,
@@ -12349,7 +12349,7 @@
         },
         "type": "uint32"
       },
-      "VPhysXJoint_t::Flags_t": {
+      "VPhysXJoint_t__Flags_t": {
         "alignment": 4,
         "members": {
           "JOINT_FLAGS_BODY1_FIXED": 1,
@@ -12365,7 +12365,7 @@
           "DirectionOnly": 0,
           "MagnitudeOnly": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "VertexAlbedoFormat_t": {
         "alignment": 1,
@@ -12374,7 +12374,7 @@
           "VERTEX_ALBEDO_8888": 1,
           "VERTEX_ALBEDO_NONE": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       }
     }
   }

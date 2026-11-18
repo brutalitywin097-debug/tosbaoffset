@@ -195,7 +195,7 @@
           "FIELD_VOID": 0,
           "FIELD_WORLD_GROUP_ID": 78
         },
-        "type": "uint32"
+        "type": "uint8"
       }
     }
   }

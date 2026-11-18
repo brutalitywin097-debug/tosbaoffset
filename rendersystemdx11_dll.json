@@ -105,7 +105,7 @@
           "INPUT_LAYOUT_VARIATION_STREAM1_INSTANCEID": 1,
           "INPUT_LAYOUT_VARIATION_STREAM1_INSTANCEID_MORPH_VERT_ID": 2
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "RenderBufferFlags_t": {
         "alignment": 4,
@@ -139,7 +139,7 @@
           "RENDER_MULTISAMPLE_NONE": 0,
           "RENDER_MULTISAMPLE_TYPE_COUNT": 6
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "RenderPrimitiveType_t": {
         "alignment": 4,
@@ -168,7 +168,7 @@
           "RENDER_SLOT_PER_INSTANCE": 1,
           "RENDER_SLOT_PER_VERTEX": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "RsComparison_t": {
         "alignment": 1,
@@ -188,7 +188,7 @@
           "RS_CMP_NEVER": 0,
           "RS_CMP_NOT_EQUAL": 5
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "RsCullMode_t": {
         "alignment": 1,
@@ -197,7 +197,7 @@
           "RS_CULL_FRONT": 2,
           "RS_CULL_NONE": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "RsFillMode_t": {
         "alignment": 1,
@@ -205,7 +205,7 @@
           "RS_FILL_SOLID": 0,
           "RS_FILL_WIREFRAME": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "UpscalerType_t": {
         "alignment": 4,

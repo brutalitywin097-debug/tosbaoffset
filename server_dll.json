@@ -75,7 +75,7 @@
         ],
         "parent": null
       },
-      "AI_DefaultNPC_DebugSnapshotData_t::PathQuery_t": {
+      "AI_DefaultNPC_DebugSnapshotData_t__PathQuery_t": {
         "fields": {
           "m_nCurrentMovementId": 8,
           "m_nInitialMovementId": 0,
@@ -155,7 +155,7 @@
         ],
         "parent": null
       },
-      "AI_GroundRootMotionMotor_DebugSnapshotData_t::Event_t": {
+      "AI_GroundRootMotionMotor_DebugSnapshotData_t__Event_t": {
         "fields": {
           "description": 0,
           "location": 8
@@ -192,7 +192,7 @@
         ],
         "parent": null
       },
-      "AI_MotorServices_DebugSnapshotData_t::MotorPathWaypoint_t": {
+      "AI_MotorServices_DebugSnapshotData_t__MotorPathWaypoint_t": {
         "fields": {
           "flags": 16,
           "nav_type": 12,
@@ -232,7 +232,7 @@
         ],
         "parent": null
       },
-      "AI_Navigator_DebugSnapshotData_t::Waypoint_t": {
+      "AI_Navigator_DebugSnapshotData_t__Waypoint_t": {
         "fields": {
           "flags": 16,
           "is_pathcorner": 20,
@@ -462,7 +462,7 @@
         "metadata": [],
         "parent": null
       },
-      "CAttributeManager::cached_attribute_float_t": {
+      "CAttributeManager__cached_attribute_float_t": {
         "fields": {
           "flIn": 0,
           "flOut": 16,
@@ -976,7 +976,7 @@
         "metadata": [],
         "parent": "CBaseEntity"
       },
-      "CBaseModelEntity::BodyGroupRequest_t": {
+      "CBaseModelEntity__BodyGroupRequest_t": {
         "fields": {
           "m_nGroup": 16,
           "m_nGroupName": 4,
@@ -993,7 +993,7 @@
         ],
         "parent": null
       },
-      "CBaseModelEntity::OnDamageLevelChangedArgs_t": {
+      "CBaseModelEntity__OnDamageLevelChangedArgs_t": {
         "fields": {
           "nDamageLevel": 4,
           "nDamageLevelsRemaining": 8,
@@ -2443,7 +2443,7 @@
         "metadata": [],
         "parent": null
       },
-      "CCSPlayerController_InventoryServices::NetworkedLoadoutSlot_t": {
+      "CCSPlayerController_InventoryServices__NetworkedLoadoutSlot_t": {
         "fields": {
           "pItem": 0,
           "slot": 10,
@@ -6908,7 +6908,7 @@
         ],
         "parent": null
       },
-      "CNmAimCSNode::CDefinition": {
+      "CNmAimCSNode__CDefinition": {
         "fields": {
           "m_flActionBlendTimeSeconds": 44,
           "m_flHandIKBlendInTimeSeconds": 40,
@@ -7036,7 +7036,7 @@
         ],
         "parent": null
       },
-      "CNmSnapWeaponNode::CDefinition": {
+      "CNmSnapWeaponNode__CDefinition": {
         "fields": {
           "m_nFlashedAmountNodeIdx": 24,
           "m_nWeaponCategoryNodeIdx": 26,
@@ -8418,7 +8418,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_ApplyAnimGraphParam::CursorState_t": {
+      "CPulseCell_ApplyAnimGraphParam__CursorState_t": {
         "fields": {
           "bApplyToExternalGraphs": 16,
           "hEntity": 0,
@@ -8450,7 +8450,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_ApplyDynamicAttributeBase::CursorState_t": {
+      "CPulseCell_ApplyDynamicAttributeBase__CursorState_t": {
         "fields": {
           "m_hEntity": 0,
           "m_szAttributeKey": 8
@@ -8535,7 +8535,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_ApplyEntityFlags::CursorState_t": {
+      "CPulseCell_ApplyEntityFlags__CursorState_t": {
         "fields": {
           "m_hEntity": 0,
           "m_uFlags": 4
@@ -8566,7 +8566,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_ApplyParent::CursorState_t": {
+      "CPulseCell_ApplyParent__CursorState_t": {
         "fields": {
           "m_hChildEntity": 4,
           "m_hParentEntity": 0
@@ -8613,7 +8613,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_BaseLerp::CursorState_t": {
+      "CPulseCell_BaseLerp__CursorState_t": {
         "fields": {
           "m_EndTime": 4,
           "m_StartTime": 0
@@ -8905,7 +8905,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_IntervalTimer::CursorState_t": {
+      "CPulseCell_IntervalTimer__CursorState_t": {
         "fields": {
           "m_EndTime": 4,
           "m_StartTime": 0,
@@ -8931,7 +8931,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_IsRequirementValid::Criteria_t": {
+      "CPulseCell_IsRequirementValid__Criteria_t": {
         "fields": {
           "m_bIsValid": 0
         },
@@ -8952,7 +8952,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_LerpCameraSettings::CursorState_t": {
+      "CPulseCell_LerpCameraSettings__CursorState_t": {
         "fields": {
           "m_OverlaidEnd": 28,
           "m_OverlaidStart": 12,
@@ -8986,14 +8986,14 @@
         ],
         "parent": null
       },
-      "CPulseCell_LimitCount::Criteria_t": {
+      "CPulseCell_LimitCount__Criteria_t": {
         "fields": {
           "m_bLimitCountPasses": 0
         },
         "metadata": [],
         "parent": null
       },
-      "CPulseCell_LimitCount::InstanceState_t": {
+      "CPulseCell_LimitCount__InstanceState_t": {
         "fields": {
           "m_nCurrentCount": 0
         },
@@ -9017,7 +9017,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_Outflow_CycleOrdered::InstanceState_t": {
+      "CPulseCell_Outflow_CycleOrdered__InstanceState_t": {
         "fields": {
           "m_nNextIndex": 0
         },
@@ -9053,7 +9053,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_Outflow_CycleShuffled::InstanceState_t": {
+      "CPulseCell_Outflow_CycleShuffled__InstanceState_t": {
         "fields": {
           "m_Shuffle": 0,
           "m_nNextShuffle": 32
@@ -9122,7 +9122,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_Outflow_ListenForEntityOutput::CursorState_t": {
+      "CPulseCell_Outflow_ListenForEntityOutput__CursorState_t": {
         "fields": {
           "m_entity": 0
         },
@@ -9157,7 +9157,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_Outflow_PlaySceneBase::CursorState_t": {
+      "CPulseCell_Outflow_PlaySceneBase__CursorState_t": {
         "fields": {
           "m_cursorIDToEventID": 8,
           "m_mainActor": 4,
@@ -9198,11 +9198,8 @@
         ],
         "parent": null
       },
-      "CPulseCell_Outflow_PlayVCD::VCDRequirementInfo_t": {
-        "fields": {
-          "m_Outflow": 8,
-          "m_nEventID": 0
-        },
+      "CPulseCell_Outflow_PlayVCDBase": {
+        "fields": {},
         "metadata": [
           {
             "name": "MGetKV3ClassDefaults",
@@ -9211,8 +9208,11 @@
         ],
         "parent": null
       },
-      "CPulseCell_Outflow_PlayVCDBase": {
-        "fields": {},
+      "CPulseCell_Outflow_PlayVCD__VCDRequirementInfo_t": {
+        "fields": {
+          "m_Outflow": 8,
+          "m_nEventID": 0
+        },
         "metadata": [
           {
             "name": "MGetKV3ClassDefaults",
@@ -9249,7 +9249,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_Outflow_PlayVOLine::CursorState_t": {
+      "CPulseCell_Outflow_PlayVOLine__CursorState_t": {
         "fields": {
           "m_sceneInstance": 0
         },
@@ -9281,7 +9281,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_Outflow_ScriptedSequence::CursorState_t": {
+      "CPulseCell_Outflow_ScriptedSequence__CursorState_t": {
         "fields": {
           "m_scriptedSequence": 0
         },
@@ -9344,7 +9344,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_PlaySequence::CursorState_t": {
+      "CPulseCell_PlaySequence__CursorState_t": {
         "fields": {
           "m_hTarget": 0
         },
@@ -9488,7 +9488,7 @@
         ],
         "parent": null
       },
-      "CPulseCell_Timeline::TimelineEvent_t": {
+      "CPulseCell_Timeline__TimelineEvent_t": {
         "fields": {
           "m_EventOutflow": 8,
           "m_flTimeFromPrevious": 0
@@ -11296,59 +11296,6 @@
         "metadata": [],
         "parent": "CBaseEntity"
       },
-      "CTestPulseIO::EntityHandleIntArgs_t": {
-        "fields": {
-          "handleA": 0,
-          "valueB": 4
-        },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
-        "parent": null
-      },
-      "CTestPulseIO::EntityNameStringArgs_t": {
-        "fields": {
-          "nameA": 0,
-          "strValueB": 8
-        },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
-        "parent": null
-      },
-      "CTestPulseIO::FloatStringArgs_t": {
-        "fields": {
-          "flOutFloat": 0,
-          "strOutString": 8
-        },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
-        "parent": null
-      },
-      "CTestPulseIO::ThreeStringArgs_t": {
-        "fields": {
-          "strArg1": 0,
-          "strArg2": 8,
-          "strArg3": 16
-        },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
-        "parent": null
-      },
       "CTestPulseIOComponent": {
         "fields": {
           "m_ComponentData": 8,
@@ -11364,6 +11311,59 @@
       },
       "CTestPulseIOComponent_Derived": {
         "fields": {},
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CTestPulseIO__EntityHandleIntArgs_t": {
+        "fields": {
+          "handleA": 0,
+          "valueB": 4
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CTestPulseIO__EntityNameStringArgs_t": {
+        "fields": {
+          "nameA": 0,
+          "strValueB": 8
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CTestPulseIO__FloatStringArgs_t": {
+        "fields": {
+          "flOutFloat": 0,
+          "strOutString": 8
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CTestPulseIO__ThreeStringArgs_t": {
+        "fields": {
+          "strArg1": 0,
+          "strArg2": 8,
+          "strArg3": 16
+        },
         "metadata": [
           {
             "name": "MGetKV3ClassDefaults",
@@ -12554,7 +12554,7 @@
         ],
         "parent": null
       },
-      "PulseNodeDynamicOutflows_t::DynamicOutflow_t": {
+      "PulseNodeDynamicOutflows_t__DynamicOutflow_t": {
         "fields": {
           "m_Connection": 8,
           "m_OutflowID": 0
@@ -13397,7 +13397,7 @@
           "eNone": 0,
           "eSequence": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "BeamType_t": {
         "alignment": 4,
@@ -13418,7 +13418,7 @@
           "TRANSITION_TO_LIFESTATE_DEAD": 1,
           "TRANSITION_TO_LIFESTATE_DYING": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "Bidirectional_Messages": {
         "alignment": 4,
@@ -13483,7 +13483,7 @@
         },
         "type": "uint32"
       },
-      "CCSPlayerAnimationState::AirAction_t": {
+      "CCSPlayerAnimationState__AirAction_t": {
         "alignment": 1,
         "members": {
           "Jump": 1,
@@ -13491,9 +13491,9 @@
           "None": 0,
           "StartFall": 2
         },
-        "type": "uint32"
+        "type": "uint8"
       },
-      "CCSPlayerAnimationState::Direction_t": {
+      "CCSPlayerAnimationState__Direction_t": {
         "alignment": 1,
         "members": {
           "E": 3,
@@ -13506,9 +13506,9 @@
           "SW": 6,
           "W": 7
         },
-        "type": "uint32"
+        "type": "uint8"
       },
-      "CCSPlayerAnimationState::GroundMoveState_t": {
+      "CCSPlayerAnimationState__GroundMoveState_t": {
         "alignment": 1,
         "members": {
           "Idle": 1,
@@ -13519,9 +13519,9 @@
           "TurnOnSpot": 4,
           "TurnOnSpotLoop": 5
         },
-        "type": "uint32"
+        "type": "uint8"
       },
-      "CCSPlayerAnimationState::MoveType_t": {
+      "CCSPlayerAnimationState__MoveType_t": {
         "alignment": 1,
         "members": {
           "Air": 2,
@@ -13529,7 +13529,7 @@
           "Ladder": 3,
           "None": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "CDebugOverlayCombinedTypes_t": {
         "alignment": 4,
@@ -13567,7 +13567,7 @@
         },
         "type": "uint32"
       },
-      "CFuncMover::FindFollowMoverStrategy_t": {
+      "CFuncMover__FindFollowMoverStrategy_t": {
         "alignment": 4,
         "members": {
           "FIND_FOLLOW_MOVER_BIDIRECTIONAL_CLOSEST": 2,
@@ -13576,7 +13576,7 @@
         },
         "type": "uint32"
       },
-      "CFuncMover::FollowConstraint_t": {
+      "CFuncMover__FollowConstraint_t": {
         "alignment": 4,
         "members": {
           "FOLLOW_CONSTRAINT_COUPLER": 3,
@@ -13586,7 +13586,7 @@
         },
         "type": "uint32"
       },
-      "CFuncMover::FollowEntityDirection_t": {
+      "CFuncMover__FollowEntityDirection_t": {
         "alignment": 4,
         "members": {
           "FOLLOW_ENTITY_BIDIRECTIONAL": 0,
@@ -13595,7 +13595,7 @@
         },
         "type": "uint32"
       },
-      "CFuncMover::Move_t": {
+      "CFuncMover__Move_t": {
         "alignment": 4,
         "members": {
           "MOVE_LOOP": 0,
@@ -13604,7 +13604,7 @@
         },
         "type": "uint32"
       },
-      "CFuncMover::OrientationUpdate_t": {
+      "CFuncMover__OrientationUpdate_t": {
         "alignment": 4,
         "members": {
           "ORIENTATION_FACE_ENTITY": 8,
@@ -13619,7 +13619,7 @@
         },
         "type": "uint32"
       },
-      "CFuncMover::PathRebuildStrategy_t": {
+      "CFuncMover__PathRebuildStrategy_t": {
         "alignment": 4,
         "members": {
           "PATH_REBUILD_DONT_MOVE": 0,
@@ -13628,7 +13628,7 @@
         },
         "type": "uint32"
       },
-      "CFuncMover::TransitionToPathNodeAction_t": {
+      "CFuncMover__TransitionToPathNodeAction_t": {
         "alignment": 4,
         "members": {
           "TRANSITION_TO_PATH_NODE_ACTION_NONE": 0,
@@ -13638,7 +13638,7 @@
         },
         "type": "uint32"
       },
-      "CFuncRotator::Rotate_t": {
+      "CFuncRotator__Rotate_t": {
         "alignment": 4,
         "members": {
           "ROTATE_LOOK_AT_TARGET": 3,
@@ -13651,7 +13651,7 @@
         },
         "type": "uint32"
       },
-      "CFuncRotator::RotationAxis_t": {
+      "CFuncRotator__RotationAxis_t": {
         "alignment": 4,
         "members": {
           "ROTATION_AXIS_PITCH": 2,
@@ -13692,7 +13692,7 @@
         },
         "type": "uint32"
       },
-      "CLogicBranchList::LogicBranchListenerLastState_t": {
+      "CLogicBranchList__LogicBranchListenerLastState_t": {
         "alignment": 4,
         "members": {
           "LOGIC_BRANCH_LISTENER_ALL_FALSE": 2,
@@ -13702,7 +13702,7 @@
         },
         "type": "uint32"
       },
-      "CPathMoverEntitySpawner::TemplateChoiceStrategy_t": {
+      "CPathMoverEntitySpawner__TemplateChoiceStrategy_t": {
         "alignment": 4,
         "members": {
           "TEMPLATE_CHOICE_COUNT_RANDOM": 2,
@@ -13711,7 +13711,7 @@
         },
         "type": "uint32"
       },
-      "CPhysicsProp::CrateType_t": {
+      "CPhysicsProp__CrateType_t": {
         "alignment": 4,
         "members": {
           "CRATE_SPECIFIC_ITEM": 0,
@@ -13719,7 +13719,7 @@
         },
         "type": "uint32"
       },
-      "CRR_Response::ResponseEnum_t": {
+      "CRR_Response__ResponseEnum_t": {
         "alignment": 4,
         "members": {
           "MAX_RESPONSE_NAME": 192,
@@ -13989,7 +13989,7 @@
           "CUSTOM_CAMERA_MODE_DISABLED": 0,
           "CUSTOM_CAMERA_MODE_FOLLOW_POSITION": 3
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "DIALOG_TYPE": {
         "alignment": 4,
@@ -14077,7 +14077,7 @@
           "OVERLAY_VIEWOFFSET": 34359738368,
           "OVERLAY_VISIBILITY_TRACES_BIT": 1048576
         },
-        "type": "uint32"
+        "type": "uint64"
       },
       "DecalFlags_t": {
         "alignment": 4,
@@ -14342,7 +14342,7 @@
           "k_EContributionScoreFlag_Default": 0,
           "k_EContributionScoreFlag_Objective": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "ECsgoGCMsg": {
         "alignment": 4,
@@ -15043,7 +15043,7 @@
           "KILL_SHOCK": 6,
           "KILL_SLASH": 5
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "ENetworkDisconnectionReason": {
         "alignment": 4,
@@ -15364,7 +15364,7 @@
           "EF_NOSHADOW": 16,
           "EF_PARENT_ANIMATES": 512
         },
-        "type": "uint32"
+        "type": "uint16"
       },
       "EntityPlatformTypes_t": {
         "alignment": 1,
@@ -15373,7 +15373,7 @@
           "ENTITY_PLATFORM_PLAYER_FOLLOWS_YAW": 1,
           "ENTITY_PLATFORM_PLAYER_IGNORES_YAW": 2
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "EntitySubclassScope_t": {
         "alignment": 4,
@@ -15401,7 +15401,7 @@
           "eUnbind": 1,
           "eUnbindAndDelete": 2
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "FixAngleSet_t": {
         "alignment": 1,
@@ -15410,7 +15410,7 @@
           "None": 0,
           "Relative": 2
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "Flags_t": {
         "alignment": 4,
@@ -15535,7 +15535,7 @@
           "GLOBAL_OFF": 0,
           "GLOBAL_ON": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "GameAnimEventIndex_t": {
         "alignment": 4,
@@ -15642,7 +15642,7 @@
           "eNone": 0,
           "ePosition": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "Hull_t": {
         "alignment": 4,
@@ -15662,7 +15662,7 @@
         },
         "type": "uint32"
       },
-      "IChoreoServices::ChoreoState_t": {
+      "IChoreoServices__ChoreoState_t": {
         "alignment": 4,
         "members": {
           "STATE_PLAY_SCRIPT": 4,
@@ -15675,7 +15675,7 @@
         },
         "type": "uint32"
       },
-      "IChoreoServices::ScriptState_t": {
+      "IChoreoServices__ScriptState_t": {
         "alignment": 4,
         "members": {
           "SCRIPT_CLEANUP": 3,
@@ -15686,7 +15686,7 @@
         },
         "type": "uint32"
       },
-      "INavObstacle::NavObstacleType_t": {
+      "INavObstacle__NavObstacleType_t": {
         "alignment": 4,
         "members": {
           "NAV_OBSTACLE_TYPE_AVOID": 1,
@@ -15723,7 +15723,7 @@
           "IN_USEORRELOAD": 4294967296,
           "IN_ZOOM": 17179869184
         },
-        "type": "uint32"
+        "type": "uint64"
       },
       "ItemFlagTypes_t": {
         "alignment": 1,
@@ -15738,7 +15738,7 @@
           "ITEM_FLAG_NOITEMPICKUP": 128,
           "ITEM_FLAG_NONE": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "LatchDirtyPermission_t": {
         "alignment": 4,
@@ -15820,7 +15820,7 @@
           "MOVECOLLIDE_FLY_SLIDE": 3,
           "MOVECOLLIDE_MAX_BITS": 3
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "MoveLinearAuthoredPos_t": {
         "alignment": 4,
@@ -15859,7 +15859,7 @@
           "MOVETYPE_VPHYSICS": 5,
           "MOVETYPE_WALK": 2
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "NET_Messages": {
         "alignment": 4,
@@ -15943,7 +15943,7 @@
           "NAV_MESH_TRANSIENT": 256,
           "NAV_MESH_WALK": 64
         },
-        "type": "uint32"
+        "type": "uint64"
       },
       "NavDirType": {
         "alignment": 4,
@@ -15964,7 +15964,7 @@
           "eGround": 1,
           "eNone": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "NavScope_t": {
         "alignment": 1,
@@ -15975,7 +15975,7 @@
           "eGround": 0,
           "eInvalid": 255
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "ObserverInterpState_t": {
         "alignment": 4,
@@ -16006,7 +16006,7 @@
           "ONFRAME_TRUE": 1,
           "ONFRAME_UNKNOWN": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "PARTICLE_MESSAGE": {
         "alignment": 4,
@@ -16323,7 +16323,7 @@
         },
         "type": "uint32"
       },
-      "QuestProgress::Reason": {
+      "QuestProgress__Reason": {
         "alignment": 4,
         "members": {
           "QUEST_NONINITIALIZED": 0,
@@ -16367,7 +16367,7 @@
           "RELATIVE_TO_ENTITY_YAW_ONLY": 2,
           "WORLD_SPACE_POSITION": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "RenderFx_t": {
         "alignment": 1,
@@ -16391,7 +16391,7 @@
           "kRenderFxStrobeFaster": 11,
           "kRenderFxStrobeSlow": 9
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "RenderMode_t": {
         "alignment": 1,
@@ -16401,7 +16401,7 @@
           "kRenderNormal": 0,
           "kRenderTransAlpha": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "ReplayEventType_t": {
         "alignment": 4,
@@ -16562,7 +16562,7 @@
           "eNotifyTriggered": 2,
           "eNotifyWhenFinished": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "ShadowType_t": {
         "alignment": 4,
@@ -16591,7 +16591,7 @@
           "SHARD_DEBRIS": 1,
           "SHARD_SOLID": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "ShatterDamageCause": {
         "alignment": 1,
@@ -16602,7 +16602,7 @@
           "SHATTERDAMAGE_SCRIPT": 3,
           "SHATTERDAMAGE_THROWN": 2
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "ShatterGlassEntityPoolState_t": {
         "alignment": 4,
@@ -16621,7 +16621,7 @@
           "SHATTERGLASS_EXPLOSIVE": 3,
           "SHATTERGLASS_PULSE": 2
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "SignonState_t": {
         "alignment": 4,
@@ -16651,7 +16651,7 @@
           "SOLID_SPHERE": 4,
           "SOLID_VPHYSICS": 6
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "SoundEventStartType_t": {
         "alignment": 4,
@@ -16710,7 +16710,7 @@
           "USE_ROTATION_EXPANDED_SEQUENCE_BOUNDS": 8,
           "USE_SPECIFIED_BOUNDS": 3
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "TOGGLE_STATE": {
         "alignment": 4,
@@ -16761,7 +16761,7 @@
           "DFLAG_SUPPRESS_UTILREMOVE": 524288,
           "DMG_LASTDFLAG": 131072
         },
-        "type": "uint32"
+        "type": "uint64"
       },
       "TestInputOutputCombinationsEnum_t": {
         "alignment": 4,
@@ -16886,7 +16886,7 @@
           "WL_NotInWater": 0,
           "WL_Waist": 3
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "WeaponAttackType_t": {
         "alignment": 4,
@@ -16933,7 +16933,7 @@
           "WPN_ANIMSTATE_SILENCER_REMOVE": 601,
           "WPN_ANIMSTATE_UNINITIALIZED": 0
         },
-        "type": "uint32"
+        "type": "uint16"
       },
       "WeaponSound_t": {
         "alignment": 4,

@@ -1850,7 +1850,7 @@
         ],
         "parent": null
       },
-      "CVoiceContainerStaticAdditiveSynth::CGainScalePerInstance": {
+      "CVoiceContainerStaticAdditiveSynth__CGainScalePerInstance": {
         "fields": {
           "m_flMaxVolume": 8,
           "m_flMinVolume": 0,
@@ -1865,7 +1865,7 @@
         ],
         "parent": null
       },
-      "CVoiceContainerStaticAdditiveSynth::CHarmonic": {
+      "CVoiceContainerStaticAdditiveSynth__CHarmonic": {
         "fields": {
           "m_curve": 16,
           "m_flCents": 8,
@@ -1883,7 +1883,7 @@
         ],
         "parent": null
       },
-      "CVoiceContainerStaticAdditiveSynth::CTone": {
+      "CVoiceContainerStaticAdditiveSynth__CTone": {
         "fields": {
           "m_bSyncInstances": 88,
           "m_curve": 24,
@@ -2687,7 +2687,7 @@
           "PCM16": 0,
           "PCM8": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "EMidiNote": {
         "alignment": 1,
@@ -2706,7 +2706,7 @@
           "G": 7,
           "G_Sharp": 8
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "EMode_t": {
         "alignment": 4,
@@ -2741,7 +2741,7 @@
           "Square": 1,
           "Triangle": 3
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "PlayBackMode_t": {
         "alignment": 4,
@@ -2897,7 +2897,7 @@
           "VMIX_AUTO_SEND_LEVEL": 0,
           "VMIX_AUTO_STACK_VAR": 1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "VMixChannelOperation_t": {
         "alignment": 4,
@@ -2921,7 +2921,7 @@
           "FILTER_RIGHT_ONLY": 2,
           "FILTER_SIDE_ONLY": 4
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "VMixFilterSlope_t": {
         "alignment": 1,
@@ -2936,7 +2936,7 @@
           "FILTER_SLOPE_48dB": 7,
           "FILTER_SLOPE_MAX": 7
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "VMixFilterType_t": {
         "alignment": 1,
@@ -2952,7 +2952,7 @@
           "FILTER_PEAKING_EQ": 4,
           "FILTER_UNKNOWN": -1
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "VMixGraphCommandID_t": {
         "alignment": 4,
@@ -3014,7 +3014,7 @@
           "SIDE": 4,
           "SUM": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "VMixOffsetCategory_t": {
         "alignment": 4,
@@ -3067,7 +3067,7 @@
           "ROOM_VOICES": 1,
           "TRACK": 8
         },
-        "type": "uint32"
+        "type": "uint16"
       },
       "VMixSubgraphSwitchInterpolationType_t": {
         "alignment": 4,
@@ -3084,7 +3084,7 @@
           "BROADCAST": 1,
           "DIVIDE": 0
         },
-        "type": "uint32"
+        "type": "uint8"
       },
       "soundlevel_t": {
         "alignment": 4,
