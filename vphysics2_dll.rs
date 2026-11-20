@@ -1,5 +1,5 @@
-﻿// Generated using https://github.com/SelfC0de/CS2-All-Dumps-Offsets
-// 2026-11-12 08:33:41.7308395 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2026-11-20 03:30:16.454259300 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -28,7 +28,7 @@ pub mod cs2_dumper {
             }
             // Alignment: 1
             // Member count: 3
-            #[repr(u32)]
+            #[repr(u8)]
             pub enum DynamicContinuousContactBehavior_t {
                 DYNAMIC_CONTINUOUS_ALLOW_IF_REQUESTED_BY_OTHER_BODY = 0x0,
                 DYNAMIC_CONTINUOUS_ALWAYS = 0x1,
@@ -49,7 +49,7 @@ pub mod cs2_dumper {
             }
             // Alignment: 1
             // Member count: 5
-            #[repr(u32)]
+            #[repr(u8)]
             pub enum PhysGenericShapeType_t {
                 GENERIC_SHAPE_POINT = 0x0,
                 GENERIC_SHAPE_SPHERE = 0x1,
@@ -59,31 +59,49 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnSphereDesc_t {
                 pub const m_Sphere: usize = 0x18; // RnSphere_t
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnCompoundDesc_t {
                 pub const m_Compound: usize = 0x18; // RnCompound_t
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnSoftbodyParticle_t {
                 pub const m_flMassInv: usize = 0x0; // float32
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnHullDesc_t {
                 pub const m_Hull: usize = 0x18; // RnHull_t
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnCapsuleDesc_t {
                 pub const m_Capsule: usize = 0x18; // RnCapsule_t
             }
             // Parent: None
             // Field count: 113
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod PhysFeModelDesc_t {
                 pub const m_CtrlHash: usize = 0x0; // CUtlVector<uint32>
                 pub const m_CtrlName: usize = 0x18; // CUtlVector<CUtlString>
@@ -201,17 +219,26 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnMeshDesc_t {
                 pub const m_Mesh: usize = 0x18; // RnMesh_t
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnSoftbodySpring_t {
                 pub const m_nParticle: usize = 0x0; // uint16[2]
                 pub const m_flLength: usize = 0x4; // float32
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnSoftbodyCapsule_t {
                 pub const m_vCenter: usize = 0x0; // Vector[2]
                 pub const m_flRadius: usize = 0x18; // float32
@@ -219,11 +246,17 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod vphysics_save_cphysicsbody_t {
                 pub const m_nOldPointer: usize = 0xE0; // uint64
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeBuildBoxRigid_t {
                 pub const m_nPriority: usize = 0x40; // int32
                 pub const m_nVertexMapHash: usize = 0x44; // uint32
@@ -231,6 +264,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CFeIndexedJiggleBone {
                 pub const m_nNode: usize = 0x0; // uint32
                 pub const m_nJiggleParent: usize = 0x4; // uint32
@@ -238,6 +274,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeBoneMergeLink_t {
                 pub const m_nParentHash: usize = 0x0; // uint32
                 pub const m_nChildNode: usize = 0x4; // uint16
@@ -250,6 +289,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeBandBendLimit_t {
                 pub const flDistMin: usize = 0x0; // float32
                 pub const flDistMax: usize = 0x4; // float32
@@ -257,12 +299,18 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnCompoundTree_t {
                 pub const m_Nodes: usize = 0x0; // CUtlLeanVector<RnCompoundTreeNode_t>
                 pub const m_nStartIterationIndex: usize = 0x10; // uint32
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeTaperedCapsuleStretch_t {
                 pub const nNode: usize = 0x0; // uint16[2]
                 pub const nCollisionMask: usize = 0x4; // uint16
@@ -279,6 +327,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeSimdRodConstraintAnim_t {
                 pub const nNode: usize = 0x0; // uint16[4][2]
                 pub const f4Weight0: usize = 0x10; // fltx4
@@ -286,6 +337,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeSimdRodConstraint_t {
                 pub const nNode: usize = 0x0; // uint16[4][2]
                 pub const f4MaxDist: usize = 0x10; // fltx4
@@ -299,6 +353,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod constraint_hingeparams_t {
                 pub const worldPosition: usize = 0x0; // VectorWS
                 pub const worldAxisDirection: usize = 0xC; // Vector
@@ -311,6 +368,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeBuildSphereRigid_t {
                 pub const m_nPriority: usize = 0x20; // int32
                 pub const m_nVertexMapHash: usize = 0x24; // uint32
@@ -318,6 +378,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeSimdAnimStrayRadius_t {
                 pub const nNode: usize = 0x0; // uint16[4][2]
                 pub const flMaxDist: usize = 0x10; // fltx4
@@ -325,17 +388,26 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnTriangle_t {
                 pub const m_nIndex: usize = 0x0; // int32[3]
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeProxyVertexMap_t {
                 pub const m_Name: usize = 0x0; // CUtlString
                 pub const m_flWeight: usize = 0x8; // float32
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeNodeIntegrator_t {
                 pub const flPointDamping: usize = 0x0; // float32
                 pub const flAnimationForceAttraction: usize = 0x4; // float32
@@ -344,12 +416,18 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnCapsule_t {
                 pub const m_vCenter: usize = 0x0; // Vector[2]
                 pub const m_flRadius: usize = 0x18; // float32
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CFeNamedJiggleBone {
                 pub const m_strParentBone: usize = 0x0; // CUtlString
                 pub const m_transform: usize = 0x10; // CTransform
@@ -358,12 +436,18 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FePrism_t {
                 pub const nNode: usize = 0x0; // uint16[6]
                 pub const flVolume: usize = 0xC; // float32
             }
             // Parent: None
             // Field count: 7
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeAntiTunnelProbeBuild_t {
                 pub const flWeight: usize = 0x0; // float32
                 pub const flActivationDistance: usize = 0x4; // float32
@@ -375,6 +459,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 36
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnBodyDesc_t {
                 pub const m_sDebugName: usize = 0x0; // CUtlString
                 pub const m_vPosition: usize = 0x8; // VectorWS
@@ -415,6 +502,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 12
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod OldFeEdge_t {
                 pub const m_flK: usize = 0x0; // float32[3]
                 pub const invA: usize = 0xC; // float32
@@ -431,6 +521,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeFollowNode_t {
                 pub const nParentNode: usize = 0x0; // uint16
                 pub const nChildNode: usize = 0x2; // uint16
@@ -438,6 +531,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 12
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnMesh_t {
                 pub const m_vMin: usize = 0x0; // Vector
                 pub const m_vMax: usize = 0xC; // Vector
@@ -464,6 +560,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnCompoundTreeNode_t {
                 pub const m_vMin: usize = 0x0; // Vector
                 pub const m_vMax: usize = 0xC; // Vector
@@ -472,6 +571,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeBuildSDFRigid_t {
                 pub const m_nPriority: usize = 0x50; // int32
                 pub const m_nVertexMapHash: usize = 0x54; // uint32
@@ -479,6 +581,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 8
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnBlendVertex_t {
                 pub const m_nWeight0: usize = 0x0; // uint16
                 pub const m_nIndex0: usize = 0x2; // uint16
@@ -491,6 +596,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 7
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CFeMorphLayer {
                 pub const m_Name: usize = 0x0; // CUtlString
                 pub const m_nNameHash: usize = 0x8; // uint32
@@ -502,6 +610,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeCtrlSoftOffset_t {
                 pub const nCtrlParent: usize = 0x0; // uint16
                 pub const nCtrlChild: usize = 0x2; // uint16
@@ -510,11 +621,17 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod VPhysEntityId_t {
                 pub const m_Id: usize = 0x0; // uint32
             }
             // Parent: None
             // Field count: 13
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnCompound_t {
                 pub const m_Tree: usize = 0x0; // RnCompoundTree_t
                 pub const m_nHullBaseIndex: usize = 0x18; // int32
@@ -532,6 +649,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 12
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeVertexMapDesc_t {
                 pub const sName: usize = 0x0; // CUtlString
                 pub const nNameHash: usize = 0x8; // uint32
@@ -548,6 +668,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeTaperedCapsuleRigid_t {
                 pub const vSphere: usize = 0x0; // fltx4[2]
                 pub const nNode: usize = 0x20; // uint16
@@ -557,6 +680,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeAnimStrayRadius_t {
                 pub const nNode: usize = 0x0; // uint16[2]
                 pub const flMaxDist: usize = 0x4; // float32
@@ -568,6 +694,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeEdgeDesc_t {
                 pub const nEdge: usize = 0x0; // uint16[2]
                 pub const nSide: usize = 0x4; // uint16[2][2]
@@ -575,6 +704,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeNodeStrayBox_t {
                 pub const vMin: usize = 0x0; // Vector
                 pub const nFlags: usize = 0xC; // uint32
@@ -583,6 +715,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeNodeReverseOffset_t {
                 pub const vOffset: usize = 0x0; // Vector
                 pub const nBoneCtrl: usize = 0xC; // uint16
@@ -590,12 +725,18 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnPlane_t {
                 pub const m_vNormal: usize = 0x0; // Vector
                 pub const m_flOffset: usize = 0xC; // float32
             }
             // Parent: None
             // Field count: 11
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeSDFRigid_t {
                 pub const vLocalMin: usize = 0x0; // Vector
                 pub const vLocalMax: usize = 0xC; // Vector
@@ -611,6 +752,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 35
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CFeJiggleBone {
                 pub const m_nFlags: usize = 0x0; // uint32
                 pub const m_flLength: usize = 0x4; // float32
@@ -650,12 +794,18 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CRegionSVM {
                 pub const m_Planes: usize = 0x0; // CUtlVector<RnPlane_t>
                 pub const m_Nodes: usize = 0x18; // CUtlVector<uint32>
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeWorldCollisionParams_t {
                 pub const flWorldFriction: usize = 0x0; // float32
                 pub const flGroundFriction: usize = 0x4; // float32
@@ -669,6 +819,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnNode_t {
                 pub const m_vMin: usize = 0x0; // Vector
                 pub const m_nChildren: usize = 0xC; // uint32
@@ -677,6 +830,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeFitMatrix_t {
                 pub const bone: usize = 0x0; // CTransform
                 pub const vCenter: usize = 0x20; // Vector
@@ -686,6 +842,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeSimdQuad_t {
                 pub const nNode: usize = 0x0; // uint16[4][4]
                 pub const f4Slack: usize = 0x20; // fltx4
@@ -694,6 +853,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeSimdSpringIntegrator_t {
                 pub const nNode: usize = 0x0; // uint16[4][2]
                 pub const flSpringRestLength: usize = 0x10; // fltx4
@@ -703,6 +865,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 7
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeSimdNodeBase_t {
                 pub const nNode: usize = 0x0; // uint16[4]
                 pub const nNodeX0: usize = 0x8; // uint16[4]
@@ -714,6 +879,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeQuad_t {
                 pub const nNode: usize = 0x0; // uint16[4]
                 pub const flSlack: usize = 0x8; // float32
@@ -721,6 +889,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 6
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeHingeLimit_t {
                 pub const nNode: usize = 0x0; // uint16[6]
                 pub const nFlags: usize = 0xC; // uint32
@@ -731,17 +902,27 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnWing_t {
                 pub const m_nIndex: usize = 0x0; // int32[3]
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeWeightedNode_t {
                 pub const nNode: usize = 0x0; // uint16
                 pub const nWeight: usize = 0x2; // uint16
             }
             // Parent: None
             // Field count: 6
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MVDataOutlinerLeafNameFn
             pub mod CollisionDetailLayerInfo_t {
                 pub const m_sDescription: usize = 0x0; // CUtlString
                 pub const m_sFriendlyName: usize = 0x8; // CUtlString
@@ -752,6 +933,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeEffectDesc_t {
                 pub const sName: usize = 0x0; // CUtlString
                 pub const nNameHash: usize = 0x8; // uint32
@@ -760,6 +944,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeSpringIntegrator_t {
                 pub const nNode: usize = 0x0; // uint16[2]
                 pub const flSpringRestLength: usize = 0x4; // float32
@@ -769,12 +956,18 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FourVectors2D {
                 pub const x: usize = 0x0; // fltx4
                 pub const y: usize = 0x10; // fltx4
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeKelagerBend2_t {
                 pub const flWeight: usize = 0x0; // float32[3]
                 pub const flHeight0: usize = 0xC; // float32
@@ -783,6 +976,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 10
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod vphysics_save_ragdoll_control_t {
                 pub const m_flMinSpringFrequency: usize = 0x0; // float32
                 pub const m_flMaxSpringFrequency: usize = 0x4; // float32
@@ -797,6 +993,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeRigidColliderIndices_t {
                 pub const m_nTaperedCapsuleRigidIndex: usize = 0x0; // uint16
                 pub const m_nSphereRigidIndex: usize = 0x2; // uint16
@@ -806,6 +1005,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeCollisionPlane_t {
                 pub const nCtrlParent: usize = 0x0; // uint16
                 pub const nChildNode: usize = 0x2; // uint16
@@ -814,6 +1016,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeStiffHingeBuild_t {
                 pub const flMaxAngle: usize = 0x0; // float32
                 pub const flStrength: usize = 0x4; // float32
@@ -822,6 +1027,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 6
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeBoxRigid_t {
                 pub const tmFrame2: usize = 0x0; // CTransform
                 pub const nNode: usize = 0x20; // uint16
@@ -832,6 +1040,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 8
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeMorphLayerDepr_t {
                 pub const m_Name: usize = 0x0; // CUtlString
                 pub const m_nNameHash: usize = 0x8; // uint32
@@ -844,6 +1055,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeCtrlOffset_t {
                 pub const vOffset: usize = 0x0; // Vector
                 pub const nCtrlParent: usize = 0xC; // uint16
@@ -855,6 +1069,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 7
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeNodeBase_t {
                 pub const nNode: usize = 0x0; // uint16
                 pub const nDummy: usize = 0x2; // uint16[3]
@@ -866,6 +1083,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 6
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeVertexMapBuild_t {
                 pub const m_VertexMapName: usize = 0x0; // CUtlString
                 pub const m_nNameHash: usize = 0x8; // uint32
@@ -876,11 +1096,17 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CFeVertexMapBuildArray {
                 pub const m_Array: usize = 0x0; // CUtlVector<FeVertexMapBuild_t*>
             }
             // Parent: None
             // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeTri_t {
                 pub const nNode: usize = 0x0; // uint16[3]
                 pub const w1: usize = 0x8; // float32
@@ -890,6 +1116,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 15
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnHull_t {
                 pub const m_vCentroid: usize = 0x0; // Vector
                 pub const m_flMaxAngularRadius: usize = 0xC; // float32
@@ -909,6 +1138,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeModelSelfCollisionLayer_t {
                 pub const m_Name: usize = 0x0; // CUtlString
                 pub const m_Nodes: usize = 0x8; // CUtlVector<uint16>
@@ -918,12 +1150,18 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeAntiTunnelGroupBuild_t {
                 pub const m_nVertexMapHash: usize = 0x0; // uint32
                 pub const m_nCollisionMask: usize = 0x4; // uint32
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CovMatrix3 {
                 pub const m_vDiag: usize = 0x0; // Vector
                 pub const m_flXY: usize = 0xC; // float32
@@ -937,6 +1175,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnVertex_t {
                 pub const m_nEdge: usize = 0x0; // uint8
             }
@@ -946,34 +1187,52 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod Dop26_t {
                 pub const m_flSupport: usize = 0x0; // float32[26]
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeDynKinLink_t {
                 pub const m_nParent: usize = 0x0; // uint16
                 pub const m_nChild: usize = 0x2; // uint16
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnFace_t {
                 pub const m_nEdge: usize = 0x0; // uint8
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeSimdPrism_t {
                 pub const nNode: usize = 0x0; // uint16[4][6]
                 pub const flVolume: usize = 0x30; // fltx4
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeCtrlOsOffset_t {
                 pub const nCtrlParent: usize = 0x0; // uint16
                 pub const nCtrlChild: usize = 0x2; // uint16
             }
             // Parent: None
             // Field count: 8
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeAntiTunnelProbe_t {
                 pub const flWeight: usize = 0x0; // float32
                 pub const nFlags: usize = 0x4; // uint32
@@ -986,11 +1245,17 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeSourceEdge_t {
                 pub const nNode: usize = 0x0; // uint16[2]
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeTwistConstraint_t {
                 pub const nNodeOrient: usize = 0x0; // uint16
                 pub const nNodeEnd: usize = 0x2; // uint16
@@ -999,6 +1264,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeNodeWindBase_t {
                 pub const nNodeX0: usize = 0x0; // uint16
                 pub const nNodeX1: usize = 0x2; // uint16
@@ -1007,6 +1275,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeAxialEdgeBend_t {
                 pub const te: usize = 0x0; // float32
                 pub const tv: usize = 0x4; // float32
@@ -1016,6 +1287,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FourCovMatrices3 {
                 pub const m_vDiag: usize = 0x0; // FourVectors
                 pub const m_flXY: usize = 0x30; // fltx4
@@ -1033,6 +1307,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeSphereRigid_t {
                 pub const vSphere: usize = 0x0; // fltx4
                 pub const nNode: usize = 0x10; // uint16
@@ -1042,12 +1319,18 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 2
-            pub mod CollisionDetailLayerInfo_t::Name_t {
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub mod CollisionDetailLayerInfo_t__Name_t {
                 pub const m_nNameToken: usize = 0x0; // CUtlStringToken
                 pub const m_sNameString: usize = 0x8; // CUtlString
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeBuildTaperedCapsuleRigid_t {
                 pub const m_nPriority: usize = 0x30; // int32
                 pub const m_nVertexMapHash: usize = 0x34; // uint32
@@ -1059,12 +1342,18 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeSoftParent_t {
                 pub const nParent: usize = 0x0; // int32
                 pub const flAlpha: usize = 0x4; // float32
             }
             // Parent: None
             // Field count: 6
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnShapeDesc_t {
                 pub const m_nCollisionAttributeIndex: usize = 0x0; // uint32
                 pub const m_nSurfacePropertyIndex: usize = 0x4; // uint32
@@ -1075,11 +1364,17 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeTreeChildren_t {
                 pub const nChild: usize = 0x0; // uint16[2]
             }
             // Parent: None
             // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeRodConstraint_t {
                 pub const nNode: usize = 0x0; // uint16[2]
                 pub const flMaxDist: usize = 0x4; // float32
@@ -1089,6 +1384,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeFitWeight_t {
                 pub const flWeight: usize = 0x0; // float32
                 pub const nNode: usize = 0x4; // uint16
@@ -1096,6 +1394,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod RnHalfEdge_t {
                 pub const m_nNext: usize = 0x0; // uint8
                 pub const m_nTwin: usize = 0x1; // uint8
@@ -1104,6 +1405,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeSimdTri_t {
                 pub const nNode: usize = 0x0; // uint32[4][3]
                 pub const w1: usize = 0x30; // fltx4
@@ -1118,6 +1422,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeFitInfluence_t {
                 pub const nVertexNode: usize = 0x0; // uint32
                 pub const flWeight: usize = 0x4; // float32
@@ -1125,6 +1432,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod FeHingeLimitBuild_t {
                 pub const nNode: usize = 0x0; // uint16[6]
                 pub const nFlags: usize = 0xC; // uint32
@@ -1134,4 +1444,3 @@ pub mod cs2_dumper {
         }
     }
 }
-

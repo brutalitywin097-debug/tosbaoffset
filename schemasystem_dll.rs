@@ -1,5 +1,5 @@
-﻿// Generated using https://github.com/SelfC0de/CS2-All-Dumps-Offsets
-// 2026-11-12 08:33:41.7308395 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2026-11-20 03:30:16.454259300 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -11,7 +11,7 @@ pub mod cs2_dumper {
         pub mod schemasystem_dll {
             // Alignment: 1
             // Member count: 84
-            #[repr(u32)]
+            #[repr(u8)]
             pub enum fieldtype_t {
                 FIELD_VOID = 0x0,
                 FIELD_FLOAT32 = 0x1,
@@ -108,6 +108,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MResourceTypeForInfoType
             pub mod InfoForResourceTypeCResourceManifestInternal {
             }
             // Parent: None
@@ -139,16 +142,25 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CExampleSchemaVData_PolymorphicDerivedA {
                 pub const m_nDerivedA: usize = 0x10; // int32
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CExampleSchemaVData_PolymorphicBase {
                 pub const m_nBase: usize = 0x8; // int32
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CExampleSchemaVData_PolymorphicDerivedB {
                 pub const m_nDerivedB: usize = 0x10; // int32
             }
@@ -159,6 +171,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CExampleSchemaVData_Monomorphic {
                 pub const m_nExample1: usize = 0x0; // int32
                 pub const m_nExample2: usize = 0x4; // int32
@@ -166,4 +181,3 @@ pub mod cs2_dumper {
         }
     }
 }
-

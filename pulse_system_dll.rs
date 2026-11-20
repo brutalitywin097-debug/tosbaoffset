@@ -1,5 +1,5 @@
-﻿// Generated using https://github.com/SelfC0de/CS2-All-Dumps-Offsets
-// 2026-11-12 08:33:41.7308395 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2026-11-20 03:30:16.454259300 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -75,22 +75,38 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
             pub mod CPulseCell_Step_TestDomainDestroyFakeEntity {
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
+            // MPropertyDescription
+            // MPulseEditorHeaderIcon
             pub mod CPulseCell_WaitForCursorsWithTag {
                 pub const m_bTagSelfWhenComplete: usize = 0x128; // bool
                 pub const m_nDesiredKillPriority: usize = 0x12C; // PulseCursorCancelPriority_t
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_RaceCursors {
                 pub const m_Outflows: usize = 0xD8; // CUtlVector<CPulse_OutflowConnection>
                 pub const m_OnFinished: usize = 0xF0; // CPulse_ResumePoint
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Test_NoInflow {
             }
             // Parent: None
@@ -99,6 +115,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Base {
                 pub const m_nEditorNodeID: usize = 0x8; // PulseDocNodeID_t
             }
@@ -114,12 +133,25 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
+            // MPropertyDescription
+            // MPulseEditorHeaderIcon
+            // MPulseEditorCanvasItemSpecKV3
             pub mod CPulseCell_PickBestOutflowSelector {
                 pub const m_nCheckType: usize = 0x48; // PulseBestOutflowRules_t
                 pub const m_OutflowList: usize = 0x50; // PulseSelectorOutflowList_t
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPulseEditorHeaderIcon
+            // MPropertyFriendlyName
+            // MPropertyDescription
             pub mod CPulseCell_WaitForObservable {
                 pub const m_Condition: usize = 0xD8; // CPulseObservableExpression<bool>
                 pub const m_OnTrue: usize = 0x168; // CPulse_ResumePoint
@@ -134,6 +166,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 15
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseGraphDef {
                 pub const m_DomainIdentifier: usize = 0x8; // PulseSymbol_t
                 pub const m_DomainSubType: usize = 0x18; // CPulseValueFullType
@@ -153,6 +188,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_TestYieldForever {
             }
             // Parent: None
@@ -161,11 +199,17 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
-            pub mod CPulseCell_TestWaitWithCursorState::InstanceState_t {
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub mod CPulseCell_TestWaitWithCursorState__InstanceState_t {
                 pub const m_nDummy: usize = 0x0; // int32
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_FireCursors {
                 pub const m_Outflows: usize = 0xD8; // CUtlVector<CPulse_OutflowConnection>
                 pub const m_bWaitForChildOutflows: usize = 0xF0; // bool
@@ -173,13 +217,19 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 2
-            pub mod CPulseCell_Timeline::TimelineEvent_t {
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub mod CPulseCell_Timeline__TimelineEvent_t {
                 pub const m_flTimeFromPrevious: usize = 0x0; // float32
                 pub const m_EventOutflow: usize = 0x8; // CPulse_OutflowConnection
             }
             // Parent: None
             // Field count: 5
-            pub mod CPulseCell_IntervalTimer::CursorState_t {
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub mod CPulseCell_IntervalTimer__CursorState_t {
                 pub const m_StartTime: usize = 0x0; // GameTime_t
                 pub const m_EndTime: usize = 0x4; // GameTime_t
                 pub const m_flWaitInterval: usize = 0x8; // float32
@@ -188,14 +238,24 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_BaseRequirement {
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPulseEditorHeaderIcon
             pub mod CPulseCell_BaseState {
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod OutflowWithRequirements_t {
                 pub const m_Connection: usize = 0x0; // CPulse_OutflowConnection
                 pub const m_DestinationFlowNodeID: usize = 0x48; // PulseDocNodeID_t
@@ -204,27 +264,44 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_IsRequirementValid {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
             pub mod CPulseCell_Value_Gradient {
                 pub const m_Gradient: usize = 0x48; // CColorGradient
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
             pub mod CPulseCell_TestWaitWithAutoTracepoints {
                 pub const m_TracePrefix: usize = 0xD8; // CUtlString
                 pub const m_WakeResume: usize = 0xE0; // CPulse_ResumePoint
             }
             // Parent: None
             // Field count: 2
-            pub mod PulseNodeDynamicOutflows_t::DynamicOutflow_t {
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub mod PulseNodeDynamicOutflows_t__DynamicOutflow_t {
                 pub const m_OutflowID: usize = 0x0; // CGlobalSymbol
                 pub const m_Connection: usize = 0x8; // CPulse_OutflowConnection
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Test_MultiOutflow_WithParams {
                 pub const m_Out1: usize = 0x48; // SignatureOutflow_Continue
                 pub const m_Out2: usize = 0x90; // SignatureOutflow_Continue
@@ -235,6 +312,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Inflow_GraphHook {
                 pub const m_HookName: usize = 0x80; // PulseSymbol_t
             }
@@ -244,7 +324,10 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
-            pub mod CPulseCell_Test_MultiOutflow_WithParams_Yielding::CursorState_t {
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub mod CPulseCell_Test_MultiOutflow_WithParams_Yielding__CursorState_t {
                 pub const nTestStep: usize = 0x0; // int32
             }
             // Parent: None
@@ -257,7 +340,10 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 5
-            pub mod CPulseCell_TestWaitWithCursorState::CursorState_t {
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub mod CPulseCell_TestWaitWithCursorState__CursorState_t {
                 pub const flWaitValue: usize = 0x0; // float32
                 pub const bFail: usize = 0x4; // bool
                 pub const m_hSelfCursor: usize = 0x8; // HYieldedCursor
@@ -266,22 +352,35 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Inflow_BaseEntrypoint {
                 pub const m_EntryChunk: usize = 0x48; // PulseRuntimeChunkIndex_t
                 pub const m_RegisterMap: usize = 0x50; // PulseRegisterMap_t
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Test_MultiInflow_NoDefault {
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPulseEditorCanvasItemSpecKV3
             pub mod CPulseCell_WaitForCursorsWithTagBase {
                 pub const m_nCursorsAllowedToWait: usize = 0xD8; // int32
                 pub const m_WaitComplete: usize = 0xE0; // CPulse_ResumePoint
             }
             // Parent: None
             // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulse_InvokeBinding {
                 pub const m_RegisterMap: usize = 0x0; // PulseRegisterMap_t
                 pub const m_FuncName: usize = 0x30; // PulseSymbol_t
@@ -291,21 +390,39 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
+            // MPropertyDescription
+            // MPulseEditorHeaderIcon
+            // MPulseEditorCanvasItemSpecKV3
             pub mod CPulseCell_IntervalTimer {
                 pub const m_Completed: usize = 0xD8; // CPulse_ResumePoint
                 pub const m_OnInterval: usize = 0x120; // SignatureOutflow_Continue
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_BaseLerp {
                 pub const m_WakeResume: usize = 0xD8; // CPulse_ResumePoint
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
+            // MPropertyDescription
             pub mod CPulseCell_Value_TestValue50 {
             }
             // Parent: None
             // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Test_MultiOutflow_WithParams_Yielding {
                 pub const m_Out1: usize = 0xD8; // SignatureOutflow_Continue
                 pub const m_AsyncChild1: usize = 0x120; // SignatureOutflow_Continue
@@ -315,31 +432,51 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
             pub mod CPulseCell_Value_Curve {
                 pub const m_Curve: usize = 0x48; // CPiecewiseCurve
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Inflow_EventHandler {
                 pub const m_EventName: usize = 0x80; // PulseSymbol_t
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_BaseFlow {
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
             pub mod CPulseCell_Step_TestDomainTracepoint {
             }
             // Parent: None
             // Field count: 2
-            pub mod CPulseCell_Outflow_CycleShuffled::InstanceState_t {
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub mod CPulseCell_Outflow_CycleShuffled__InstanceState_t {
                 pub const m_Shuffle: usize = 0x0; // CUtlVectorFixedGrowable<uint8,8>
                 pub const m_nNextShuffle: usize = 0x20; // int32
             }
             // Parent: None
             // Field count: 2
-            pub mod CPulseCell_BaseLerp::CursorState_t {
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub mod CPulseCell_BaseLerp__CursorState_t {
                 pub const m_StartTime: usize = 0x0; // GameTime_t
                 pub const m_EndTime: usize = 0x4; // GameTime_t
             }
@@ -367,6 +504,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Timeline {
                 pub const m_TimelineEvents: usize = 0xD8; // CUtlVector<CPulseCell_Timeline::TimelineEvent_t>
                 pub const m_bWaitForChildOutflows: usize = 0xF0; // bool
@@ -374,6 +514,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Inflow_EntOutputHandler {
                 pub const m_SourceEntity: usize = 0x80; // PulseSymbol_t
                 pub const m_SourceOutput: usize = 0x90; // PulseSymbol_t
@@ -381,63 +524,101 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
+            // MPropertyDescription
             pub mod CPulseCell_Outflow_TestExplicitYesNo {
                 pub const m_Yes: usize = 0x48; // CPulse_OutflowConnection
                 pub const m_No: usize = 0x90; // CPulse_OutflowConnection
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
+            // MPropertyDescription
             pub mod CPulseCell_Outflow_TestRandomYesNo {
                 pub const m_Yes: usize = 0x48; // CPulse_OutflowConnection
                 pub const m_No: usize = 0x90; // CPulse_OutflowConnection
             }
             // Parent: None
             // Field count: 1
-            pub mod CPulseCell_Outflow_CycleOrdered::InstanceState_t {
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub mod CPulseCell_Outflow_CycleOrdered__InstanceState_t {
                 pub const m_nNextIndex: usize = 0x0; // int32
             }
             // Parent: None
             // Field count: 1
-            pub mod CPulseCell_LimitCount::InstanceState_t {
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub mod CPulseCell_LimitCount__InstanceState_t {
                 pub const m_nCurrentCount: usize = 0x0; // int32
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Test_MultiInflow_WithDefault {
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Step_DebugLog {
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MCustomFGDMetadata
             pub mod CPulseCell_BaseYieldingInflow {
                 pub const m_BaseFlow_OnAfterCancel: usize = 0x48; // CPulse_ResumePoint
                 pub const m_BaseFlow_WhileActive: usize = 0x90; // CPulse_ResumePoint
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod PulseNodeDynamicOutflows_t {
                 pub const m_Outflows: usize = 0x0; // CUtlVector<PulseNodeDynamicOutflows_t::DynamicOutflow_t>
             }
             // Parent: None
             // Field count: 1
-            pub mod CPulseCell_IsRequirementValid::Criteria_t {
+            pub mod CPulseCell_IsRequirementValid__Criteria_t {
                 pub const m_bIsValid: usize = 0x0; // bool
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Inflow_ObservableVariableListener {
                 pub const m_nBlackboardReference: usize = 0x80; // PulseRuntimeBlackboardReferenceIndex_t
                 pub const m_bSelfReference: usize = 0x82; // bool
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Outflow_CycleOrdered {
                 pub const m_Outputs: usize = 0x48; // CUtlVector<CPulse_OutflowConnection>
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod PulseSelectorOutflowList_t {
                 pub const m_Outflows: usize = 0x0; // CUtlVector<OutflowWithRequirements_t>
             }
@@ -447,26 +628,46 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
             pub mod CPulseCell_Val_TestDomainGetEntityName {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
+            // MPropertyDescription
+            // MPulseEditorHeaderIcon
+            // MPulseEditorCanvasItemSpecKV3
             pub mod CPulseCell_Inflow_Wait {
                 pub const m_WakeResume: usize = 0xD8; // CPulse_ResumePoint
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_TestWaitWithCursorState {
                 pub const m_WakeResume: usize = 0xD8; // CPulse_ResumePoint
                 pub const m_WakeFail: usize = 0x120; // CPulse_ResumePoint
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Outflow_CycleShuffled {
                 pub const m_Outputs: usize = 0x48; // CUtlVector<CPulse_OutflowConnection>
             }
             // Parent: None
             // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Inflow_Method {
                 pub const m_MethodName: usize = 0x80; // PulseSymbol_t
                 pub const m_Description: usize = 0x90; // CUtlString
@@ -476,10 +677,19 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_BaseValue {
             }
             // Parent: None
             // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
+            // MPropertyDescription
+            // MPulseEditorCanvasItemSpecKV3
             pub mod CPulseCell_BooleanSwitchState {
                 pub const m_Condition: usize = 0xD8; // CPulseObservableExpression<bool>
                 pub const m_WhenTrue: usize = 0x168; // CPulse_OutflowConnection
@@ -487,6 +697,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Inflow_Yield {
                 pub const m_UnyieldResume: usize = 0xD8; // CPulse_ResumePoint
             }
@@ -497,20 +710,33 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Outflow_CycleRandom {
                 pub const m_Outputs: usize = 0x48; // CUtlVector<CPulse_OutflowConnection>
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Step_PublicOutput {
                 pub const m_OutputIndex: usize = 0x48; // PulseRuntimeOutputIndex_t
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
             pub mod CPulseCell_Val_TestDomainFindEntityByName {
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulse_BlackboardReference {
                 pub const m_hBlackboardResource: usize = 0x0; // CStrongHandle<InfoForResourceTypeIPulseGraphDef>
                 pub const m_BlackboardResource: usize = 0x8; // PulseSymbol_t
@@ -519,30 +745,58 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_ReturnValues {
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
+            // MPropertyDescription
+            // MPulseEditorHeaderIcon
             pub mod CPulseCell_Value_RandomInt {
             }
             // Parent: None
             // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
             pub mod CPulseCell_TestEnums {
                 pub const m_nReferenceColor: usize = 0x48; // PulseTestEnumColor_t
                 pub const m_nReferenceFlags: usize = 0x4C; // PulseTestEnumFlags_t
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
+            // MPulseEditorHeaderText
             pub mod CPulseCell_Step_TestDomainEntFire {
                 pub const m_Input: usize = 0x48; // CUtlString
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
+            // MPropertyDescription
+            // MPulseEditorHeaderIcon
+            // MPulseEditorCanvasItemSpecKV3
             pub mod CPulseCell_ExampleSelector {
                 pub const m_OutflowList: usize = 0x48; // PulseSelectorOutflowList_t
             }
             // Parent: None
             // Field count: 8
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulse_CallInfo {
                 pub const m_PortName: usize = 0x0; // PulseSymbol_t
                 pub const m_nEditorNodeID: usize = 0x10; // PulseDocNodeID_t
@@ -555,6 +809,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_InlineNodeSkipSelector {
                 pub const m_nFlowNodeID: usize = 0x48; // PulseDocNodeID_t
                 pub const m_bAnd: usize = 0x4C; // bool
@@ -563,22 +820,35 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 3
-            pub mod CPulseCell_ExampleCriteria::Criteria_t {
+            pub mod CPulseCell_ExampleCriteria__Criteria_t {
                 pub const m_flFloatValue1: usize = 0x0; // float32
                 pub const m_flFloatValue2: usize = 0x4; // float32
                 pub const m_bMyBool: usize = 0x8; // bool
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
+            // MPropertyDescription
             pub mod CPulseCell_ExampleCriteria {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
+            // MPropertyDescription
             pub mod CPulseCell_LimitCount {
                 pub const m_nLimitCount: usize = 0x48; // int32
             }
             // Parent: None
             // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_Step_CallExternalMethod {
                 pub const m_MethodName: usize = 0xD8; // PulseSymbol_t
                 pub const m_nBlackboardIndex: usize = 0xE8; // PulseRuntimeBlackboardReferenceIndex_t
@@ -588,15 +858,22 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
-            pub mod CPulseCell_LimitCount::Criteria_t {
+            pub mod CPulseCell_LimitCount__Criteria_t {
                 pub const m_bLimitCountPasses: usize = 0x0; // bool
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
             pub mod CPulseCell_Step_TestDomainCreateFakeEntity {
             }
             // Parent: None
             // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod CPulseCell_TestYieldWithObservables {
                 pub const m_flWatchForFloatValue: usize = 0xD8; // float32
                 pub const m_LiveFloatValue: usize = 0xE0; // CPulseObservableExpression<float32>
@@ -606,11 +883,23 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
+            // MPropertyDescription
+            // MPulseEditorHeaderIcon
             pub mod CPulseCell_CursorQueue {
                 pub const m_nCursorsAllowedToRunParallel: usize = 0x128; // int32
             }
             // Parent: None
             // Field count: 0
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MPropertyFriendlyName
+            // MPropertyDescription
+            // MPulseEditorHeaderIcon
             pub mod CPulseCell_Value_RandomFloat {
             }
             // Parent: None
@@ -625,4 +914,3 @@ pub mod cs2_dumper {
         }
     }
 }
-

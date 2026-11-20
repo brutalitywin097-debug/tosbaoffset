@@ -1,5 +1,5 @@
-﻿// Generated using https://github.com/SelfC0de/CS2-All-Dumps-Offsets
-// 2026-11-12 08:33:41.7308395 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2026-11-20 03:30:16.454259300 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -53,21 +53,33 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod MaterialParam_t {
                 pub const m_name: usize = 0x0; // CUtlString
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod MaterialParamVector_t {
                 pub const m_value: usize = 0x8; // Vector4D
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod MaterialParamString_t {
                 pub const m_value: usize = 0x8; // CUtlString
             }
             // Parent: None
             // Field count: 15
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod PostProcessingResource_t {
                 pub const m_bHasTonemapParams: usize = 0x0; // bool
                 pub const m_toneMapParams: usize = 0x4; // PostProcessingTonemapParameters_t
@@ -87,11 +99,17 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod MaterialParamInt_t {
                 pub const m_nValue: usize = 0x8; // int32
             }
             // Parent: None
             // Field count: 6
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod PostProcessingVignetteParameters_t {
                 pub const m_flVignetteStrength: usize = 0x0; // float32
                 pub const m_vCenter: usize = 0x4; // Vector2D
@@ -102,6 +120,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod PostProcessingLocalContrastParameters_t {
                 pub const m_flLocalContrastStrength: usize = 0x0; // float32
                 pub const m_flLocalContrastEdgeStrength: usize = 0x4; // float32
@@ -111,6 +132,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 15
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod PostProcessingTonemapParameters_t {
                 pub const m_flExposureBias: usize = 0x0; // float32
                 pub const m_flShoulderStrength: usize = 0x4; // float32
@@ -130,6 +154,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 8
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod PostProcessingFogScatteringParameters_t {
                 pub const m_fRadius: usize = 0x0; // float32
                 pub const m_fScale: usize = 0x4; // float32
@@ -142,11 +169,17 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod MaterialParamBuffer_t {
                 pub const m_value: usize = 0x8; // CUtlBinaryBlock
             }
             // Parent: None
             // Field count: 14
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod MaterialResourceData_t {
                 pub const m_materialName: usize = 0x0; // CUtlString
                 pub const m_shaderName: usize = 0x8; // CUtlString
@@ -165,6 +198,9 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 16
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod PostProcessingBloomParameters_t {
                 pub const m_blendMode: usize = 0x0; // BloomBlendMode_t
                 pub const m_flBloomStrength: usize = 0x4; // float32
@@ -185,11 +221,17 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod MaterialParamFloat_t {
                 pub const m_flValue: usize = 0x8; // float32
             }
             // Parent: None
             // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod PostProcessingLocalExposureParameters_t {
                 pub const m_fShadowOffsetEV: usize = 0x0; // float32
                 pub const m_fHighlightOffsetEV: usize = 0x4; // float32
@@ -198,10 +240,12 @@ pub mod cs2_dumper {
             }
             // Parent: None
             // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub mod MaterialParamTexture_t {
                 pub const m_pValue: usize = 0x8; // CStrongHandle<InfoForResourceTypeCTextureBase>
             }
         }
     }
 }
-
